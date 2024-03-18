@@ -1,9 +1,27 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Gilda_Display, Barlow } from "next/font/google";
 import "./globals.css";
 import Provider from "./providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const gilda = Gilda_Display({
+  subsets: ["latin"],
+  variable: "--font-gilda-display",
+  display: "swap",
+  weight: "400",
+});
+
+const barlow = Barlow({
+  subsets: ["latin"],
+  variable: "--font-barlow",
+  display: "swap",
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.variable} ${gilda.variable} ${barlow.variable}`}
+      >
         <Provider>{children}</Provider>
       </body>
     </html>
