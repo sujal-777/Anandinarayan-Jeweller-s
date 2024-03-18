@@ -1,0 +1,36 @@
+.footer .add-list {
+    list-style-type: disc;
+}
+
+.footer .add-list li:nth-child(1) {
+    list-style-image: url("/FooterAssets/location.png");
+}
+.footer .add-list li:nth-child(2) {
+    list-style-image: url("/FooterAssets/phone.png");
+}
+.footer .add-list li:nth-child(3) {
+    list-style-image: url("/FooterAssets/mail.png");
+}
+
+/* .footer .add-list li {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer .add-list li:before {
+  content: "";
+
+  display: inline-block;
+
+  height: 10px;
+
+  width: 10px;
+
+  background-size: 10px;
+
+  background-image: url("/FooterAssets/location.png");
+
+  background-repeat: no-repeat;
+
+  margin-right: 5px;
+} */
