@@ -1,5 +1,4 @@
 import React from "react";
-import { Image } from "@nextui-org/react";
 import RoomPage from "../RoomPage";
 
 const src = "/rooms/room1.png";
@@ -17,8 +16,6 @@ const para2 = `The alpha room among the ones up for grabs at Hotel Ashok, the
               king suite is certainly a class above all. The king suite gives
               you the actual vibe about how a room is supposed to be in a luxury
               hotel`;
-
-import Test from "../test";
 
 export default function king() {
   return (

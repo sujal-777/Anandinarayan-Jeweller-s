@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Gilda_Display, Barlow } from "next/font/google";
 import "./globals.css";
 import Provider from "./providers";
+import Footer from "./_components/Footer/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -38,7 +39,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${gilda.variable} ${barlow.variable}`}
       >
-        <Provider>{children}</Provider>
+        <Provider>
+          {children}
+          <Footer />
+        </Provider>
       </body>
     </html>
   );

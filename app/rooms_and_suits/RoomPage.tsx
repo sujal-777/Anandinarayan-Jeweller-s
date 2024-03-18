@@ -74,8 +74,8 @@ const RoomPage: React.FC<RoomPageProps> = ({ src, room, desc1, desc2 }) => {
           <div className="flex justify-center items-center p-5">
             <Image
               radius="none"
-              alt="test image"
-              src="/rooms/room1.png"
+              alt={src}
+              src={src}
               className="h-auto max-w-full"
             />
           </div>
@@ -111,8 +111,8 @@ const RoomPage: React.FC<RoomPageProps> = ({ src, room, desc1, desc2 }) => {
         <p>Pets not allowed</p>
       </div>
 
-      <div className="flex flex-col">
-        <div className=" order-last md:order-first pt-3">
+      <div className="flex flex-col mt-5">
+        <div className=" order-last md:order-first mt-5 lg:mt-0">
           <p className="font-gilda text-[#222222] text-[24px]">Amenities</p>
           <p className="flex items-center mt-2">
             <SwimmingPool className="mr-2" /> Swimming Pool
@@ -133,7 +133,7 @@ const RoomPage: React.FC<RoomPageProps> = ({ src, room, desc1, desc2 }) => {
             <PersonIcon className="mr-2" /> 1-2 Persons
           </p>
         </div>
-        <div className="order-first md:order-last py-4">
+        <div className="order-first md:order-last md:mt-4">
           <Button
             radius="none"
             size="lg"
