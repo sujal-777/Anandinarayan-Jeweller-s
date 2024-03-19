@@ -3,6 +3,7 @@ import { Inter, Gilda_Display, Barlow } from "next/font/google";
 import "./globals.css";
 import Provider from "./providers";
 import Footer from "./_components/Footer/Footer";
+import Header from "./_components/Header/Header";
 
 const inter = Inter({
   subsets: ["latin"],
