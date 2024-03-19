@@ -1,10 +1,9 @@
-import Image from "next/image";
-import Footer from "./_components/Footer/Footer";
+import HomePage from "./Home/page";
 
 export default function Home() {
   return (
     <main>
-      <p>Hello</p>
+      <HomePage/>
     </main>
   );
 }
