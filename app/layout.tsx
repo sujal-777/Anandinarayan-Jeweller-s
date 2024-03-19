@@ -4,6 +4,7 @@ import "./globals.css";
 import Provider from "./providers";
 import Footer from "./_components/Footer/Footer";
 import Header from "./_components/Header/Header";
+import Nav from "./_components/NavBar/Nav";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -41,6 +42,7 @@ export default function RootLayout({
         className={`${inter.variable} ${gilda.variable} ${barlow.variable}`}
       >
         <Provider>
+          <Nav/>
           {children}
           <Footer />
         </Provider>
