@@ -2,6 +2,7 @@
 "use cleint";
 
 import React from "react";
+import { Image } from "@nextui-org/react";
 
 interface HeaderProps {
   aboutUsText: string;
@@ -11,13 +12,13 @@ interface HeaderProps {
 export default function Header({ aboutUsText, headerBannerSrc }: HeaderProps) {
   return (
     <section className="relative">
-      <img
+      <Image
         src={headerBannerSrc}
         alt="Header"
         className="w-full h-96 object-cover"
       />
       <div className="absolute top-5 left-5 flex flex-col items-start w-full h-full">
-        <img
+        <Image
           src="/HeaderAssets/hotel_logo.png"
           alt="Hotel Logo"
           className="w-20 md:w-40"

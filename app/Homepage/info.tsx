@@ -1,6 +1,8 @@
 import React from "react";
 import CallIcon from "@mui/icons-material/Call";
 
+import { Image } from "@nextui-org/react";
+
 const info = () => {
   return (
     <section>
@@ -25,11 +27,11 @@ const info = () => {
               hospitality and exceptional services, setting the standard for
               excellence in the hospitality industry in Nagpur. Experience the
               regal charm and grandeur of our suites, designed to make every
-              guest feel like royalty. Whether you're seeking a family retreat
-              or a romantic escape, our range of rooms, from family to honeymoon
-              suites, caters to your every whim. With a host of modern amenities
-              and facilities, we ensure a comfortable and memorable stay at
-              Hotel Ashok.
+              guest feel like royalty. Whether you&apos;re seeking a family
+              retreat or a romantic escape, our range of rooms, from family to
+              honeymoon suites, caters to your every whim. With a host of modern
+              amenities and facilities, we ensure a comfortable and memorable
+              stay at Hotel Ashok.
             </p>
 
             <br />
@@ -51,7 +53,10 @@ const info = () => {
           </div>
 
           <div className="w-full sm:w-1/2 flex flex-col justify-center px-10 py-7">
-            <img alt="man with generator" src="/HomePageAssets/home_info.png" />
+            <Image
+              alt="man with generator"
+              src="/HomePageAssets/home_info.png"
+            />
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@ const roomCount = [
   "6 rooms",
 ];
 
-const roomSelect = () => {
+const RoomSelect = () => {
   const [startDate, setStartDate] = useState<Date | null>(null);
   const [endDate, setEndDate] = useState<Date | null>(null);
 
@@ -100,4 +100,4 @@ const roomSelect = () => {
   );
 };
 
-export default roomSelect;
+export default RoomSelect;
