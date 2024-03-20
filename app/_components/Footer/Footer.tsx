@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { GrLocation } from "react-icons/gr";
 import { IoCallOutline } from "react-icons/io5";
@@ -9,7 +9,9 @@ import { FaFacebookF } from "react-icons/fa";
 import { SiGoogle } from "react-icons/si";
 import { PiLinkedinLogo } from "react-icons/pi";
 import { RiTwitterXLine } from "react-icons/ri";
-import "./style.css"
+import "./style.css";
+
+import { Image } from "@nextui-org/react";
 
 export default function Footer() {
   // TODO: ADD links to: Solutions, Price lists, Terms of Sale, Privacy Statement, Legal Authoriiy, Accessibilty, Projects, Commissions
@@ -17,7 +19,7 @@ export default function Footer() {
   return (
     <div className="footer bg-[#282424] text-white pt-8 pb-4 md:px-20 px-10">
       <div className="flex flex-wrap md:justify-between gap-8">
-        <div className="grid grid-cols-2 grid-flow-col grid-cols-2 grid-rows-3 lg:grid-rows-1 lg:grid-cols-5 gap-8 md:text-left md:max-w-[70%]">
+        <div className="grid grid-cols-2 grid-flow-col grid-rows-3 lg:grid-rows-1 lg:grid-cols-5 gap-8 md:text-left md:max-w-[70%]">
           <div className="leading-5">
             <h2 className="text-lg font-bold mb-2">Explore</h2>
             <ul className="text-sm">
@@ -56,14 +58,11 @@ export default function Footer() {
         <div className="md:max-w-[30%] text-sm py-8 md:border-0 border-b-2 border-white md:text-left">
           <ul className="add-list pl-4">
             <li>
-              Address - WHC Road, Aath Rasta Square, Laxmi Nagar, Nagpur, Maharashtra 440022
+              Address - WHC Road, Aath Rasta Square, Laxmi Nagar, Nagpur,
+              Maharashtra 440022
             </li>
-            <li>
-             +91 88888 70722
-            </li>
-            <li>
-            booking@thenagpurashok.com
-            </li>
+            <li> +91 88888 70722</li>
+            <li>booking@thenagpurashok.com</li>
           </ul>
           <br />
           <div className="flex mt-2 gap-8 justify-start">
@@ -106,7 +105,13 @@ export default function Footer() {
           </div>
         </div>
         <div className="md:max-w-[30%] text-sm py-8 md:border-0 border-b-2 border-white md:text-left">
-          <img src="/FooterAssets/image.png" alt=" " className="w-24 h-auto" />
+          <Image
+            src="/FooterAssets/image.png"
+            alt="footer image"
+            width={100}
+            height={100}
+            className="h-auto max-w-full"
+          />
         </div>
       </div>
       <div className="text-center pt-4">
