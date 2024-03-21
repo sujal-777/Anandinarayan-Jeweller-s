@@ -34,14 +34,14 @@ const SearchRooms = () => {
   const [endDate, setEndDate] = useState<Date | null>(null);
 
   return (
-    <div className="px-10 hidden lg:block w-full py-32 font-barlow ">
+    <div className="px-2 lg:px-10 w-full py-10 lg:py-32 font-barlow ">
       <div>
         <p className="text-[#222222]">CHECK NOW</p>
         <p className="text-[#222222] text-[60px] font-gilda ">Search</p>
       </div>
-      <div className="mx-5 flex justify-center items-center border-2">
-        <div className="w-full grid grid-cols-6">
-          <div className="flex justify-center items-center h-full border-r-2">
+      <div className="mx-2 md:mx-5 flex justify-center items-center border-2">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-0">
+          <div className="flex justify-center items-stretch border-r-0 md:border-r-2 border-b-2 md:border-b-0">
             <DatePicker
               showIcon
               isClearable
@@ -51,10 +51,10 @@ const SearchRooms = () => {
               selectsStart
               startDate={startDate}
               endDate={endDate}
-              className="w-full h-full"
+              className="w-full"
             />
           </div>
-          <div className="flex justify-center items-center h-full border-r-2">
+          <div className="flex justify-center items-stretch border-r-0 md:border-r-2 border-b-2 md:border-b-0">
             <DatePicker
               showIcon
               isClearable
@@ -68,28 +68,28 @@ const SearchRooms = () => {
               className="w-full"
             />
           </div>
-          <div className="flex justify-center items-center h-full border-r-2">
+          <div className="flex justify-center items-stretch border-r-0 md:border-r-2 border-b-2 md:border-b-0">
             <Select radius="none" label="Adults" className="w-full">
               {adultCount?.map((ele, i) => (
                 <SelectItem key={i}>{ele}</SelectItem>
               ))}
             </Select>
           </div>
-          <div className="flex justify-center items-center h-full border-r-2">
+          <div className="flex justify-center items-stretch border-r-0 md:border-r-2 border-b-2 md:border-b-0">
             <Select radius="none" label="Children" className="w-full">
               {childCount?.map((ele, i) => (
                 <SelectItem key={i}>{ele}</SelectItem>
               ))}
             </Select>
           </div>
-          <div className="flex justify-center items-center h-full border-r-2">
+          <div className="flex justify-center items-stretch border-r-0 md:border-r-2 border-b-2 md:border-b-0">
             <Select radius="none" label="Rooms" className="w-full">
               {roomCount?.map((ele, i) => (
                 <SelectItem key={i}>{ele}</SelectItem>
               ))}
             </Select>
           </div>
-          <div className="flex justify-center items-center w-full h-full">
+          <div className="flex justify-center items-stretch border-b-2 md:border-b-0">
             <Button
               radius="none"
               variant="flat"
