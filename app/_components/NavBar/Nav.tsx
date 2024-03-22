@@ -18,10 +18,10 @@ export default function App() {
           <Link href="#">Home</Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#">About</Link>
+          <Link href="/about-us">About</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#">Rooms & Sutes</Link>
+          <Link href="/rooms_and_suits">Rooms & Suits</Link>
         </NavbarItem>
         <NavbarItem>
           <Link href="#">Wedding & Events</Link>
@@ -36,7 +36,7 @@ export default function App() {
           <Link href="#">Nearby Attractions</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#">Contact</Link>
+          <Link href="/contact_us">Contact</Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
