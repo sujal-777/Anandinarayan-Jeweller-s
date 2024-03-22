@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Image } from "@nextui-org/react";
+
 export default function Weddings() {
   return (
     <section>
@@ -19,20 +21,20 @@ export default function Weddings() {
             <p className="text-black font-gilda mt-5">
               Hotel Ashok, part of the esteemed Ashok Group, has been a
               prominent name in the hospitality industry in Nagpur. Renowned for
-              its food’s taste and quality, the hotel has earned the trust and
-              loyalty of its guests over the years.
+              its food&apos;s taste and quality, the hotel has earned the trust
+              and loyalty of its guests over the years.
             </p>
             <p className="text-black font-gilda mt-5">
-              Nagpur, crowned by the name 'Orange City of India', is a
-              well-famed city in Maharashtra. It comes among the top smart
+              Nagpur, crowned by the name &apos;Orange City of India&apos;s, is
+              a well-famed city in Maharashtra. It comes among the top smart
               cities in the country and is blessed with a spiritual legacy,
-              historical heritage, and picturesque surroundings.  So, if you are
+              historical heritage, and picturesque surroundings. So, if you are
               an adventure seeker, history buff or soul searcher, you will be
               hooked to this place
             </p>
             <p className="text-black font-gilda mt-5">
               A highlight of Hotel Ashok is its enchanting poolside venue,
-              perfect for ceremonies like Haldi and Mehndi.  The lively
+              perfect for ceremonies like Haldi and Mehndi. The lively
               atmosphere by the pool adds an extra layer of enjoyment to
               celebrations, ensuring they are truly unforgettable.
             </p>
@@ -62,7 +64,7 @@ export default function Weddings() {
             </p>
             <p className="text-black font-gilda mt-5">
               A highlight of Hotel Ashok is its enchanting poolside venue,
-              perfect for ceremonies like Haldi and Mehndi.  The lively
+              perfect for ceremonies like Haldi and Mehndi. The lively
               atmosphere by the pool adds an extra layer of enjoyment to
               celebrations, ensuring they are truly unforgettable.
             </p>
@@ -114,7 +116,7 @@ export default function Weddings() {
               Nagpur, crowned by the name 'Orange City of India', is a
               well-famed city in Maharashtra. It comes among the top smart
               cities in the country and is blessed with a spiritual legacy,
-              historical heritage, and picturesque surroundings.  So, if you are
+              historical heritage, and picturesque surroundings. So, if you are
               an adventure seeker, history buff or soul searcher, you will be
               hooked to this place
             </p>
@@ -145,7 +147,11 @@ export default function Weddings() {
             </p>
           </div>
           <div className="w-full sm:w-1/2 flex flex-col justify-center px-10 py-7">
-            <img alt="" src="/HomePageAssets/Weddings/image_bar2.png" />
+            <Image
+              radius="none"
+              alt=""
+              src="/HomePageAssets/Weddings/image_bar2.png"
+            />
           </div>
         </div>
       </div>
