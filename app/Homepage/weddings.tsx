@@ -9,7 +9,8 @@ export default function Weddings() {
         Weddings
       </p>
 
-      <img
+      <Image
+        radius="none"
         className="p-20"
         src="/HomePageAssets/Weddings/image_wed.png"
         alt=""
@@ -45,7 +46,11 @@ export default function Weddings() {
           </div>
 
           <div className="w-full sm:w-1/2 flex flex-col justify-center px-10 py-7">
-            <img alt="" src="/HomePageAssets/Weddings/image_wed_col.png" />
+            <Image
+              radius="none"
+              alt=""
+              src="/HomePageAssets/Weddings/image_wed_col.png"
+            />
           </div>
         </div>
       </div>
@@ -53,7 +58,11 @@ export default function Weddings() {
       <div className="w-full flex flex-col justify-center items-center">
         <div className="flex flex-col sm:flex-row justify-center items-start">
           <div className="w-full sm:w-1/2 flex flex-col justify-center px-10 py-7">
-            <img alt="" src="/HomePageAssets/Weddings/image_food.png" />
+            <Image
+              radius="none"
+              alt=""
+              src="/HomePageAssets/Weddings/image_food.png"
+            />
           </div>
           <div className="w-full sm:w-1/2 flex flex-col justify-center p-20 text-justify">
             <p className="text-xl font-gilda mt-5" style={{ color: "#666666" }}>
@@ -98,7 +107,11 @@ export default function Weddings() {
             </p>
           </div>
           <div className="w-full sm:w-1/2 flex flex-col justify-center px-10 py-7">
-            <img alt="" src="/HomePageAssets/Weddings/image_bar.png" />
+            <Image
+              radius="none"
+              alt=""
+              src="/HomePageAssets/Weddings/image_bar.png"
+            />
           </div>
         </div>
       </div>
@@ -106,7 +119,11 @@ export default function Weddings() {
       <div className="w-full flex flex-col justify-center items-center">
         <div className="flex flex-col sm:flex-row justify-center items-start">
           <div className="w-full sm:w-1/2 flex flex-col justify-center px-10 py-7">
-            <img alt="" src="/HomePageAssets/Weddings/image_pool.png" />
+            <Image
+              radius="none"
+              alt=""
+              src="/HomePageAssets/Weddings/image_pool.png"
+            />
           </div>
           <div className="w-full sm:w-1/2 flex flex-col justify-center p-20 text-justify">
             <p className="text-xl font-gilda mt-5" style={{ color: "#666666" }}>
