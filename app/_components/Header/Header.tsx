@@ -1,5 +1,5 @@
 // Header.tsx
-"use cleint";
+"use client";
 
 import React from "react";
 import { Image } from "@nextui-org/react";
