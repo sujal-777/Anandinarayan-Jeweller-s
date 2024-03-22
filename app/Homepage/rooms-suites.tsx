@@ -7,15 +7,6 @@ const images = [
   { id: 3, src: "/HomePageAssets/image_budget_room.png", alt: "Image 3" },
   { id: 4, src: "/HomePageAssets/image_deluxe_room.png", alt: "Image 4" },
 ];
-import Image from 'next/image';
-
-const images = [
-    { id: 1, src: '/HomePageAssets/image_king_suite.png', alt: 'Image 1' },
-    { id: 2, src: '/HomePageAssets/image_family_room.png', alt: 'Image 2' },
-    { id: 3, src: '/HomePageAssets/image_budget_room.png', alt: 'Image 3' },
-    { id: 4, src: '/HomePageAssets/image_deluxe_room.png', alt: 'Image 4' },
-];
-
 
 export default function RoomsAndSuites() {
   return (
@@ -41,7 +32,4 @@ export default function RoomsAndSuites() {
       <br />
     </section>
   );
-            <br />
-        </section>
-    );
 }
