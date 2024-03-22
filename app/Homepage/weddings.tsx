@@ -86,11 +86,12 @@ export default function Weddings() {
             </p>
             <p className="text-black font-gilda mt-5">
               Indulge in an extraordinary dining experience at PoolDeck, Hotel
-              Ashok's spacious poolside fine dining restaurant. Immerse yourself
-              in the soothing ambience while enjoying daily live music, creating
-              the perfect atmosphere for a memorable meal.Our restaurant prides
-              itself on offering a diverse and delectable range of multi-cuisine
-              options, tailored to suit the preferences of our esteemed guests.
+              Ashok&apos;s spacious poolside fine dining restaurant. Immerse
+              yourself in the soothing ambience while enjoying daily live music,
+              creating the perfect atmosphere for a memorable meal.Our
+              restaurant prides itself on offering a diverse and delectable
+              range of multi-cuisine options, tailored to suit the preferences
+              of our esteemed guests.
             </p>
             <p className="mt-5 text-xl bg-[#AA8453] text-white p-2 inline-block">
               Learn More
@@ -113,7 +114,7 @@ export default function Weddings() {
             </p>
             <p className="text-2xl text-black font-gilda mt-5">Swimming Pool</p>
             <p className="text-black font-gilda mt-5">
-              Nagpur, crowned by the name 'Orange City of India', is a
+              Nagpur, crowned by the name &apos;Orange City of India&apos;, is a
               well-famed city in Maharashtra. It comes among the top smart
               cities in the country and is blessed with a spiritual legacy,
               historical heritage, and picturesque surroundings. So, if you are
@@ -136,11 +137,12 @@ export default function Weddings() {
             <p className="text-2xl text-black font-gilda mt-5">Bar</p>
             <p className="text-black font-gilda mt-5">
               Indulge in an extraordinary dining experience at PoolDeck, Hotel
-              Ashok's spacious poolside fine dining restaurant. Immerse yourself
-              in the soothing ambience while enjoying daily live music, creating
-              the perfect atmosphere for a memorable meal.Our restaurant prides
-              itself on offering a diverse and delectable range of multi-cuisine
-              options, tailored to suit the preferences of our esteemed guests.
+              Ashok&apos;s spacious poolside fine dining restaurant. Immerse
+              yourself in the soothing ambience while enjoying daily live music,
+              creating the perfect atmosphere for a memorable meal.Our
+              restaurant prides itself on offering a diverse and delectable
+              range of multi-cuisine options, tailored to suit the preferences
+              of our esteemed guests.
             </p>
             <p className="mt-5 text-xl bg-[#AA8453] text-white p-2 inline-block">
               Learn More
