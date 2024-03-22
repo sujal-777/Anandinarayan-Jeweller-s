@@ -35,10 +35,10 @@ const industry = () => {
             <br />
             <br />
             Our stunning banquet halls are renowned for providing the perfect
-            setting for all your special events and functions. Whether it's an
-            intimate gathering or a large-scale corporate event, our versatile
-            banquet halls can cater to your specific needs, ensuring a memorable
-            experience for you and your guests.
+            setting for all your special events and functions. Whether it&apos;s
+            an intimate gathering or a large-scale corporate event, our
+            versatile banquet halls can cater to your specific needs, ensuring a
+            memorable experience for you and your guests.
             <br />
             <br />
             To enhance your stay, we offer modern amenities and multiple

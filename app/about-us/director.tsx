@@ -24,7 +24,7 @@ const director = () => {
             Gupta is a renowned civil engineer with over 30 years of experience
             in the field of premium construction. Apart from his expertise in
             construction and hotel industry, he has also gained vast experience
-            in the jewellery and mining industry. Mr. Gupta's passion for
+            in the jewellery and mining industry. Mr. Gupta&apos;s passion for
             hospitality and tourism has led to remarkable efforts in promoting
             the development of tourism projects in Maharashtra. The Government
             of Maharashtra has appreciated and complimented his suggestions in
