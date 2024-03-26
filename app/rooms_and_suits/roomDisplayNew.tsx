@@ -107,7 +107,7 @@ const ServiceCard = ({
   return (
     <div
       className={` flex justify-center items-center flex-col ${
-        index === 0 || index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+        index === 0 || index % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
     >
       <div className="inline-block w-full md:w-10/12 lg:w-6/12">
@@ -127,7 +127,7 @@ const ServiceCard = ({
 
       <div
         className={`w-11/12 -top-5 lg:top-0 md:w-8/12 lg:w-5/12 inline-block text-sm relative z-10 bg-white ${
-          index === 0 || index % 2 === 0 ? "lg:-left-20" : "lg:-right-20"
+          index === 0 || index % 2 === 0 ? "lg:-right-20" : "lg:-left-20"
         }`}
       >
         <Card radius="none" className="">
