@@ -24,7 +24,7 @@ export default function App() {
           <Link href="/rooms_and_suits">Rooms & Suits</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#">Wedding & Events</Link>
+          <Link href="/halls">Wedding & Events</Link>
         </NavbarItem>
         <NavbarItem isActive>
           <Link href="#">Dining</Link>
