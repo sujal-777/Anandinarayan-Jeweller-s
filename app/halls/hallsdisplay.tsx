@@ -13,74 +13,71 @@ import {
 
 import { RxArrowRight } from "react-icons/rx";
 
-import BreakfastIcon from "./Icons/breakfastIcon";
-import ClockIcon from "./Icons/clockIcon";
-import PersonIcon from "./Icons/personIcon";
-import WifiIcon from "./Icons/wifiIcon";
-import SwimmingPool from "./Icons/swimmingPool";
-import BedIcon from "./Icons/bedIcon";
+import PeopleIcon from "./Icons/people";
+import SofaIcon from "./Icons/sofa";
+import AreaIcon from "./Icons/area";
 
 const cardArray = [
   {
     imageArray: [
       {
-        img: "/rooms/king_suit.png", // Corrected image path
-        alt: "",
+        img: "/halls/kohinoor.png", // Corrected image path
+        alt: "Kohinoor Hall",
       },
     ],
-    price: "1500/Night",
-    room: "King Suit",
+    price: "150$/Night",
+    hall: "Kohinoor",
     description:
-      "The King Suites offer a spacious and luxurious stay experience, ideal for guests seeking comfort and more.",
-    link: "/rooms_and_suits/king_suit",
+      "A prestigious venue where every detail is tailored to perfection for your special day.",
+    link: "/halls/kohinoor",
   },
   {
     imageArray: [
       {
-        img: "/rooms/family_room.png", // Corrected image path
-        alt: "",
+        img: "/halls/maurya.png", // Corrected image path
+        alt: "Maurya Hall",
       },
     ],
-    price: "800/Night",
-    room: "Family Room",
+    price: "200$/Night",
+    hall: "Maurya",
     description:
-      "We present the best in line family rooms which will go soft on the pocket when you see the array of...read more",
-    link: "/rooms_and_suits/family_room",
+      "Maurya Wedding Event Hall at Hotel Ashok offers elegance and sophistication for your special day.",
+    link: "/halls/maurya",
   },
   {
     imageArray: [
       {
-        img: "/rooms/deluxe_room.png", // Corrected image path
-        alt: "",
+        img: "/halls/samrat.png", // Corrected image path
+        alt: "Samrat Hall",
       },
     ],
-    price: "1000/Night",
-    room: "Deluxe Room",
+    price: "250$/Night",
+    hall: "Samrat",
     description:
-      "The Deluxe Rooms at our hotel are designed to provide a comfortable space and relaxing stay for...read more",
-    link: "/rooms_and_suits/deluxe_room",
+      "Elevate your celebrations in a regal setting that promises an unforgettable wedding experience.",
+    link: "/halls/samrat",
   },
   {
     imageArray: [
       {
-        img: "/rooms/budget_room.png", // Corrected image path
-        alt: "",
+        img: "/halls/magadh.png", // Corrected image path
+        alt: "Magadh Hall",
       },
     ],
-    price: "500/Night",
-    room: "Budget Room",
+    price: "300$/Night",
+    hall: "Magadh",
     description:
-      "Our Budget rooms  are second to none in this range with the vast options of services and...read more",
-    link: "/rooms_and_suits/budget_room",
+      "A harmonious blend of luxury and elegance, creating the perfect backdrop for your cherished celebrations",
+    link: "/halls/magadh",
   },
 ];
 
 const Service = () => {
   return (
     <>
-      <section className="max-w-[1600px] mx-auto w-11/12 xl:w-10/12 flex flex-col lg:gap-y-20 gap-y-0 lg:mt-20 mt-12 font-barlow">
+      <section className="max-w-[1600px] mx-auto w-11/12 xl:w-10/12 flex flex-col lg:gap-y-20 gap-y-0 lg:mt-20 mt-12 font-barlow mb-24">
         {cardArray?.map((ele, i) => (
-          <ServiceCard key={ele.room} {...ele} index={i} />
+          <ServiceCard key={ele.hall} {...ele} index={i} />
         ))}
       </section>
     </>
@@ -92,14 +89,14 @@ export default Service;
 const ServiceCard = ({
   imageArray,
   price,
-  room,
+  hall,
   description,
   link,
   index,
 }: {
   imageArray: any;
   price: string;
-  room: string;
+  hall: string;
   description: string;
   link: string;
   index: any;
@@ -134,30 +131,21 @@ const ServiceCard = ({
           <CardHeader className="flex gap-3">
             <div className="flex flex-col">
               <p className=" text-lg font-gilda text-[#AA8453] ">{price}</p>
-              <p className="text-2xl font-gilda">{room}</p>
+              <p className="text-2xl font-gilda">{hall}</p>
             </div>
           </CardHeader>
           <CardBody className="text-sm">
             <p>{description}</p>
             <div className=" flex justify-center items-center">
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <p className="flex items-center mt-2">
-                  <PersonIcon className="mr-2" /> 1-2 Persons
+                  <PeopleIcon className="mr-2" /> 500+ Guests
                 </p>
                 <p className="flex items-center mt-2">
-                  <WifiIcon className="mr-2" /> Free WiFi
+                  <SofaIcon className="mr-2" /> 300 seats
                 </p>
                 <p className="flex items-center mt-2">
-                  <BedIcon className="mr-2" /> Twin Bed
-                </p>
-                <p className="flex items-center mt-2">
-                  <BreakfastIcon className="mr-2" /> Breakfast
-                </p>
-                <p className="flex items-center mt-2">
-                  <ClockIcon className="mr-2" /> 200 sqft room
-                </p>
-                <p className="flex items-center mt-2">
-                  <SwimmingPool className="mr-2" /> Swimming Pool
+                  <AreaIcon className="mr-2" /> 5000 x 2000 sq. ft
                 </p>
               </div>
             </div>

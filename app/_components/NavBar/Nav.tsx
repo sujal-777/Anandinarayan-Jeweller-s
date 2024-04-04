@@ -15,7 +15,7 @@ export default function App() {
       <Image src="/NavAssets/image.png" className="h-8" alt="Flowbite Logo" />
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link href="#">Home</Link>
+          <Link href="/">Home</Link>
         </NavbarItem>
         <NavbarItem isActive>
           <Link href="/about-us">About</Link>
@@ -24,7 +24,7 @@ export default function App() {
           <Link href="/rooms_and_suits">Rooms & Suits</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#">Wedding & Events</Link>
+          <Link href="/halls">Wedding & Events</Link>
         </NavbarItem>
         <NavbarItem isActive>
           <Link href="#">Dining</Link>
