@@ -41,7 +41,7 @@ const contentfaq = [
 
 export default function Mandolin() {
   return (
-    <div className="mt-10 mb-40 px-5 md:px-40">
+    <div className="mt-10 mb-40 px-5 md:px-40 font-gilda  ">
       <Accordion variant="splitted" className="group">
         {contentfaq.map((item, index) => {
           return (
@@ -61,7 +61,7 @@ export default function Mandolin() {
               title={item.question}
               className=" group-hover:text-[#AA8453] "
             >
-              {item.answer}
+              <p className=" font-barlow ">{item.answer}</p>
             </AccordionItem>
           );
         })}
