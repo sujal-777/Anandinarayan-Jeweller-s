@@ -5,13 +5,13 @@ import { Image } from "@nextui-org/react";
 export default function CorporateTie() {
   return (
     <section className="bg-[#F8F5F0]">
-      <p className="text-4xl text-black flex justify-center items-center p-20">
+      <p className="text-4xl text-black flex justify-center items-center md:p-20">
         Corporate Tie-ups
       </p>
 
       <div className="w-full flex flex-col justify-center items-center">
         <div className="flex flex-col sm:flex-row justify-center items-start">
-          <div className="w-full sm:w-1/2 flex flex-col justify-center p-20 text-justify">
+          <div className="w-full sm:w-1/2 flex flex-col justify-center md:p-20 p-5 text-justify">
             <p className="text-2xl font-gilda" style={{ color: "#AA8453" }}>
               Best Services
             </p>

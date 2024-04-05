@@ -36,7 +36,7 @@ const MobileView: React.FC<{ menuItems: MenuItem[]; isOpen: boolean; toggleMenu:
   isOpen,
   toggleMenu,
 }) => (
-  <NavbarMenu open={isOpen} onOpenChange={toggleMenu}>
+  <NavbarMenu is onOpenChange={toggleMenu}>
     {menuItems.map((item, index) => (
       <NavbarMenuItem key={index}>
         <Link href={item.href}>{item.text}</Link>
