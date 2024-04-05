@@ -12,7 +12,6 @@ import ContactForm from "./_ContactUsForm";
 import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
 
 export default function ContactUs() {
-
   return (
     <section>
       <Header
@@ -31,11 +30,11 @@ export default function ContactUs() {
               hospitality and exceptional services, setting the standard for
               excellence in the hospitality industry in Nagpur. Experience the
               regal charm and grandeur of our suites, designed to make every
-              guest feel like royalty. Whether you're seeking a family retreat
-              or a romantic escape, our range of rooms, from family to honeymoon
-              suites, caters to your every whim. With a host of modern amenities
-              and facilities, we ensure a comfortable and memorable stay at
-              Hotel Ashok.
+              guest feel like royalty. Whether you&apos;re seeking a family
+              retreat or a romantic escape, our range of rooms, from family to
+              honeymoon suites, caters to your every whim. With a host of modern
+              amenities and facilities, we ensure a comfortable and memorable
+              stay at Hotel Ashok.
             </p>
 
             <div className="flex items-center mt-20">
@@ -77,7 +76,7 @@ export default function ContactUs() {
           </div>
 
           <div className="w-full sm:w-1/2 flex flex-col justify-center px-10 py-7">
-            <ContactForm/>
+            <ContactForm />
           </div>
         </div>
       </div>
@@ -89,16 +88,10 @@ export default function ContactUs() {
           How to get to the Hotel Ashok, Nagpur
         </p>
 
-        <Card
-          className="flex justify-center item-center border-none bg-[#fff] h-100"
-        >
+        <Card className="flex justify-center item-center border-none bg-[#fff] h-100">
           <CardBody>
             <div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center justify-center">
-              <div className="relative col-span-6 md:col-span-4">
-
-                
-
-              </div>
+              <div className="relative col-span-6 md:col-span-4"></div>
             </div>
           </CardBody>
         </Card>

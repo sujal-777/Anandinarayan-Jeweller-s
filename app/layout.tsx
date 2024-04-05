@@ -42,7 +42,7 @@ export default function RootLayout({
         className={`${inter.variable} ${gilda.variable} ${barlow.variable}`}
       >
         <Provider>
-          <Nav/>
+          <Nav />
           {children}
           <Footer />
         </Provider>
