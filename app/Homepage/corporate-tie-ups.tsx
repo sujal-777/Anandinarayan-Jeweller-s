@@ -19,7 +19,7 @@ export default function CorporateTie() {
             <br />
             <br />
 
-            <p className="text-3xl text-black font-gilda">Corporate Tie-ups </p>
+            <p className="text-3xl text-black font-gilda ">Corporate Tie-ups </p>
 
             <br />
             <br />

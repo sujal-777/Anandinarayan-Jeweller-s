@@ -1,5 +1,5 @@
-'use client'
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -11,43 +11,48 @@ import {
   Link,
   Button,
   Image,
+  Dropdown,
+  DropdownItem,
+  DropdownTrigger,
+  DropdownMenu,
 } from "@nextui-org/react";
 
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+
 // Define the type for menu items
-type MenuItem = {
-  text: string;
-  href: string;
-};
+// type MenuItem = {
+//   text: string;
+//   href: string;
+// };
 
 // Desktop view component
-const DesktopView: React.FC<{ menuItems: MenuItem[] }> = ({ menuItems }) => (
-  <NavbarContent className="hidden sm:flex gap-4" justify="center">
-    {menuItems.map((item, index) => (
-      <NavbarItem key={index}>
-        <Link href={item.href}>{item.text}</Link>
-      </NavbarItem>
-    ))}
-  </NavbarContent>
-);
+// const DesktopView: React.FC<{ menuItems: MenuItem[] }> = ({ menuItems }) => (
+//   <NavbarContent className="hidden sm:flex gap-4" justify="center">
+//     {menuItems.map((item, index) => (
+//       <NavbarItem key={index}>
+//         <Link href={item.href}>{item.text}</Link>
+//       </NavbarItem>
+//     ))}
+//   </NavbarContent>
+// );
 
 // Mobile view component
-const MobileView: React.FC<{ menuItems: MenuItem[]; isOpen: boolean; toggleMenu: () => void }> = ({
-  menuItems,
-  isOpen,
-  toggleMenu,
-}) => (
-  <NavbarMenu is onOpenChange={toggleMenu}>
-    {menuItems.map((item, index) => (
-      <NavbarMenuItem key={index}>
-        <Link href={item.href}>{item.text}</Link>
-      </NavbarMenuItem>
-    ))}
-  </NavbarMenu>
-);
+// const MobileView: React.FC<{ menuItems: MenuItem[]; isOpen: boolean; toggleMenu: () => void }> = ({
+//   menuItems,
+//   isOpen,
+//   toggleMenu,
+// }) => (
+//   <NavbarMenu open={isOpen} onOpenChange={toggleMenu}>
+//     {menuItems.map((item, index) => (
+//       <NavbarMenuItem key={index}>
+//         <Link href={item.href}>{item.text}</Link>
+//       </NavbarMenuItem>
+//     ))}
+//   </NavbarMenu>
+// );
 
-export default function App() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
+export default function Nav() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuItems = [
     { text: "Home", href: "/" },
     { text: "About", href: "/about-us" },
@@ -59,34 +64,258 @@ export default function App() {
     { text: "Contact", href: "/contact_us" },
   ];
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-          onClick={toggleMenu}
-        />
-        <img src="/NavAssets/image.png" className="h-8" alt=" " />
-      </NavbarContent>
+    <div>
+      <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+        <NavbarContent
+          className="hidden sm:flex gap-4 text-[#AA8453] justify-between"
+          justify="end"
+        >
+          <img src={"/NavAssets/image.png"} alt="logo" className="w-14 h-14" />
 
-      <DesktopView menuItems={menuItems} />
-      <MobileView menuItems={menuItems} isOpen={isMenuOpen} toggleMenu={toggleMenu} />
+          <NavbarItem>
+            <Button
+              disableRipple
+              className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+              radius="sm"
+            >
+              <Link className="text-[#AA8453]" href="/">
+                Home
+              </Link>
+            </Button>
+          </NavbarItem>
+          <NavbarItem>
+            <Button
+              disableRipple
+              className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+              radius="sm"
+              variant="light"
+            >
+              <Link className="text-[#AA8453]" href="/">
+                About
+              </Link>
+            </Button>
+          </NavbarItem>
+          <Dropdown >
+            <DropdownTrigger>
+              <NavbarItem>
+                <Button
+                  disableRipple
+                  className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                  radius="sm"
+                  variant="light"
+                >
+                  <Link className="text-[#AA8453]" href="/">
+                    Rooms & Suits
+                  </Link>
+                  <KeyboardArrowDownIcon className="text-[#AA8453]" />
+                </Button>
+              </NavbarItem>
+            </DropdownTrigger>
+            <DropdownMenu>
+              <DropdownItem>
+                <Link href="/">Who We Are</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link href="/">Our Team</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link href="/">Our Vision</Link>
+              </DropdownItem>
+            </DropdownMenu>
+            {/* TODO: Add Dropdown menu Items  */}
+          </Dropdown>
+          <Dropdown>
+            <DropdownTrigger>
+              <NavbarItem>
+                <Button
+                  disableRipple
+                  className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                  radius="sm"
+                  variant="light"
+                >
+                  <Link className="text-[#AA8453]" href="/">
+                    Weddings and Events
+                  </Link>
+                  <KeyboardArrowDownIcon className="text-[#AA8453]" />
+                </Button>
+              </NavbarItem>
+            </DropdownTrigger>
+            <DropdownMenu>
+              <DropdownItem>
+                <Link href="/">Who We Are</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link href="/">Our Team</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link href="/">Our Vision</Link>
+              </DropdownItem>
+            </DropdownMenu>
+            {/* TODO: Add Dropdown menu Items  */}
+          </Dropdown>
+          <Dropdown>
+            <DropdownTrigger>
+              <NavbarItem>
+                <Button
+                  disableRipple
+                  className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                  radius="sm"
+                  variant="light"
+                >
+                  <Link className="text-[#AA8453]" href="/">
+                    Dinning
+                  </Link>
+                  <KeyboardArrowDownIcon className="text-[#AA8453]" />
+                </Button>
+              </NavbarItem>
+            </DropdownTrigger>
+            <DropdownMenu>
+              <DropdownItem>
+                <Link href="/">Who We Are</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link href="/">Our Team</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link href="/">Our Vision</Link>
+              </DropdownItem>
+            </DropdownMenu>
+            {/* TODO: Add Dropdown menu Items  */}
+          </Dropdown>
+          <Dropdown>
+            <DropdownTrigger>
+              <NavbarItem>
+                <Button
+                  disableRipple
+                  className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                  radius="sm"
+                  variant="light"
+                >
+                  <Link className="text-[#AA8453]" href="/">
+                    Updates
+                  </Link>
+                  <KeyboardArrowDownIcon className="text-[#AA8453]" />
+                </Button>
+              </NavbarItem>
+            </DropdownTrigger>
+            <DropdownMenu>
+              <DropdownItem>
+                <Link href="/">Who We Are</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link href="/">Our Team</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link href="/">Our Vision</Link>
+              </DropdownItem>
+            </DropdownMenu>
+            {/* TODO: Add Dropdown menu Items  */}
+          </Dropdown>
+          <Dropdown>
+            <DropdownTrigger>
+              <NavbarItem>
+                <Button
+                  disableRipple
+                  className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                  radius="sm"
+                  variant="light"
+                >
+                  <Link className="text-[#AA8453]" href="/">
+                    Nearby Attractions
+                  </Link>
+                  <KeyboardArrowDownIcon className="text-[#AA8453]" />
+                </Button>
+              </NavbarItem>
+            </DropdownTrigger>
+            <DropdownMenu>
+              <DropdownItem>
+                <Link href="/">Who We Are</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link href="/">Our Team</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link href="/">Our Vision</Link>
+              </DropdownItem>
+            </DropdownMenu>
+            {/* TODO: Add Dropdown menu Items  */}
+          </Dropdown>
+          <Dropdown>
+            <DropdownTrigger>
+              <NavbarItem>
+                <Button
+                  disableRipple
+                  className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                  radius="sm"
+                  variant="light"
+                >
+                  <Link className="text-[#AA8453]" href="/">
+                    Contact
+                  </Link>
+                  <KeyboardArrowDownIcon className="text-[#AA8453]" />
+                </Button>
+              </NavbarItem>
+            </DropdownTrigger>
+            <DropdownMenu>
+              <DropdownItem>
+                <Link href="/">Who We Are</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link href="/">Our Team</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link href="/">Our Vision</Link>
+              </DropdownItem>
+            </DropdownMenu>
+            {/* TODO: Add Dropdown menu Items  */}
+          </Dropdown>
+          <NavbarItem>
+            <Button
+              disableRipple
+              className="p-0 bg-[#AA8453] data-[hover=true]:bg-transparent p-4 rounded-none"
+              radius="sm"
+              variant="light"
+            >
+              <Link className="text-white" href="/">
+                Book Now
+              </Link>
+            </Button>
+          </NavbarItem>
+        </NavbarContent>
+        
+        <NavbarContent className="sm:hidden" justify="start">
+          <img src={"/NavAssets/image.png"} alt="logo" className="w-14 h-14" />
+        </NavbarContent>
+        <NavbarContent className="sm:hidden" justify="end">
+          <NavbarMenuToggle
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          />
+        </NavbarContent>
+        
 
-      <NavbarContent justify="end">
-        <NavbarItem>
-          <button
-            type="button"
-            className="text-white bg-[#AA8453] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Book Now
-          </button>
-        </NavbarItem>
-      </NavbarContent>
-    </Navbar>
+        {/* for mobile view */}
+
+        <NavbarMenu>
+          {menuItems.map((item, index) => (
+            <NavbarMenuItem key={`${item}-${index}`}>
+              <Link
+                className="w-full"
+                color={
+                  index === 2
+                    ? "warning"
+                    : index === menuItems.length - 1
+                    ? "danger"
+                    : "foreground"
+                }
+                href={item.href}
+              >
+                {item.text}
+              </Link>
+            </NavbarMenuItem>
+          ))}
+        </NavbarMenu>
+      </Navbar>
+    </div>
   );
 }
