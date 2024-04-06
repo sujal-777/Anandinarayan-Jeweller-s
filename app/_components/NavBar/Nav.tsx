@@ -10,12 +10,13 @@ import {
   NavbarMenuItem,
   Link,
   Button,
-  Image,
   Dropdown,
   DropdownItem,
   DropdownTrigger,
   DropdownMenu,
 } from "@nextui-org/react";
+
+import Image from "next/image";
 
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
@@ -71,7 +72,13 @@ export default function Nav() {
           className="hidden sm:flex gap-4 text-[#AA8453] justify-between"
           justify="end"
         >
-          <img src={"/NavAssets/image.png"} alt="logo" className="w-14 h-14" />
+          <Image
+            src="/NavAssets/image.png"
+            alt="logo"
+            className="w-14 h-14"
+            width={100}
+            height={100}
+          />
 
           <NavbarItem>
             <Button
@@ -96,7 +103,7 @@ export default function Nav() {
               </Link>
             </Button>
           </NavbarItem>
-          <Dropdown >
+          <Dropdown>
             <DropdownTrigger>
               <NavbarItem>
                 <Button
@@ -273,7 +280,7 @@ export default function Nav() {
           <NavbarItem>
             <Button
               disableRipple
-              className="p-0 bg-[#AA8453] data-[hover=true]:bg-transparent p-4 rounded-none"
+              className="p-4 bg-[#AA8453] data-[hover=true]:bg-transparent rounded-none"
               radius="sm"
               variant="light"
             >
@@ -283,16 +290,21 @@ export default function Nav() {
             </Button>
           </NavbarItem>
         </NavbarContent>
-        
+
         <NavbarContent className="sm:hidden" justify="start">
-          <img src={"/NavAssets/image.png"} alt="logo" className="w-14 h-14" />
+          <Image
+            src="/NavAssets/image.png"
+            alt="logo"
+            className="w-14 h-14"
+            width={100}
+            height={100}
+          />
         </NavbarContent>
         <NavbarContent className="sm:hidden" justify="end">
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           />
         </NavbarContent>
-        
 
         {/* for mobile view */}
 
