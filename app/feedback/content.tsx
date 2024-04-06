@@ -222,7 +222,7 @@ const Content = () => {
           <img
             src="/feedback/feed_img.png"
             alt="feedback image"
-            className="block h-auto max-w-full items-center justify-center "
+            className="block h-auto max-w-full items-center justify-center"
           />
         </div>
       </div>
