@@ -2,7 +2,7 @@
 
 import { Icon } from "@mui/material";
 import Header from "../_components/Header/Header";
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 export default function Foods() {
   return (
@@ -34,7 +34,7 @@ export default function Foods() {
           that cater to diverse palates.
         </p>
         <p className="px-20 mt-5 font-gilda">
-          The hotel's emphasis on freshness extends to sourcing ingredients
+          The hotel&apos;s emphasis on freshness extends to sourcing ingredients
           locally whenever possible, supporting the community and contributing
           to sustainability efforts. This commitment to quality and community
           engagement sets Hotel Ashok apart, making it a preferred destination
@@ -45,28 +45,31 @@ export default function Foods() {
         <p className="mt-20 px-20 font-gilda text-2xl">Hours</p>
 
         <div className="flex justify-start px-20 mt-5">
-            <AccessTimeIcon style={{ color: '#AA8453' }}/>
-            <p className="px-2">Breakfast: 7.00 am - 11.00 am ( daily)</p>
+          <AccessTimeIcon style={{ color: "#AA8453" }} />
+          <p className="px-2">Breakfast: 7.00 am - 11.00 am ( daily)</p>
         </div>
 
         <div className="flex justify-start px-20 mt-5">
-            <AccessTimeIcon style={{ color: '#AA8453' }}/>
-            <p className="px-2">Lunch: 12.00 pm - 2.00 Pm ( daily)</p>
+          <AccessTimeIcon style={{ color: "#AA8453" }} />
+          <p className="px-2">Lunch: 12.00 pm - 2.00 Pm ( daily)</p>
         </div>
 
         <div className="flex justify-start px-20 mt-5">
-            <AccessTimeIcon style={{ color: '#AA8453' }}/>
-            <p className="px-2">Dinner : open from 6.30 pm, last order at 10.00 pm (daily)</p>
+          <AccessTimeIcon style={{ color: "#AA8453" }} />
+          <p className="px-2">
+            Dinner : open from 6.30 pm, last order at 10.00 pm (daily)
+          </p>
         </div>
-        
+
         <p className="text-2xl font-gilda px-20 mt-10">Dress Code</p>
-        <p className="font-gilda px-20 mt-2">Smart casual (no shorts, hats, or sandals permitted)</p>
+        <p className="font-gilda px-20 mt-2">
+          Smart casual (no shorts, hats, or sandals permitted)
+        </p>
 
         <p className="text-2xl font-gilda px-20 mt-10">Terrace</p>
         <p className="font-gilda px-20 mt-2">Open for drinks only</p>
 
-        <img className="p-20" src="/food/food_grid.png" alt=" "/>
-
+        <img className="p-20" src="/food/food_grid.png" alt=" " />
       </div>
     </section>
   );

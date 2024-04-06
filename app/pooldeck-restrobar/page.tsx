@@ -37,14 +37,15 @@ export default function PoolDeckRestroBar() {
           Surrounded by lush greenery and the soothing sounds of water, patrons
           can indulge in a relaxed atmosphere, perfect for socializing with
           friends or enjoying a romantic evening. The Pooldeck Restrobar at
-          Hotel Ashok is not just a dining destination; it's an escape into a
-          world of culinary excellence and refined hospitality.
+          Hotel Ashok is not just a dining destination; it&apos;s an escape into
+          a world of culinary excellence and refined hospitality.
         </p>
         <p className="px-20 mt-5 font-gilda">
-          Whether you're looking to celebrate a special occasion, have a casual
-          meal with friends, or simply unwind with a refreshing drink, Pooldeck
-          Restrobar promises a memorable experience against the backdrop of the
-          hotel's luxurious amenities and impeccable service.
+          Whether you&apos;re looking to celebrate a special occasion, have a
+          casual meal with friends, or simply unwind with a refreshing drink,
+          Pooldeck Restrobar promises a memorable experience against the
+          backdrop of the hotel&apos;s luxurious amenities and impeccable
+          service.
         </p>
 
         <p className="mt-20 px-20 font-gilda text-2xl">Hours</p>

@@ -65,7 +65,7 @@ export default function Nav() {
   ];
 
   return (
-    <div>
+    <div className=" font-barlow">
       <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent
           className="hidden sm:flex gap-4 text-[#AA8453] justify-between"
@@ -96,7 +96,7 @@ export default function Nav() {
               </Link>
             </Button>
           </NavbarItem>
-          <Dropdown >
+          <Dropdown>
             <DropdownTrigger>
               <NavbarItem>
                 <Button
@@ -273,7 +273,7 @@ export default function Nav() {
           <NavbarItem>
             <Button
               disableRipple
-              className="p-0 bg-[#AA8453] data-[hover=true]:bg-transparent p-4 rounded-none"
+              className="bg-[#AA8453] data-[hover=true]:bg-transparent md:p-4 rounded-none"
               radius="sm"
               variant="light"
             >
@@ -283,7 +283,7 @@ export default function Nav() {
             </Button>
           </NavbarItem>
         </NavbarContent>
-        
+
         <NavbarContent className="sm:hidden" justify="start">
           <img src={"/NavAssets/image.png"} alt="logo" className="w-14 h-14" />
         </NavbarContent>
@@ -292,7 +292,6 @@ export default function Nav() {
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           />
         </NavbarContent>
-        
 
         {/* for mobile view */}
 
