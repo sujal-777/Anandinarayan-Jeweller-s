@@ -9,7 +9,7 @@ interface CardProps {
   
   const Card: React.FC<CardProps> = ({ imageSrc, title, description }) => (
     <div className='p-5'>
-      <div className="text-black font-gilda relative flex flex-col justify-start items-start min-h-full p-5 border border-black">
+      <div className="text-black font-gilda flex flex-col justify-start items-start min-h-full p-5 border border-black">
         <Image src={imageSrc} alt={title} width={70} height={70} />
         <div className="font-gilda text-start">
           <p className='mt-2 text-xl'>{title}</p>
@@ -61,7 +61,7 @@ export default function HomeServices() {
                 <p className='text-2xl font-gilda'>Hotel Facilities</p>
             </div>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
                 {services.map((service, index) => (
                     <Card key={index} imageSrc={service.imageSrc} title={service.title} description={service.description} />
                 ))}

@@ -7,7 +7,7 @@ export default function WeddingEvent() {
     <section className="bg-[#222222]">
       <div className="w-full flex flex-col justify-center items-center">
         <div className="flex flex-col sm:flex-row justify-center items-start">
-          <div className="w-full sm:w-1/2 flex flex-col justify-center p-20 text-justify">
+          <div className="w-full sm:w-1/2 flex flex-col justify-center md:p-20 p-5 text-justify">
             <p className="font-gilda" style={{ color: "#AA8453" }}>
               Hotel Ashok
             </p>
