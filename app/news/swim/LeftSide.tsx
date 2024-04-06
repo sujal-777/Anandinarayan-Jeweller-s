@@ -32,7 +32,7 @@ const LeftSide = () => {
       {/* Mian div */}
       <div className="md:px-5 mt-5 md:mt-20 mb-10 md:mb-20 lg:mb-40">
         {pgData.map((data, index) => (
-          <div>
+          <div key={index}>
             <Image
               alt={data.alternate1}
               src={data.photo1}
