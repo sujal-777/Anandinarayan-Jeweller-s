@@ -11,19 +11,18 @@ import Weddings from "./weddings";
 import WhatClientsSay from "../_components/WhatClientsSay/WhatClientsSay";
 
 const pageLayout = () => {
-  return (
-    <section>
-      <Hero />
-      <Info />
-      <RoomsAndSuites />
-      <WeddingEvent/>
-      <CorporateTie/>
-      <HomeServices/>
-      <BookDirectBenefits/>
-      <Weddings/>
-      <WhatClientsSay />
-    </section>
-  );
+    return (
+        <section>
+            <Hero />
+            <Info />
+            <RoomsAndSuites />
+            <WeddingEvent />
+            <CorporateTie />
+            <HomeServices />
+            <BookDirectBenefits />
+            <Weddings />
+        </section>
+    );
 };
 
 export default pageLayout;
