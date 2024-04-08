@@ -13,7 +13,7 @@ const newData = [
     heading: "Retro Lighting Design in the Hotel",
     content:
       "The allure of retro lighting lies in its ability to evoke a sense of nostalgia, transporting guests to a bygone era while offering modern functionality and charm.Retro lighting fixtures, inspired by designs from the mid-20th century, add a touch of vintage elegance to hotel interiors. From sleek and minimalist designs to bold and artistic pieces, retro lighting fixtures come in a variety of styles to suit every aesthetic.",
-    route: "#",
+    route: "news/retro",
   },
   {
     photo: "/news/img-2.png",
@@ -22,7 +22,7 @@ const newData = [
     heading: "Best Food Items",
     content:
       "Embark on a culinary journey like no other and savor the exquisite flavors of the best food items at Hotel Ashok. From traditional delicacies to modern culinary creations, our menu is a testament to our commitment to culinary excellence and guest satisfaction.",
-    route: "#",
+    route: "news/foods",
   },
   {
     photo: "/news/img-3.png",
@@ -31,7 +31,7 @@ const newData = [
     heading: "Improve Your Health by Swimming",
     content:
       "Take a dip in Hotel Ashok's rooftop pool and experience the health benefits of swimming for yourself. Whether you're looking to improve your fitness level, relieve stress, or simply have fun, our rooftop pool is the perfect place to dive into wellness. Experience a refreshing way to enhance your health and well-being at Hotel Ashok's rooftop pool. Swimming is not just a recreational activity; it's a full-body workout that offers numerous health benefits for both your body and mind.",
-    route: "#",
+    route: "news/swim",
   },
 ];
 
