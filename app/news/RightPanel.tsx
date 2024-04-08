@@ -6,24 +6,24 @@ import Link from "next/link";
 import { Button, Divider } from "@nextui-org/react";
 
 const sideData = [
-    {
-        photo: "/news/sv-1.png",
-        alternate: "swimming pool blued lighting",
-        route: "news/swim",
-        content: "Benefits of Swimming for Your Health",
-    },
-    {
-        photo: "/news/sv-2.png",
-        alternate: "exotic food",
-        route: "news/food",
-        content: "Tasty Foods with our choices",
-    },
-    {
-        photo: "/news/sv-3.png",
-        alternate: "amazing hotel view",
-        route: "news/retro",
-        content: "Enjoy the View from our Beautiful Balcony",
-    },
+  {
+    photo: "/news/sv-1.png",
+    alternate: "swimming pool blued lighting",
+    route: "/news/swim",
+    content: "Benefits of Swimming for Your Health",
+  },
+  {
+    photo: "/news/sv-2.png",
+    alternate: "exotic food",
+    route: "/news/best-food-items",
+    content: "Tasty Foods with our choices",
+  },
+  {
+    photo: "/news/sv-3.png",
+    alternate: "amazing hotel view",
+    route: "/news/restaurant-renovated",
+    content: "Enjoy the View from our Beautiful Balcony",
+  },
 ];
 
 const categories = ["Hotel Design", "Restaurant", "Swimming Pool"];
