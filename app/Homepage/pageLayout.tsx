@@ -21,6 +21,7 @@ const pageLayout = () => {
             <HomeServices />
             <BookDirectBenefits />
             <Weddings />
+            <WhatClientsSay />
         </section>
     );
 };

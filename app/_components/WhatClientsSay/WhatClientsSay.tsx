@@ -1,7 +1,6 @@
 "use client";
 import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
-import Textra from "react-textra"
 import ReviewCarousel from './ReviewCarousel';
 import SelectRooms from './SelectRooms';
 import RoomSearch from '../../Homepage/roomSelect';
