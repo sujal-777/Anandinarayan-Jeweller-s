@@ -30,19 +30,11 @@ export default function ContactUs() {
               hospitality and exceptional services, setting the standard for
               excellence in the hospitality industry in Nagpur. Experience the
               regal charm and grandeur of our suites, designed to make every
-<<<<<<< HEAD
-              guest feel like royalty. Whether you&apos;re seeking a family retreat
-              or a romantic escape, our range of rooms, from family to honeymoon
-              suites, caters to your every whim. With a host of modern amenities
-              and facilities, we ensure a comfortable and memorable stay at
-              Hotel Ashok.
-=======
               guest feel like royalty. Whether you&apos;re seeking a family
               retreat or a romantic escape, our range of rooms, from family to
               honeymoon suites, caters to your every whim. With a host of modern
               amenities and facilities, we ensure a comfortable and memorable
               stay at Hotel Ashok.
->>>>>>> refs/remotes/origin/main
             </p>
 
             <div className="flex items-center mt-20">
