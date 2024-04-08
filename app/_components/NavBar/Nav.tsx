@@ -1,21 +1,22 @@
 "use client";
 import React, { useState } from "react";
 import {
-    Navbar,
-    NavbarBrand,
-    NavbarContent,
-    NavbarItem,
-    NavbarMenuToggle,
-    NavbarMenu,
-    NavbarMenuItem,
-    Link,
-    Button,
-    Image,
-    Dropdown,
-    DropdownItem,
-    DropdownTrigger,
-    DropdownMenu,
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Link,
+  Button,
+  Dropdown,
+  DropdownItem,
+  DropdownTrigger,
+  DropdownMenu,
 } from "@nextui-org/react";
+
+import Image from "next/image";
 
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 

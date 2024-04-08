@@ -8,6 +8,7 @@ import CorporateTie from "./corporate-tie-ups";
 import HomeServices from "./services";
 import BookDirectBenefits from "./book-direct-benefits";
 import Weddings from "./weddings";
+import WhatClientsSay from "../_components/WhatClientsSay/WhatClientsSay";
 
 const pageLayout = () => {
     return (
@@ -20,6 +21,7 @@ const pageLayout = () => {
             <HomeServices />
             <BookDirectBenefits />
             <Weddings />
+            <WhatClientsSay />
         </section>
     );
 };
