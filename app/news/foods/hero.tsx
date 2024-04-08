@@ -7,7 +7,7 @@ export default function hero() {
     <>
       <Image
         alt="hero banner retro"
-        src="/news/retro/banner.png"
+        src="/news/foods/banner.png"
         width={1920}
         height={650}
         className="block h-auto w-full"

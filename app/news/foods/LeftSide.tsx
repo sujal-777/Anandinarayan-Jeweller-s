@@ -4,23 +4,23 @@ import Image from "next/image";
 
 const pgData = [
   {
-    photo1: "/news/retro/image.png",
-    alternate1: "Hall With Retro Lighting",
+    photo1: "/news/foods/img-1.png",
+    alternate1: "Tikka",
 
     text1:
-      "The allure of retro lighting lies in its ability to evoke a sense of nostalgia, transporting guests to a bygone era while offering modern functionality and charm.Retro lighting fixtures, inspired by designs from the mid-20th century, add a touch of vintage elegance to hotel interiors. From sleek and minimalistic designs to bold and artistic pieces, retro lighting fixtures come in a variety of styles to suit every aesthetic.",
+      "Embark on a culinary journey like no other and savor the exquisite flavors of the best food items at Hotel Ashok. From traditional delicacies to modern culinary creations, our menu is a testament to our commitment to culinary excellence and guest satisfaction.",
 
     text2:
-      "While retro lighting may harken back to a simpler time, its design is anything but outdated. Retro fixtures are often equipped with modern technology, such as energy-efficient LED bulbs and smart lighting controls, offering both style and functionality.",
+      "Dive into our signature dishes, crafted by our talented chefs using the finest ingredients and innovative techniques, each dish is a masterpiece that will tantalize your taste buds. ake your taste buds on a global adventure with our international cuisine ,our menu offers a diverse range of flavors and textures to satisfy every palate.",
 
-    photo2: "/news/retro/img-2.png",
-    alternate2: "Hall designs",
+    photo2: "/news/foods/img-2.png",
+    alternate2: "Variety",
 
     text3:
-      "One of the key features of retro lighting is its ability to create a warm and inviting ambiance. Soft, ambient lighting from retro fixtures can transform a hotel room or lobby into a cozy retreat, enhancing the overall guest experience.",
+      "Prepare your taste buds for a culinary journey of a lifetime as you explore the best food items at Hotel Ashok. Our menu is a testament to the rich culinary heritage of India, offering a tantalizing array of dishes that are sure to delight your palate.",
 
     text4:
-      "Explore the timeless appeal of retro lighting design at Hotel Ashok. Our thoughtfully curated lighting fixtures combine vintage aesthetics with modern functionality, creating a unique ambiance that's sure to leave a lasting impression. Book your stay with us and immerse yourself in the allure of retro lighting design. ",
+      "Join us at Hotel Ashok and experience the best food items that our culinary team has to offer. From traditional Indian dishes to international favorites, our menu is a celebration of flavor and a true delight for the senses. ",
   },
 ];
 
