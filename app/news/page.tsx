@@ -1,14 +1,14 @@
 import Hero from "./hero";
 import Home from "./home";
 export default function page() {
-  return (
-    <>
-      <Hero />
-      <div className="flex flex-col md:flex-row items-stretch justify-center min-h-screen px-4">
-        <div className="hidden flex-grow lg:block md:w-1/12 lg:w-1/6 bg-[url('../public/short_border.svg')] bg-repeat bg-contain bg-center"></div>
-        <Home />
-        <div className="hidden flex-grow lg:block md:w-1/12 lg:w-1/6 bg-[url('../public/short_border.svg')] bg-repeat bg-contain bg-center"></div>
-      </div>
-    </>
-  );
+    return (
+        <>
+            <Hero />
+            <div className="flex min-h-screen flex-col items-stretch justify-center px-4 md:flex-row">
+                <div className="hidden flex-grow bg-[url('../public/short_border.svg')] bg-contain bg-center bg-repeat md:w-1/12 lg:block lg:w-1/6"></div>
+                <Home />
+                <div className="hidden flex-grow bg-[url('../public/short_border.svg')] bg-contain bg-center bg-repeat md:w-1/12 lg:block lg:w-1/6"></div>
+            </div>
+        </>
+    );
 }

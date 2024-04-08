@@ -6,12 +6,12 @@ import Search from "./searchrooms";
 import Room from "./roomDisplayNew";
 
 export default function rooms() {
-  return (
-    <section>
-      <Hero />
-      <Room />
-      {/* <Page /> */}
-      <Search />
-    </section>
-  );
+    return (
+        <section>
+            <Hero />
+            <Room />
+            {/* <Page /> */}
+            <Search />
+        </section>
+    );
 }

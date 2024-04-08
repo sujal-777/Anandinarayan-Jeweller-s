@@ -10,18 +10,18 @@ import BookDirectBenefits from "./book-direct-benefits";
 import Weddings from "./weddings";
 
 const pageLayout = () => {
-  return (
-    <section>
-      <Hero />
-      <Info />
-      <RoomsAndSuites />
-      <WeddingEvent/>
-      <CorporateTie/>
-      <HomeServices/>
-      <BookDirectBenefits/>
-      <Weddings/>
-    </section>
-  );
+    return (
+        <section>
+            <Hero />
+            <Info />
+            <RoomsAndSuites />
+            <WeddingEvent />
+            <CorporateTie />
+            <HomeServices />
+            <BookDirectBenefits />
+            <Weddings />
+        </section>
+    );
 };
 
 export default pageLayout;

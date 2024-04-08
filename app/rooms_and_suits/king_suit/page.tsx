@@ -18,13 +18,13 @@ const para2 = `The alpha room among the ones up for grabs at Hotel Ashok, the
               hotel`;
 
 export default function king() {
-  return (
-    <section>
-      <div className="flex flex-col md:flex-row items-stretch justify-center min-h-screen px-4">
-        <div className="hidden flex-grow lg:block md:w-1/12 lg:w-1/6 bg-[url('../public/short_border.svg')] bg-repeat bg-contain bg-center"></div>
-        <RoomPage src={src} room={title} desc1={para1} desc2={para2} />
-        <div className="hidden flex-grow lg:block md:w-1/12 lg:w-1/6 bg-[url('../public/short_border.svg')] bg-repeat bg-contain bg-center"></div>
-      </div>
-    </section>
-  );
+    return (
+        <section>
+            <div className="flex min-h-screen flex-col items-stretch justify-center px-4 md:flex-row">
+                <div className="hidden flex-grow bg-[url('../public/short_border.svg')] bg-contain bg-center bg-repeat md:w-1/12 lg:block lg:w-1/6"></div>
+                <RoomPage src={src} room={title} desc1={para1} desc2={para2} />
+                <div className="hidden flex-grow bg-[url('../public/short_border.svg')] bg-contain bg-center bg-repeat md:w-1/12 lg:block lg:w-1/6"></div>
+            </div>
+        </section>
+    );
 }
