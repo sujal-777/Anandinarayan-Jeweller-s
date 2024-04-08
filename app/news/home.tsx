@@ -4,27 +4,27 @@ import RightPanel from "./RightPanel";
 import LeftPanel from "./LeftPanel";
 
 const Home = () => {
-  return (
-    <>
-      <div className="w-full flex flex-col md:flex-row justify-center font-barlow ">
-        {/* Left Side */}
+    return (
+        <>
+            <div className="flex w-full flex-col justify-center font-barlow md:flex-row ">
+                {/* Left Side */}
 
-        <div className="left w-full md:w-[65%]">
-          <LeftPanel />
-        </div>
+                <div className="left w-full md:w-[65%]">
+                    <LeftPanel />
+                </div>
 
-        {/* Left Side  End*/}
+                {/* Left Side  End*/}
 
-        {/*  Right Side */}
+                {/*  Right Side */}
 
-        <div className="w-full md:w-[30%] my-20">
-          <RightPanel />
-        </div>
+                <div className="my-20 w-full md:w-[30%]">
+                    <RightPanel />
+                </div>
 
-        {/* Right Side end */}
-      </div>
-    </>
-  );
+                {/* Right Side end */}
+            </div>
+        </>
+    );
 };
 
 export default Home;

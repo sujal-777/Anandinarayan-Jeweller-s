@@ -29,96 +29,98 @@ const sideData = [
 const categories = ["Hotel Design", "Restaurant", "Swimming Pool"];
 
 const tags = [
-  "Hotel",
-  "Luxury Hotel",
-  "Tasty Food",
-  "Swimming Pool",
-  "Restaurant",
+    "Hotel",
+    "Luxury Hotel",
+    "Tasty Food",
+    "Swimming Pool",
+    "Restaurant",
 ];
 
 function RightPanel() {
-  return (
-    <>
-      {/* Recent blog posts */}
-      <div className="bg-[#F8F5F0] py-2 md:py-5 px-5">
-        <p className="text-2xl font-gilda">Recent Posts</p>
+    return (
+        <>
+            {/* Recent blog posts */}
+            <div className="bg-[#F8F5F0] px-5 py-2 md:py-5">
+                <p className="font-gilda text-2xl">Recent Posts</p>
 
-        <Divider className="bg-[#AA8453] mt-3 flex justify-center items-center" />
+                <Divider className="mt-3 flex items-center justify-center bg-[#AA8453]" />
 
-        <div className="Posters mt-3">
-          {sideData.map((blog, index) => {
-            return (
-              <Link key={index} href={blog.route}>
-                {/* Entire div is link to be pressed */}
+                <div className="Posters mt-3">
+                    {sideData.map((blog, index) => {
+                        return (
+                            <Link key={index} href={blog.route}>
+                                {/* Entire div is link to be pressed */}
 
-                <div className="grid grid-cols-3 space-x-4">
-                  {/* Blog image settings */}
+                                <div className="grid grid-cols-3 space-x-4">
+                                    {/* Blog image settings */}
 
-                  <div className="p-2">
-                    <Image
-                      alt={blog.alternate}
-                      src={blog.photo}
-                      width={90}
-                      height={60}
-                      className="block h-auto max-w-full justify-center items-center"
-                    />
-                  </div>
-                  {/* Small Heading */}
+                                    <div className="p-2">
+                                        <Image
+                                            alt={blog.alternate}
+                                            src={blog.photo}
+                                            width={90}
+                                            height={60}
+                                            className="block h-auto max-w-full items-center justify-center"
+                                        />
+                                    </div>
+                                    {/* Small Heading */}
 
-                  <div className="col-span-2 flex justify-center items-center">
-                    <p className=" text-[#666666]">{blog.content}</p>
-                  </div>
+                                    <div className="col-span-2 flex items-center justify-center">
+                                        <p className=" text-[#666666]">
+                                            {blog.content}
+                                        </p>
+                                    </div>
+                                </div>
+                            </Link>
+                        );
+                    })}
                 </div>
-              </Link>
-            );
-          })}
-        </div>
-      </div>
-      {/* Recent blog posts */}
+            </div>
+            {/* Recent blog posts */}
 
-      {/* Categories section */}
-      <div className="bg-[#F8F5F0] py-5 px-5 mt-5">
-        <p className="text-2xl font-gilda">Categories</p>
+            {/* Categories section */}
+            <div className="mt-5 bg-[#F8F5F0] px-5 py-5">
+                <p className="font-gilda text-2xl">Categories</p>
 
-        <Divider className="bg-[#AA8453] mt-3 flex justify-center items-center" />
+                <Divider className="mt-3 flex items-center justify-center bg-[#AA8453]" />
 
-        {/* Listing categories */}
-        <div className="text-[#666666]">
-          {categories.map((data, index) => (
-            <p key={index}>
-              <span className="text-2xl">&rsaquo;</span> {data}
-            </p>
-          ))}
-        </div>
-      </div>
-      {/* Categories end */}
+                {/* Listing categories */}
+                <div className="text-[#666666]">
+                    {categories.map((data, index) => (
+                        <p key={index}>
+                            <span className="text-2xl">&rsaquo;</span> {data}
+                        </p>
+                    ))}
+                </div>
+            </div>
+            {/* Categories end */}
 
-      {/* Tags section */}
-      <div className="bg-[#F8F5F0] py-5 px-5 mt-5">
-        <p className="text-2xl font-gilda">Tags</p>
+            {/* Tags section */}
+            <div className="mt-5 bg-[#F8F5F0] px-5 py-5">
+                <p className="font-gilda text-2xl">Tags</p>
 
-        <Divider className="bg-[#AA8453] mt-3 flex justify-center items-center" />
+                <Divider className="mt-3 flex items-center justify-center bg-[#AA8453]" />
 
-        {/*  Listing tags */}
-        <div className="justify-center items-center">
-          {tags.map((tag, index) => (
-            <Button
-              key={index}
-              radius="none"
-              disableRipple
-              disableAnimation
-              className="text-black bg-white mx-2 text-sm my-2"
-            >
-              {tag}
-            </Button>
-          ))}
-        </div>
-        {/* Listing tags */}
-      </div>
+                {/*  Listing tags */}
+                <div className="items-center justify-center">
+                    {tags.map((tag, index) => (
+                        <Button
+                            key={index}
+                            radius="none"
+                            disableRipple
+                            disableAnimation
+                            className="mx-2 my-2 bg-white text-sm text-black"
+                        >
+                            {tag}
+                        </Button>
+                    ))}
+                </div>
+                {/* Listing tags */}
+            </div>
 
-      {/* tags section end */}
-    </>
-  );
+            {/* tags section end */}
+        </>
+    );
 }
 
 export default RightPanel;

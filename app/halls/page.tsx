@@ -4,12 +4,12 @@ import Hero from "./hero";
 import Halls from "./hallsdisplay";
 
 const halls = () => {
-  return (
-    <div>
-      <Hero />
-      <Halls />
-    </div>
-  );
+    return (
+        <div>
+            <Hero />
+            <Halls />
+        </div>
+    );
 };
 
 export default halls;

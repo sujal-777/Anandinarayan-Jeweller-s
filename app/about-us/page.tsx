@@ -5,13 +5,13 @@ import Industry from "./industry";
 import Director from "./director";
 
 const page = () => {
-  return (
-    <div>
-      <Hero />
-      <Industry />
-      <Director />
-    </div>
-  );
+    return (
+        <div>
+            <Hero />
+            <Industry />
+            <Director />
+        </div>
+    );
 };
 
 export default page;

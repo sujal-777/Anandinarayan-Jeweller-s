@@ -36,40 +36,47 @@ const newData = [
 ];
 
 function LeftPanel() {
-  return (
-    <>
-      {/* Mian blog div */}
-      <div className="md:px-5 mt-5 md:mt-20 mb-5">
-        {newData.map((item, index) => {
-          return (
-            <div key={index} className="mt-10">
-              <Image
-                alt={item.alternate}
-                src={item.photo}
-                width={760}
-                height={480}
-                className="block h-auto max-w-full"
-              />
-              <p className="uppercase text-[#AA8453] mt-5">{item.subheading}</p>
-              <p className="font-gilda text-2xl md:text-4xl mt-2">
-                {item.heading}
-              </p>
-              <p className="mt-4 text-sm text-justify">{item.content}</p>
-              <div className="mt-5">
-                <Link href={item.route} className="">
-                  <Button radius="none" className="text-white bg-[#AA8453]">
-                    Read More
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          );
-        })}
+    return (
+        <>
+            {/* Mian blog div */}
+            <div className="mb-5 mt-5 md:mt-20 md:px-5">
+                {newData.map((item, index) => {
+                    return (
+                        <div key={index} className="mt-10">
+                            <Image
+                                alt={item.alternate}
+                                src={item.photo}
+                                width={760}
+                                height={480}
+                                className="block h-auto max-w-full"
+                            />
+                            <p className="mt-5 uppercase text-[#AA8453]">
+                                {item.subheading}
+                            </p>
+                            <p className="mt-2 font-gilda text-2xl md:text-4xl">
+                                {item.heading}
+                            </p>
+                            <p className="mt-4 text-justify text-sm">
+                                {item.content}
+                            </p>
+                            <div className="mt-5">
+                                <Link href={item.route} className="">
+                                    <Button
+                                        radius="none"
+                                        className="bg-[#AA8453] text-white"
+                                    >
+                                        Read More
+                                    </Button>
+                                </Link>
+                            </div>
+                        </div>
+                    );
+                })}
 
-        {/* Main blog div end */}
-      </div>
-    </>
-  );
+                {/* Main blog div end */}
+            </div>
+        </>
+    );
 }
 
 export default LeftPanel;
