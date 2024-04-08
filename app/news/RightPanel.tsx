@@ -9,19 +9,19 @@ const sideData = [
   {
     photo: "/news/sv-1.png",
     alternate: "swimming pool blued lighting",
-    route: "#",
+    route: "news/swim",
     content: "Benefits of Swimming for Your Health",
   },
   {
     photo: "/news/sv-2.png",
     alternate: "exotic food",
-    route: "#",
+    route: "news/food",
     content: "Tasty Foods with our choices",
   },
   {
     photo: "/news/sv-3.png",
     alternate: "amazing hotel view",
-    route: "#",
+    route: "news/retro",
     content: "Enjoy the View from our Beautiful Balcony",
   },
 ];
