@@ -95,7 +95,7 @@ export default function Nav() {
                             radius="sm"
                             variant="light"
                         >
-                            <Link className="text-[#AA8453]" href="/">
+                            <Link className="text-[#AA8453]" href="/about-us">
                                 About
                             </Link>
                         </Button>
@@ -109,7 +109,7 @@ export default function Nav() {
                                     radius="sm"
                                     variant="light"
                                 >
-                                    <Link className="text-[#AA8453]" href="/">
+                                    <Link className="text-[#AA8453]" href="/rooms_and_suits">
                                         Rooms & Suits
                                     </Link>
                                     <KeyboardArrowDownIcon className="text-[#AA8453]" />
@@ -138,7 +138,7 @@ export default function Nav() {
                                     radius="sm"
                                     variant="light"
                                 >
-                                    <Link className="text-[#AA8453]" href="/">
+                                    <Link className="text-[#AA8453]" href="/halls">
                                         Weddings and Events
                                     </Link>
                                     <KeyboardArrowDownIcon className="text-[#AA8453]" />
@@ -167,7 +167,7 @@ export default function Nav() {
                                     radius="sm"
                                     variant="light"
                                 >
-                                    <Link className="text-[#AA8453]" href="/">
+                                    <Link className="text-[#AA8453]" href="/food">
                                         Dinning
                                     </Link>
                                     <KeyboardArrowDownIcon className="text-[#AA8453]" />
@@ -254,7 +254,7 @@ export default function Nav() {
                                     radius="sm"
                                     variant="light"
                                 >
-                                    <Link className="text-[#AA8453]" href="/">
+                                    <Link className="text-[#AA8453]" href="/contact_us">
                                         Contact
                                     </Link>
                                     <KeyboardArrowDownIcon className="text-[#AA8453]" />
