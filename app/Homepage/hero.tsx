@@ -2,7 +2,7 @@ import RoomSearch from "./roomSelect";
 
 export default function Hero() {
     return (
-        <section>
+        <section data-aos="fade-in">
             <div className="relative h-screen w-full bg-[url('/HeaderAssets/bkg.png')] bg-cover bg-center bg-no-repeat">
                 <div className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform">
                     <div className="text-center">

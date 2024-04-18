@@ -11,7 +11,7 @@ const images = [
 export default function RoomsAndSuites() {
     return (
         <section className="bg-[#F8F5F0]">
-            <div className="p-20">
+            <div className="p-20" data-aos="fade-up">
                 <p className="font-gilda text-4xl" style={{ color: "#AA8453" }}>
                     Hotel Ashok
                 </p>
@@ -22,8 +22,8 @@ export default function RoomsAndSuites() {
 
             <div className="flex justify-center">
                 <div className="grid grid-cols-2 gap-4">
-                    {images.map((image) => (
-                        <div key={image.id}>
+                    {images.map((image, index) => (
+                        <div key={image.id} data-aos="fade-in" data-aos-delay={`${index+1}00`}>
                             <Image
                                 src={image.src}
                                 alt={image.alt}

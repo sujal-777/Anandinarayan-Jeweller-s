@@ -61,14 +61,14 @@ export default function HomeServices() {
 
     return (
         <section>
-            <div className="px-20 py-10">
+            <div className="px-20 py-10" data-aos="fade-up">
                 <p className="font-gilda text-xl" style={{ color: "#666666" }}>
                     OUR SERVICES
                 </p>
                 <p className="font-gilda text-2xl">Hotel Facilities</p>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3" data-aos="fade-in">
                 {services.map((service, index) => (
                     <Card
                         key={index}

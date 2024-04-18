@@ -10,19 +10,19 @@ const info = () => {
             <div className="flex w-full flex-col items-center justify-center">
                 <div className="flex flex-col items-start justify-center sm:flex-row">
                     <div className="flex w-full flex-col justify-center px-10 py-7 text-justify sm:w-1/2">
-                        <p className="inline-block bg-[#AA8453] p-2 text-3xl text-white">
+                        <p className="inline-block bg-[#AA8453] p-2 text-3xl text-white" data-aos="fade-up">
                             Hotel Ashok
                         </p>
 
                         <br />
                         <br />
 
-                        <p className="text-3xl">Enjoy a Luxury Experience</p>
+                        <p className="text-3xl" data-aos="fade-up">Enjoy a Luxury Experience</p>
 
                         <br />
                         <br />
 
-                        <p>
+                        <p data-aos="fade-up">
                             Welcome to Hotel Ashok, nestled in the heart of
                             Nagpur, since our inception in February 2011, we
                             have been consistent with warm hospitality and
@@ -41,7 +41,7 @@ const info = () => {
                         <br />
                         <br />
 
-                        <div className="flex items-center">
+                        <div className="flex items-center" data-aos="fade-up">
                             <div className="mr-4">
                                 <CallIcon style={{ color: "#AA8453" }} />
                             </div>
@@ -62,7 +62,7 @@ const info = () => {
                         </div>
                     </div>
 
-                    <div className="flex w-full flex-col justify-center px-10 py-7 sm:w-1/2">
+                    <div className="flex w-full flex-col justify-center px-10 py-7 sm:w-1/2"  data-aos="fade-in">
                         <Image
                             alt="man with generator"
                             src="/HomePageAssets/home_info.png"

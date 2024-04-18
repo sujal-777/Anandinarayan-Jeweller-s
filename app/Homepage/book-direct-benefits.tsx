@@ -9,8 +9,8 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ title, description }) => (
-    <div className="p-10">
-        <div className="relative flex min-h-full flex-col items-start justify-start p-5 font-gilda text-black">
+    <div className="">
+        <div className="relative flex min-h-full flex-col items-start justify-start py-5 font-gilda text-black">
             <div className="text-start font-gilda">
                 <p className="mt-2 text-xl" style={{ color: "#AA8453" }}>
                     {title}
@@ -47,11 +47,11 @@ export default function BookDirectBenefits() {
 
     return (
         <section className="bg-[#222222]">
-            <p className="flex items-center justify-center p-20 font-gilda text-4xl text-white">
+            <p className="flex items-center justify-center px-8 py-10 md:px-20 font-gilda text-4xl text-white">
                 Book DIRECT BENEFITS
             </p>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-8 py-10 md:px-20">
                 {cardList.map((cardList, index) => (
                     <Card
                         key={index}
@@ -61,8 +61,8 @@ export default function BookDirectBenefits() {
                 ))}
             </div>
 
-            <div className="flex">
-                <div className="w-1/2 p-20">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="px-8 py-10 md:px-20" data-aos="fade-in">
                     <Image
                         width={600}
                         height={600}
@@ -70,8 +70,8 @@ export default function BookDirectBenefits() {
                         alt="Your Image"
                     />
                 </div>
-                <div className="w-1/2 p-8">
-                    <div className="bg-[#F8F5F0] p-10">
+                <div className="px-8 py-10 md:px-20" data-aos="fade-in">
+                    <div className="bg-[#F8F5F0] p-4">
                         <p className="text-xl" style={{ color: "#666666" }}>
                             Rooms & Suites
                         </p>

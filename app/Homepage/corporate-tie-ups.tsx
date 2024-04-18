@@ -11,7 +11,7 @@ export default function CorporateTie() {
 
             <div className="flex w-full flex-col items-center justify-center">
                 <div className="flex flex-col items-start justify-center sm:flex-row">
-                    <div className="flex w-full flex-col justify-center p-5 text-justify sm:w-1/2 md:p-20">
+                    <div className="flex w-full flex-col justify-center p-5 text-justify sm:w-1/2 md:p-20" data-aos="fade-up">
                         <p
                             className="font-gilda text-2xl"
                             style={{ color: "#AA8453" }}
@@ -62,7 +62,7 @@ export default function CorporateTie() {
                         </div>
                     </div>
 
-                    <div className="flex w-full flex-col justify-center px-10 py-7 sm:w-1/2">
+                    <div className="flex w-full flex-col justify-center px-10 py-7 sm:w-1/2" data-aos="fade-in">
                         <Image radius="none" alt="" src="/image_cop_ties.png" />
                     </div>
                 </div>

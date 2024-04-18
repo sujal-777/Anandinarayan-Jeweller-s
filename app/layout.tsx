@@ -4,6 +4,7 @@ import "./globals.css";
 import Provider from "./providers";
 import Footer from "./_components/Footer/Footer";
 import Nav from "./_components/NavBar/Nav";
+import { AOSInit } from "./_components/AOS";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <AOSInit />
             <body
                 className={`${inter.variable} ${gilda.variable} ${barlow.variable}`}
             >
