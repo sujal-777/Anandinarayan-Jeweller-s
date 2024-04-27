@@ -19,7 +19,7 @@ export default function Header({ aboutUsText, headerBannerSrc }: HeaderProps) {
                     alt="Hotel Logo"
                     className="w-20 md:w-40"
                 />
-                <div className="absolute left-5 top-60 flex h-full w-full flex-col items-start">
+                <div className="absolute left-5 top-60 flex h-full w-fit flex-col items-start">
                     <p className="font-gilda text-white">LUXURY HOTEL</p>
                     <p className="font-gilda text-8xl text-white md:text-4xl">
                         {aboutUsText}

@@ -94,7 +94,7 @@ export default function Weddings() {
 
             <div className="flex w-full flex-col items-center justify-center">
                 <div className="flex flex-col items-start justify-center sm:flex-row">
-                    <div className="flex w-full flex-col justify-center p-20 text-justify sm:w-1/2" data-aos="fade-up">
+                    <div className="flex w-full flex-col justify-center px-8 py-10 md:px-20 text-justify sm:w-1/2" data-aos="fade-up">
                         <p
                             className="mt-5 font-gilda text-xl"
                             style={{ color: "#666666" }}
@@ -137,7 +137,7 @@ export default function Weddings() {
                             src="/HomePageAssets/Weddings/image_pool.png"
                         />
                     </div>
-                    <div className="flex w-full flex-col justify-center p-20 text-justify sm:w-1/2" data-aos="fade-up">
+                    <div className="flex w-full flex-col justify-center px-8 py-10 md:px-20 text-justify sm:w-1/2" data-aos="fade-up">
                         <p
                             className="mt-5 font-gilda text-xl"
                             style={{ color: "#666666" }}
@@ -165,7 +165,7 @@ export default function Weddings() {
 
             <div className="flex w-full flex-col items-center justify-center">
                 <div className="flex flex-col items-start justify-center sm:flex-row">
-                    <div className="flex w-full flex-col justify-center p-20 text-justify sm:w-1/2" data-aos="fade-up">
+                    <div className="flex w-full flex-col justify-center px-8 py-10 md:px-20 text-justify sm:w-1/2" data-aos="fade-up">
                         <p
                             className="mt-5 font-gilda text-xl"
                             style={{ color: "#666666" }}

@@ -13,12 +13,12 @@ export default function Foods() {
             />
             <div>
                 <p
-                    className="mt-20 px-20 font-gilda text-3xl"
+                    className="mt-20 px-10 md:px-20 font-gilda text-3xl"
                     style={{ color: "#AA8453" }}
                 >
                     Taste That Nagpur Loves
                 </p>
-                <p className="mt-5 px-20 font-gilda">
+                <p className="mt-5 px-10 md:px-20 font-gilda">
                     When it comes to food, Hotel Ashok is known for its taste
                     and food quality. With a team of specialty chefs crafting
                     unique dishes that tantalize taste buds, guests are treated
@@ -26,7 +26,7 @@ export default function Foods() {
                     to delivering fresh food, avoiding the use of cold storage
                     to ensure quality and freshness. provide more lines
                 </p>
-                <p className="mt-5 px-20 font-gilda">
+                <p className="mt-5 px-10 md:px-20 font-gilda">
                     The culinary journey at Hotel Ashok extends beyond
                     traditional boundaries, with a menu that showcases a fusion
                     of flavors and innovative combinations. Guests can savor the
@@ -34,7 +34,7 @@ export default function Foods() {
                     prepared to create a symphony of tastes that cater to
                     diverse palates.
                 </p>
-                <p className="mt-5 px-20 font-gilda">
+                <p className="mt-5 px-10 md:px-20 font-gilda">
                     The hotel&apos;s emphasis on freshness extends to sourcing
                     ingredients locally whenever possible, supporting the
                     community and contributing to sustainability efforts. This
@@ -44,7 +44,7 @@ export default function Foods() {
                     and memorable culinary experience.
                 </p>
 
-                <p className="mt-20 px-20 font-gilda text-2xl">Hours</p>
+                <p className="mt-20 px-10 md:px-20 font-gilda text-2xl">Hours</p>
 
                 <div className="mt-5 flex justify-start px-20">
                     <AccessTimeIcon style={{ color: "#AA8453" }} />
@@ -66,15 +66,15 @@ export default function Foods() {
                     </p>
                 </div>
 
-                <p className="mt-10 px-20 font-gilda text-2xl">Dress Code</p>
+                <p className="mt-10 px-10 md:px-20 font-gilda text-2xl">Dress Code</p>
                 <p className="mt-2 px-20 font-gilda">
                     Smart casual (no shorts, hats, or sandals permitted)
                 </p>
 
-                <p className="mt-10 px-20 font-gilda text-2xl">Terrace</p>
+                <p className="mt-10 px-10 md:px-20 font-gilda text-2xl">Terrace</p>
                 <p className="mt-2 px-20 font-gilda">Open for drinks only</p>
 
-                <img className="p-20" src="/food/food_grid.png" alt=" " />
+                <img className="px-10 md:px-20 py-4" src="/food/food_grid.png" alt=" " />
             </div>
         </section>
     );
