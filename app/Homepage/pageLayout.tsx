@@ -12,7 +12,7 @@ import WhatClientsSay from "../_components/WhatClientsSay/WhatClientsSay";
 
 const pageLayout = () => {
     return (
-        <section>
+        <section className="font-gilda">
             <Hero />
             <Info />
             <RoomsAndSuites />

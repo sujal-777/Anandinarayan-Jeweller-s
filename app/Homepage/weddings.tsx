@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Image } from "@nextui-org/react";
+import Link from "next/link";
 
 export default function Weddings() {
     return (
@@ -85,9 +86,9 @@ export default function Weddings() {
                             an extra layer of enjoyment to celebrations,
                             ensuring they are truly unforgettable.
                         </p>
-                        <p className="mt-5 inline-block bg-[#AA8453] p-2 px-4 text-xl text-white text-center w-fit">
+                        <Link href={"/news/best-food-items"} className="mt-5 inline-block bg-[#AA8453] p-2 px-4 text-xl text-white text-center w-fit">
                             Learn More
-                        </p>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -114,9 +115,9 @@ export default function Weddings() {
                             delectable range of multi-cuisine options, tailored
                             to suit the preferences of our esteemed guests.
                         </p>
-                        <p className="mt-5 inline-block bg-[#AA8453] p-2 px-4 text-xl text-white text-center w-fit">
+                        <Link href={"/pooldeck-restrobar"} className="mt-5 inline-block bg-[#AA8453] p-2 px-4 text-xl text-white text-center w-fit">
                             Learn More
-                        </p>
+                        </Link>
                     </div>
                     <div className="flex w-full flex-col justify-center px-10 py-7 sm:w-1/2" data-aos="fade-in">
                         <Image
@@ -156,9 +157,9 @@ export default function Weddings() {
                             are an adventure seeker, history buff or soul
                             searcher, you will be hooked to this place
                         </p>
-                        <p className="mt-5 inline-block bg-[#AA8453] p-2 px-4 text-xl text-white text-center w-fit">
+                        <Link href={"/news/swim"} className="mt-5 inline-block bg-[#AA8453] p-2 px-4 text-xl text-white text-center w-fit">
                             Learn More
-                        </p>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -185,9 +186,9 @@ export default function Weddings() {
                             delectable range of multi-cuisine options, tailored
                             to suit the preferences of our esteemed guests.
                         </p>
-                        <p className="mt-5 inline-block bg-[#AA8453] p-2 px-4 text-xl text-white text-center w-fit">
+                        <Link href={"/news/refreshing-cold-drinks"} className="mt-5 inline-block bg-[#AA8453] p-2 px-4 text-xl text-white text-center w-fit">
                             Learn More
-                        </p>
+                        </Link>
                     </div>
                     <div className="flex w-full flex-col justify-center px-10 py-7 sm:w-1/2" data-aos="fade-in">
                         <Image

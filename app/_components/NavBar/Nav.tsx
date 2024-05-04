@@ -60,7 +60,7 @@ export default function Nav() {
         { text: "Rooms & Suits", href: "/rooms_and_suits" },
         { text: "Wedding & Events", href: "/halls" },
         { text: "Dining", href: "#" },
-        { text: "Updates", href: "#" },
+        { text: "Updates", href: "/news" },
         { text: "Nearby Attractions", href: "#" },
         { text: "Contact", href: "/contact_us" },
     ];
@@ -197,7 +197,7 @@ export default function Nav() {
                                     radius="sm"
                                     variant="light"
                                 >
-                                    <Link className="text-[#AA8453]" href="/">
+                                    <Link className="text-[#AA8453]" href="/news">
                                         Updates
                                     </Link>
                                     <KeyboardArrowDownIcon className="text-[#AA8453]" />

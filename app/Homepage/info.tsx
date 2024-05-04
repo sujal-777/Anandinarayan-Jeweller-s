@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import CallIcon from "@mui/icons-material/Call";
 
@@ -41,19 +40,19 @@ const info = () => {
                         <br />
                         <br />
 
-                        <div className="flex items-center" data-aos="fade-up">
+                        <div className="flex items-center text-xl" data-aos="fade-up">
                             <div className="mr-4">
                                 <CallIcon style={{ color: "#AA8453" }} />
                             </div>
                             <div className="flex flex-col">
                                 <p
-                                    className="text-lg"
                                     style={{ color: "#AA8453" }}
+
                                 >
                                     Reservation
                                 </p>
                                 <p
-                                    className="text-sm"
+                                    className="text-lg"
                                     style={{ color: "#AA8453" }}
                                 >
                                     +91 88888 70722
