@@ -1,0 +1,96 @@
+"use client";
+
+import React from "react";
+import { EmblaOptionsType } from "embla-carousel";
+import useEmblaCarousel from "embla-carousel-react";
+import Fade from "embla-carousel-fade";
+import {
+    NextButton,
+    PrevButton,
+    usePrevNextButtons,
+} from "./EmblaCarouselArrowButtons";
+import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
+import Image from "next/image";
+import Link from "next/link";
+import Autoplay from "embla-carousel-autoplay";
+
+type PropType = {
+    slides: {
+        img: string;
+        title1: string;
+        title2: string;
+        links: string;
+    }[];
+    options?: EmblaOptionsType;
+};
+
+const EmblaCarousel: React.FC<PropType> = (props) => {
+    const { slides, options } = props;
+    const [emblaRef, emblaApi] = useEmblaCarousel(options, [
+        Fade(),
+        Autoplay({ playOnInit: false, delay: 3000 }),
+    ]);
+
+    const { selectedIndex, scrollSnaps, onDotButtonClick } =
+        useDotButton(emblaApi);
+
+    return (
+        <div className="embla relative h-[100dvh] w-full">
+            <div className="embla__viewport relative z-20" ref={emblaRef}>
+                <div className="embla__container">
+                    {slides.map((item, index) => (
+                        <div
+                            className="embla__slide h-[100dvh] w-full bg-black"
+                            key={index}
+                        >
+                            <div className="relative flex h-full w-full flex-col items-center justify-center gap-4 px-8 py-20 text-center text-white lg:px-20">
+                                <div
+                                    className={`z-30 space-y-8 tracking-[0.5rem] transition-all duration-700 delay-200 ${index === selectedIndex ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
+                                >
+                                    <h3 className="font-barlow">
+                                        {item.title2}
+                                    </h3>
+                                    <h1 className="  text-3xl font-[500] uppercase tracking-wider lg:text-5xl">
+                                        {item.title1}
+                                    </h1>
+                                </div>
+                                <Link
+                                    href={item.links}
+                                    className={`z-30 border-2 border-white p-4 font-barlow uppercase tracking-wider transition-all duration-700 delay-200  ${index === selectedIndex ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
+                                >
+                                    Rooms & Suites
+                                </Link>
+                                <Image
+                                    src={item.img}
+                                    alt="Picture of the author"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="z-10 h-full w-full object-cover"
+                                />
+                                <div className="absolute left-0 top-0 z-20 h-full w-full bg-black bg-opacity-40"></div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div className="embla__controls absolute bottom-0 right-0 top-0 z-30 my-auto">
+                <div className="embla__dots my-auto h-fit rotate-90 gap-2">
+                    {scrollSnaps.map((_, index) => (
+                        <DotButton
+                            key={index}
+                            onClick={() => onDotButtonClick(index)}
+                            className={" aspect-square h-4 rounded-full border-2 border-white".concat(
+                                index === selectedIndex
+                                    ? " border-[#AA8453] bg-[#AA8453]"
+                                    : ""
+                            )}
+                        />
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default EmblaCarousel;

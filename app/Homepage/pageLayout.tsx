@@ -1,6 +1,6 @@
 import React from "react";
 
-import Hero from "./hero";
+import Hero from "./Hero/hero";
 import Info from "./info";
 import RoomsAndSuites from "./rooms-suites";
 import WeddingEvent from "./wedding-event";
