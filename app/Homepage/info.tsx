@@ -1,70 +1,79 @@
 import React from "react";
 import CallIcon from "@mui/icons-material/Call";
 
-import { Image } from "@nextui-org/react";
+import { FaPhoneVolume } from "react-icons/fa6";
+import Image from "next/image";
 
 const info = () => {
     return (
-        <section>
+        <section className="min-h-screen px-8 py-20 lg:px-40 bg-white">
             <div className="flex w-full flex-col items-center justify-center">
-                <div className="flex flex-col items-start justify-center sm:flex-row">
-                    <div className="flex w-full flex-col justify-center px-10 py-7 text-justify sm:w-1/2">
-                        <p className="inline-block bg-[#AA8453] p-2 text-3xl text-white" data-aos="fade-up">
+                <div className="grid w-full grid-cols-1 place-items-center gap-12 md:grid-cols-2">
+                    <div className="flex w-full flex-col justify-center py-7" data-aos="fade-up">
+                        <p
+                            className="font-barlow uppercase tracking-widest text-[#666666]"
+                            data-aos="fade-up"
+                        >
                             Hotel Ashok
                         </p>
+                        <h2 className="text-3xl md:text-5xl">
+                            Enjoy a Luxury Experience
+                        </h2>
 
                         <br />
                         <br />
 
-                        <p className="text-3xl" data-aos="fade-up">Enjoy a Luxury Experience</p>
+                        <div className="space-y-4 font-barlow">
+                            <p data-aos="fade-up">
+                                Welcome to Hotel Ashok, nestled in the heart of
+                                Nagpur, since our inception in February 2011, we
+                                have been consistent with warm hospitality and
+                                exceptional services, setting the standard for
+                                excellence in the hospitality industry in
+                                Nagpur.
+                            </p>
+                            <p>
+                                Experience the regal charm and grandeur of our
+                                suites, designed to make every guest feel like
+                                royalty. Whether you&apos;re seeking a family
+                                retreat or a romantic escape, our range of
+                                rooms, from family to honeymoon suites, caters
+                                to your every whim. With a host of modern
+                                amenities and facilities, we ensure a
+                                comfortable and memorable stay at Hotel Ashok.
+                            </p>
 
-                        <br />
-                        <br />
-
-                        <p data-aos="fade-up">
-                            Welcome to Hotel Ashok, nestled in the heart of
-                            Nagpur, since our inception in February 2011, we
-                            have been consistent with warm hospitality and
-                            exceptional services, setting the standard for
-                            excellence in the hospitality industry in Nagpur.
-                            Experience the regal charm and grandeur of our
-                            suites, designed to make every guest feel like
-                            royalty. Whether you&apos;re seeking a family
-                            retreat or a romantic escape, our range of rooms,
-                            from family to honeymoon suites, caters to your
-                            every whim. With a host of modern amenities and
-                            facilities, we ensure a comfortable and memorable
-                            stay at Hotel Ashok.
-                        </p>
-
-                        <br />
-                        <br />
-
-                        <div className="flex items-center text-xl" data-aos="fade-up">
-                            <div className="mr-4">
-                                <CallIcon style={{ color: "#AA8453" }} />
-                            </div>
-                            <div className="flex flex-col">
-                                <p
-                                    style={{ color: "#AA8453" }}
-
-                                >
-                                    Reservation
-                                </p>
-                                <p
-                                    className="text-lg"
-                                    style={{ color: "#AA8453" }}
-                                >
-                                    +91 88888 70722
-                                </p>
+                            <div
+                                className="flex items-center text-xl"
+                                data-aos="fade-up"
+                            >
+                                <div className="mr-4">
+                                    <FaPhoneVolume
+                                        style={{ color: "#AA8453" }}
+                                    />
+                                </div>
+                                <div className="flex flex-col">
+                                    <p style={{ color: "" }}>Reservation</p>
+                                    <p
+                                        className="text-xl"
+                                        style={{ color: "#AA8453" }}
+                                    >
+                                        +91 88888 70722
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="flex w-full flex-col justify-center px-10 py-7 sm:w-1/2"  data-aos="fade-in">
+                    <div
+                        className="flex w-full flex-col justify-center py-7"
+                        data-aos="fade-in"
+                    >
                         <Image
-                            alt="man with generator"
-                            src="/HomePageAssets/home_info.png"
+                            src="/assets/Home/luxury.png"
+                            alt="Your Image"
+                            width={1000}
+                            height={1000}
                         />
                     </div>
                 </div>

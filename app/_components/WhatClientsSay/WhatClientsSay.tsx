@@ -4,7 +4,10 @@ import React, { useState, useEffect } from "react";
 import ReviewCarousel from "./ReviewCarousel";
 import SelectRooms from "./SelectRooms";
 import RoomSearch from "../../Homepage/roomSelect";
-
+import EmblaCarousel from "./EmblaCarousel";
+import DatePicker from "react-datepicker";
+import { Select, SelectItem, Button } from "@nextui-org/react";
+import { FaPhoneVolume } from "react-icons/fa6";
 const imageUrl = "/WhatClientsSay/image.png";
 const reviews = [
     {
@@ -31,6 +34,31 @@ const reviews = [
     // Add more reviews here
 ];
 
+const adultCount = [
+    "1 Adult",
+    "2 Adult",
+    "3 Adult",
+    "4 Adult",
+    "5 Adult",
+    "6 Adult",
+    "7 Adult",
+];
+const childCount = [
+    "1 Child",
+    "2 Children",
+    "3 Children",
+    "4 Children",
+    "5 Children",
+];
+const roomCount = [
+    "1 room",
+    "2 rooms",
+    "3 rooms",
+    "4 rooms",
+    "5 rooms",
+    "6 rooms",
+];
+
 const WhatClientsSay = () => {
     const [currentReview, setCurrentReview] = useState(0);
 
@@ -41,30 +69,96 @@ const WhatClientsSay = () => {
 
         return () => clearInterval(intervalId);
     }, [currentReview]);
-    return (
-        <div
-            className="justify-between md:flex"
-            style={{
-                backgroundImage: `url(${imageUrl})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-            }}
-        >
-            <ReviewCarousel
-                name={reviews[currentReview].name}
-                text={reviews[currentReview].text}
-                image={reviews[currentReview].image}
-                rating={reviews[currentReview].rating}
-            />
-            <div className="right-1 bg-[#F8F5F0] md:m-40 md:p-10">
-                <p className="text-xl" style={{ color: "#666666" }}>
-                    Rooms & Suites
-                </p>
-                <p className="mt-5 font-gilda text-2xl text-black">
-                    Hotel Booking Form
-                </p>
 
-                <RoomSearch></RoomSearch>
+    const [startDate, setStartDate] = useState<Date | null>(null);
+    const [endDate, setEndDate] = useState<Date | null>(null);
+    return (
+        <div className="grid grid-cols-1 gap-16 px-8 py-20 lg:grid-cols-2 lg:px-40">
+            <div className="space-y-4">
+                <h2 className="font-gilda text-3xl text-white md:text-5xl">
+                    What Client&apos;s Say?
+                </h2>
+                <EmblaCarousel slides={reviews} />
+                <div className="flex items-center text-xl" data-aos="fade-up">
+                    <div className="mr-4">
+                        <FaPhoneVolume style={{ color: "#fff" }} />
+                    </div>
+                    <div className="flex flex-col">
+                        <p style={{ color: "#fff" }}>Reservation</p>
+                        <p className="text-xl" style={{ color: "#fff" }}>
+                            +91 88888 70722
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="right-1 mx-auto  max-w-[450px] bg-[#F8F5F0] p-4">
+                <div className="py-10" data-aos="fade-up">
+                    <p className="font-barlow uppercase tracking-widest text-[#666666]">
+                        ROOMS & SUITES
+                    </p>
+                    <h2
+                        className="font-gilda text-3xl md:text-5xl"
+                        style={{ color: "#000000" }}
+                    >
+                        Hotel Booking Form
+                    </h2>
+                </div>
+
+                <div className="grid grid-cols-1 gap-4 font-barlow lg:grid-cols-2">
+                    <div className="bg-white p-4 lg:col-span-2">
+                        <DatePicker
+                            showIcon
+                            isClearable
+                            placeholderText="Check In"
+                            selected={endDate}
+                            onChange={(date) => setEndDate(date)}
+                            selectsEnd
+                            startDate={startDate}
+                            endDate={endDate}
+                            minDate={startDate}
+                            className="h-full w-full bg-white"
+                        />
+                    </div>
+                    <div className="bg-white p-4 lg:col-span-2">
+                        <DatePicker
+                            showIcon
+                            isClearable
+                            placeholderText="Check Out"
+                            selected={endDate}
+                            onChange={(date) => setEndDate(date)}
+                            selectsEnd
+                            startDate={startDate}
+                            endDate={endDate}
+                            minDate={startDate}
+                            className="h-full w-full bg-white"
+                        />
+                    </div>
+                    <div className="flex h-full items-center justify-center border-r-2 bg-white">
+                        <Select
+                            radius="none"
+                            label="Adults"
+                            className="w-full bg-white"
+                        >
+                            {adultCount?.map((ele, i) => (
+                                <SelectItem key={i}>{ele}</SelectItem>
+                            ))}
+                        </Select>
+                    </div>
+                    <div className="flex h-full items-center justify-center border-r-2">
+                        <Select
+                            radius="none"
+                            label="Children"
+                            className="w-full"
+                        >
+                            {childCount?.map((ele, i) => (
+                                <SelectItem key={i}>{ele}</SelectItem>
+                            ))}
+                        </Select>
+                    </div>
+                    <button className="bg-[#AA8453] p-4 text-center uppercase text-white hover:bg-black lg:col-span-2">
+                        CHECK AVAILABILITY
+                    </button>
+                </div>
             </div>
         </div>
     );

@@ -28,7 +28,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     const { slides, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [
         Fade(),
-        Autoplay({ playOnInit: false, delay: 3000 }),
+        Autoplay({ playOnInit: true, delay: 5000, stopOnMouseEnter: true }),
     ]);
 
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
@@ -43,9 +43,9 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                             className="embla__slide h-[100dvh] w-full bg-black"
                             key={index}
                         >
-                            <div className="relative flex h-full w-full flex-col items-center justify-center gap-4 px-8 py-20 text-center text-white lg:px-20">
+                            <div className="relative flex h-full w-full flex-col items-center justify-center gap-4 px-8 lg:px-20 py-20 text-center text-white">
                                 <div
-                                    className={`z-30 space-y-8 tracking-[0.5rem] transition-all duration-700 delay-200 ${index === selectedIndex ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
+                                    className={`z-30 space-y-8 tracking-[0.5rem] transition-all delay-200 duration-700 ${index === selectedIndex ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
                                 >
                                     <h3 className="font-barlow">
                                         {item.title2}
@@ -56,7 +56,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                 </div>
                                 <Link
                                     href={item.links}
-                                    className={`z-30 border-2 border-white p-4 font-barlow uppercase tracking-wider transition-all duration-700 delay-200  ${index === selectedIndex ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
+                                    className={`z-30 border-2 border-white p-4 font-barlow uppercase tracking-wider transition-all delay-200 duration-700  ${index === selectedIndex ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
                                 >
                                     Rooms & Suites
                                 </Link>
@@ -64,7 +64,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                     src={item.img}
                                     alt="Picture of the author"
                                     layout="fill"
-                                    objectFit="cover"
                                     className="z-10 h-full w-full object-cover"
                                 />
                                 <div className="absolute left-0 top-0 z-20 h-full w-full bg-black bg-opacity-40"></div>
@@ -80,10 +79,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                         <DotButton
                             key={index}
                             onClick={() => onDotButtonClick(index)}
-                            className={" aspect-square h-4 rounded-full border-2 border-white".concat(
+                            className={" aspect-square h-4 rounded-full border-2 ".concat(
                                 index === selectedIndex
                                     ? " border-[#AA8453] bg-[#AA8453]"
-                                    : ""
+                                    : "border-white"
                             )}
                         />
                     ))}

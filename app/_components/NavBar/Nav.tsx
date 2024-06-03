@@ -6,44 +6,11 @@ import Image from "next/image";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { it } from "node:test";
 import Link from "next/link";
+import { menuItems } from "@/constants/menuItems";
 
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const menuItems = [
-        {
-            text: "Home",
-            href: "/",
-            links: [
-                {
-                    name: "Home 1",
-                    href: "/",
-                },
-            ],
-        },
-        {
-            text: "About",
-            href: "/about-us",
-            links: [
-                {
-                    name: "About Us",
-                    href: "/about-us",
-                },
-                {
-                    name: "Our Team",
-                    href: "/our-team",
-                },
-                {
-                    name: "Our Partners",
-                    href: "/our-partners",
-                },
-            ],
-        },
-        { text: "Rooms & Suits", href: "/rooms_and_suits" },
-        { text: "Wedding & Events", href: "/halls" },
-        { text: "Dining", href: "#" },
-        { text: "Updates", href: "/news" },
-        { text: "Contact", href: "/contact_us" },
-    ];
+
 
     const [hidden, setHidden] = useState(true);
     const [scrolled, setScrolled] = useState(false);
@@ -122,7 +89,7 @@ export default function Nav() {
                                 )}
                             </Link>
                             {item.links && (
-                                <div className="absolute left-0 right-0 top-full mx-auto hidden w-[100px] space-y-2 divide-y-2 bg-white p-4 group-hover:block">
+                                <div className="lg:absolute lg:left-0 lg:right-0 top-full hidden w-full max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block">
                                     {item.links.map((link, index) => {
                                         return (
                                             <Link

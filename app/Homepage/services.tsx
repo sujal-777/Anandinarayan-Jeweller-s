@@ -8,13 +8,11 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ imageSrc, title, description }) => (
-    <div className="p-5">
-        <div className="flex min-h-full flex-col items-start justify-start border border-black p-5 font-gilda text-black">
-            <Image src={imageSrc} alt={title} width={70} height={70} />
-            <div className="text-start font-gilda">
-                <p className="mt-2 text-xl">{title}</p>
-                <p className="mt-2">{description}</p>
-            </div>
+    <div className="flex min-h-full flex-col items-start justify-start border border-[#F1EEEB] p-5 font-gilda text-black">
+        <Image src={imageSrc} alt={title} width={70} height={70} />
+        <div className="text-start font-gilda">
+            <p className="mt-2 text-xl">{title}</p>
+            <p className="mt-2 font-barlow">{description}</p>
         </div>
     </div>
 );
@@ -60,15 +58,26 @@ export default function HomeServices() {
     ];
 
     return (
-        <section>
-            <div className="px-20 py-10" data-aos="fade-up">
-                <p className="font-gilda text-xl" style={{ color: "#666666" }}>
-                    OUR SERVICES
+        <section className="bg-white px-8 py-20 lg:px-40">
+            <div className="py-10" data-aos="fade-up">
+                <p
+                    className="font-barlow uppercase tracking-widest text-[#AA8453]"
+                    data-aos="fade-up"
+                >
+                    our services
                 </p>
-                <p className="font-gilda text-2xl">Hotel Facilities</p>
+                <h2
+                    className="font-gilda text-3xl capitalize md:text-5xl"
+                    style={{ color: "#000000" }}
+                >
+                    hotel facilities
+                </h2>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3" data-aos="fade-in">
+            <div
+                className="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-3"
+                data-aos="fade-in"
+            >
                 {services.map((service, index) => (
                     <Card
                         key={index}

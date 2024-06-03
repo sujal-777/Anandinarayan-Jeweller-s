@@ -7,7 +7,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import Link from "next/link";
 import Image from "next/image";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-
+import { menuItems } from "@/constants/menuItems";
 
 export default function Hero() {
     const slides = [
@@ -31,49 +31,15 @@ export default function Hero() {
         },
     ];
 
-    const options: EmblaOptionsType = { loop: true };
+    const options: EmblaOptionsType = { loop: true, duration: 60 };
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const menuItems = [
-        {
-            text: "Home",
-            href: "/",
-            links: [
-                {
-                    name: "Home 1",
-                    href: "/",
-                },
-            ],
-        },
-        {
-            text: "About",
-            href: "/about-us",
-            links: [
-                {
-                    name: "About Us",
-                    href: "/about-us",
-                },
-                {
-                    name: "Our Team",
-                    href: "/our-team",
-                },
-                {
-                    name: "Our Partners",
-                    href: "/our-partners",
-                },
-            ],
-        },
-        { text: "Rooms & Suits", href: "/rooms_and_suits" },
-        { text: "Wedding & Events", href: "/halls" },
-        { text: "Dining", href: "#" },
-        { text: "Updates", href: "/news" },
-        { text: "Contact", href: "/contact_us" },
-    ];
 
     const [hidden, setHidden] = useState(true);
 
     return (
-        <section data-aos="fade-in relative">
+        <section data-aos="fade-in" className="hero relative">
+            {/* NAVBAR */}
             <div className="fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 bg-black bg-opacity-20 px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
                 <Image
                     src="/logo.svg"
@@ -128,7 +94,7 @@ export default function Hero() {
                                     )}
                                 </Link>
                                 {item.links && (
-                                    <div className="absolute left-0 right-0 top-full mx-auto hidden w-[100px] space-y-2 divide-y-2 bg-white p-4 group-hover:block">
+                                    <div className="absolute left-0 right-0 top-full hidden w-full max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block">
                                         {item.links.map((link, index) => {
                                             return (
                                                 <Link
@@ -147,7 +113,11 @@ export default function Hero() {
                     })}
                 </div>
             </div>
+
+            {/* CAROUSEL */}
             <EmblaCarousel slides={slides} options={options} />
+
+            {/* SIDE */}
             <div className="absolute bottom-0 left-[-5%] top-0 z-20 my-auto hidden h-fit -rotate-90 p-4 text-white lg:block">
                 <div className="float-left rounded-full border-2 border-white p-4 hover:scale-110">
                     <FaPhoneVolume className="text-xl" />
@@ -158,6 +128,10 @@ export default function Hero() {
                     </p>
                     <p className="text-xl">+91 88888 70722</p>
                 </div>
+            </div>
+
+            <div className="absolute bottom-0 left-0 right-0 px-8 pb-10 lg:px-40 z-30 hidden lg:block">
+                <RoomSearch></RoomSearch>
             </div>
         </section>
     );
