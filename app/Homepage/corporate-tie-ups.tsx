@@ -7,7 +7,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 export default function CorporateTie() {
     return (
         <section className="min-h-screen space-y-8 bg-[#F8F5F0] px-8 py-20 lg:px-40">
-            <p className="flex items-center justify-center text-3xl text-black md:text-5xl">
+            <p className="flex items-center justify-center text-3xl text-black md:text-5xl" data-aos="fade-up">
                 Corporate Tie-ups
             </p>
 
@@ -25,7 +25,7 @@ export default function CorporateTie() {
                                 className="font-gilda text-3xl md:text-5xl"
                                 style={{ color: "#000000" }}
                             >
-                                Wedding & Event Halls
+                                Corporate Tie-ups
                             </h2>
                         </div>
 
@@ -71,8 +71,8 @@ export default function CorporateTie() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4 md:gap-2">
-                        <div className="group relative md:col-span-2 w-full">
+                    <div className="grid grid-cols-1 grid-rows-2 gap-4 md:grid-cols-3 md:gap-2">
+                        <div className="group relative w-full md:col-span-2" data-aos="fade-in" data-aos-delay="100">
                             <Image
                                 src="/assets/Home/corp1.png"
                                 width={1000}
@@ -86,7 +86,7 @@ export default function CorporateTie() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="group relative">
+                        <div className="group relative" data-aos="fade-in" data-aos-delay="150">
                             <Image
                                 src="/assets/Home/corp2.png"
                                 width={1000}
@@ -100,7 +100,7 @@ export default function CorporateTie() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="group relative md:col-span-2 ">
+                        <div className="group relative md:col-span-2 " data-aos="fade-in" data-aos-delay="200">
                             <Image
                                 src="/assets/Home/corp3.png"
                                 width={1000}
@@ -114,7 +114,7 @@ export default function CorporateTie() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="group relative">
+                        <div className="group relative" data-aos="fade-in" data-aos-delay="250">
                             <Image
                                 src="/assets/Home/corp4.png"
                                 width={1000}

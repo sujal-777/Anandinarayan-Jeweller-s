@@ -10,7 +10,7 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ title, description, icon }) => (
-    <div className="">
+    <div className="" data-aos="fade-in">
         <div className="relative flex min-h-full flex-col items-start justify-start py-5 font-gilda text-black">
             <div className="text-start font-gilda">
                 <div className="grid grid-cols-6 gap-4">
@@ -66,7 +66,7 @@ export default function BookDirectBenefits() {
 
     return (
         <section className="bg-[#222222] px-8 py-20 lg:px-40">
-            <p className="flex items-center justify-center py-10 font-gilda text-4xl text-white">
+            <p className="flex items-center justify-center py-10 font-gilda text-4xl text-white" data-aos="fade-up">
                 Book DIRECT BENEFITS
             </p>
 

@@ -7,22 +7,22 @@ export default function RoomsAndSuites() {
         {
             title: "Budget Room",
             img: "/assets/Home/rooms1.png",
-            link: "/rooms/deluxe-room",
+            link: "/rooms_and_suits/budget_room",
         },
         {
-            title: "Duplex Room",
+            title: "Deluxe Room",
             img: "/assets/Home/rooms2.png",
-            link: "/rooms/deluxe-room",
+            link: "/rooms_and_suits/deluxe_room",
         },
         {
             title: "Family Room",
             img: "/assets/Home/rooms3.png",
-            link: "/rooms/deluxe-room",
+            link: "/rooms_and_suits/family_room",
         },
         {
             title: "King Suite",
             img: "/assets/Home/rooms4.png",
-            link: "/rooms/deluxe-room",
+            link: "/rooms_and_suits/king_suit",
         },
     ];
 

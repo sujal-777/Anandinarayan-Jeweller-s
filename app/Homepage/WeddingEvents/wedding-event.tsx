@@ -13,7 +13,7 @@ export default function WeddingEvent() {
             guests: 500,
             seats: 300,
             area: "5000 x 2000",
-            link1: "",
+            link1: "/halls/kohinoor",
             link2: "",
         },
         {
@@ -23,7 +23,7 @@ export default function WeddingEvent() {
             guests: 500,
             seats: 400,
             area: "5000 x 2000",
-            link1: "",
+            link1: "/halls/maurya",
             link2: "",
         },
         {
@@ -33,7 +33,7 @@ export default function WeddingEvent() {
             guests: 500,
             seats: 500,
             area: "5000 x 2000",
-            link1: "",
+            link1: "/halls/magadh",
             link2: "",
         },
         {
@@ -43,7 +43,7 @@ export default function WeddingEvent() {
             guests: 500,
             seats: 450,
             area: "5000 x 2000",
-            link1: "",
+            link1: "/halls/samrat",
             link2: "",
         },
     ];
@@ -103,7 +103,7 @@ export default function WeddingEvent() {
                     </div>
                 </div>
 
-                <div className="w-full md:p-4">
+                <div className="w-full md:p-4" data-aos="fade-in" data-aos-delay="200">
                     <EmblaCarousel slides={halls} options={{ loop: false }} />
                 </div>
             </div>

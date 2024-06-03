@@ -13,23 +13,23 @@ export const menuItems = [
         links: [
             {
                 name: "Family Room",
-                href: "/rooms_and_suits/family-room",
+                href: "/rooms_and_suits/family_room",
             },
             {
-                name: "Duplex Room",
-                href: "/rooms_and_suits/duplex-room",
+                name: "Deluxe Room",
+                href: "/rooms_and_suits/deluxe_room",
             },
             {
                 name: "King Suite",
-                href: "/rooms_and_suits/king-suite",
+                href: "/rooms_and_suits/king_suite",
             },
             {
                 name: "Budget Room",
-                href: "/rooms_and_suits/budget-room",
+                href: "/rooms_and_suits/budget_room",
             },
             {
                 name: "Room Details",
-                href: "/rooms_and_suits/room-details",
+                href: "/rooms_and_suits/",
             },
         ],
     },
@@ -39,27 +39,27 @@ export const menuItems = [
         links: [
             {
                 name: "Kohinoor Hall",
-                href: "/halls/kohinoor-hall",
+                href: "/halls/kohinoor",
             },
             {
                 name: "Maurya Hall",
-                href: "/halls/maurya-hall",
+                href: "/halls/maurya",
             },
             {
                 name: "Magadh Hall",
-                href: "/halls/magadh-hall",
+                href: "/halls/magadh",
             },
             {
                 name: "Samrat Hall",
-                href: "/halls/samrat-hall",
+                href: "/halls/samrat",
             },
             {
                 name: "Hall Details",
-                href: "/halls/hall-details",
+                href: "/halls/",
             },
         ],
     },
-    { text: "Dining", href: "#" },
+    { text: "Dining", href: "/food" },
     { text: "Updates", href: "/news" },
     { text: "Contact", href: "/contact_us" },
 ];

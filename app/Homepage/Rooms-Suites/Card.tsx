@@ -17,7 +17,7 @@ export default function Card({
     link: string;
 }) {
     return (
-        <div className="group relative aspect-video w-full overflow-clip">
+        <div className="group relative aspect-video w-full overflow-clip" data-aos="fade-in">
             <Image
                 src={img}
                 alt={title + " image"}

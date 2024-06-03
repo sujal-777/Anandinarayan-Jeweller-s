@@ -6,14 +6,14 @@ import Image from "next/image";
 
 const info = () => {
     return (
-        <section className="min-h-screen px-8 py-20 lg:px-40 bg-white">
+        <section className="min-h-screen bg-white px-8 py-20 lg:px-40">
             <div className="flex w-full flex-col items-center justify-center">
                 <div className="grid w-full grid-cols-1 place-items-center gap-12 md:grid-cols-2">
-                    <div className="flex w-full flex-col justify-center py-7" data-aos="fade-up">
-                        <p
-                            className="font-barlow uppercase tracking-widest text-[#666666]"
-                            data-aos="fade-up"
-                        >
+                    <div
+                        className="flex w-full flex-col justify-center py-7"
+                        data-aos="fade-up"
+                    >
+                        <p className="font-barlow uppercase tracking-widest text-[#666666]">
                             Hotel Ashok
                         </p>
                         <h2 className="text-3xl md:text-5xl">
@@ -43,7 +43,8 @@ const info = () => {
                                 comfortable and memorable stay at Hotel Ashok.
                             </p>
 
-                            <div
+                            <a
+                                href="tel:+918888870722"
                                 className="flex items-center text-xl"
                                 data-aos="fade-up"
                             >
@@ -61,7 +62,7 @@ const info = () => {
                                         +91 88888 70722
                                     </p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 

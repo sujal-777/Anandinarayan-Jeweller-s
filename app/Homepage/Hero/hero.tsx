@@ -118,7 +118,7 @@ export default function Hero() {
             <EmblaCarousel slides={slides} options={options} />
 
             {/* SIDE */}
-            <div className="absolute bottom-0 left-[-5%] top-0 z-20 my-auto hidden h-fit -rotate-90 p-4 text-white lg:block">
+            <a href="tel:+918888870722" className="absolute bottom-0 left-[-5%] top-0 z-20 my-auto hidden h-fit -rotate-90 p-4 text-white lg:block">
                 <div className="float-left rounded-full border-2 border-white p-4 hover:scale-110">
                     <FaPhoneVolume className="text-xl" />
                 </div>
@@ -128,7 +128,7 @@ export default function Hero() {
                     </p>
                     <p className="text-xl">+91 88888 70722</p>
                 </div>
-            </div>
+            </a>
 
             <div className="absolute bottom-0 left-0 right-0 px-8 pb-10 lg:px-40 z-30 hidden lg:block">
                 <RoomSearch></RoomSearch>
