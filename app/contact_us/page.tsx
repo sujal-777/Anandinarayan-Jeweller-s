@@ -15,13 +15,14 @@ export default function ContactUs() {
     return (
         <section>
             <Header
-                aboutUsText="Contact Us"
-                headerBannerSrc="/HeaderAssets/img_header.png"
+                image="/HeaderAssets/img_header.png"
+                title1="Contact Us"
+                title2="luxury hotel"
             />
 
-            <div className="flex w-full flex-col items-center justify-center">
+            <div className="flex w-full flex-col items-center justify-center px-8 py-20 lg:px-40">
                 <div className="flex flex-col items-start justify-center sm:flex-row">
-                    <div className="flex w-full flex-col justify-center py-20 px-10 md:p-20  text-justify sm:w-1/2">
+                    <div className="flex w-full flex-col justify-center text-justify sm:w-1/2">
                         <p className="font-gilda text-3xl text-black">
                             Hotel Ashok
                         </p>
@@ -95,7 +96,7 @@ export default function ContactUs() {
                         </div>
                     </div>
 
-                    <div className="flex w-full flex-col justify-center px-8 pt-7 sm:w-1/2">
+                    <div className="flex w-full flex-col px-8 sm:w-1/2">
                         <ContactForm />
                     </div>
                 </div>
@@ -103,10 +104,9 @@ export default function ContactUs() {
 
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.728442230228!2d79.06194007448362!3d21.123389984523246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c07e29b66081%3A0xe1ff7f6028251a43!2sHotel%20Nagpur%20Ashok!5e0!3m2!1sen!2sin!4v1714800728687!5m2!1sen!2sin"
-
                 height="450"
-                style={{ border: "0", width: "100%",  marginBlock: "2rem"}}
-                className="max-w-[1000px] mx-auto px-8"
+                style={{ border: "0", width: "100%", marginBlock: "2rem" }}
+                className="mx-auto max-w-[1000px] px-8"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
             ></iframe>

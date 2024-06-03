@@ -83,12 +83,12 @@ const WhatClientsSay = () => {
                     <div className="mr-4">
                         <FaPhoneVolume style={{ color: "#fff" }} />
                     </div>
-                    <div className="flex flex-col">
+                    <a href="tel:+918888870722" className="flex flex-col">
                         <p style={{ color: "#fff" }}>Reservation</p>
                         <p className="text-xl" style={{ color: "#fff" }}>
                             +91 88888 70722
                         </p>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div className="right-1 mx-auto  max-w-[450px] bg-[#F8F5F0] p-4">

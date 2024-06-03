@@ -87,7 +87,8 @@ export default function WeddingEvent() {
                     <br />
                     <br />
 
-                    <div
+                    <a
+                                href="tel:+918888870722"
                         className="flex items-center text-xl"
                         data-aos="fade-up"
                     >
@@ -100,7 +101,7 @@ export default function WeddingEvent() {
                                 +91 88888 70722
                             </p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div className="w-full md:p-4" data-aos="fade-in" data-aos-delay="200">

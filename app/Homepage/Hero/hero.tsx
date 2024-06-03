@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { menuItems } from "@/constants/menuItems";
+import Form from "./Form";
 
 export default function Hero() {
     const slides = [
@@ -40,7 +41,7 @@ export default function Hero() {
     return (
         <section data-aos="fade-in" className="hero relative">
             {/* NAVBAR */}
-            <div className="fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 bg-black bg-opacity-20 px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
+            <div className="fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 bg-black bg-opacity-60 px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
                 <Image
                     src="/logo.svg"
                     alt="logo"
@@ -94,7 +95,7 @@ export default function Hero() {
                                     )}
                                 </Link>
                                 {item.links && (
-                                    <div className="absolute left-0 right-0 top-full hidden w-full max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block">
+                                    <div className="lg:absolute left-0 right-0 top-full hidden w-full max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block">
                                         {item.links.map((link, index) => {
                                             return (
                                                 <Link
@@ -118,7 +119,10 @@ export default function Hero() {
             <EmblaCarousel slides={slides} options={options} />
 
             {/* SIDE */}
-            <a href="tel:+918888870722" className="absolute bottom-0 left-[-5%] top-0 z-20 my-auto hidden h-fit -rotate-90 p-4 text-white lg:block">
+            <a
+                href="tel:+918888870722"
+                className="absolute bottom-0 left-[-5%] top-0 z-20 my-auto hidden h-fit -rotate-90 p-4 text-white lg:block"
+            >
                 <div className="float-left rounded-full border-2 border-white p-4 hover:scale-110">
                     <FaPhoneVolume className="text-xl" />
                 </div>
@@ -130,8 +134,12 @@ export default function Hero() {
                 </div>
             </a>
 
-            <div className="absolute bottom-0 left-0 right-0 px-8 pb-10 lg:px-40 z-30 hidden lg:block">
+            <div className="absolute bottom-0 left-0 right-0 z-30 hidden px-8 pb-10 lg:block lg:px-40">
                 <RoomSearch></RoomSearch>
+            </div>
+
+            <div className="block lg:hidden bg-[#F8F5F0] p-4">
+                <Form />
             </div>
         </section>
     );

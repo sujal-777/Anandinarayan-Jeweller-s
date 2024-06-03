@@ -4,7 +4,7 @@ import { Image, Button } from "@nextui-org/react";
 
 const industry = () => {
     return (
-        <div className=" mx-10 mt-10 font-barlow">
+        <div className="mt-10 font-barlow">
             <Button
                 radius="none"
                 size="lg"
@@ -12,7 +12,7 @@ const industry = () => {
             >
                 HOTEL ASHOK
             </Button>
-            <div className="mb-5 mt-5 flex flex-col lg:flex-row">
+            <div className="mb-5 mt-5 flex flex-col lg:flex-row gap-8">
                 <div className="w-full text-sm md:text-base lg:w-[60%] lg:text-lg">
                     <h1 className="font-gilda text-3xl lg:text-4xl">
                         Ashok group of Industries
@@ -61,7 +61,7 @@ const industry = () => {
                         <br />
                     </p>
                 </div>
-                <div className=" flex w-full items-center justify-center px-5 lg:w-[40%]">
+                <div className=" flex w-full items-center justify-center lg:w-[40%]">
                     <div>
                         <br />
                         <Image

@@ -21,7 +21,7 @@ export const menuItems = [
             },
             {
                 name: "King Suite",
-                href: "/rooms_and_suits/king_suite",
+                href: "/rooms_and_suits/king_suit",
             },
             {
                 name: "Budget Room",

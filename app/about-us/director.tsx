@@ -4,7 +4,7 @@ import { Image } from "@nextui-org/react";
 
 const director = () => {
     return (
-        <div className=" mx-10 mb-20 mt-10 font-barlow">
+        <div className=" mb-20 mt-10 font-barlow">
             <div className="mb-5 mt-5 flex flex-col lg:flex-row">
                 <div className="w-full items-start justify-center text-sm md:text-base lg:w-[40%] lg:text-lg ">
                     <Image
