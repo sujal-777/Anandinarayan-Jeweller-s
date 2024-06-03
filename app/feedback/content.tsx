@@ -220,10 +220,12 @@ const Content = () => {
                     </div>
                 </div>
                 <div className="flex w-full items-center justify-center md:w-1/2">
-                    <img
+                    <Image
                         src="/feedback/feed_img.png"
                         alt="feedback image"
                         className="block h-auto max-w-full items-center justify-center"
+                        width={1000}
+                        height={1000}
                     />
                 </div>
             </div>

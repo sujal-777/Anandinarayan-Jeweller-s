@@ -3,13 +3,15 @@
 import React from "react";
 import Header from "../_components/Header/Header";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import Image from "next/image";
 
 export default function PoolDeckRestroBar() {
     return (
         <section>
             <Header
-                aboutUsText="Pooldeck Restrobar"
-                headerBannerSrc="/pool-restrobar/banner.png"
+                title1="Pooldeck Restrobar"
+                title2=""
+                image="/pool-restrobar/banner.png"
             />
 
             <div>
@@ -80,10 +82,12 @@ export default function PoolDeckRestroBar() {
                 <p className="mt-10 px-20 font-gilda text-2xl">Terrace</p>
                 <p className="mt-2 px-20 font-gilda">Open for drinks only</p>
 
-                <img
+                <Image
                     className="p-20"
                     src="/pool-restrobar/pool_grid.png"
                     alt=" "
+                    width={1000}
+                    height={1000}
                 />
             </div>
         </section>

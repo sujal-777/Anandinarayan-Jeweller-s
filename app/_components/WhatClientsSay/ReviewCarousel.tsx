@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type Props = {
@@ -10,7 +11,7 @@ type Props = {
 
 const ReviewCarousel = (props: Props) => {
     return (
-        <figure className="max-w-screen-md p-4 md:p-20 flex flex-col justify-center">
+        <figure className="flex max-w-screen-md flex-col justify-center p-4 md:p-20">
             <div className="">
                 <div className="mb-4 flex items-center text-yellow-300">
                     {Array(props.rating)
@@ -34,10 +35,12 @@ const ReviewCarousel = (props: Props) => {
                     </p>
                 </blockquote>
                 <figcaption className="mt-6 flex items-center space-x-3 divide-gray-300 dark:divide-gray-700 rtl:space-x-reverse">
-                    <img
+                    <Image
                         className="h-12 w-12 rounded-full"
                         src={props.image}
                         alt="profile picture"
+                        height={1000}
+                        width={1000}
                     />
                     <div className="flex items-center divide-x-2 rtl:divide-x-reverse">
                         <cite className="pe-3 text-white md:font-medium">
