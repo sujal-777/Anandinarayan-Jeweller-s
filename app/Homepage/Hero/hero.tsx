@@ -41,7 +41,7 @@ export default function Hero() {
     return (
         <section data-aos="fade-in" className="hero relative">
             {/* NAVBAR */}
-            <div className="fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 bg-black bg-opacity-60 px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
+            <div className="fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 bg-gradient-black px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
                 <Image
                     src="/logo.svg"
                     alt="logo"

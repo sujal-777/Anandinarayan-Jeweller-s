@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, description }) => (
         <Image src={imageSrc} alt={title} width={70} height={70} />
         <div className="text-start font-gilda">
             <p className="mt-2 text-xl">{title}</p>
-            <p className="mt-2 font-barlow">{description}</p>
+            <p className="mt-2 text-sm font-barlow">{description}</p>
         </div>
     </div>
 );
@@ -58,7 +58,7 @@ export default function HomeServices() {
     ];
 
     return (
-        <section className="bg-white px-8 py-20 lg:px-40">
+        <section className="bg-white px-8 py-20 lg:px-96">
             <div className="py-10" data-aos="fade-up">
                 <p
                     className="font-barlow uppercase tracking-widest text-[#AA8453]"

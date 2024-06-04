@@ -49,8 +49,8 @@ export default function WeddingEvent() {
     ];
 
     return (
-        <section className="flex min-h-screen items-center bg-[#222222] px-8 py-20 lg:px-40">
-            <div className="grid grid-cols-1 place-items-center gap-8 lg:grid-cols-2">
+        <section className="flex min-h-screen items-center bg-[#222222] px-8 py-20 lg:px-96">
+            <div className="grid grid-cols-1 place-items-center gap-4 lg:grid-cols-2">
                 <div
                     className="flex w-full flex-col justify-center"
                     data-aos="fade-up"

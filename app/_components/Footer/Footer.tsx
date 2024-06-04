@@ -33,7 +33,7 @@ export default function Footer() {
 
     return (
         <>
-            <div className="footer grid grid-cols-1 gap-4 bg-[#282424] px-8 py-20 text-white lg:grid-cols-4 lg:px-40">
+            <div className="footer grid grid-cols-1 gap-4 bg-[#282424] px-8 py-20 text-white lg:grid-cols-4 lg:px-96">
                 <div className="leading-5">
                     <h2 className="mb-2 font-gilda text-lg">Explore</h2>
                     <ul className="">
@@ -93,7 +93,7 @@ export default function Footer() {
                         </li>
                     </ul>
                     <br />
-                    <div className="mt-2 flex justify-start gap-8">
+                    <div className="mt-2 flex justify-start gap-4">
                         <a
                             href="/"
                             className="transition duration-75 hover:text-purple-400"

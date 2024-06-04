@@ -39,7 +39,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     return (
         <div className="embla w-full">
             <div className="embla__viewport w-full" ref={emblaRef}>
-                <div className="embla__container w-full py-4 md:p-4">
+                <div className="embla__container w-full py-4">
                     {slides.map((item, index) => (
                         <div
                             className="embla__slide group relative aspect-[4/3] w-full"
@@ -58,8 +58,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                 <h3 className="text-xl md:text-2xl md:text-3xl">
                                     {item.name}
                                 </h3>
-                                <div className=" max-h-0 space-y-4 overflow-clip font-barlow  text-sm transition-all delay-200 duration-1000 group-hover:max-h-[34rem] md:text-lg">
-                                    <p className="">{item.desc}</p>
+                                <div className=" max-h-0 space-y-4 overflow-clip font-barlow  text-sm transition-all delay-200 duration-[2s] group-hover:max-h-[20rem] md:text-lg">
+                                    <p className="text-sm">{item.desc}</p>
                                     <div className="grid grid-cols-3 text-left text-xs md:text-sm">
                                         <p>
                                             <TbUsersGroup className="mx-2 inline text-[#AA8453]" />

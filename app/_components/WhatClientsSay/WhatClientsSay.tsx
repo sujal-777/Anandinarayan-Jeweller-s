@@ -73,9 +73,9 @@ const WhatClientsSay = () => {
     const [startDate, setStartDate] = useState<Date | null>(null);
     const [endDate, setEndDate] = useState<Date | null>(null);
     return (
-        <div className="grid grid-cols-1 gap-16 px-8 py-20 lg:grid-cols-2 lg:px-40">
+        <div className="grid grid-cols-1 gap-16 px-8 py-20 lg:grid-cols-2 lg:px-96">
             <div className="space-y-4">
-                <h2 className="font-gilda text-3xl text-white md:text-5xl">
+                <h2 className="font-gilda text-3xl text-white md:text-4xl">
                     What Client&apos;s Say?
                 </h2>
                 <EmblaCarousel slides={reviews} />
@@ -97,7 +97,7 @@ const WhatClientsSay = () => {
                         ROOMS & SUITES
                     </p>
                     <h2
-                        className="font-gilda text-3xl md:text-5xl"
+                        className="font-gilda text-3xl md:text-4xl"
                         style={{ color: "#000000" }}
                     >
                         Hotel Booking Form

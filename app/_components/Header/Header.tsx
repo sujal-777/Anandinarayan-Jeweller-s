@@ -20,7 +20,7 @@ export default function Header({
     return (
         <div className="relative h-[60dvh] bg-gray-300">
             {/* NAVBAR */}
-            <div className="fixed left-0 top-0 z-40 flex w-full items-center justify-between gap-12 bg-black bg-opacity-40 px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
+            <div className="fixed left-0 top-0 z-40 flex w-full items-center justify-between gap-12 bg-gradient-black px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
                 <Image
                     src="/logo.svg"
                     alt="logo"
