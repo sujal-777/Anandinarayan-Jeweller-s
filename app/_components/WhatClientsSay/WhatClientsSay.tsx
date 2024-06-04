@@ -97,7 +97,7 @@ const WhatClientsSay = () => {
                         ROOMS & SUITES
                     </p>
                     <h2
-                        className="font-gilda text-3xl md:text-4xl"
+                        className="font-gilda text-heading"
                         style={{ color: "#000000" }}
                     >
                         Hotel Booking Form

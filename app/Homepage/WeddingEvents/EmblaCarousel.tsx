@@ -42,7 +42,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                 <div className="embla__container w-full py-4">
                     {slides.map((item, index) => (
                         <div
-                            className="embla__slide group relative aspect-[4/3] w-full"
+                            className="embla__slide ml-4 mr-6 group relative aspect-[4/3] w-full"
                             key={index}
                         >
                             <div className="h-full w-full overflow-clip">
@@ -54,8 +54,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                     className="h-full w-full object-cover transition-all duration-200"
                                 />
                             </div>
-                            <div className="absolute -bottom-[1rem] left-0 right-0 mx-auto w-[90%] bg-white px-4 py-2 text-center group-hover:space-y-4 md:py-6">
-                                <h3 className="text-xl md:text-2xl md:text-3xl">
+                            <div className="absolute -bottom-[1rem] left-0 right-0 mx-auto w-[90%] bg-white px-4 py-2 text-center group-hover:space-y-4 md:py-4">
+                                <h3 className="text-xl md:text-2xl">
                                     {item.name}
                                 </h3>
                                 <div className=" max-h-0 space-y-4 overflow-clip font-barlow  text-sm transition-all delay-200 duration-[2s] group-hover:max-h-[20rem] md:text-lg">
@@ -77,14 +77,14 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                     <div className="flex items-center justify-between">
                                         <Link
                                             href={item.link1}
-                                            className="font-barlow uppercase hover:text-[#AA8453]"
+                                            className="font-barlow text-normal uppercase hover:text-[#AA8453]"
                                         >
                                             Details
                                             <FaArrowRight className="mx-2 my-auto inline-block" />
                                         </Link>
                                         <Link
                                             href={""}
-                                            className="bg-[#AA8453] p-2 uppercase text-white"
+                                            className="bg-[#AA8453] text-normal p-2 uppercase text-white"
                                         >
                                             Book Now
                                         </Link>

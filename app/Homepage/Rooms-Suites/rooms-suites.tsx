@@ -36,7 +36,7 @@ export default function RoomsAndSuites() {
                     Hotel Ashok
                 </p>
                 <h2
-                    className="font-gilda text-3xl md:text-5xl"
+                    className="font-gilda text-heading"
                     style={{ color: "#000000" }}
                 >
                     Rooms & Suites

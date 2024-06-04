@@ -50,7 +50,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                     <h3 className="font-barlow">
                                         {item.title2}
                                     </h3>
-                                    <h1 className="  text-3xl font-[500] uppercase tracking-wider lg:text-5xl">
+                                    <h1 className="  text-heading font-[500] uppercase tracking-wider">
                                         {item.title1}
                                     </h1>
                                 </div>

@@ -12,7 +12,9 @@ const halls = () => {
                 title2="discover"
                 image="/assets/header1.png"
             />
-            <Halls />
+            <div className="px-8 lg:px-80">
+                <Halls />
+            </div>
         </div>
     );
 };

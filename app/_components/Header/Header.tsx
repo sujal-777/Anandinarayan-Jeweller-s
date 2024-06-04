@@ -100,7 +100,7 @@ export default function Header({
                 height="1000"
                 className="h-full w-full object-cover"
             />
-            <div className="absolute left-0 left-0 top-0 flex h-full w-full flex-col items-center justify-center px-8 py-20 font-gilda text-white md:items-start lg:px-40 bg-black bg-opacity-40 ">
+            <div className="absolute left-0 left-0 top-0 flex h-full w-full flex-col items-center justify-center px-8 py-20 font-gilda text-white md:items-start lg:px-40 bg-black bg-opacity-40 text-center">
                 <h3 className="text-lg uppercase md:text-xl">{title2}</h3>
                 <h3 className="text-3xl uppercase md:text-5xl">{title1}</h3>
             </div>

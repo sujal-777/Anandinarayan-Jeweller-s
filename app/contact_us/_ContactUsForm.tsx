@@ -81,7 +81,7 @@ const ContactForm = () => {
                 </div>
 
                 <div className="text-start">
-                    <button className="bg-[#AA8453] px-6 py-3 font-gilda text-white">
+                    <button className="bg-[#AA8453] px-6 py-3 font-barlow uppercase text-white">
                         Send a message
                     </button>
                 </div>

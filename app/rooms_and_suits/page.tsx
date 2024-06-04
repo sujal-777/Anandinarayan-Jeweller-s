@@ -8,15 +8,17 @@ import Header from "../_components/Header/Header";
 
 export default function rooms() {
     return (
-        <section>
+        <section className="">
             <Header
                 image="/HeaderAssets/img_header.png"
                 title1="Rooms & Suite"
                 title2="luxury hotel"
             />
-            <Room />
-            {/* <Page /> */}
-            <Search />
+            <div className="">
+                <Room />
+                {/* <Page /> */}
+                <Search />
+            </div>
         </section>
     );
 }

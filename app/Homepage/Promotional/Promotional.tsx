@@ -13,7 +13,7 @@ export default function Promotional() {
                     Hotel Ashok
                 </p>
                 <h2
-                    className="font-gilda text-3xl md:text-5xl"
+                    className="font-gilda text-heading"
                     style={{ color: "#fff" }}
                 >
                     Rooms & Suites

@@ -20,14 +20,14 @@ export default function ContactUs() {
                 title2="luxury hotel"
             />
 
-            <div className="flex w-full flex-col items-center justify-center px-8 py-20 lg:px-40">
-                <div className="flex flex-col items-start justify-center sm:flex-row">
-                    <div className="flex w-full flex-col justify-center text-justify sm:w-1/2">
-                        <p className="font-gilda text-3xl text-black">
+            <div className="flex w-full flex-col items-center justify-center px-8 py-20 lg:px-96">
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                    <div className="flex w-full flex-col justify-center text-justify">
+                        <p className="font-gilda text-heading text-black">
                             Hotel Ashok
                         </p>
 
-                        <p className="mt-10 font-gilda text-black">
+                        <p className="mt-10 font-barlow text-black">
                             Welcome to Hotel Ashok, nestled in the heart of
                             Nagpur, since our inception in February 2011, we
                             have been consistent with warm hospitality and
@@ -96,7 +96,7 @@ export default function ContactUs() {
                         </div>
                     </div>
 
-                    <div className="flex w-full flex-col px-8 sm:w-1/2">
+                    <div className="">
                         <ContactForm />
                     </div>
                 </div>

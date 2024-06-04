@@ -8,7 +8,7 @@ export default function CorporateTie() {
     return (
         <section className="min-h-screen space-y-8 bg-[#F8F5F0] px-8 py-20 lg:px-96">
             <p
-                className="flex items-center justify-center text-3xl text-black md:text-5xl"
+                className="flex items-center justify-center text-heading text-black"
                 data-aos="fade-up"
             >
                 Corporate Tie-ups
@@ -25,7 +25,7 @@ export default function CorporateTie() {
                                 best services
                             </p>
                             <h2
-                                className="font-gilda text-3xl md:text-5xl"
+                                className="font-gilda text-heading"
                                 style={{ color: "#000000" }}
                             >
                                 Corporate Tie-ups
@@ -78,7 +78,7 @@ export default function CorporateTie() {
                     <div className="flex items-center justify-center">
                         <div className="grid grid-cols-1 place-items-center gap-4 md:grid-cols-3 md:gap-2">
                             <div
-                                className="group relative aspect-video w-full md:col-span-2"
+                                className="group relative lg:aspect-video w-full md:col-span-2"
                                 data-aos="fade-in"
                                 data-aos-delay="100"
                             >
@@ -96,7 +96,7 @@ export default function CorporateTie() {
                                 </div>
                             </div>
                             <div
-                                className="group relative aspect-[1/1.15]"
+                                className="group relative w-full lg:aspect-[1/1.15]"
                                 data-aos="fade-in"
                                 data-aos-delay="150"
                             >
@@ -114,7 +114,7 @@ export default function CorporateTie() {
                                 </div>
                             </div>
                             <div
-                                className="group relative aspect-video md:col-span-2"
+                                className="group relative lg:aspect-video md:col-span-2"
                                 data-aos="fade-in"
                                 data-aos-delay="200"
                             >
@@ -132,7 +132,7 @@ export default function CorporateTie() {
                                 </div>
                             </div>
                             <div
-                                className="group relative aspect-[1/1.15]"
+                                className="group relative w-full lg:aspect-[1/1.15]"
                                 data-aos="fade-in"
                                 data-aos-delay="250"
                             >

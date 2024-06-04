@@ -62,7 +62,7 @@ export default function WeddingEvent() {
                         Best services
                     </p>
                     <h2
-                        className="font-gilda text-3xl md:text-5xl"
+                        className="font-gilda text-heading"
                         style={{ color: "#fff" }}
                     >
                         Wedding & Event Halls

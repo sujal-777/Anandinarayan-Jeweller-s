@@ -13,14 +13,14 @@ export default function Foods() {
                 title2="luxury hotel"
                 image="/food/banner.png"
             />
-            <div className="px-8 pb-10 lg:px-40">
+            <div className="px-8 pb-10 font-barlow lg:px-96">
                 <p
-                    className="mt-20 font-gilda text-3xl"
+                    className="text-heading mt-20 font-gilda"
                     style={{ color: "#AA8453" }}
                 >
                     Taste That Nagpur Loves
                 </p>
-                <p className="mt-5 font-gilda">
+                <p className="mt-5">
                     When it comes to food, Hotel Ashok is known for its taste
                     and food quality. With a team of specialty chefs crafting
                     unique dishes that tantalize taste buds, guests are treated
@@ -28,7 +28,7 @@ export default function Foods() {
                     to delivering fresh food, avoiding the use of cold storage
                     to ensure quality and freshness. provide more lines
                 </p>
-                <p className="mt-5 font-gilda">
+                <p className="mt-5 ">
                     The culinary journey at Hotel Ashok extends beyond
                     traditional boundaries, with a menu that showcases a fusion
                     of flavors and innovative combinations. Guests can savor the
@@ -36,7 +36,7 @@ export default function Foods() {
                     prepared to create a symphony of tastes that cater to
                     diverse palates.
                 </p>
-                <p className="mt-5 font-gilda">
+                <p className="mt-5 ">
                     The hotel&apos;s emphasis on freshness extends to sourcing
                     ingredients locally whenever possible, supporting the
                     community and contributing to sustainability efforts. This
@@ -69,20 +69,77 @@ export default function Foods() {
                 </div>
 
                 <p className="mt-10 font-gilda text-2xl">Dress Code</p>
-                <p className="mt-2 font-gilda">
+                <p className="mt-2">
                     Smart casual (no shorts, hats, or sandals permitted)
                 </p>
 
                 <p className="mt-10 font-gilda text-2xl">Terrace</p>
-                <p className="mt-2 font-gilda">Open for drinks only</p>
+                <p className="mt-2">Open for drinks only</p>
                 <br />
-                <Image
-                    width="1000"
-                    height="1000"
-                    className="h-full w-full"
-                    src="/food/food_grid.png"
-                    alt=" "
-                />
+                <div className="space-y-4">
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                        <Image
+                            src="/assets/food/image1.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full"
+                        />
+                        <Image
+                            src="/assets/food/image2.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full"
+                        />
+                        <Image
+                            src="/assets/food/image3.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full"
+                        />
+                    </div>
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                        <Image
+                            src="/assets/food/image4.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full"
+                        />
+                        <Image
+                            src="/assets/food/image5.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full"
+                        />
+                    </div>
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                        <Image
+                            src="/assets/food/image6.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full"
+                        />
+                        <Image
+                            src="/assets/food/image7.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full"
+                        />
+                        <Image
+                            src="/assets/food/image8.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full"
+                        />
+                    </div>
+                </div>
             </div>
         </section>
     );

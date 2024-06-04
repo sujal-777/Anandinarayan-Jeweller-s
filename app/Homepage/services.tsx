@@ -67,7 +67,7 @@ export default function HomeServices() {
                     our services
                 </p>
                 <h2
-                    className="font-gilda text-3xl capitalize md:text-5xl"
+                    className="font-gilda text-heading capitalize"
                     style={{ color: "#000000" }}
                 >
                     hotel facilities

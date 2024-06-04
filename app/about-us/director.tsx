@@ -14,12 +14,11 @@ const director = () => {
                         className="h-auto max-w-full px-0 md:px-5"
                     />
                 </div>
-                <div className="w-full text-justify text-sm md:text-base lg:w-[60%] lg:text-lg">
+                <div className="w-full text-justify lg:w-[60%]">
                     <p className="text-xl">About the Director</p>
                     <p className="text-4xl font-bold text-[#E4A853] ">
                         Mr. Sanjay Gupta
                     </p>
-                    <br />
                     <br />
                     <p>
                         Mr. Sanjay Gupta is the visionary owner of The Nagpur

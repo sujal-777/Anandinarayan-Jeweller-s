@@ -1,5 +1,8 @@
 import React from "react";
 import RoomPage from "../RoomPage";
+import Hero from "../Hero/hero";
+import RoomsAndSuites from "../Rooms-Suites/rooms-suites";
+import WhatClientsSay from "../WhatClientsSay/WhatClientsSay";
 
 const src = "/rooms/room1.png";
 const title = "King Suit";
@@ -18,13 +21,19 @@ const para2 = `The alpha room among the ones up for grabs at Hotel Ashok, the
               hotel`;
 
 export default function king() {
+    const slides = [
+        "/assets/rooms/king1.png",
+        "/assets/rooms/king2.png",
+        "/assets/rooms/king3.png",
+    ];
     return (
         <section>
-            <div className="flex min-h-screen flex-col items-stretch justify-center px-4 md:flex-row">
-                <div className="hidden flex-grow bg-[url('../public/short_border.svg')] bg-contain bg-center bg-repeat md:w-1/12 lg:block lg:w-1/6"></div>
+            <Hero slides={slides} />
+            <div className="px-8 py-10 lg:px-96">
                 <RoomPage src={src} room={title} desc1={para1} desc2={para2} />
-                <div className="hidden flex-grow bg-[url('../public/short_border.svg')] bg-contain bg-center bg-repeat md:w-1/12 lg:block lg:w-1/6"></div>
             </div>
+            <RoomsAndSuites />
+            <WhatClientsSay />
         </section>
     );
 }

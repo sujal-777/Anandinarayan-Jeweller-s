@@ -33,7 +33,7 @@ export default function Card({
             <div
                 className={`space-y-4 bg-[#F8F5F0] p-6 flex flex-col  justify-center ${pos % 2 === 0 ? "lg:order-1" : "lg:order-2"}`}
             >
-                <div className="" data-aos="fade-up">
+                <div className="" data-aos="fade-in">
                     <p className="font-barlow text-xs uppercase tracking-[0.5rem] text-[#666666]">
                         {pos % 2 === 0 ? "Experience" : "Explore"}
                     </p>
@@ -44,14 +44,14 @@ export default function Card({
                         {title}
                     </h2>
                 </div>
-                <p className="leading-relazed font-barlow text-sm" data-aos="fade-up">
+                <p className="leading-relazed font-barlow text-sm" data-aos="fade-in">
                     Welcome to Hotel Ashok, nestled in the heart of Nagpur,
                     since our inception in February 2011, we have been
                     consistent with warm hospitality and exceptional services,
                     setting the standard for excellence in the hospitality
                     industry in Nagpur.
                 </p>
-                <Link href={link} className="block w-fit bg-[#AB8A62] p-2 font-barlow text-sm text-white uppercase" data-aos="fade-up">
+                <Link href={link} className="block w-fit bg-[#AB8A62] p-2 font-barlow text-sm text-white uppercase" data-aos="fade-in">
                     Learn More
                 </Link>
             </div>

@@ -40,7 +40,7 @@ export default function RootLayout({
         <html lang="en">
             <AOSInit />
             <body
-                className={`${inter.variable} ${gilda.variable} ${barlow.variable}`}
+                className={`${inter.variable} ${gilda.variable} ${barlow.variable} text-normal`}
             >
                 <Provider>
                     <Nav />

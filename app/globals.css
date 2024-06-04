@@ -26,8 +26,8 @@
 .embla__slide {
     flex: 0 0 var(--slide-size);
     min-width: 0;
-    margin-right: 20px;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 .embla__slide__img {
     border-radius: 1.8rem;
@@ -125,9 +125,15 @@
 }
 
 .bg-gradient-black {
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0)
-    );
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.text-normal {
+    font-size: 15px;
+    line-height: 1.75rem;
+}
+
+.text-heading {
+    font-size: 45px;
+    line-height: 1;
 }

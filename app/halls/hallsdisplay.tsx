@@ -1,7 +1,6 @@
 import React from "react";
 
 import {
-    Image,
     Card,
     CardHeader,
     CardBody,
@@ -16,6 +15,7 @@ import { RxArrowRight } from "react-icons/rx";
 import PeopleIcon from "./Icons/people";
 import SofaIcon from "./Icons/sofa";
 import AreaIcon from "./Icons/area";
+import Image from "next/image";
 
 const cardArray = [
     {
@@ -75,7 +75,7 @@ const cardArray = [
 const Service = () => {
     return (
         <>
-            <section className="mx-auto mb-24 mt-12 flex w-11/12 max-w-[1600px] flex-col gap-y-0 font-barlow lg:mt-20 lg:gap-y-20 xl:w-10/12">
+            <section className="py-20 space-y-4 lg:space-y-10">
                 {cardArray?.map((ele, i) => (
                     <ServiceCard key={ele.hall} {...ele} index={i} />
                 ))}
@@ -102,42 +102,32 @@ const ServiceCard = ({
     index: any;
 }) => {
     return (
-        <div
-            className={` flex flex-col items-center justify-center ${
-                index === 0 || index % 2 === 0
-                    ? "lg:flex-row-reverse"
-                    : "lg:flex-row"
-            }`}
-        >
-            <div className="inline-block w-full md:w-10/12 lg:w-6/12">
-                <div>
-                    {imageArray?.map((ele: any, i: number) => (
-                        <div key={i}>
-                            <Image
-                                src={ele.img}
-                                alt={ele.alt}
-                                radius="none"
-                                className="h-auto max-w-full"
-                            />
-                        </div>
-                    ))}
-                </div>
+        <div className="w-full relative">
+            <div
+                className={`lg:w-[70%] ${index % 2 === 0 ? "ml-auto" : "mr-auto lg:-translate-x-[10%]"}`}
+            >
+                <Image
+                    src={imageArray[0].img}
+                    alt={imageArray[0].alt}
+                    width={800}
+                    height={500}
+                />
             </div>
 
             <div
-                className={`relative -top-5 z-10 inline-block w-11/12 bg-white text-sm md:w-8/12 lg:top-0 lg:w-5/12 ${
+                className={`p-4 lg:p-0 -translate-y-[2rem] lg:translate-y-0 lg:w-[70%] lg:absolute top-0 bottom-0 my-auto h-fit ${
                     index === 0 || index % 2 === 0
-                        ? "lg:-right-20"
-                        : "lg:-left-20"
+                        ? "-left-[10%]"
+                        : "-right-[10%]"
                 }`}
             >
-                <Card radius="none" className="">
+                <Card radius="none" className="space-y-0">
                     <CardHeader className="flex gap-3">
                         <div className="flex flex-col">
-                            <p className=" font-gilda text-lg text-[#AA8453] ">
+                            <p className=" font-barlow text-sm text-[#AA8453] ">
                                 {price}
                             </p>
-                            <p className="font-gilda text-2xl">{hall}</p>
+                            <p className="font-gilda text-xl">{hall}</p>
                         </div>
                     </CardHeader>
                     <CardBody className="text-sm">
@@ -161,8 +151,8 @@ const ServiceCard = ({
                         <Divider className="w-11/12" />
                     </div>
                     <CardFooter className="flex justify-between">
-                        <Link href={link}>
-                            <Button radius="none" variant="flat">
+                        <Link href={link}> 
+                            <Button radius="none" variant="flat"> 
                                 Details
                                 <RxArrowRight />
                             </Button>
