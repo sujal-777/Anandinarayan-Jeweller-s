@@ -1,5 +1,7 @@
 import React from "react";
 import HallsPage from "../HallsPage";
+import Hero from "../Hero/hero";
+import HallCarousel from "../HallCarousel/HallCarousel";
 
 const src = "/halls/samrat.png";
 const hall = "Samrat";
@@ -24,8 +26,14 @@ const occasionsArray = [
 const page = () => {
     return (
         <section>
-            <div className="flex min-h-screen flex-col items-stretch justify-center px-4 md:flex-row">
-                <div className="hidden flex-grow bg-[url('../public/short_border.svg')] bg-contain bg-center bg-repeat md:w-1/12 lg:block lg:w-1/6"></div>
+            <Hero
+                slides={[
+                    "/assets/hallls/kohinor1.png",
+                    "/assets/hallls/kohinor2.png",
+                    "/assets/hallls/kohinor3.png",
+                ]}
+            />
+            <div className="px-8 py-20 md:px-96">
                 <HallsPage
                     src={src}
                     hall={hall}
@@ -33,8 +41,8 @@ const page = () => {
                     features={featuresArray}
                     occasions={occasionsArray}
                 />
-                <div className="hidden flex-grow bg-[url('../public/short_border.svg')] bg-contain bg-center bg-repeat md:w-1/12 lg:block lg:w-1/6"></div>
             </div>
+            <HallCarousel />
         </section>
     );
 };

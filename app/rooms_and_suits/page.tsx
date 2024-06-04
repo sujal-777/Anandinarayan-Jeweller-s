@@ -4,7 +4,7 @@ import Hero from "./hero";
 // import Page from "./roomdisplay";
 import Search from "./searchrooms";
 import Room from "./roomDisplayNew";
-import Header from "../_components/Header/Header";
+import Header from "./Header/Header";
 
 export default function rooms() {
     return (
@@ -14,9 +14,11 @@ export default function rooms() {
                 title1="Rooms & Suite"
                 title2="luxury hotel"
             />
-            <div className="">
+            <div className="px-8 py-20 md:px-96">
                 <Room />
                 {/* <Page /> */}
+            </div>
+            <div className="my-20 bg-[#F8F5F0] px-8 md:px-96">
                 <Search />
             </div>
         </section>

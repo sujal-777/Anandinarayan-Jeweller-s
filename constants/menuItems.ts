@@ -59,7 +59,24 @@ export const menuItems = [
             },
         ],
     },
-    { text: "Dining", href: "/food" },
+    {
+        text: "Dining",
+        href: "/food",
+        links: [
+            {
+                name: "Bar",
+                href: "",
+            },
+            {
+                name: "Pooldeck Restrobar",
+                href: "",
+            },
+            {
+                name: "Swimming Pool",
+                href: "",
+            },
+        ],
+    },
     { text: "Updates", href: "/news" },
     { text: "Contact", href: "/contact_us" },
 ];

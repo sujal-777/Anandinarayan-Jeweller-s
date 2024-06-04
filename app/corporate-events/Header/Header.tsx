@@ -1,47 +1,26 @@
 "use client";
-import { useState } from "react";
-import RoomSearch from "../roomSelect";
-import EmblaCarousel from "./Carousel";
-import { EmblaOptionsType } from "embla-carousel";
-import { FaPhoneVolume } from "react-icons/fa6";
-import Link from "next/link";
-import Image from "next/image";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+
 import { menuItems } from "@/constants/menuItems";
-import Form from "./Form";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-export default function Hero() {
-    const slides = [
-        {
-            img: "/assets/Home/carousel1.png",
-            title1: "Enjoy a luxury experience",
-            title2: "Luxury Hotel & Best Resort",
-            links: "",
-        },
-        {
-            img: "/assets/Home/carousel2.png",
-            title1: "Experience unparalleled luxury and sophistication",
-            title2: "Luxury Hotel & Best Resort",
-            links: "",
-        },
-        {
-            img: "/assets/Home/carousel3.png",
-            title1: "Discover a sanctuary of luxury and tranquility",
-            title2: "Luxury Hotel & Best Resort",
-            links: "",
-        },
-    ];
-
-    const options: EmblaOptionsType = { loop: true, duration: 60 };
-
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+export default function Header({
+    image,
+    title1,
+    title2,
+}: {
+    image: string;
+    title1: string;
+    title2: string;
+}) {
+    
     const [hidden, setHidden] = useState(true);
-
     return (
-        <section data-aos="fade-in" className="hero relative">
+        <div className="relative h-[100dvh] bg-gray-300">
             {/* NAVBAR */}
-            <div className="fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 bg-gradient-black px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
+            <div className="fixed left-0 top-0 z-40 flex w-full items-center justify-between gap-12 bg-gradient-black px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
                 <Image
                     src="/logo.svg"
                     alt="logo"
@@ -95,7 +74,7 @@ export default function Hero() {
                                     )}
                                 </Link>
                                 {item.links && (
-                                    <div className="lg:absolute left-0 right-0 top-full hidden w-full lg:min-w-[10rem] max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block">
+                                    <div className="lg:absolute left-0 right-0 top-full hidden w-full  lg:max-w-[10rem] max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block">
                                         {item.links.map((link, index) => {
                                             return (
                                                 <Link
@@ -114,33 +93,17 @@ export default function Hero() {
                     })}
                 </div>
             </div>
-
-            {/* CAROUSEL */}
-            <EmblaCarousel slides={slides} options={options} />
-
-            {/* SIDE */}
-            <a
-                href="tel:+918888870722"
-                className="absolute bottom-0 left-[-5%] top-0 z-20 my-auto hidden h-fit -rotate-90 p-4 text-white lg:block"
-            >
-                <div className="float-left rounded-full border-2 border-white p-4 hover:scale-110">
-                    <FaPhoneVolume className="text-xl" />
-                </div>
-                <div className="float-left mx-4">
-                    <p className="font-barlow uppercase tracking-[0.5rem]">
-                        reservation
-                    </p>
-                    <p className="text-xl">+91 88888 70722</p>
-                </div>
-            </a>
-
-            <div className="absolute bottom-0 left-0 right-0 z-30 hidden px-8 pb-10 lg:block lg:px-40">
-                <RoomSearch></RoomSearch>
+            <Image
+                src={image}
+                alt="header image"
+                width="1000"
+                height="1000"
+                className="h-full w-full object-cover"
+            />
+            <div className="absolute left-0 left-0 top-0 flex h-full w-full flex-col items-center justify-center px-8 py-20 font-gilda text-white md:items-start lg:px-40 bg-black bg-opacity-40 text-center">
+                <h3 className="text-lg uppercase md:text-xl">{title2}</h3>
+                <h3 className="text-3xl uppercase md:text-5xl">{title1}</h3>
             </div>
-
-            <div className="block lg:hidden bg-[#F8F5F0] p-4">
-                <Form />
-            </div>
-        </section>
+        </div>
     );
 }

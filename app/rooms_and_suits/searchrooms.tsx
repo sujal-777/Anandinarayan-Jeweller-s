@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Select, SelectItem, Button } from "@nextui-org/react";
+import Form from "./Hero/Form";
 
 const adultCount = [
     "1 Adult",
@@ -34,14 +35,24 @@ const SearchRooms = () => {
     const [endDate, setEndDate] = useState<Date | null>(null);
 
     return (
-        <div className="w-full px-2 py-10 font-barlow lg:px-10 lg:py-32 ">
-            <div>
-                <p className="text-[#222222]">CHECK NOW</p>
-                <p className="font-gilda text-[60px] text-[#222222] ">Search</p>
+        <div className="w-full py-10 font-barlow">
+            <div className="pb-10" data-aos="fade-up">
+                <p
+                    className="font-barlow uppercase tracking-widest text-[#666666]"
+                    data-aos="fade-up"
+                >
+                    Hotel the nagpur Ashok
+                </p>
+                <h2
+                    className="text-heading font-gilda"
+                    style={{ color: "#000000" }}
+                >
+                    Search Rooms
+                </h2>
             </div>
-            <div className="mx-2 flex items-center justify-center border-2 md:mx-5">
+            <div className="lg:flex items-center justify-center border-2 hidden">
                 <div className="grid w-full grid-cols-1 gap-0 md:grid-cols-2 lg:grid-cols-6">
-                    <div className="flex items-stretch justify-center border-b-2 border-r-0 md:border-b-0 md:border-r-2">
+                    <div className="flex items-stretch justify-center border-b-2 border-r-0 bg-white md:border-b-0 md:border-r-2">
                         <DatePicker
                             showIcon
                             isClearable
@@ -51,10 +62,10 @@ const SearchRooms = () => {
                             selectsStart
                             startDate={startDate}
                             endDate={endDate}
-                            className="w-full"
+                            className="w-full "
                         />
                     </div>
-                    <div className="flex items-stretch justify-center border-b-2 border-r-0 md:border-b-0 md:border-r-2">
+                    <div className="flex items-stretch justify-center border-b-2 border-r-0 bg-white md:border-b-0 md:border-r-2">
                         <DatePicker
                             showIcon
                             isClearable
@@ -103,6 +114,9 @@ const SearchRooms = () => {
                         </Button>
                     </div>
                 </div>
+            </div>
+            <div className="block bg-[#F8F5F0] p-4 lg:hidden">
+                <Form />
             </div>
         </div>
     );

@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import RoomSearch from "../roomSelect";
 import EmblaCarousel from "./Carousel";
 import { EmblaOptionsType } from "embla-carousel";
 import { FaPhoneVolume } from "react-icons/fa6";
@@ -10,27 +9,11 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { menuItems } from "@/constants/menuItems";
 import Form from "./Form";
 
-export default function Hero() {
-    const slides = [
-        {
-            img: "/assets/Home/carousel1.png",
-            title1: "Enjoy a luxury experience",
-            title2: "Luxury Hotel & Best Resort",
-            links: "",
-        },
-        {
-            img: "/assets/Home/carousel2.png",
-            title1: "Experience unparalleled luxury and sophistication",
-            title2: "Luxury Hotel & Best Resort",
-            links: "",
-        },
-        {
-            img: "/assets/Home/carousel3.png",
-            title1: "Discover a sanctuary of luxury and tranquility",
-            title2: "Luxury Hotel & Best Resort",
-            links: "",
-        },
-    ];
+export default function Hero({
+    slides
+} : {
+    slides: string[]
+}) {
 
     const options: EmblaOptionsType = { loop: true, duration: 60 };
 
@@ -119,28 +102,7 @@ export default function Hero() {
             <EmblaCarousel slides={slides} options={options} />
 
             {/* SIDE */}
-            <a
-                href="tel:+918888870722"
-                className="absolute bottom-0 left-[-5%] top-0 z-20 my-auto hidden h-fit -rotate-90 p-4 text-white lg:block"
-            >
-                <div className="float-left rounded-full border-2 border-white p-4 hover:scale-110">
-                    <FaPhoneVolume className="text-xl" />
-                </div>
-                <div className="float-left mx-4">
-                    <p className="font-barlow uppercase tracking-[0.5rem]">
-                        reservation
-                    </p>
-                    <p className="text-xl">+91 88888 70722</p>
-                </div>
-            </a>
 
-            <div className="absolute bottom-0 left-0 right-0 z-30 hidden px-8 pb-10 lg:block lg:px-40">
-                <RoomSearch></RoomSearch>
-            </div>
-
-            <div className="block lg:hidden bg-[#F8F5F0] p-4">
-                <Form />
-            </div>
         </section>
     );
 }

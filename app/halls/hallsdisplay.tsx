@@ -115,13 +115,13 @@ const ServiceCard = ({
             </div>
 
             <div
-                className={`p-4 lg:p-0 -translate-y-[2rem] lg:translate-y-0 lg:w-[70%] lg:absolute top-0 bottom-0 my-auto h-fit ${
+                className={`p-4 lg:p-0 -translate-y-[2rem] lg:translate-y-0 lg:w-[50%] lg:absolute top-0 bottom-0 my-auto h-fit ${
                     index === 0 || index % 2 === 0
                         ? "-left-[10%]"
-                        : "-right-[10%]"
+                        : "-right-[0%]"
                 }`}
             >
-                <Card radius="none" className="space-y-0">
+                <Card radius="none" className="space-y-0 shadow-none">
                     <CardHeader className="flex gap-3">
                         <div className="flex flex-col">
                             <p className=" font-barlow text-sm text-[#AA8453] ">

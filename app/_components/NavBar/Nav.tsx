@@ -89,7 +89,7 @@ export default function Nav() {
                                 )}
                             </Link>
                             {item.links && (
-                                <div className="lg:absolute lg:left-0 lg:right-0 top-full hidden w-full max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block">
+                                <div className="lg:absolute lg:left-0 lg:right-0 top-full hidden w-full lg:min-w-[10rem] max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block">
                                     {item.links.map((link, index) => {
                                         return (
                                             <Link

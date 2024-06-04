@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Image, Button } from "@nextui-org/react";
+import HallCarousel from "./HallCarousel/HallCarousel";
 
 interface RoomPageProps {
     src: string;
@@ -18,67 +19,64 @@ const HallsPage: React.FC<RoomPageProps> = ({
     occasions,
 }) => {
     return (
-        <div className="mb-48 mt-20 flex-grow px-5 font-barlow text-[15px] text-[#666666]">
-            <div className="flex items-center justify-center lg:hidden">
-                <Image
-                    radius="none"
-                    alt={src}
-                    src={src}
-                    className="flex h-auto max-w-full items-center justify-center p-5"
-                />
-            </div>
-            <div>
-                <p className="hidden font-barlow text-[#222222] md:block">
-                    HOTEL THE NAGPUR ASHOK
-                </p>
-                <p className="font-barlow text-[#222222] md:hidden">
-                    HOTEL ASHOK LUXURY HOTEL
-                </p>
-                <p className="font-gilda text-[60px] text-[#222222] ">{hall}</p>
-            </div>
-            <div className="flex w-full">
-                <div className="w-full lg:w-[40%]">
-                    <div>
-                        <p className="justify-text">{desc1}</p>
-                    </div>
-                    <div className="mt-5">
-                        <h1>Features:</h1>
-                        {features.map((feature, index) => (
-                            <li key={index} className=" pl-5 ">
-                                {feature}
-                            </li>
-                        ))}
-                    </div>
-                </div>
-                <div className="hidden w-[60%] lg:block">
-                    <div className="flex items-center justify-center p-5">
-                        <Image
-                            radius="none"
-                            alt={src}
-                            src={src}
-                            className="h-auto max-w-full"
-                        />
-                    </div>
-                </div>
-            </div>
-
-            <div className="mt-5">
-                <p>Occasions Held at {hall}:</p>
-                {occasions.map((occasion, index) => (
-                    <li key={index} className=" pl-5 ">
-                        {occasion}
-                    </li>
-                ))}
-            </div>
-
-            <div className="mt-5">
-                <Button
-                    radius="none"
-                    size="lg"
-                    className="bg-[#AA8453] tracking-tight text-white"
+        <div className="font-barlow">
+            <div className="" data-aos="fade-up">
+                <p
+                    className="font-barlow uppercase tracking-widest text-[#666666]"
+                    data-aos="fade-up"
                 >
-                    CHECK NOW
-                </Button>
+                    Hotel the nagpur Ashok
+                </p>
+                <h2
+                    className="text-heading font-gilda"
+                    style={{ color: "#000000" }}
+                >
+                    {hall}
+                </h2>
+            </div>
+            <div className="md:px-8">
+                <p className="py-10">
+                    Kohinoor is a prestigious event hall at Hotel Ashok,
+                    designed to host a variety of occasions with grace and
+                    style. For a truly unforgettable event, choose Kohinoor at
+                    Hotel Ashok. Our team is committed to making your event a
+                    success, and we look forward to welcoming you and your
+                    guests.
+                </p>
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                    <div className="">
+                        <div>
+                            <p className="justify-text">{desc1}</p>
+                        </div>
+                        <div className="mt-5">
+                            <h1>Features:</h1>
+                            {features.map((feature, index) => (
+                                <li key={index} className=" pl-5 ">
+                                    {feature}
+                                </li>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mt-5">
+                    <p>Occasions Held at {hall}:</p>
+                    {occasions.map((occasion, index) => (
+                        <li key={index} className=" pl-5 ">
+                            {occasion}
+                        </li>
+                    ))}
+                </div>
+
+                <div className="mt-5">
+                    <Button
+                        radius="none"
+                        size="lg"
+                        className="bg-[#AA8453] tracking-tight text-white"
+                    >
+                        CHECK NOW
+                    </Button>
+                </div>
             </div>
         </div>
     );

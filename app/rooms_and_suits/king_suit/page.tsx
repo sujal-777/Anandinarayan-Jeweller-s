@@ -5,7 +5,7 @@ import RoomsAndSuites from "../Rooms-Suites/rooms-suites";
 import WhatClientsSay from "../WhatClientsSay/WhatClientsSay";
 
 const src = "/rooms/room1.png";
-const title = "King Suit";
+const title = "King Suite";
 const para1 = `The King Suites offer a spacious and luxurious stay experience,
               ideal for guests seeking comfort and elegance. These suites are
               designed with modern amenities and stylish decor, providing a
