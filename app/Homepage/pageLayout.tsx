@@ -13,7 +13,7 @@ import Promotional from "./Promotional/Promotional";
 
 const pageLayout = () => {
     return (
-        <section className="font-gilda">
+        <section className="font-gilda overflow-x-hidden">
             <Hero />
             <Info />
             <RoomsAndSuites />
