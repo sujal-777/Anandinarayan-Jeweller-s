@@ -35,12 +35,13 @@ const contentfaq = [
 
 export default function Mandolin() {
     return (
-        <div className="mb-40 mt-10 px-5 font-gilda md:px-40  ">
-            <Accordion variant="splitted" className="group">
+        <div className="px-8  py-20 font-gilda lg:px-96">
+            <Accordion variant="light" className="group">
                 {contentfaq.map((item, index) => {
                     return (
                         <AccordionItem
                             key={index}
+                            title={item.question}
                             indicator={({ isOpen }) =>
                                 isOpen ? (
                                     <Cross2Icon
@@ -56,10 +57,8 @@ export default function Mandolin() {
                                     />
                                 )
                             }
-                            title={item.question}
-                            className=" group-hover:text-[#AA8453] "
                         >
-                            <p className=" font-barlow ">{item.answer}</p>
+                            <p className="font-barlow">{item.answer}</p>
                         </AccordionItem>
                     );
                 })}

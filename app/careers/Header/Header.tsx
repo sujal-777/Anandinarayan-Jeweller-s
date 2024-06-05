@@ -73,7 +73,7 @@ export default function Header({
                                     )}
                                 </Link>
                                 {item.links && (
-                                    <div className="left-0 right-0 top-full hidden w-full   max-w-[20rem] space-y-2  divide-y-2 bg-white p-4 group-hover:block lg:absolute lg:min-w-[10rem] lg:max-w-[10rem]">
+                                    <div className="left-0 right-0 top-full hidden w-full max-w-[20rem]  space-y-2 divide-y-2 bg-white p-4 group-hover:block lg:absolute lg:max-w-[10rem]">
                                         {item.links.map((link, index) => {
                                             return (
                                                 <Link

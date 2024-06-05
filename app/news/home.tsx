@@ -6,10 +6,10 @@ import LeftPanel from "./LeftPanel";
 const Home = () => {
     return (
         <>
-            <div className="flex w-full flex-col justify-center font-barlow md:flex-row ">
+            <div className="grid grid-cols-1 font-barlow lg:grid-cols-3 gap-4">
                 {/* Left Side */}
 
-                <div className="left w-full md:w-[65%]">
+                <div className="left lg:col-span-2 w-full">
                     <LeftPanel />
                 </div>
 
@@ -17,7 +17,7 @@ const Home = () => {
 
                 {/*  Right Side */}
 
-                <div className="my-20 w-full md:w-[30%]">
+                <div className=" w-full">
                     <RightPanel />
                 </div>
 

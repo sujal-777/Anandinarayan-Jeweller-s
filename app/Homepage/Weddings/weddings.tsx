@@ -10,7 +10,7 @@ export default function Weddings() {
             img: "/assets/Home/wedding.png",
             title: "Weddings",
             desc: "Welcome to Hotel Ashok, nestled in the heart of Nagpur, since our inception in February 2011, we have been consistent with warm hospitality and exceptional services, setting the standard for excellence in the hospitality industry in Nagpur.",
-            link: "/halls",
+            link: "/weddings",
         },
         {
             img: "/assets/Home/restro.png",
@@ -28,13 +28,13 @@ export default function Weddings() {
             img: "/assets/Home/bar.png",
             title: "Bar",
             desc: "The bar at Hotel Ashok offers a sophisticated ambiance with an extensive selection of premium spirits and cocktails. It's the perfect place to unwind and enjoy a refined evening.",
-            link: "/news/swim",
+            link: "/bar",
         },
         {
             img: "/assets/Home/pool.png",
             title: "Swimming Pool",
             desc: "Nagpur, crowned by the name 'Orange City of India', is a well-famed city in Maharashtra. It comes among the top smart cities in the country and is blessed with a spiritual legacy, historical heritage, and picturesque surroundings.  So, if you are an adventure seeker, history buff or soul searcher, you will be hooked to this place",
-            link: "/news/swim",
+            link: "/swimming-pool",
         },
     ];
 

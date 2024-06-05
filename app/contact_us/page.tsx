@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import Header from "../_components/Header/Header";
+import Header from "./Header/Header";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import MapIcon from "@mui/icons-material/Map";
@@ -23,7 +23,7 @@ export default function ContactUs() {
             <div className="flex w-full flex-col items-center justify-center px-8 py-20 lg:px-96">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     <div className="flex w-full flex-col justify-center text-justify">
-                        <p className="font-gilda text-heading text-black">
+                        <p className="text-heading font-gilda text-black">
                             Hotel Ashok
                         </p>
 

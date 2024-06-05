@@ -9,7 +9,7 @@ export const menuItems = [
     },
     {
         text: "Rooms & Suits",
-        href: "/rooms_and_suits",
+        href: "",
         links: [
             {
                 name: "Family Room",
@@ -35,7 +35,7 @@ export const menuItems = [
     },
     {
         text: "Wedding & Events",
-        href: "/halls",
+        href: "",
         links: [
             {
                 name: "Kohinoor Hall",
@@ -64,6 +64,10 @@ export const menuItems = [
         href: "/food",
         links: [
             {
+                name: "Food",
+                href: "/food",
+            },
+            {
                 name: "Bar",
                 href: "/bar",
             },
@@ -78,5 +82,23 @@ export const menuItems = [
         ],
     },
     { text: "Updates", href: "/news" },
+    {
+        text: "More",
+        href: "",
+        links: [
+            {
+                name: "Awards",
+                href: "/awards",
+            },
+            {
+                name: "FAQs",
+                href: "/faq",
+            },
+            {
+                name: "Feedback",
+                href: "/feedback",
+            }
+        ]
+    },
     { text: "Contact", href: "/contact_us" },
 ];
