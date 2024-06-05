@@ -20,10 +20,10 @@ const HallsPage: React.FC<RoomPageProps> = ({
 }) => {
     return (
         <div className="font-barlow">
-            <div className="" data-aos="fade-up">
+            <div className="">
                 <p
                     className="font-barlow uppercase tracking-widest text-[#666666]"
-                    data-aos="fade-up"
+
                 >
                     Hotel the nagpur Ashok
                 </p>
