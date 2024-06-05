@@ -15,12 +15,11 @@ export default function Header({
     title1: string;
     title2: string;
 }) {
-    
     const [hidden, setHidden] = useState(true);
     return (
         <div className="relative h-[100dvh] bg-gray-300">
             {/* NAVBAR */}
-            <div className="fixed left-0 top-0 z-40 flex w-full items-center justify-between gap-12 bg-gradient-black px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
+            <div className="bg-gradient-black fixed left-0 top-0 z-40 flex w-full items-center justify-between gap-12 px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
                 <Image
                     src="/logo.svg"
                     alt="logo"
@@ -59,7 +58,7 @@ export default function Header({
                 </button>
 
                 <div
-                    className={`absolute left-0 top-full block w-full items-center gap-8 space-y-4 overflow-clip bg-white transition-all duration-300 lg:static lg:flex lg:w-fit lg:space-y-0 lg:overflow-visible lg:bg-transparent lg:p-0 px-4 ${hidden ? "max-h-[0dvh] p-0 lg:max-h-fit" : "max-h-[80dvh] py-4 lg:max-h-fit"}`}
+                    className={`absolute left-0 top-full block w-full items-center gap-8 space-y-4 overflow-clip bg-white px-4 transition-all duration-300 lg:static lg:flex lg:w-fit lg:space-y-0 lg:overflow-visible lg:bg-transparent lg:p-0 ${hidden ? "max-h-[0dvh] p-0 lg:max-h-fit" : "max-h-[80dvh] py-4 lg:max-h-fit"}`}
                 >
                     {menuItems.map((item, index) => {
                         return (
@@ -67,6 +66,9 @@ export default function Header({
                                 <Link
                                     href={item.href}
                                     className="uppercase text-black hover:text-[#AA8453] lg:text-white"
+                                    onClick={() => {
+                                        setHidden(true);
+                                    }}
                                 >
                                     {item.text}
                                     {item.links && (
@@ -74,13 +76,16 @@ export default function Header({
                                     )}
                                 </Link>
                                 {item.links && (
-                                    <div className="lg:absolute left-0 right-0 top-full hidden w-full lg:min-w-[10rem] max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block">
+                                    <div className="left-0 right-0 top-full hidden w-full max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block lg:absolute lg:min-w-[10rem]">
                                         {item.links.map((link, index) => {
                                             return (
                                                 <Link
                                                     key={index}
                                                     href={link.href}
                                                     className="block pt-2 text-sm text-black hover:text-[#AA8453]"
+                                                    onClick={() => {
+                                                        setHidden(true);
+                                                    }}
                                                 >
                                                     {link.name}
                                                 </Link>
@@ -100,7 +105,7 @@ export default function Header({
                 height="1000"
                 className="h-full w-full object-cover"
             />
-            <div className="absolute left-0 left-0 top-0 flex h-full w-full flex-col items-center justify-center px-8 py-20 font-gilda text-white md:items-start lg:px-40 bg-black bg-opacity-40 text-center">
+            <div className="absolute left-0 left-0 top-0 flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-40 px-8 py-20 text-center font-gilda text-white md:items-start lg:px-40">
                 <h3 className="text-lg uppercase md:text-xl">{title2}</h3>
                 <h3 className="text-3xl uppercase md:text-5xl">{title1}</h3>
             </div>

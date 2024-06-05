@@ -57,6 +57,14 @@ export const menuItems = [
                 name: "Hall Details",
                 href: "/halls/",
             },
+            {
+                name: "Wedding",
+                href: "/weddings",
+            },
+            {
+                name: "Corporate Events",
+                href: "/corporate-events",
+            },
         ],
     },
     {
@@ -97,8 +105,12 @@ export const menuItems = [
             {
                 name: "Feedback",
                 href: "/feedback",
-            }
-        ]
+            },
+            {
+                name: "Careers",
+                href: "/careers",
+            },
+        ],
     },
     { text: "Contact", href: "/contact_us" },
 ];

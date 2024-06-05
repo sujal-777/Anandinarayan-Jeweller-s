@@ -19,12 +19,11 @@ interface RoomPageProps {
 
 const RoomPage: React.FC<RoomPageProps> = ({ src, room, desc1, desc2 }) => {
     return (
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
             <div className="col-span-2 space-y-4 font-barlow">
-                <div className="pb-10" data-aos="fade-up">
+                <div className="pb-8">
                     <p
                         className="font-barlow uppercase tracking-widest text-[#666666]"
-                        data-aos="fade-up"
                     >
                         Hotel the nagpur Ashok
                     </p>
@@ -74,7 +73,7 @@ const RoomPage: React.FC<RoomPageProps> = ({ src, room, desc1, desc2 }) => {
                         </div>
                     </div>
                 </div>
-
+        <br />
                 <div className="mt-5 lg:mt-0">
                     <p className="font-gilda text-[24px] text-[#222222]">
                         Special check-in instructions

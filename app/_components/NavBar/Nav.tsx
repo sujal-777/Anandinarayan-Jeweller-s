@@ -11,7 +11,6 @@ import { menuItems } from "@/constants/menuItems";
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
     const [hidden, setHidden] = useState(true);
     const [scrolled, setScrolled] = useState(false);
 
@@ -34,7 +33,7 @@ export default function Nav() {
 
     return (
         <div
-            className={`fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 bg-white px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12 transition-all duration-200 shadow-xl ${scrolled ? " -translate-y-0" : " -translate-y-full"}`}
+            className={`fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 bg-white px-4 font-barlow shadow-xl backdrop-blur-sm transition-all duration-200 lg:justify-center lg:px-12 ${scrolled ? " -translate-y-0" : " -translate-y-full"}`}
         >
             <Image
                 src="/logo.svg"
@@ -74,7 +73,7 @@ export default function Nav() {
             </button>
 
             <div
-                className={`absolute left-0 top-full block w-full items-center gap-8 space-y-4 overflow-clip bg-white transition-all duration-300 lg:static lg:flex lg:w-fit lg:space-y-0 lg:overflow-visible lg:bg-transparent lg:p-0 px-4 ${hidden ? "max-h-[0dvh] p-0 lg:max-h-fit" : "max-h-[80dvh] py-4 lg:max-h-fit"}`}
+                className={`absolute left-0 top-full block w-full items-center gap-8 space-y-4 overflow-clip bg-white px-4 transition-all duration-300 lg:static lg:flex lg:w-fit lg:space-y-0 lg:overflow-visible lg:bg-transparent lg:p-0 ${hidden ? "max-h-[0dvh] p-0 lg:max-h-fit" : "max-h-[80dvh] py-4 lg:max-h-fit"}`}
             >
                 {menuItems.map((item, index) => {
                     return (
@@ -82,6 +81,9 @@ export default function Nav() {
                             <Link
                                 href={item.href}
                                 className="uppercase text-black hover:text-[#AA8453]"
+                                onClick={() => {
+                                    setHidden(true);
+                                }}
                             >
                                 {item.text}
                                 {item.links && (
@@ -89,13 +91,16 @@ export default function Nav() {
                                 )}
                             </Link>
                             {item.links && (
-                                <div className="lg:absolute lg:left-0 lg:right-0 top-full hidden w-full lg:min-w-[10rem] max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block">
+                                <div className="top-full hidden w-full max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block lg:absolute lg:left-0 lg:right-0 lg:min-w-[10rem]">
                                     {item.links.map((link, index) => {
                                         return (
                                             <Link
                                                 key={index}
                                                 href={link.href}
                                                 className="block pt-2 text-sm text-black hover:text-[#AA8453]"
+                                                onClick={() => {
+                                                    setHidden(true);
+                                                }}
                                             >
                                                 {link.name}
                                             </Link>

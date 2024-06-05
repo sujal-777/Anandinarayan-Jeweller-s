@@ -1,7 +1,7 @@
 "use client";
 
 import { Icon } from "@mui/material";
-import Header from "../_components/Header/Header";
+import Header from "./Header/Header";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import Image from "next/image";
 import WhatClientsSay from "./WhatClientsSay/WhatClientsSay";

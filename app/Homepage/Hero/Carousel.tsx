@@ -43,7 +43,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                             className="embla__slide h-[100dvh] w-full bg-black"
                             key={index}
                         >
-                            <div className="relative flex h-full w-full flex-col items-center justify-center gap-4 px-8 py-20 text-center text-white lg:px-20">
+                            <div className="relative flex h-full w-full flex-col items-center justify-center gap-4 px-8 py-20 text-center text-white lg:px-96">
                                 <div
                                     className={`z-30 space-y-8 tracking-[0.5rem] transition-all delay-200 duration-700 ${index === selectedIndex ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
                                 >
@@ -56,7 +56,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                 </div>
                                 <Link
                                     href={item.links}
-                                    className={`z-30 border-2 border-white p-4 font-barlow uppercase tracking-wider transition-all delay-200 duration-700 hover:bg-white hover:text-black  ${index === selectedIndex ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
+                                    className={`z-30 border-2 border-white px-4 py-2 font-barlow uppercase tracking-wider transition-all delay-200 duration-700 hover:bg-white hover:text-black  ${index === selectedIndex ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
                                 >
                                     Rooms & Suites
                                 </Link>

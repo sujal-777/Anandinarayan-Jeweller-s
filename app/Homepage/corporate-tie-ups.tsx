@@ -16,11 +16,10 @@ export default function CorporateTie() {
 
             <div className="flex w-full flex-col items-center justify-center">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-                    <div className="" data-aos="fade-up">
-                        <div className="py-10" data-aos="fade-up">
+                    <div className="" data-aos="fade-right">
+                        <div className="py-10" >
                             <p
                                 className="font-barlow uppercase tracking-widest text-[#AA8453]"
-                                data-aos="fade-up"
                             >
                                 best services
                             </p>
@@ -33,7 +32,7 @@ export default function CorporateTie() {
                         </div>
 
                         <div className="space-y-4 font-barlow">
-                            <p data-aos="fade-up">
+                            <p>
                                 Hotel Ashok offers premium corporate tie-up
                                 services, providing bespoke accommodation
                                 solutions tailored to the unique needs of
@@ -50,7 +49,6 @@ export default function CorporateTie() {
                             <a
                                 href="tel:+918888870722"
                                 className="flex items-center text-xl"
-                                data-aos="fade-up"
                             >
                                 <div className="mr-4">
                                     <FaPhoneVolume
@@ -75,10 +73,10 @@ export default function CorporateTie() {
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-center">
-                        <div className="grid grid-cols-1 place-items-center gap-4 md:grid-cols-3 md:gap-2">
+                    <div className="lg:flex items-center lg:justify-center w-full">
+                        <div className="grid grid-cols-1 lg:place-items-center gap-4 md:grid-cols-3 md:gap-2">
                             <div
-                                className="group relative lg:aspect-video w-full md:col-span-2"
+                                className="group relative lg:aspect-video w-full h-full md:col-span-2"
                                 data-aos="fade-in"
                                 data-aos-delay="100"
                             >

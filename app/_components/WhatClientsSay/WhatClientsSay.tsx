@@ -8,6 +8,7 @@ import EmblaCarousel from "./EmblaCarousel";
 import DatePicker from "react-datepicker";
 import { Select, SelectItem, Button } from "@nextui-org/react";
 import { FaPhoneVolume } from "react-icons/fa6";
+import Carousel from "./Carousel";
 const imageUrl = "/WhatClientsSay/image.png";
 const reviews = [
     {
@@ -78,7 +79,7 @@ const WhatClientsSay = () => {
                 <h2 className="font-gilda text-3xl text-white md:text-4xl">
                     What Client&apos;s Say?
                 </h2>
-                <EmblaCarousel slides={reviews} />
+                <Carousel reviews={reviews} />
                 <div className="flex items-center text-xl" data-aos="fade-up">
                     <div className="mr-4">
                         <FaPhoneVolume style={{ color: "#fff" }} />
@@ -97,7 +98,7 @@ const WhatClientsSay = () => {
                         ROOMS & SUITES
                     </p>
                     <h2
-                        className="font-gilda text-heading"
+                        className="text-heading font-gilda"
                         style={{ color: "#000000" }}
                     >
                         Hotel Booking Form

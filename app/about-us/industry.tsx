@@ -5,19 +5,20 @@ import { Image, Button } from "@nextui-org/react";
 export const Industry = () => {
     return (
         <div className="mt-10 font-barlow">
-            <div className="w-full space-y-8 grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {" "}
+            <div className="pb-10">
+                <p className="font-barlow uppercase tracking-widest text-[#666666]">
+                    Hotel Ashok
+                </p>
+                <h2
+                    className="text-heading font-gilda"
+                    style={{ color: "#000000" }}
+                >
+                    Ashok group of Industries
+                </h2>
+            </div>
+            <div className="grid w-full grid-cols-1 gap-4 space-y-8 lg:grid-cols-2">
                 <div>
-                    <div className="pb-10" data-aos="fade-up">
-                        <p className="font-barlow uppercase tracking-widest text-[#666666]">
-                            Hotel Ashok
-                        </p>
-                        <h2
-                            className="text-heading font-gilda"
-                            style={{ color: "#000000" }}
-                        >
-                            Ashok group of Industries
-                        </h2>
-                    </div>
                     <div className="space-y-4 font-barlow">
                         <p>
                             Welcome to Hotel Ashok, where warm hospitality and
@@ -61,7 +62,7 @@ export const Industry = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col justify-center gap-4">
+                <div className="flex flex-col  gap-4">
                     <Image
                         radius="none"
                         alt="img1"

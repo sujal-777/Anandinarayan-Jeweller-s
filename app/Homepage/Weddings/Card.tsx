@@ -19,7 +19,7 @@ export default function Card({
         <div className="grid grid-cols-1 lg:grid-cols-2">
             <div
                 className={`h-full w-full overflow-clip ${pos % 2 === 0 ? "lg:order-2" : "lg:order-1"}`}
-                data-aos="fade-in" data-aos-delay="100"
+                data-aos={`${pos % 2 === 0 ? "fade-left" : "fade-right"}`}
             >
                 <Image
                     src={img}
@@ -27,13 +27,13 @@ export default function Card({
                     width={1000}
                     height={1000}
                     className="h-full w-full object-cover transition-all duration-200 hover:scale-110"
-
                 />
             </div>
             <div
-                className={`space-y-4 bg-[#F8F5F0] p-6 flex flex-col  justify-center ${pos % 2 === 0 ? "lg:order-1" : "lg:order-2"}`}
+                className={`flex flex-col justify-center space-y-4 bg-[#F8F5F0]  p-6 ${pos % 2 === 0 ? "lg:order-1" : "lg:order-2"}`}
+                data-aos={`${pos % 2 === 0 ? "fade-right" : "fade-left"}`}
             >
-                <div className="" data-aos="fade-in">
+                <div className="">
                     <p className="font-barlow text-xs uppercase tracking-[0.5rem] text-[#666666]">
                         {pos % 2 === 0 ? "Experience" : "Explore"}
                     </p>
@@ -44,14 +44,17 @@ export default function Card({
                         {title}
                     </h2>
                 </div>
-                <p className="leading-relazed font-barlow text-sm" data-aos="fade-in">
+                <p className="leading-relazed font-barlow text-sm">
                     Welcome to Hotel Ashok, nestled in the heart of Nagpur,
                     since our inception in February 2011, we have been
                     consistent with warm hospitality and exceptional services,
                     setting the standard for excellence in the hospitality
                     industry in Nagpur.
                 </p>
-                <Link href={link} className="block w-fit bg-[#AB8A62] p-2 font-barlow text-sm text-white uppercase" data-aos="fade-in">
+                <Link
+                    href={link}
+                    className="block w-fit bg-[#AB8A62] p-2 font-barlow text-sm uppercase text-white"
+                >
                     Learn More
                 </Link>
             </div>

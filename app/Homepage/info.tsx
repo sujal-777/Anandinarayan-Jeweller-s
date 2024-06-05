@@ -23,8 +23,11 @@ const info = () => {
                         <br />
                         <br />
 
-                        <div className="space-y-4 font-barlow">
-                            <p data-aos="fade-up">
+                        <div
+                            className="space-y-4 font-barlow"
+                            data-aos="fade-up"
+                        >
+                            <p>
                                 Welcome to Hotel Ashok, nestled in the heart of
                                 Nagpur, since our inception in February 2011, we
                                 have been consistent with warm hospitality and

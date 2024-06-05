@@ -45,7 +45,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                     layout="fill"
                                     className="z-10 h-full w-full object-cover"
                                 />
-                                <div className="absolute left-0 top-0 z-20 h-full w-full bg-black bg-opacity-40"></div>
                             </div>
                         </div>
                     ))}

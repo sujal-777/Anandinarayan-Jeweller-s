@@ -66,6 +66,9 @@ export default function Header({
                                 <Link
                                     href={item.href}
                                     className="uppercase text-black hover:text-[#AA8453] lg:text-white"
+                                    onClick={() => {
+                                        setHidden(true);
+                                    }}
                                 >
                                     {item.text}
                                     {item.links && (
@@ -80,6 +83,9 @@ export default function Header({
                                                     key={index}
                                                     href={link.href}
                                                     className="block pt-2 text-sm text-black hover:text-[#AA8453]"
+                                                    onClick={() => {
+                                                        setHidden(true);
+                                                    }}
                                                 >
                                                     {link.name}
                                                 </Link>

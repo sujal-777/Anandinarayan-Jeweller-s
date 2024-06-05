@@ -34,16 +34,8 @@ const HallsPage: React.FC<RoomPageProps> = ({
                     {hall}
                 </h2>
             </div>
-            <div className="md:px-8">
-                <p className="py-10">
-                    Kohinoor is a prestigious event hall at Hotel Ashok,
-                    designed to host a variety of occasions with grace and
-                    style. For a truly unforgettable event, choose Kohinoor at
-                    Hotel Ashok. Our team is committed to making your event a
-                    success, and we look forward to welcoming you and your
-                    guests.
-                </p>
-                <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="py-10 md:px-8">
+                <div className="">
                     <div className="">
                         <div>
                             <p className="justify-text">{desc1}</p>
