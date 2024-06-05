@@ -9,7 +9,7 @@ export const menuItems = [
     },
     {
         text: "Rooms & Suits",
-        href: "",
+        href: "/rooms_and_suits",
         links: [
             {
                 name: "Family Room",
@@ -35,7 +35,7 @@ export const menuItems = [
     },
     {
         text: "Wedding & Events",
-        href: "",
+        href: "/halls",
         links: [
             {
                 name: "Kohinoor Hall",
