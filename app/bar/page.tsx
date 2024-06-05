@@ -12,42 +12,35 @@ export default function PoolDeckRestroBar() {
             <Header
                 title1="Pooldeck Restrobar"
                 title2="explore our"
-                image="/assets/pooldeck/pooldeck.png"
+                image="/assets/bar/bar.png"
             />
 
-            <div className=" px-8 py-20 lg:px-96">
+            <div className=" px-8 py-20 font-barlow lg:px-96">
                 <p className="text-heading mt-20 font-gilda text-[#AA8453]">
-                    Pooldeck Restrobar
+                    Spirited Elegance at Ashok&apos;s Lounge Bar
                 </p>
                 <p className="mt-5 font-barlow">
-                    Pooldeck Restrobar at Hotel Ashok offers a captivating
-                    fusion of culinary delights and leisure in a picturesque
-                    setting. Nestled by the shimmering poolside, this unique
-                    dining experience combines the vibrant ambiance of a trendy
-                    bar with the laid-back charm of a sophisticated restaurant.
+                    Indulge in an exquisite blend of sophistication and
+                    conviviality at Ashok's Lounge Bar, nestled within the heart
+                    of Hotel Ashok. This distinguished bar stands as a testament
+                    to the hotel's commitment to delivering an unparalleled
+                    experience for discerning guests.
                 </p>
                 <p className="mt-5 font-barlow">
-                    As the sun sets, the Pooldeck Restrobar transforms into a
-                    chic destination, where guests can unwind and savor a
-                    diverse array of delectable dishes and handcrafted
-                    cocktails. The menu showcases a blend of international and
-                    local flavors, featuring fresh and high-quality ingredients
-                    prepared by skilled chefs.
+                    As you step into Ashok's Lounge Bar, you are greeted by an
+                    ambiance that seamlessly fuses modern chic with timeless
+                    elegance. The well-appointed bar offers a curated selection
+                    of premium spirits, fine wines, and signature cocktails,
+                    expertly crafted by our skilled mixologists. Whether you're
+                    seeking a classic favorite or an innovative concoction, our
+                    extensive drink menu caters to all palates.
                 </p>
                 <p className="mt-5 font-barlow">
-                    Surrounded by lush greenery and the soothing sounds of
-                    water, patrons can indulge in a relaxed atmosphere, perfect
-                    for socializing with friends or enjoying a romantic evening.
-                    The Pooldeck Restrobar at Hotel Ashok is not just a dining
-                    destination; it&apos;s an escape into a world of culinary
-                    excellence and refined hospitality.
-                </p>
-                <p className="mt-5 font-barlow">
-                    Whether you&apos;re looking to celebrate a special occasion,
-                    have a casual meal with friends, or simply unwind with a
-                    refreshing drink, Pooldeck Restrobar promises a memorable
-                    experience against the backdrop of the hotel&apos;s
-                    luxurious amenities and impeccable service.
+                    Surrounded by a refined atmosphere, guests can enjoy
+                    intimate conversations or revel in the lively energy of the
+                    bar. With plush seating, subtle lighting, and attentive
+                    service, Ashok's Lounge Bar provides the perfect backdrop
+                    for both casual gatherings and formal celebrations.
                 </p>
 
                 <p className="mt-20 font-gilda text-2xl">Hours</p>
@@ -83,68 +76,69 @@ export default function PoolDeckRestroBar() {
                 <div className="space-y-4">
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                         <Image
-                            src="/assets/pooldeck/p1.png"
+                            src="/assets/bar/b1.png"
                             alt="food"
                             width={1000}
                             height={1000}
-                            className="w-full h-full"
+                            className="h-full w-full"
                         />
                         <Image
-                            src="/assets/pooldeck/p2.png"
+                            src="/assets/bar/b2.png"
                             alt="food"
                             width={1000}
                             height={1000}
-                            className="w-full h-full"
+                            className="h-full w-full"
                         />
                         <Image
-                            src="/assets/pooldeck/p3.png"
+                            src="/assets/bar/b3.png"
                             alt="food"
                             width={1000}
                             height={1000}
-                            className="w-full h-full"
+                            className="h-full w-full"
                         />
                     </div>
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <Image
-                            src="/assets/pooldeck/p5.png"
+                            src="/assets/bar/b7.png"
                             alt="food"
                             width={1000}
                             height={1000}
-                            className="w-full h-full"
+                            className="h-full w-full"
                         />
                         <Image
-                            src="/assets/pooldeck/p6.png"
+                            src="/assets/bar/b8.png"
                             alt="food"
                             width={1000}
                             height={1000}
-                            className="w-full h-full"
+                            className="h-full w-full"
                         />
                     </div>
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                         <Image
-                            src="/assets/pooldeck/p7.png"
+                            src="/assets/bar/b6.png"
                             alt="food"
                             width={1000}
                             height={1000}
-                            className="w-full h-full"
+                            className="h-full w-full"
                         />
                         <Image
-                            src="/assets/pooldeck/p8.png"
+                            src="/assets/bar/b4.png"
                             alt="food"
                             width={1000}
                             height={1000}
-                            className="w-full h-full"
+                            className="h-full w-full"
                         />
                         <Image
-                            src="/assets/pooldeck/p9.png"
+                            src="/assets/bar/b5.png"
                             alt="food"
                             width={1000}
                             height={1000}
-                            className="w-full h-full"
+                            className="h-full w-full"
                         />
                     </div>
                 </div>
             </div>
+
             <WhatClientsSay />
         </section>
     );

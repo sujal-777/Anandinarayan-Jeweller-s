@@ -90,7 +90,7 @@ export default function CorporateTie() {
                                     className="h-full w-full object-cover object-center"
                                 />
                                 <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-40 opacity-0 transition-all duration-200 group-hover:opacity-100">
-                                    <Link href={""} className="text-white">
+                                    <Link href={"/corporate-events"} className="text-white">
                                         Read More
                                     </Link>
                                 </div>
@@ -108,7 +108,7 @@ export default function CorporateTie() {
                                     className="h-full w-full object-cover object-center"
                                 />
                                 <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-40 opacity-0 transition-all duration-200 group-hover:opacity-100">
-                                    <Link href={""} className="text-white">
+                                    <Link href={"/corporate-events"} className="text-white">
                                         Read More
                                     </Link>
                                 </div>
@@ -126,7 +126,7 @@ export default function CorporateTie() {
                                     className="h-full w-full object-cover object-center"
                                 />
                                 <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-40 opacity-0 transition-all duration-200 group-hover:opacity-100">
-                                    <Link href={""} className="text-white">
+                                    <Link href={"/corporate-events"} className="text-white">
                                         Read More
                                     </Link>
                                 </div>
@@ -144,7 +144,7 @@ export default function CorporateTie() {
                                     className="h-full w-full object-cover object-center"
                                 />
                                 <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-40 opacity-0 transition-all duration-200 group-hover:opacity-100">
-                                    <Link href={""} className="text-white">
+                                    <Link href={"/corporate-events"} className="text-white">
                                         Read More
                                     </Link>
                                 </div>

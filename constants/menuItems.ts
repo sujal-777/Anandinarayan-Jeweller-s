@@ -65,15 +65,15 @@ export const menuItems = [
         links: [
             {
                 name: "Bar",
-                href: "",
+                href: "/bar",
             },
             {
                 name: "Pooldeck Restrobar",
-                href: "",
+                href: "/pooldeck-restrobar",
             },
             {
                 name: "Swimming Pool",
-                href: "",
+                href: "/swimming-pool",
             },
         ],
     },
