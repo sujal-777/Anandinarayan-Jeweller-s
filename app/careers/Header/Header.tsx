@@ -76,7 +76,7 @@ export default function Header({
                                     )}
                                 </Link>
                                 {item.links && (
-                                    <div className="left-0 right-0 top-full hidden w-full max-w-[20rem]  space-y-2 divide-y-2 bg-white p-4 group-hover:block lg:absolute lg:max-w-[10rem]">
+                                    <div className="left-0 right-0 top-full hidden w-full max-w-[20rem]  space-y-2 divide-y-2 bg-white p-4 group-hover:block lg:absolute lg:min-w-[10rem]">
                                         {item.links.map((link, index) => {
                                             return (
                                                 <Link
@@ -105,7 +105,7 @@ export default function Header({
                 height="2000"
                 className="h-full w-full object-cover"
             />
-            <div className="absolute left-0 left-0 top-0 flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-40 px-8 py-20 text-center font-gilda text-white md:items-start lg:px-40">
+            <div className="absolute left-0 left-0 top-0 flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-40 px-8 py-20 text-center font-gilda text-white md:items-start lg:px-96">
                 <h3 className=" font-barlow uppercase tracking-[0.5rem]">
                     {title2}
                 </h3>

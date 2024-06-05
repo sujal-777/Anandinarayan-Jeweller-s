@@ -105,7 +105,7 @@ export default function Header({
                 height="1000"
                 className="h-full w-full object-cover"
             />
-            <div className="absolute left-0 left-0 top-0 flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-40 px-8 py-20 text-center font-gilda text-white md:items-start lg:px-40">
+            <div className="absolute left-0 left-0 top-0 flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-40 px-8 py-20 text-center font-gilda text-white md:items-start lg:px-96">
                 <h3 className=" font-barlow uppercase tracking-[0.5rem]">
                     {title2}
                 </h3>

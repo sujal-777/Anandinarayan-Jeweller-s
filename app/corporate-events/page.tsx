@@ -16,10 +16,9 @@ export default function page() {
                 title2=""
             />
             <div className="space-y-4 px-8 py-20 font-barlow md:px-96">
-                <div className="" data-aos="fade-up">
+                <div className="">
                     <p
                         className="font-barlow uppercase tracking-widest text-[#666666]"
-                        data-aos="fade-up"
                     >
                         Hotel the nagpur Ashok
                     </p>

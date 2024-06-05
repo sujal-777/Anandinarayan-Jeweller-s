@@ -84,14 +84,14 @@ export default function Nav() {
                         <div key={index} className="group relative">
                             <Link
                                 href={item.href}
-                                className={`uppercase hover:text-[#AA8453] ${pathname === item.href && (pathname.includes("rooms_and_suits") || pathname.includes("halls")) ? "text-[#AA8453]" : "text-black"}`}
+                                className={`uppercase hover:text-[#AA8453] ${pathname === item.href ? "text-[#AA8453]" : "text-black"}`}
                                 onClick={() => {
                                     setHidden(true);
                                 }}
                             >
                                 {item.text}
                                 {item.links && (
-                                    <KeyboardArrowDownIcon className=" text-black hover:text-[#AA8453]" />
+                                    <KeyboardArrowDownIcon className={` hover:text-[#AA8453] ${pathname === item.href ? "text-[#AA8453]" : "text-black"}`} />
                                 )}
                             </Link>
                             {item.links && (
@@ -101,7 +101,7 @@ export default function Nav() {
                                             <Link
                                                 key={index}
                                                 href={link.href}
-                                                className={`block pt-2 text-sm text-black hover:text-[#AA8453] ${pathname === item.href && "text-[#AA8453]"}`}
+                                                className={`block pt-2 text-sm hover:text-[#AA8453] ${pathname === item.href && "text-[#AA8453]"}`}
                                                 onClick={() => {
                                                     setHidden(true);
                                                 }}
