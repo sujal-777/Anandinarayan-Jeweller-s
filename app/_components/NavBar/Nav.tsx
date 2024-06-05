@@ -7,12 +7,16 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { it } from "node:test";
 import Link from "next/link";
 import { menuItems } from "@/constants/menuItems";
+import { usePathname } from "next/navigation";
 
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const [hidden, setHidden] = useState(true);
     const [scrolled, setScrolled] = useState(false);
+
+    const pathname = usePathname();
+    console.log(pathname);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -80,7 +84,7 @@ export default function Nav() {
                         <div key={index} className="group relative">
                             <Link
                                 href={item.href}
-                                className="uppercase text-black hover:text-[#AA8453]"
+                                className={`uppercase hover:text-[#AA8453] ${pathname === item.href ? "text-[#AA8453]" : "text-black"}`}
                                 onClick={() => {
                                     setHidden(true);
                                 }}
@@ -97,7 +101,7 @@ export default function Nav() {
                                             <Link
                                                 key={index}
                                                 href={link.href}
-                                                className="block pt-2 text-sm text-black hover:text-[#AA8453]"
+                                                className={`block pt-2 text-sm text-black hover:text-[#AA8453] ${pathname === item.href ? "text-[#AA8453]" : "text-black"}`}
                                                 onClick={() => {
                                                     setHidden(true);
                                                 }}

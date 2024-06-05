@@ -64,13 +64,6 @@ export default function page() {
                             stay at Hotel Ashok.
                         </p>
                         <br />
-                        <p>
-                            A highlight of Hotel Ashok is its enchanting
-                            poolside venue, perfect for ceremonies like Haldi
-                            and Mehndi. The lively atmosphere by the pool adds
-                            an extra layer of enjoyment to celebrations,
-                            ensuring they are truly unforgettable.
-                        </p>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 ">

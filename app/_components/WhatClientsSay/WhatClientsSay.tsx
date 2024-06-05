@@ -107,32 +107,16 @@ const WhatClientsSay = () => {
 
                 <div className="grid grid-cols-1 gap-4 font-barlow lg:grid-cols-2">
                     <div className="bg-white p-4 lg:col-span-2">
-                        <DatePicker
-                            showIcon
-                            isClearable
-                            placeholderText="Check In"
-                            selected={endDate}
-                            onChange={(date) => setEndDate(date)}
-                            selectsEnd
-                            startDate={startDate}
-                            endDate={endDate}
-                            minDate={startDate}
-                            className="h-full w-full bg-white"
-                        />
+                        <label htmlFor="" className="text-[#666666]">
+                            Check In
+                        </label>
+                        <input type="date" className="block w-full" />
                     </div>
                     <div className="bg-white p-4 lg:col-span-2">
-                        <DatePicker
-                            showIcon
-                            isClearable
-                            placeholderText="Check Out"
-                            selected={endDate}
-                            onChange={(date) => setEndDate(date)}
-                            selectsEnd
-                            startDate={startDate}
-                            endDate={endDate}
-                            minDate={startDate}
-                            className="h-full w-full bg-white"
-                        />
+                        <label htmlFor="" className="text-[#666666]">
+                            Check Out
+                        </label>
+                        <input type="date" className="block w-full" />
                     </div>
                     <div className="flex h-full items-center justify-center border-r-2 bg-white">
                         <Select
