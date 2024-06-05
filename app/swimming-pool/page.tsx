@@ -21,7 +21,7 @@ export default function PoolDeckRestroBar() {
                 </p>
                 <p className="mt-5 font-barlow">
                     Indulge in an extraordinary dining experience at PoolDeck,
-                    Hotel Ashok's spacious poolside fine dining restaurant.
+                    Hotel Ashok&apos;s spacious poolside fine dining restaurant.
                     Immerse yourself in the soothing ambience while enjoying
                     daily live music, creating the perfect atmosphere for a
                     memorable meal.

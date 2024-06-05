@@ -21,17 +21,17 @@ export default function PoolDeckRestroBar() {
                 </p>
                 <p className="mt-5 font-barlow">
                     Indulge in an exquisite blend of sophistication and
-                    conviviality at Ashok's Lounge Bar, nestled within the heart
+                    conviviality at Ashok&apos;s Lounge Bar, nestled within the heart
                     of Hotel Ashok. This distinguished bar stands as a testament
-                    to the hotel's commitment to delivering an unparalleled
+                    to the hotel&apos;s commitment to delivering an unparalleled
                     experience for discerning guests.
                 </p>
                 <p className="mt-5 font-barlow">
-                    As you step into Ashok's Lounge Bar, you are greeted by an
+                    As you step into Ashok&apos;s Lounge Bar, you are greeted by an
                     ambiance that seamlessly fuses modern chic with timeless
                     elegance. The well-appointed bar offers a curated selection
                     of premium spirits, fine wines, and signature cocktails,
-                    expertly crafted by our skilled mixologists. Whether you're
+                    expertly crafted by our skilled mixologists. Whether you&apos;re
                     seeking a classic favorite or an innovative concoction, our
                     extensive drink menu caters to all palates.
                 </p>
@@ -39,7 +39,7 @@ export default function PoolDeckRestroBar() {
                     Surrounded by a refined atmosphere, guests can enjoy
                     intimate conversations or revel in the lively energy of the
                     bar. With plush seating, subtle lighting, and attentive
-                    service, Ashok's Lounge Bar provides the perfect backdrop
+                    service, Ashok&apos;s Lounge Bar provides the perfect backdrop
                     for both casual gatherings and formal celebrations.
                 </p>
 

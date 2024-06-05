@@ -56,11 +56,12 @@ export default function page() {
                         <p>
                             Experience the regal charm and grandeur of our
                             suites, designed to make every guest feel like
-                            royalty. Whether you're seeking a family retreat or
-                            a romantic escape, our range of rooms, from family
-                            to honeymoon suites, caters to your every whim. With
-                            a host of modern amenities and facilities, we ensure
-                            a comfortable and memorable stay at Hotel Ashok.
+                            royalty. Whether you&apos;re seeking a family
+                            retreat or a romantic escape, our range of rooms,
+                            from family to honeymoon suites, caters to your
+                            every whim. With a host of modern amenities and
+                            facilities, we ensure a comfortable and memorable
+                            stay at Hotel Ashok.
                         </p>
                         <br />
                         <p>
@@ -101,7 +102,7 @@ export default function page() {
                             of tastes that cater to diverse palates.
                         </p>
                         <p>
-                            The hotel's emphasis on freshness extends to
+                            The hotel&apos;s emphasis on freshness extends to
                             sourcing ingredients locally whenever possible,
                             supporting the community and contributing to
                             sustainability efforts. This commitment to quality
@@ -154,7 +155,7 @@ export default function page() {
                             delightful stay for all members. The thoughtfully
                             curated family rooms provide an ideal setting for
                             special occasions, creating cherished memories in
-                            the heart of the hotel's warm and welcoming
+                            the heart of the hotel&apos;s warm and welcoming
                             ambiance.
                         </p>
                         <p>
@@ -171,7 +172,10 @@ export default function page() {
                 <div className="space-y-8">
                     {awards.map((award, index) => {
                         return (
-                            <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 ">
+                            <div
+                                className="grid grid-cols-1 gap-4 lg:grid-cols-3 "
+                                key={index}
+                            >
                                 <div className=" aspect-square w-full">
                                     <Image
                                         src={award.img}
