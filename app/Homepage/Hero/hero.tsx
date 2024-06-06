@@ -32,7 +32,7 @@ export default function Hero() {
             title1: "Discover a sanctuary of luxury and tranquility",
             title2: "Luxury Hotel & Best Resort",
             btnTitle: "Weddings",
-            links: "/halls",
+            links: "/weddings-and-events",
         },
     ];
 
@@ -45,7 +45,7 @@ export default function Hero() {
     return (
         <section data-aos="fade-in" className="hero relative">
             {/* NAVBAR */}
-            <div className=" fixed left-0 py-4 top-0 z-50 flex w-full items-center justify-between gap-36 px-4 font-barlow lg:justify-center lg:px-12">
+            <div className=" fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-36 px-4 py-4 font-barlow lg:justify-center lg:px-12">
                 <Link href={"/"}>
                     <Image
                         src="/logo.svg"
