@@ -2,8 +2,8 @@ import React from "react";
 
 import Hero from "./hero";
 import Content from "./content";
-import Header from "./Header/Header";
 import WhatClientsSay from "./WhatClientsSay/WhatClientsSay";
+import Header from "../_components/Header/Header";
 
 export default function page() {
     return (

@@ -64,7 +64,7 @@ const cardArray = [
 const Service = () => {
     return (
         <>
-            <section className=" space-y-10 px-8 py-20 md:px-96">
+            <section className=" space-y-10 px-8 py-20 md:px-48">
                 {cardArray?.map((ele, i) => (
                     <ServiceCard key={ele.award} {...ele} index={i} />
                 ))}
@@ -89,7 +89,7 @@ const ServiceCard = ({
     return (
         <div className="relative w-full">
             <div
-                className={`lg:w-[70%] ${index % 2 === 0 ? "ml-auto" : "mr-auto lg:-translate-x-[10%]"}`}
+                className={`lg:w-[60%] ${index % 2 === 0 ? "ml-auto" : "mr-auto"}`}
             >
                 <Image
                     src={imageArray[0].img}
@@ -102,7 +102,7 @@ const ServiceCard = ({
             <div
                 className={`bottom-0 top-0 my-auto h-fit -translate-y-[2rem] p-4 lg:absolute lg:w-[50%] lg:translate-y-0 lg:p-0 ${
                     index === 0 || index % 2 === 0
-                        ? "-left-[10%]"
+                        ? "-left-[0%]"
                         : "-right-[0%]"
                 }`}
             >

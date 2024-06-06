@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "./Header/Header";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import { CiSpeaker } from "react-icons/ci";
 import { PiForkKnife } from "react-icons/pi";
 import { PiCalendarCheck } from "react-icons/pi";
 import { LiaConciergeBellSolid } from "react-icons/lia";
+import Header from "../_components/Header/Header";
 
 export default function page() {
     return (
@@ -15,7 +15,7 @@ export default function page() {
                 title1="Corporate Events"
                 title2=""
             />
-            <div className="space-y-4 px-8 py-20 font-barlow md:px-96">
+            <div className="space-y-4 px-8 py-20 font-barlow md:px-48">
                 <div className="">
                     <p
                         className="font-barlow uppercase tracking-widest text-[#666666]"

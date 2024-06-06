@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./Header/Header";
 import { GoArrowUpRight } from "react-icons/go";
+import Header from "../_components/Header/Header";
 
 export default function page() {
     const careers = [
@@ -41,7 +41,7 @@ export default function page() {
                 title2="Explore"
                 image="/HeaderAssets/img_header.png"
             />
-            <div className="px-8  py-20 font-barlow lg:px-96">
+            <div className="px-8  py-20 font-barlow lg:px-48">
                 {careers.map((career, index) => {
                     return (
                         <div

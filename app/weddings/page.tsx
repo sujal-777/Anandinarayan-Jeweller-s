@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./Header/Header";
 import Image from "next/image";
+import Header from "../_components/Header/Header";
 
 export default function page() {
     const awards = [
@@ -32,19 +32,21 @@ export default function page() {
 
     return (
         <div>
-            <Header image="/assets/weddings/weddings.png" title1="" title2="" />
-            <div className="space-y-8 px-8 py-10 font-barlow font-barlow leading-8 text-[##7D7D7D] md:px-96">
+            <Header image="/assets/weddings/weddings.png" title1="Weddings" title2="" />
+            <div className="space-y-8 px-8 py-10 font-barlow font-barlow leading-8 text-[##7D7D7D] md:px-48">
                 <div>
                     <h2 className="text-4xl font-[500] text-[#AA8453]">
                         A place to make your wedding an unforgettable event
                     </h2>
+                    <br />
                     <Image
                         src={"/assets/weddings/wedding1.png"}
-                        width={1000}
-                        height={1000}
+                        width={1920}
+                        height={1080}
                         alt="wedding hero image"
                         className="h-full w-full"
                     />
+                    <br />
                     <div className="space-y-2">
                         <p>
                             Welcome to Hotel Ashok, nestled in the heart of

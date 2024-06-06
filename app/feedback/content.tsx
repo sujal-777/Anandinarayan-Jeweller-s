@@ -13,7 +13,7 @@ const Content = () => {
 
     return (
         <>
-            <div className="px-8  py-20 font-barlow lg:px-96">
+            <div className="px-8  py-20 font-barlow lg:px-48">
                 <h3 className="text-2xl uppercase tracking-wider text-[#666666]">
                     Feedback
                 </h3>
@@ -23,7 +23,7 @@ const Content = () => {
                     with us.
                 </h2>
             </div>
-            <div className="grid grid-cols-1 gap-4 bg-[#141414] px-8  py-20 font-barlow text-white lg:grid-cols-2 lg:px-96">
+            <div className="grid grid-cols-1 gap-12 bg-[#141414] px-8  py-20 font-barlow text-white lg:grid-cols-2 lg:px-48">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <input
                         type="text"

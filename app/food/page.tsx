@@ -1,10 +1,10 @@
 "use client";
 
 import { Icon } from "@mui/material";
-import Header from "./Header/Header";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import Image from "next/image";
 import WhatClientsSay from "./WhatClientsSay/WhatClientsSay";
+import Header from "../_components/Header/Header";
 
 export default function Foods() {
     return (
@@ -14,7 +14,7 @@ export default function Foods() {
                 title2="luxury hotel"
                 image="/food/banner.png"
             />
-            <div className="px-8 pb-10 font-barlow lg:px-96">
+            <div className="px-8 pb-10 font-barlow lg:px-48">
                 <p
                     className="text-heading mt-20 font-gilda"
                     style={{ color: "#AA8453" }}

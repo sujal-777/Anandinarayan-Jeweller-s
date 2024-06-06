@@ -2,7 +2,6 @@
 
 import React from "react";
 
-import Header from "./Header/Header";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import MapIcon from "@mui/icons-material/Map";
@@ -10,6 +9,7 @@ import MapIcon from "@mui/icons-material/Map";
 import ContactForm from "./_ContactUsForm";
 
 import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
+import Header from "../_components/Header/Header";
 
 export default function ContactUs() {
     return (
@@ -20,7 +20,7 @@ export default function ContactUs() {
                 title2="luxury hotel"
             />
 
-            <div className="flex w-full flex-col items-center justify-center px-8 py-20 lg:px-96">
+            <div className="flex w-full flex-col items-center justify-center px-8 py-20 lg:px-48">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     <div className="flex w-full flex-col justify-center text-justify">
                         <p className="text-heading font-gilda text-black">

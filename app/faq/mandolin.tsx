@@ -35,7 +35,7 @@ const contentfaq = [
 
 export default function Mandolin() {
     return (
-        <div className="px-8  py-20 font-gilda lg:px-96">
+        <div className="px-8  py-20 font-gilda lg:px-48">
             <Accordion variant="light" className="group">
                 {contentfaq.map((item, index) => {
                     return (

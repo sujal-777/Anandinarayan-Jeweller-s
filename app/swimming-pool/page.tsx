@@ -1,10 +1,9 @@
 "use client";
 
 import React from "react";
-import Header from "./Header/Header";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import Image from "next/image";
 import WhatClientsSay from "./WhatClientsSay/WhatClientsSay";
+import Header from "../_components/Header/Header";
 
 export default function PoolDeckRestroBar() {
     return (
@@ -15,7 +14,7 @@ export default function PoolDeckRestroBar() {
                 image="/assets/pool/pool.png"
             />
 
-            <div className=" px-8 py-20 lg:px-96">
+            <div className=" px-8 py-10 lg:px-48">
                 <p className="text-heading mt-20 font-gilda text-[#AA8453]">
                     Swimming Pool
                 </p>

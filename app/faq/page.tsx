@@ -2,7 +2,7 @@ import React from "react";
 
 import Hero from "./hero";
 import Mandolin from "./mandolin";
-import Header from "./Header/Header";
+import Header from "../_components/Header/Header";
 
 function page() {
     return (

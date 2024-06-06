@@ -38,27 +38,11 @@ export const menuItems = [
         href: "/halls",
         links: [
             {
-                name: "Kohinoor Hall",
-                href: "/halls/kohinoor",
-            },
-            {
-                name: "Maurya Hall",
-                href: "/halls/maurya",
-            },
-            {
-                name: "Magadh Hall",
-                href: "/halls/magadh",
-            },
-            {
-                name: "Samrat Hall",
-                href: "/halls/samrat",
-            },
-            {
                 name: "Hall Details",
-                href: "/halls/",
+                href: "/halls",
             },
             {
-                name: "Wedding",
+                name: "Weddings",
                 href: "/weddings",
             },
             {
@@ -89,7 +73,6 @@ export const menuItems = [
             },
         ],
     },
-    { text: "Updates", href: "/news" },
     {
         text: "More",
         href: "",
