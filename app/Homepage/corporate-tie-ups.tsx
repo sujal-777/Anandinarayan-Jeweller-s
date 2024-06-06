@@ -6,9 +6,9 @@ import { FaPhoneVolume } from "react-icons/fa6";
 
 export default function CorporateTie() {
     return (
-        <section className="min-h-screen space-y-8 bg-[#F8F5F0] px-8 py-20 lg:px-96">
+        <section className="min-h-screen space-y-8 bg-[#F8F5F0] px-8 py-20 lg:px-48">
             <p
-                className="flex items-center justify-center text-heading text-black"
+                className="text-heading flex items-center justify-center text-black"
                 data-aos="fade-up"
             >
                 Corporate Tie-ups
@@ -17,14 +17,12 @@ export default function CorporateTie() {
             <div className="flex w-full flex-col items-center justify-center">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
                     <div className="" data-aos="fade-right">
-                        <div className="py-10" >
-                            <p
-                                className="font-barlow uppercase tracking-widest text-[#AA8453]"
-                            >
+                        <div className="py-10">
+                            <p className="font-barlow uppercase tracking-widest text-[#AA8453]">
                                 best services
                             </p>
                             <h2
-                                className="font-gilda text-heading"
+                                className="text-heading font-gilda"
                                 style={{ color: "#000000" }}
                             >
                                 Corporate Tie-ups
@@ -73,10 +71,10 @@ export default function CorporateTie() {
                         </div>
                     </div>
 
-                    <div className="lg:flex items-center lg:justify-center w-full">
-                        <div className="grid grid-cols-1 lg:place-items-center gap-4 md:grid-cols-3 md:gap-2">
+                    <div className="w-full items-center lg:flex lg:justify-center">
+                        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-2 lg:place-items-center">
                             <div
-                                className="group relative lg:aspect-video w-full h-full md:col-span-2"
+                                className="group relative h-full w-full md:col-span-2 lg:aspect-video"
                                 data-aos="fade-in"
                                 data-aos-delay="100"
                             >
@@ -88,7 +86,10 @@ export default function CorporateTie() {
                                     className="h-full w-full object-cover object-center"
                                 />
                                 <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-40 opacity-0 transition-all duration-200 group-hover:opacity-100">
-                                    <Link href={"/corporate-events"} className="text-white">
+                                    <Link
+                                        href={"/corporate-events"}
+                                        className="text-white"
+                                    >
                                         Read More
                                     </Link>
                                 </div>
@@ -106,13 +107,16 @@ export default function CorporateTie() {
                                     className="h-full w-full object-cover object-center"
                                 />
                                 <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-40 opacity-0 transition-all duration-200 group-hover:opacity-100">
-                                    <Link href={"/corporate-events"} className="text-white">
+                                    <Link
+                                        href={"/corporate-events"}
+                                        className="text-white"
+                                    >
                                         Read More
                                     </Link>
                                 </div>
                             </div>
                             <div
-                                className="group relative lg:aspect-video md:col-span-2"
+                                className="group relative md:col-span-2 lg:aspect-video"
                                 data-aos="fade-in"
                                 data-aos-delay="200"
                             >
@@ -124,7 +128,10 @@ export default function CorporateTie() {
                                     className="h-full w-full object-cover object-center"
                                 />
                                 <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-40 opacity-0 transition-all duration-200 group-hover:opacity-100">
-                                    <Link href={"/corporate-events"} className="text-white">
+                                    <Link
+                                        href={"/corporate-events"}
+                                        className="text-white"
+                                    >
                                         Read More
                                     </Link>
                                 </div>
@@ -142,7 +149,10 @@ export default function CorporateTie() {
                                     className="h-full w-full object-cover object-center"
                                 />
                                 <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-40 opacity-0 transition-all duration-200 group-hover:opacity-100">
-                                    <Link href={"/corporate-events"} className="text-white">
+                                    <Link
+                                        href={"/corporate-events"}
+                                        className="text-white"
+                                    >
                                         Read More
                                     </Link>
                                 </div>

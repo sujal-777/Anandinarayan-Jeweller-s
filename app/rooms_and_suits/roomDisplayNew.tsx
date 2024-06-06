@@ -107,7 +107,7 @@ const ServiceCard = ({
     return (
         <div className="group relative w-full">
             <div
-                className={`lg:w-[70%] ${index % 2 === 0 ? "ml-auto" : "mr-auto lg:-translate-x-[10%]"} overflow-clip`}
+                className={`lg:w-[60%] ${index % 2 === 0 ? "ml-auto" : "mr-auto"} overflow-clip`}
             >
                 <Image
                     src={imageArray[0].img}
@@ -121,16 +121,13 @@ const ServiceCard = ({
             <div
                 className={`bottom-0 top-0 my-auto h-fit -translate-y-[2rem] p-4 lg:absolute lg:w-[50%] lg:translate-y-0 lg:p-0 ${
                     index === 0 || index % 2 === 0
-                        ? "-left-[10%]"
-                        : "-right-[0%]"
+                        ? "left-[0%]"
+                        : "right-[0%]"
                 }`}
             >
                 <Card radius="none" className="shadow-none">
                     <CardHeader className="flex gap-3">
                         <div className="flex flex-col">
-                            <p className=" font-gilda text-lg text-[#AA8453] ">
-                                {price}
-                            </p>
                             <p className="font-gilda text-2xl">{room}</p>
                         </div>
                     </CardHeader>

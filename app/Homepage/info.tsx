@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const info = () => {
     return (
-        <section className="min-h-screen bg-white px-8 py-20 lg:px-96">
+        <section className="min-h-screen bg-white px-8 py-20 lg:px-48">
             <div className="flex w-full flex-col items-center justify-center">
                 <div className="grid w-full grid-cols-1 place-items-center gap-12 md:grid-cols-2">
                     <div

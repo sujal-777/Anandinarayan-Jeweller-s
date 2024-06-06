@@ -65,7 +65,7 @@ export default function BookDirectBenefits() {
     ];
 
     return (
-        <section className="bg-[#222222] px-8 py-20 lg:px-96">
+        <section className="bg-[#222222] px-8 py-20 lg:px-48">
             <p className="flex items-center justify-center py-10 font-gilda text-heading text-white" data-aos="fade-up">
                 Book DIRECT BENEFITS
             </p>

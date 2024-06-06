@@ -39,7 +39,7 @@ export default function Weddings() {
     ];
 
     return (
-        <section className="bg-white py-20 lg:px-96">
+        <section className="bg-white py-20 lg:px-48">
             {events.map((event, pos) => {
                 return (
                     <Card

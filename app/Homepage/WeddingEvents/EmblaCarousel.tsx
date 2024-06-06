@@ -74,19 +74,13 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                             {item.area} sq. ft
                                         </p>
                                     </div>
-                                    <div className="flex items-center justify-between">
+                                    <div className="flex items-center justify-end">
                                         <Link
                                             href={item.link1}
                                             className="font-barlow text-normal uppercase hover:text-[#AA8453]"
                                         >
                                             Details
                                             <FaArrowRight className="mx-2 my-auto inline-block" />
-                                        </Link>
-                                        <Link
-                                            href={""}
-                                            className="bg-[#AA8453] text-normal p-2 uppercase text-white"
-                                        >
-                                            Book Now
                                         </Link>
                                     </div>
                                 </div>

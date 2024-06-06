@@ -63,8 +63,9 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                 <Image
                                     src={item.img}
                                     alt="Picture of the author"
-                                    layout="fill"
-                                    className="z-10 h-full w-full object-cover"
+                                    width={1920}
+                                    height={1080}
+                                    className="z-10 h-full w-full object-cover absolute top-0 left-0"
                                 />
                                 <div className="absolute left-0 top-0 z-20 h-full w-full bg-black bg-opacity-40"></div>
                             </div>

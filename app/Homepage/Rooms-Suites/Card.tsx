@@ -23,15 +23,17 @@ export default function Card({
                 alt={title + " image"}
                 width={1000}
                 height={1000}
-                className="h-full w-full object-cover transition-all duration-200 group-hover:scale-110"
+                className="h-full w-full object-cover transition-all duration-1000 group-hover:scale-110"
             />
-            <div
-                className={`absolute right-0 top-[10%] z-30 -rotate-90 border-2 border-white p-2 font-barlow text-[0.5rem] md:text-sm uppercase tracking-wider text-white md:top-[15%]`}
+            <Link
+            target="_blank"
+            href={"https://www.swiftbook.io/inst/#home?propertyId=963MTUJmY1lpZeCmz9rXlfH7YmoaIvdJKdXK4LhxJkZp0tg0ZSH9q9wNA==&JDRN=Y"}
+                className={`absolute right-0 top-[10%] z-30 -rotate-90 border-2 border-white p-2 font-barlow text-[0.5rem] md:text-sm uppercase tracking-wider text-white md:top-[15%] hover:bg-white hover:text-black transition-all duration-1000`}
             >
-                Booking
-            </div>
+                Book Now
+            </Link>
 
-            <div className="absolute bottom-0 left-0 z-20 w-full translate-y-[50%] group-hover:translate-y-0 transition-all duration-500 space-y-4 bg-gradient-to-t from-[#00000080] to-transparent p-4 md:px-8 text-white">
+            <div className="absolute bottom-0 left-0 z-20 w-full translate-y-[50%] group-hover:translate-y-0 transition-all duration-1000 space-y-4 bg-gradient-to-t from-[#00000080] to-transparent p-4 md:px-8 text-white">
                 <div className="">
                     <h3 className="text-2xl py-2">{title}</h3>
                     <div className="duration-1000 h-[2px] w-[6rem] bg-[#ffffff80] transition-all group-hover:w-full"></div>

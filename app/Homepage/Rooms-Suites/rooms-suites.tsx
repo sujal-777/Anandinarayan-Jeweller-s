@@ -27,7 +27,7 @@ export default function RoomsAndSuites() {
     ];
 
     return (
-        <section className="min-h-screen bg-[#F8F5F0] px-8 py-20 lg:px-96">
+        <section className="min-h-screen bg-[#F8F5F0] px-8 py-20 lg:px-48">
             <div className="py-10" data-aos="fade-up">
                 <p
                     className="font-barlow uppercase tracking-widest text-[#666666]"
@@ -44,7 +44,7 @@ export default function RoomsAndSuites() {
             </div>
 
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                {rooms.map((room, index) => (
+                {rooms.reverse().map((room, index) => (
                     <Card
                         key={index}
                         title={room.title}

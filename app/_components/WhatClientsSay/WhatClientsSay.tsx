@@ -74,13 +74,13 @@ const WhatClientsSay = () => {
     const [startDate, setStartDate] = useState<Date | null>(null);
     const [endDate, setEndDate] = useState<Date | null>(null);
     return (
-        <div className="grid grid-cols-1 gap-16 px-8 py-20 lg:grid-cols-2 lg:px-96">
+        <div className="grid grid-cols-1 gap-16 px-8 py-20 lg:grid-cols-2 lg:px-48">
             <div className="space-y-4">
                 <h2 className="font-gilda text-3xl text-white md:text-4xl">
                     What Client&apos;s Say?
                 </h2>
                 <Carousel reviews={reviews} />
-                <div className="flex items-center text-xl" data-aos="fade-up">
+                <div className="flex items-center text-xl">
                     <div className="mr-4">
                         <FaPhoneVolume style={{ color: "#fff" }} />
                     </div>
@@ -93,7 +93,7 @@ const WhatClientsSay = () => {
                 </div>
             </div>
             <div className="right-1 mx-auto  max-w-[450px] bg-[#F8F5F0] p-4">
-                <div className="py-10" data-aos="fade-up">
+                <div className="py-10">
                     <p className="font-barlow uppercase tracking-widest text-[#666666]">
                         ROOMS & SUITES
                     </p>
@@ -105,7 +105,7 @@ const WhatClientsSay = () => {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 gap-4 font-barlow lg:grid-cols-2">
+                {/* <div className="grid grid-cols-1 gap-4 font-barlow lg:grid-cols-2">
                     <div className="bg-white p-4 lg:col-span-2">
                         <label htmlFor="" className="text-[#666666]">
                             Check In
@@ -143,7 +143,9 @@ const WhatClientsSay = () => {
                     <button className="bg-[#AA8453] p-4 text-center uppercase text-white hover:bg-black lg:col-span-2">
                         CHECK AVAILABILITY
                     </button>
-                </div>
+                </div> */}
+
+                <RoomSearch />
             </div>
         </div>
     );

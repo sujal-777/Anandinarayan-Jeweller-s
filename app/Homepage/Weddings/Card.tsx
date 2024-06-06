@@ -38,13 +38,13 @@ export default function Card({
                         {pos % 2 === 0 ? "Experience" : "Explore"}
                     </p>
                     <h2
-                        className="font-gilda text-xl"
+                        className="font-gilda text-heading"
                         style={{ color: "#000000" }}
                     >
                         {title}
                     </h2>
                 </div>
-                <p className="leading-relazed font-barlow text-sm">
+                <p className="leading-relazed font-barlow text-normal">
                     Welcome to Hotel Ashok, nestled in the heart of Nagpur,
                     since our inception in February 2011, we have been
                     consistent with warm hospitality and exceptional services,
@@ -53,7 +53,7 @@ export default function Card({
                 </p>
                 <Link
                     href={link}
-                    className="block w-fit bg-[#AB8A62] p-2 font-barlow text-sm uppercase text-white"
+                    className="block w-fit bg-[#AB8A62] p-2 font-barlow text-normal uppercase text-white"
                 >
                     Learn More
                 </Link>

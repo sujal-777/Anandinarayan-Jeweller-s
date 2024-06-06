@@ -9,6 +9,7 @@ import Image from "next/image";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { menuItems } from "@/constants/menuItems";
 import Form from "./Form";
+import Script from "next/script";
 
 export default function Hero() {
     const slides = [
@@ -41,14 +42,16 @@ export default function Hero() {
     return (
         <section data-aos="fade-in" className="hero relative">
             {/* NAVBAR */}
-            <div className="bg-gradient-black fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
-                <Image
-                    src="/logo.svg"
-                    alt="logo"
-                    width={500}
-                    height={500}
-                    className="max-w-[80px] md:max-w-[120px]"
-                />
+            <div className=" fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
+                <Link href={"/"}>
+                    <Image
+                        src="/logo.svg"
+                        alt="logo"
+                        width={500}
+                        height={500}
+                        className="max-w-[80px] md:max-w-[120px]"
+                    />
+                </Link>
 
                 <button
                     className="group relative block overflow-clip rounded-lg lg:hidden"
@@ -98,7 +101,7 @@ export default function Hero() {
                                     )}
                                 </Link>
                                 {item.links && (
-                                    <div className="left-0 right-0 top-full hidden w-full max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block lg:absolute lg:min-w-[10rem]">
+                                    <div className="hover-trans top-[-2000%] w-full max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 lg:opacity-0 group-hover:top-full group-hover:opacity-100 lg:absolute lg:left-0 lg:right-0 lg:min-w-[10rem] z-[-1]">
                                         {item.links.map((link, index) => {
                                             return (
                                                 <Link
@@ -133,19 +136,19 @@ export default function Hero() {
                     <FaPhoneVolume className="text-xl" />
                 </div>
                 <div className="float-left mx-4">
-                    <p className="font-barlow uppercase tracking-[0.5rem]">
+                    <p className="font-barlow text-xs uppercase tracking-[0.3rem]">
                         reservation
                     </p>
                     <p className="text-xl">+91 88888 70722</p>
                 </div>
             </a>
 
-            <div className="absolute bottom-0 left-0 right-0 z-30 hidden px-8 lg:block lg:px-40">
-                <RoomSearch></RoomSearch>
+            <div className="absolute bottom-0 left-0 right-0 z-30  hidden px-8 pb-20 lg:block lg:px-40">
+                <RoomSearch />
             </div>
 
             <div className="block bg-[#F8F5F0] p-4 lg:hidden">
-                <Form />
+                <RoomSearch />
             </div>
         </section>
     );
