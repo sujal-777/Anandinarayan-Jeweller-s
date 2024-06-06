@@ -6,27 +6,27 @@ import Card from "./Card";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
-export default function RoomsAndSuites() {
+export default function HallCarousel() {
     const rooms = [
         {
-            title: "Budget Room",
-            img: "/assets/Home/rooms1.png",
-            link: "/rooms_and_suits/budget_room",
+            title: "Kohinoor",
+            img: "/assets/hallls/samrat1.png",
+            link: "/halls/kohinoor",
         },
         {
-            title: "Deluxe Room",
-            img: "/assets/Home/rooms2.png",
-            link: "/rooms_and_suits/deluxe_room",
+            title: "Maurya",
+            img: "/assets/hallls/maurya1.png",
+            link: "/halls/maurya",
         },
         {
-            title: "Family Room",
-            img: "/assets/Home/rooms3.png",
-            link: "/rooms_and_suits/family_room",
+            title: "Magadh",
+            img: "/assets/hallls/magad1.png",
+            link: "/halls/magadh",
         },
         {
-            title: "King Suite",
-            img: "/assets/Home/rooms4.png",
-            link: "/rooms_and_suits/king_suit",
+            title: "Samrat",
+            img: "/assets/hallls/kohinor1.png",
+            link: "/halls/samrat",
         },
     ];
 
@@ -100,7 +100,7 @@ export default function RoomsAndSuites() {
                     className="text-heading font-gilda"
                     style={{ color: "#000000" }}
                 >
-                    Rooms & Suites
+                    Wedding and Event Halls
                 </h2>
             </div>
 

@@ -23,18 +23,18 @@ export default function Card({
                 alt={title + " image"}
                 width={1000}
                 height={1000}
-                className="h-full w-full object-cover transition-all duration-200 group-hover:scale-110"
+                className="h-full w-full object-cover trans-duration-500 group-hover:scale-110"
             />
-            <div
+            {/* <div
                 className={`absolute right-0 top-[10%] z-30 -rotate-90 border-2 border-white p-2 font-barlow text-[0.5rem] md:text-sm uppercase tracking-wider text-white md:top-[15%]`}
             >
                 Booking
-            </div>
+            </div> */}
 
-            <div className="absolute bottom-0 left-0 z-20 w-full translate-y-[50%] group-hover:translate-y-0 transition-all duration-500 space-y-4 bg-gradient-to-t from-[#00000080] to-transparent p-4 md:px-8 text-white">
+            <div className="absolute bottom-0 left-0 z-20 w-full translate-y-[50%] group-hover:translate-y-0 trans-duration-500 space-y-4 bg-gradient-to-t from-[#00000080] to-transparent p-4 md:px-8 text-white">
                 <div className="">
                     <h3 className="text-2xl py-2">{title}</h3>
-                    <div className="duration-1000 h-[2px] w-[6rem] bg-[#ffffff80] transition-all group-hover:w-full"></div>
+                    <div className=" h-[2px] w-[6rem] bg-[#ffffff80] trans-duration-500 group-hover:w-full"></div>
                 </div>
 
                 <div className="flex items-center justify-between pb-2 md:py-2">

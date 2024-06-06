@@ -2,6 +2,7 @@ import React from "react";
 
 import { Image, Button } from "@nextui-org/react";
 import HallCarousel from "./HallCarousel/HallCarousel";
+import { FaPhoneVolume } from "react-icons/fa6";
 
 interface RoomPageProps {
     src: string;
@@ -21,10 +22,7 @@ const HallsPage: React.FC<RoomPageProps> = ({
     return (
         <div className="font-barlow">
             <div className="">
-                <p
-                    className="font-barlow uppercase tracking-widest text-[#666666]"
-
-                >
+                <p className="font-barlow uppercase tracking-widest text-[#666666]">
                     Hotel the nagpur Ashok
                 </p>
                 <h2
@@ -60,7 +58,7 @@ const HallsPage: React.FC<RoomPageProps> = ({
                     ))}
                 </div>
 
-                <div className="mt-5">
+                {/* <div className="mt-5">
                     <Button
                         radius="none"
                         size="lg"
@@ -68,7 +66,22 @@ const HallsPage: React.FC<RoomPageProps> = ({
                     >
                         CHECK NOW
                     </Button>
-                </div>
+                </div> */}
+
+                <a
+                    href="tel:+918888870722"
+                    className="flex items-center text-xl mt-6"
+                >
+                    <div className="mr-4">
+                        <FaPhoneVolume style={{ color: "#AA8453" }} />
+                    </div>
+                    <div className="flex flex-col">
+                        <p style={{ color: "" }}>Reservation</p>
+                        <p className="text-xl" style={{ color: "#AA8453" }}>
+                            +91 88888 70722
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     );

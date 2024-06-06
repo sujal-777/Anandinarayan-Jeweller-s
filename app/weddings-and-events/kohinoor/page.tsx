@@ -1,26 +1,28 @@
 import React from "react";
+
 import HallsPage from "../HallsPage";
 import Hero from "../Hero/hero";
 import HallCarousel from "../HallCarousel/HallCarousel";
 
-const src = "/halls/samrat.png";
-const hall = "Samrat";
+const src = "/halls/kohinoor.png";
+const hall = "Kohinoor";
 const desc =
-    "Whether you're planning an intimate gathering or a grand celebration, Samrat at Hotel Ashok is the ultimate destination for your special occasions. Allow us to exceed your expectations and create magical moments that will be cherished for a lifetime.";
+    "Kohinoor is a prestigious event hall at Hotel Ashok, designed to host a variety of occasions with grace and style. For a truly unforgettable event, choose Kohinoor at Hotel Ashok. Our team is committed to making your event a success, and we look forward to welcoming you and your guests.";
 
 const featuresArray = [
-    "Flexible Space: Samrat can be adapted to suit your event, whether it's a grand wedding reception, a corporate seminar, or a birthday celebration. The hall's layout and seating can be customized to accommodate your needs.",
+    "Flexible Space: Kohinoor can be adapted to suit your event, whether it's a grand wedding reception, a corporate seminar, or a birthday celebration. The hall's layout and seating can be customized to accommodate your needs.",
     "State-of-the-Art Facilities: Equipped with modern audiovisual equipment, Kohinoor ensures that your presentations, speeches, and performances are delivered seamlessly.",
     "Catering Services: Our expert culinary team offers a diverse range of menu options, from traditional Indian cuisine to international flavors, to delight your guests' taste buds.",
     "Professional Staff: Our experienced event planning team is dedicated to ensuring that every detail of your event is executed flawlessly, allowing you to relax and enjoy your special day.",
 ];
 
 const occasionsArray = [
-    "Wedding Ceremonies and Receptions",
-    "Corporate Meetings and Conferences",
-    "Birthday and Anniversary Celebrations",
-    "Cultural and Social Gatherings",
-    "Product Launches and Exhibitions",
+    "Wedding Receptions",
+    "Corporate Events",
+    "Birthday Celebrations",
+    "Anniversary Parties",
+    "Cultural Functions",
+    "Seminars and Conferences",
 ];
 
 const page = () => {
@@ -28,12 +30,13 @@ const page = () => {
         <section>
             <Hero
                 slides={[
-                    "/assets/hallls/kohinor1.png",
-                    "/assets/hallls/kohinor2.png",
-                    "/assets/hallls/kohinor3.png",
+                    "/assets/hallls/samrat1.png",
+                    "/assets/hallls/samrat2.png",
+                    "/assets/hallls/samrat3.png",
                 ]}
+                title="Kohinoor Hall"
             />
-            <div className="px-8 py-20 md:px-96">
+            <div className="px-8 py-20 md:px-48">
                 <HallsPage
                     src={src}
                     hall={hall}

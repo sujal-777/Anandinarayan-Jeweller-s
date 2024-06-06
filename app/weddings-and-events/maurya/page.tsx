@@ -32,8 +32,9 @@ const page = () => {
                     "/assets/hallls/maurya2.png",
                     "/assets/hallls/maurya3.png",
                 ]}
+                title="Maurya Hall"
             />
-            <div className="px-8 py-20 md:px-96">
+            <div className="px-8 py-20 md:px-48">
                 <HallsPage
                     src={src}
                     hall={hall}

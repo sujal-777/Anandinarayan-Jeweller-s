@@ -3,8 +3,8 @@ import HallsPage from "../HallsPage";
 import Hero from "../Hero/hero";
 import HallCarousel from "../HallCarousel/HallCarousel";
 
-const src = "/halls/magadh.png";
-const hall = "Magadh";
+const src = "/halls/samrat.png";
+const hall = "Samrat";
 const desc =
     "Whether you're planning an intimate gathering or a grand celebration, Samrat at Hotel Ashok is the ultimate destination for your special occasions. Allow us to exceed your expectations and create magical moments that will be cherished for a lifetime.";
 
@@ -28,12 +28,13 @@ const page = () => {
         <section>
             <Hero
                 slides={[
-                    "/assets/hallls/magad1.png",
-                    "/assets/hallls/magad2.png",
-                    "/assets/hallls/magad3.png",
+                    "/assets/hallls/kohinor1.png",
+                    "/assets/hallls/kohinor2.png",
+                    "/assets/hallls/kohinor3.png",
                 ]}
+                title="Samrat Hall"
             />
-            <div className="px-8 py-20 md:px-96">
+            <div className="px-8 py-20 md:px-48">
                 <HallsPage
                     src={src}
                     hall={hall}

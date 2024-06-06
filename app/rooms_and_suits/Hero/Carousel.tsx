@@ -17,10 +17,11 @@ import Autoplay from "embla-carousel-autoplay";
 type PropType = {
     slides: string[];
     options?: EmblaOptionsType;
+    title: string;
 };
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
-    const { slides, options } = props;
+    const { slides, options, title } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [
         Fade(),
         Autoplay({ playOnInit: true, delay: 5000, stopOnMouseEnter: true }),
@@ -39,13 +40,16 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                             key={index}
                         >
                             <div className="relative flex h-full w-full flex-col items-center justify-center gap-4 px-8 py-20 text-center text-white lg:px-20">
-                            <Image
+                                <Image
                                     src={item}
                                     alt="Picture of the author"
                                     width={1920}
                                     height={1080}
-                                    className="z-10 h-full w-full object-cover absolute top-0 left-0"
+                                    className="absolute left-0 top-0 z-10 h-full w-full object-cover"
                                 />
+                            </div>
+                            <div className="absolute left-0 left-0 top-0 z-40 flex h-full w-full flex-col items-center justify-center px-8 py-20 text-center font-gilda text-white md:items-start lg:px-48">
+                                <h3 className="text-heading">{title}</h3>
                             </div>
                         </div>
                     ))}

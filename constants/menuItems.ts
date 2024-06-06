@@ -27,27 +27,27 @@ export const menuItems = [
                 name: "Budget Room",
                 href: "/rooms_and_suits/budget_room",
             },
-            {
-                name: "Room Details",
-                href: "/rooms_and_suits/",
-            },
         ],
     },
     {
         text: "Wedding & Events",
-        href: "/halls",
+        href: "/weddings-and-events",
         links: [
             {
-                name: "Hall Details",
-                href: "/halls",
+                name: "Kohinoor Hall",
+                href: "/weddings-and-events/kohinoor",
             },
             {
-                name: "Weddings",
-                href: "/weddings",
+                name: "Magadh Hall",
+                href: "/weddings-and-events/magadh",
             },
             {
-                name: "Corporate Events",
-                href: "/corporate-events",
+                name: "Maurya Hall",
+                href: "/weddings-and-events/maurya",
+            },
+            {
+                name: "Samrat Hall",
+                href: "/weddings-and-events/Samrat",
             },
         ],
     },

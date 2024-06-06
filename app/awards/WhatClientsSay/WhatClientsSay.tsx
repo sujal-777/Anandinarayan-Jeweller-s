@@ -8,6 +8,7 @@ import EmblaCarousel from "./EmblaCarousel";
 import DatePicker from "react-datepicker";
 import { Select, SelectItem, Button } from "@nextui-org/react";
 import { FaPhoneVolume } from "react-icons/fa6";
+import Carousel from "./Carousel";
 const imageUrl = "/WhatClientsSay/image.png";
 const reviews = [
     {
@@ -59,7 +60,9 @@ const roomCount = [
     "6 rooms",
 ];
 
-const WhatClientsSay = () => {
+const WhatClientsSay = ({bg} : {
+    bg?: string;
+}) => {
     const [currentReview, setCurrentReview] = useState(0);
 
     useEffect(() => {
@@ -73,13 +76,13 @@ const WhatClientsSay = () => {
     const [startDate, setStartDate] = useState<Date | null>(null);
     const [endDate, setEndDate] = useState<Date | null>(null);
     return (
-        <div className="grid grid-cols-1 gap-16 bg-[url('/assets/awards/awards.png')] bg-cover bg-no-repeat px-8 py-20 lg:grid-cols-2 lg:px-96">
+        <div className={`grid grid-cols-1 gap-16 px-8 py-20 lg:grid-cols-2 lg:px-48 bg-[url('/assets/awards/awards.png')] bg-no-repeat bg-cover`}>
             <div className="space-y-4">
                 <h2 className="font-gilda text-3xl text-white md:text-4xl">
                     What Client&apos;s Say?
                 </h2>
-                <EmblaCarousel slides={reviews} />
-                <div className="flex items-center text-xl" data-aos="fade-up">
+                <Carousel reviews={reviews} />
+                <div className="flex items-center text-xl">
                     <div className="mr-4">
                         <FaPhoneVolume style={{ color: "#fff" }} />
                     </div>
@@ -92,7 +95,7 @@ const WhatClientsSay = () => {
                 </div>
             </div>
             <div className="right-1 mx-auto  max-w-[450px] bg-[#F8F5F0] p-4">
-                <div className="py-10" data-aos="fade-up">
+                <div className="py-10">
                     <p className="font-barlow uppercase tracking-widest text-[#666666]">
                         ROOMS & SUITES
                     </p>
@@ -106,32 +109,16 @@ const WhatClientsSay = () => {
 
                 <div className="grid grid-cols-1 gap-4 font-barlow lg:grid-cols-2">
                     <div className="bg-white p-4 lg:col-span-2">
-                        <DatePicker
-                            showIcon
-                            isClearable
-                            placeholderText="Check In"
-                            selected={endDate}
-                            onChange={(date) => setEndDate(date)}
-                            selectsEnd
-                            startDate={startDate}
-                            endDate={endDate}
-                            minDate={startDate}
-                            className="h-full w-full bg-white"
-                        />
+                        <label htmlFor="" className="text-[#666666]">
+                            Check In
+                        </label>
+                        <input type="date" className="block w-full" />
                     </div>
                     <div className="bg-white p-4 lg:col-span-2">
-                        <DatePicker
-                            showIcon
-                            isClearable
-                            placeholderText="Check Out"
-                            selected={endDate}
-                            onChange={(date) => setEndDate(date)}
-                            selectsEnd
-                            startDate={startDate}
-                            endDate={endDate}
-                            minDate={startDate}
-                            className="h-full w-full bg-white"
-                        />
+                        <label htmlFor="" className="text-[#666666]">
+                            Check Out
+                        </label>
+                        <input type="date" className="block w-full" />
                     </div>
                     <div className="flex h-full items-center justify-center border-r-2 bg-white">
                         <Select
@@ -159,6 +146,8 @@ const WhatClientsSay = () => {
                         CHECK AVAILABILITY
                     </button>
                 </div>
+
+                {/* <RoomSearch />   */}
             </div>
         </div>
     );

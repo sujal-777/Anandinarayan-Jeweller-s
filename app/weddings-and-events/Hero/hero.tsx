@@ -9,7 +9,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { menuItems } from "@/constants/menuItems";
 import Form from "./Form";
 
-export default function Hero({ slides }: { slides: string[] }) {
+export default function Hero({ slides, title }: { slides: string[], title: string }) {
     const options: EmblaOptionsType = { loop: true, duration: 60 };
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +19,7 @@ export default function Hero({ slides }: { slides: string[] }) {
     return (
         <section data-aos="fade-in" className="hero relative">
             {/* NAVBAR */}
-            <div className="bg-gradient-black fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
+            <div className="py-4 fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 px-4 font-barlow lg:justify-center lg:px-12">
                 <Image
                     src="/logo.svg"
                     alt="logo"
@@ -100,7 +100,7 @@ export default function Hero({ slides }: { slides: string[] }) {
             </div>
 
             {/* CAROUSEL */}
-            <EmblaCarousel slides={slides} options={options} />
+            <EmblaCarousel slides={slides} title={title} options={options} />
 
             {/* SIDE */}
         </section>

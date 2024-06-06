@@ -1,8 +1,8 @@
 import React from "react";
 import Hero from "./hero";
 import Awards from "./display";
-import WhatClientsSay from "./WhatClientsSay/WhatClientsSay";
 import Header from "../_components/Header/Header";
+import WhatClientsSay from "./WhatClientsSay/WhatClientsSay";
 
 const awards = () => {
     return (
@@ -13,7 +13,7 @@ const awards = () => {
                 title2=""
             />
             <Awards />
-            <WhatClientsSay />
+            <WhatClientsSay bg="/assets/awards/awards.png" />
         </div>
     );
 };

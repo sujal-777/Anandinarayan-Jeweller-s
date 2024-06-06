@@ -38,7 +38,7 @@ export default function Nav() {
 
     return (
         <div
-            className={`fixed py-4 left-0 top-0 z-50 flex w-full items-center justify-between gap-36 bg-white px-4 font-barlow shadow-xl backdrop-blur-sm transition-all duration-200 lg:justify-center lg:px-12 ${scrolled ? " -translate-y-0" : " -translate-y-full"}`}
+            className={`fixed font-barlow py-4 left-0 top-0 z-50 flex w-full items-center justify-between gap-36 bg-white px-4 shadow-xl backdrop-blur-sm transition-all duration-200 lg:justify-center lg:px-12 ${scrolled ? " -translate-y-0" : " -translate-y-full"}`}
         >
             <Image
                 src="/logo.svg"

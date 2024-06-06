@@ -19,8 +19,8 @@ export default function budget_room() {
     ];
     return (
         <section>
-            <Hero slides={slides} />
-            <div className="px-8 py-10 lg:px-96">
+            <Hero slides={slides} title="Budget Room" />
+            <div className="px-8 py-10 lg:px-48">
                 <RoomPage src={src} room={title} desc1={para1} desc2={para2} />
             </div>
             <RoomsAndSuites />

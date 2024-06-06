@@ -33,7 +33,7 @@ export default function Footer() {
 
     return (
         <>
-            <div className="footer grid grid-cols-1 gap-4 bg-[#282424] px-8 py-20 text-white lg:grid-cols-4 lg:px-48">
+            <div className="footer grid grid-cols-1 gap-4 bg-[#282424] px-8 py-20 text-white lg:grid-cols-4 lg:px-48 font-barlow">
                 <div className="leading-5">
                     <h2 className="mb-2 font-gilda text-lg">Explore</h2>
                     <ul className="">

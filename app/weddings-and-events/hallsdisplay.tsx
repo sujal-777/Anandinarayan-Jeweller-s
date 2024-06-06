@@ -29,7 +29,7 @@ const cardArray = [
         hall: "Kohinoor",
         description:
             "A prestigious venue where every detail is tailored to perfection for your special day.",
-        link: "/halls/kohinoor",
+        link: "/weddings-and-events/kohinoor",
     },
     {
         imageArray: [
@@ -42,7 +42,7 @@ const cardArray = [
         hall: "Maurya",
         description:
             "Maurya Wedding Event Hall at Hotel Ashok offers elegance and sophistication for your special day.",
-        link: "/halls/maurya",
+        link: "/weddings-and-events/maurya",
     },
     {
         imageArray: [
@@ -55,7 +55,7 @@ const cardArray = [
         hall: "Samrat",
         description:
             "Elevate your celebrations in a regal setting that promises an unforgettable wedding experience.",
-        link: "/halls/samrat",
+        link: "/weddings-and-events/samrat",
     },
     {
         imageArray: [
@@ -68,7 +68,7 @@ const cardArray = [
         hall: "Magadh",
         description:
             "A harmonious blend of luxury and elegance, creating the perfect backdrop for your cherished celebrations",
-        link: "/halls/magadh",
+        link: "/weddings-and-events/magadh",
     },
 ];
 
