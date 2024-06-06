@@ -73,7 +73,7 @@ const WhatClientsSay = () => {
     const [startDate, setStartDate] = useState<Date | null>(null);
     const [endDate, setEndDate] = useState<Date | null>(null);
     return (
-        <div className="grid grid-cols-1 gap-16 bg-[url('/assets/pool/pool.png')] bg-no-repeat bg-cover px-8 py-20 lg:grid-cols-2 lg:px-96">
+        <div className="grid grid-cols-1 gap-16 bg-[url('/assets/pool/pool.png')] bg-no-repeat bg-cover px-8 py-20 lg:grid-cols-2 lg:px-48">
             <div className="space-y-4">
                 <h2 className="font-gilda text-3xl text-white md:text-4xl">
                     What Client&apos;s Say?

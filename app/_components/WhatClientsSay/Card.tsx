@@ -38,18 +38,8 @@ export default function Card({
             </div>
             <p>{text}</p>
             <div className="relative flex items-center gap-2">
-                <div className="float-left aspect-square w-20 overflow-clip rounded-full">
-                    <Image
-                        src={image}
-                        alt={name}
-                        width={500}
-                        height={500}
-                        className="h-full w-full object-cover"
-                    />
-                </div>
                 <div className="flex flex-col justify-center">
-                    <p className="uppercase tracking-widest">{name}</p>
-                    <p className="text-xs">{role}</p>
+                    <p className="uppercase tracking-widest font-bold">By {name}</p>
                 </div>
             </div>
         </div>

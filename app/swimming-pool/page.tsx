@@ -9,7 +9,7 @@ export default function PoolDeckRestroBar() {
     return (
         <section>
             <Header
-                title1="Pooldeck Restrobar"
+                title1="Swimming Pool"
                 title2="explore our"
                 image="/assets/pool/pool.png"
             />

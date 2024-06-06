@@ -10,10 +10,11 @@ import BookDirectBenefits from "./book-direct-benefits";
 import Weddings from "./Weddings/weddings";
 import WhatClientsSay from "../_components/WhatClientsSay/WhatClientsSay";
 import Promotional from "./Promotional/Promotional";
+import TripAdvisor from "./TripAdvisor/TripAdvisor";
 
 const pageLayout = () => {
     return (
-        <section className="font-gilda overflow-x-hidden">
+        <section className="overflow-x-hidden font-gilda">
             <Hero />
             <Info />
             <RoomsAndSuites />
@@ -23,6 +24,7 @@ const pageLayout = () => {
             <HomeServices />
             <BookDirectBenefits />
             <Weddings />
+            <TripAdvisor />
             <WhatClientsSay />
         </section>
     );

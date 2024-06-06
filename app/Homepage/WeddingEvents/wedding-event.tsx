@@ -13,7 +13,7 @@ export default function WeddingEvent() {
             guests: 500,
             seats: 300,
             area: "5000 x 2000",
-            link1: "/halls/kohinoor",
+            link1: "/weddings-and-events/kohinoor",
             link2: "",
         },
         {
@@ -23,7 +23,7 @@ export default function WeddingEvent() {
             guests: 500,
             seats: 400,
             area: "5000 x 2000",
-            link1: "/halls/maurya",
+            link1: "/weddings-and-events/maurya",
             link2: "",
         },
         {
@@ -33,7 +33,7 @@ export default function WeddingEvent() {
             guests: 500,
             seats: 500,
             area: "5000 x 2000",
-            link1: "/halls/magadh",
+            link1: "/weddings-and-events/magadh",
             link2: "",
         },
         {
@@ -43,7 +43,7 @@ export default function WeddingEvent() {
             guests: 500,
             seats: 450,
             area: "5000 x 2000",
-            link1: "/halls/samrat",
+            link1: "/weddings-and-events/samrat",
             link2: "",
         },
     ];

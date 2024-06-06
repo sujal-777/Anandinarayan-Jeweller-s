@@ -46,26 +46,19 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                             <div>
                                 {[...Array(item.rating)].map((_, index) => {
                                     return (
-                                        <FaStar key={index+100} className="mr-2 inline text-[#E4A853]" />
+                                        <FaStar
+                                            key={index + 100}
+                                            className="mr-2 inline text-[#E4A853]"
+                                        />
                                     );
                                 })}
                             </div>
                             <p>{item.text}</p>
                             <div className="relative flex items-center gap-2">
-                                <div className="float-left aspect-square w-20 overflow-clip rounded-full">
-                                    <Image
-                                        src={item.image}
-                                        alt={item.name}
-                                        width={500}
-                                        height={500}
-                                        className="h-full w-full object-cover"
-                                    />
-                                </div>
                                 <div className="flex flex-col justify-center">
-                                    <p className="uppercase tracking-widest">
-                                        {item.name}
+                                    <p className="font-bold uppercase tracking-widest">
+                                        By {item.name}
                                     </p>
-                                    <p className="text-xs">{item.role}</p>
                                 </div>
                             </div>
                         </div>
