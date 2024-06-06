@@ -14,22 +14,25 @@ import Script from "next/script";
 export default function Hero() {
     const slides = [
         {
-            img: "/assets/Home/carousel1.png",
+            img: "/assets/Home/Carousel1.png",
             title1: "Enjoy a luxury experience",
             title2: "Luxury Hotel & Best Resort",
+            btnTitle: "",
             links: "",
         },
         {
-            img: "/assets/Home/carousel2.png",
+            img: "/assets/Home/Carousel2.png",
             title1: "Experience unparalleled luxury and sophistication",
             title2: "Luxury Hotel & Best Resort",
-            links: "",
+            btnTitle: "Rooms and Suite",
+            links: "/rooms_and_suits",
         },
         {
-            img: "/assets/Home/carousel3.png",
+            img: "/assets/Home/Carousel3.png",
             title1: "Discover a sanctuary of luxury and tranquility",
             title2: "Luxury Hotel & Best Resort",
-            links: "",
+            btnTitle: "Weddings",
+            links: "/halls",
         },
     ];
 
@@ -42,14 +45,14 @@ export default function Hero() {
     return (
         <section data-aos="fade-in" className="hero relative">
             {/* NAVBAR */}
-            <div className=" fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 px-4 font-barlow backdrop-blur-sm lg:justify-center lg:px-12">
+            <div className=" fixed left-0 py-4 top-0 z-50 flex w-full items-center justify-between gap-36 px-4 font-barlow lg:justify-center lg:px-12">
                 <Link href={"/"}>
                     <Image
                         src="/logo.svg"
                         alt="logo"
                         width={500}
                         height={500}
-                        className="max-w-[80px] md:max-w-[120px]"
+                        className="max-w-[80px] md:max-w-[150px]"
                     />
                 </Link>
 
@@ -101,7 +104,7 @@ export default function Hero() {
                                     )}
                                 </Link>
                                 {item.links && (
-                                    <div className="hover-trans top-[-2000%] w-full max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 lg:opacity-0 group-hover:top-full group-hover:opacity-100 lg:absolute lg:left-0 lg:right-0 lg:min-w-[10rem] z-[-1]">
+                                    <div className="hover-trans top-[-2000%] z-[-1] w-full max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:top-full group-hover:opacity-100 lg:absolute lg:left-0 lg:right-0 lg:min-w-[10rem] lg:opacity-0">
                                         {item.links.map((link, index) => {
                                             return (
                                                 <Link
@@ -139,15 +142,11 @@ export default function Hero() {
                     <p className="font-barlow text-xs uppercase tracking-[0.3rem]">
                         reservation
                     </p>
-                    <p className="text-xl">+91 88888 70722</p>
+                    <p className="text-xl text-[#8E6D45]">+91 88888 70722</p>
                 </div>
             </a>
 
-            <div className="absolute bottom-0 left-0 right-0 z-30  hidden px-8 pb-20 lg:block lg:px-40">
-                <RoomSearch />
-            </div>
-
-            <div className="block bg-[#F8F5F0] p-4 lg:hidden">
+            <div className="bottom-0 left-0 right-0 z-30 hidden  px-8 pb-20 lg:absolute lg:block lg:px-40">
                 <RoomSearch />
             </div>
         </section>

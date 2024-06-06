@@ -6,6 +6,10 @@
     transition: opacity 0.3s ease-in-out;
 }
 
+.trans-duration-500 {
+    transition: all 500ms ease-in-out;
+}
+
 .home {
     background-image: url("/assets/Home/FixedImage.png");
     background-size: cover;

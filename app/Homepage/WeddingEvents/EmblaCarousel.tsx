@@ -51,14 +51,14 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                     alt={item.name}
                                     width={1000}
                                     height={1000}
-                                    className="h-full w-full object-cover transition-all duration-200"
+                                    className="h-full w-full object-cover trans-duration-500"
                                 />
                             </div>
                             <div className="absolute -bottom-[1rem] left-0 right-0 mx-auto w-[90%] bg-white px-4 py-2 text-center group-hover:space-y-4 md:py-4">
                                 <h3 className="text-xl md:text-2xl">
                                     {item.name}
                                 </h3>
-                                <div className=" max-h-0 space-y-4 overflow-clip font-barlow  text-sm transition-all delay-200 duration-[2s] group-hover:max-h-[20rem] md:text-lg">
+                                <div className=" max-h-0 space-y-4 overflow-clip font-barlow  text-sm  trans-duration-500 delay-200 group-hover:max-h-[20rem] md:text-lg">
                                     <p className="text-sm">{item.desc}</p>
                                     <div className="grid grid-cols-3 text-left text-xs md:text-sm">
                                         <p>

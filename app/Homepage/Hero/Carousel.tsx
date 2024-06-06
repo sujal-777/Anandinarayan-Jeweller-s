@@ -19,6 +19,7 @@ type PropType = {
         img: string;
         title1: string;
         title2: string;
+        btnTitle: string;
         links: string;
     }[];
     options?: EmblaOptionsType;
@@ -40,7 +41,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                 <div className="embla__container">
                     {slides.map((item, index) => (
                         <div
-                            className="embla__slide h-[100dvh] w-full bg-black"
+                            className="embla__slide h-[100dvh] w-full bg-gray-200"
                             key={index}
                         >
                             <div className="relative flex h-full w-full flex-col items-center justify-center gap-4 px-8 py-20 text-center text-white lg:px-96">
@@ -54,18 +55,20 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                         {item.title1}
                                     </h1>
                                 </div>
-                                <Link
-                                    href={item.links}
-                                    className={`z-30 border-2 border-white px-4 py-2 font-barlow uppercase tracking-wider transition-all delay-200 duration-700 hover:bg-white hover:text-black  ${index === selectedIndex ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
-                                >
-                                    Rooms & Suites
-                                </Link>
+                                {item.btnTitle !== "" && (
+                                    <Link
+                                        href={item.links}
+                                        className={`z-30 border-2 border-white px-4 py-2 font-barlow uppercase tracking-wider transition-all delay-200 duration-700 hover:bg-white hover:text-black  ${index === selectedIndex ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
+                                    >
+                                        {item.btnTitle}
+                                    </Link>
+                                )}
                                 <Image
                                     src={item.img}
                                     alt="Picture of the author"
                                     width={1920}
                                     height={1080}
-                                    className="z-10 h-full w-full object-cover absolute top-0 left-0"
+                                    className="absolute left-0 top-0 z-10 h-full w-full object-cover"
                                 />
                                 <div className="absolute left-0 top-0 z-20 h-full w-full bg-black bg-opacity-40"></div>
                             </div>

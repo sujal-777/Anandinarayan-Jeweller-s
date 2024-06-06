@@ -33,7 +33,7 @@ export default function Footer() {
 
     return (
         <>
-            <div className="footer grid grid-cols-1 gap-4 bg-[#282424] px-8 py-20 text-white lg:grid-cols-4 lg:px-96">
+            <div className="footer grid grid-cols-1 gap-4 bg-[#282424] px-8 py-20 text-white lg:grid-cols-4 lg:px-48">
                 <div className="leading-5">
                     <h2 className="mb-2 font-gilda text-lg">Explore</h2>
                     <ul className="">
@@ -53,23 +53,23 @@ export default function Footer() {
                     <h2 className="mb-2 font-gilda text-lg">Legal</h2>
                     <ul className="text-sm">
                         <li className="mb-2 text-[#ADADAD] hover:text-white">
-                            <Link href="/products&services">
+                            <Link href="/faq">
                                 Frequently Asked Questions
                             </Link>
                         </li>
                         <li className="mb-2 text-[#ADADAD] hover:text-white">
-                            <Link href="/products&services">
+                            <Link href="/terms-and-conditions">
                                 Terms and Conditions
                             </Link>
                         </li>
                         <li className="mb-2 text-[#ADADAD] hover:text-white">
-                            <Link href="/products&services">
+                            <Link href="/privacy-policy">
                                 Privacy Policy
                             </Link>
                         </li>
                         <li className="mb-2 text-[#ADADAD] hover:text-white">
-                            <Link href="/products&services">
-                                Cancellation Policy
+                            <Link href="/payment-terms">
+                                Payment Terms
                             </Link>
                         </li>
                     </ul>
@@ -84,7 +84,7 @@ export default function Footer() {
                         </li>
                         <li>
                             <FaPhoneVolume className="mr-2 inline text-lg" />{" "}
-                            +91 88888 70722
+                            <span className="text-xl text-white">+91 88888 70722</span>
                         </li>
                         <li className="underline">
                             <a href="mailto:booking@thenagpurashok.com">
@@ -134,7 +134,7 @@ export default function Footer() {
                 </div>
                 <div className="">
                     <Image
-                        src="/FooterAssets/image.png"
+                        src="/assets/trip-advisor-2024.png"
                         alt="footer image"
                         width={200}
                         height={200}
