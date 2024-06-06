@@ -11,7 +11,7 @@ export default function rooms() {
         <section className="">
             <Header
                 image="/HeaderAssets/img_header.png"
-                title1=""
+                title1="Rooms & Suites"
                 title2=""
             />
             <div className="px-8 py-20 md:px-48">

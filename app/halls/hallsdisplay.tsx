@@ -75,7 +75,7 @@ const cardArray = [
 const Service = () => {
     return (
         <>
-            <section className="py-20 space-y-4 lg:space-y-10">
+            <section className="space-y-4 py-20 lg:space-y-10">
                 {cardArray?.map((ele, i) => (
                     <ServiceCard key={ele.hall} {...ele} index={i} />
                 ))}
@@ -102,9 +102,9 @@ const ServiceCard = ({
     index: any;
 }) => {
     return (
-        <div className="w-full relative">
+        <div className="relative w-full">
             <div
-                className={`lg:w-[70%] ${index % 2 === 0 ? "ml-auto" : "mr-auto lg:-translate-x-[10%]"}`}
+                className={`lg:w-[60%] ${index % 2 === 0 ? "ml-auto" : "mr-auto"}`}
             >
                 <Image
                     src={imageArray[0].img}
@@ -115,18 +115,16 @@ const ServiceCard = ({
             </div>
 
             <div
-                className={`p-4 lg:p-0 -translate-y-[2rem] lg:translate-y-0 lg:w-[50%] lg:absolute top-0 bottom-0 my-auto h-fit ${
+                className={`bottom-0 top-0 my-auto h-fit -translate-y-[2rem] p-4 lg:absolute lg:w-[50%] lg:translate-y-0 lg:p-0 ${
                     index === 0 || index % 2 === 0
-                        ? "-left-[10%]"
+                        ? "-left-[0%]"
                         : "-right-[0%]"
                 }`}
             >
                 <Card radius="none" className="space-y-0 shadow-none">
                     <CardHeader className="flex gap-3">
                         <div className="flex flex-col">
-                            <p className=" font-barlow text-sm text-[#AA8453] ">
-                                {price}
-                            </p>
+
                             <p className="font-gilda text-xl">{hall}</p>
                         </div>
                     </CardHeader>
@@ -150,19 +148,17 @@ const ServiceCard = ({
                     <div className="flex items-center justify-center">
                         <Divider className="w-11/12" />
                     </div>
-                    <CardFooter className="flex justify-between">
-                        <Link href={link}> 
-                            <Button radius="none" variant="flat"> 
+                    <CardFooter className="flex justify-end">
+                        <Link href={link}>
+                            <Button
+                                radius="none"
+                                variant="flat"
+                                className="bg-[#AA8453] text-white"
+                            >
                                 Details
                                 <RxArrowRight />
                             </Button>
                         </Link>
-                        <Button
-                            radius="none"
-                            className="bg-[#AA8453] text-white"
-                        >
-                            Book Now
-                        </Button>
                     </CardFooter>
                 </Card>
             </div>

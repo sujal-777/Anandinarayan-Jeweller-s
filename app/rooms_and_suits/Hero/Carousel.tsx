@@ -30,20 +30,21 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         useDotButton(emblaApi);
 
     return (
-        <div className="embla relative h-[100dvh] w-full">
+        <div className="embla relative h-[60dvh] w-full">
             <div className="embla__viewport relative z-20" ref={emblaRef}>
                 <div className="embla__container">
                     {slides.map((item, index) => (
                         <div
-                            className="embla__slide h-[100dvh] w-full bg-black"
+                            className="embla__slide h-[60dvh] w-full bg-black"
                             key={index}
                         >
                             <div className="relative flex h-full w-full flex-col items-center justify-center gap-4 px-8 py-20 text-center text-white lg:px-20">
-                                <Image
+                            <Image
                                     src={item}
                                     alt="Picture of the author"
-                                    layout="fill"
-                                    className="z-10 h-full w-full object-cover"
+                                    width={1920}
+                                    height={1080}
+                                    className="z-10 h-full w-full object-cover absolute top-0 left-0"
                                 />
                             </div>
                         </div>

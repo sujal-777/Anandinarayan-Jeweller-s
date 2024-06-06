@@ -2,17 +2,17 @@ import React from "react";
 
 import Hero from "./hero";
 import Halls from "./hallsdisplay";
-import Header from "./Header/Header";
+import Header from "../_components/Header/Header";
 
 const halls = () => {
     return (
         <div>
             <Header
                 image="/HeaderAssets/img_header.png"
-                title1="Our Services"
+                title1="Halls"
                 title2="luxury hotel"
             />
-            <div className="px-8 lg:px-96">
+            <div className="px-8 lg:px-48">
                 <Halls />
             </div>
         </div>
