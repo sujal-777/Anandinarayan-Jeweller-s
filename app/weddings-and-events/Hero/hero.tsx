@@ -19,13 +19,13 @@ export default function Hero({ slides, title }: { slides: string[], title: strin
     return (
         <section data-aos="fade-in" className="hero relative">
             {/* NAVBAR */}
-            <div className="py-4 fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-12 px-4 font-barlow lg:justify-center lg:px-12">
+            <div className="py-4 fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-36 px-4  barlow-condensed lg:justify-center lg:px-12">
                 <Image
                     src="/logo.svg"
                     alt="logo"
                     width={500}
                     height={500}
-                    className="max-w-[80px] md:max-w-[120px]"
+                    className="max-w-[80px] md:max-w-[150px]"
                 />
 
                 <button

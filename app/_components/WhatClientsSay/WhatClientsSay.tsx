@@ -1,15 +1,14 @@
 "use client";
-import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import ReviewCarousel from "./ReviewCarousel";
-import SelectRooms from "./SelectRooms";
-import RoomSearch from "../../Homepage/roomSelect";
-import EmblaCarousel from "./EmblaCarousel";
-import DatePicker from "react-datepicker";
 import { Select, SelectItem, Button } from "@nextui-org/react";
-import { FaPhoneVolume } from "react-icons/fa6";
+import { FaPhoneVolume, FaPlus, FaMinus } from "react-icons/fa6";
 import Carousel from "./Carousel";
+import Link from "next/link";
 const imageUrl = "/WhatClientsSay/image.png";
+import { useRouter } from "next/navigation";
+import Form from "../Form";
+import Reviews from "../Reviews/Reviews";
+
 const reviews = [
     {
         name: "Vaishali Kumar",
@@ -44,111 +43,20 @@ const adultCount = [
     "6 Adult",
     "7 Adult",
 ];
-const childCount = [
-    "1 Child",
-    "2 Children",
-    "3 Children",
-    "4 Children",
-    "5 Children",
-];
-const roomCount = [
-    "1 room",
-    "2 rooms",
-    "3 rooms",
-    "4 rooms",
-    "5 rooms",
-    "6 rooms",
-];
 
-const WhatClientsSay = ({bg} : {
-    bg?: string;
-}) => {
-    const [currentReview, setCurrentReview] = useState(0);
+const WhatClientsSay = ({ bg }: { bg?: string }) => {
+    const [startDate, setStartDate] = useState("");
+    const [endDate, setEndDate] = useState("");
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setCurrentReview((currentReview + 1) % reviews.length);
-        }, 10000);
+    const [adults, setAdults] = useState(1);
+    const [children, setChildren] = useState(0);
 
-        return () => clearInterval(intervalId);
-    }, [currentReview]);
-
-    const [startDate, setStartDate] = useState<Date | null>(null);
-    const [endDate, setEndDate] = useState<Date | null>(null);
     return (
-        <div className={`grid grid-cols-1 gap-16 px-8 py-20 lg:grid-cols-2 lg:px-48 bg-no-repeat bg-cover`}>
-            <div className="space-y-4">
-                <h2 className="font-gilda text-3xl text-white md:text-4xl">
-                    What Client&apos;s Say?
-                </h2>
-                <Carousel reviews={reviews} />
-                <div className="flex items-center text-xl">
-                    <div className="mr-4">
-                        <FaPhoneVolume style={{ color: "#fff" }} />
-                    </div>
-                    <a href="tel:+918888870722" className="flex flex-col">
-                        <p style={{ color: "#fff" }}>Reservation</p>
-                        <p className="text-xl" style={{ color: "#fff" }}>
-                            +91 88888 70722
-                        </p>
-                    </a>
-                </div>
-            </div>
-            <div className="right-1 mx-auto  max-w-[450px] bg-[#F8F5F0] p-4">
-                <div className="py-10">
-                    <p className="font-barlow uppercase tracking-widest text-[#666666]">
-                        ROOMS & SUITES
-                    </p>
-                    <h2
-                        className="text-heading font-gilda"
-                        style={{ color: "#000000" }}
-                    >
-                        Hotel Booking Form
-                    </h2>
-                </div>
-
-                <div className="grid grid-cols-1 gap-4 font-barlow lg:grid-cols-2">
-                    <div className="bg-white p-4 lg:col-span-2">
-                        <label htmlFor="" className="text-[#666666]">
-                            Check In
-                        </label>
-                        <input type="date" className="block w-full" />
-                    </div>
-                    <div className="bg-white p-4 lg:col-span-2">
-                        <label htmlFor="" className="text-[#666666]">
-                            Check Out
-                        </label>
-                        <input type="date" className="block w-full" />
-                    </div>
-                    <div className="flex h-full items-center justify-center border-r-2 bg-white">
-                        <Select
-                            radius="none"
-                            label="Adults"
-                            className="w-full bg-white"
-                        >
-                            {adultCount?.map((ele, i) => (
-                                <SelectItem key={i}>{ele}</SelectItem>
-                            ))}
-                        </Select>
-                    </div>
-                    <div className="flex h-full items-center justify-center border-r-2">
-                        <Select
-                            radius="none"
-                            label="Children"
-                            className="w-full"
-                        >
-                            {childCount?.map((ele, i) => (
-                                <SelectItem key={i}>{ele}</SelectItem>
-                            ))}
-                        </Select>
-                    </div>
-                    <button className="bg-[#AA8453] p-4 text-center uppercase text-white hover:bg-black lg:col-span-2">
-                        CHECK AVAILABILITY
-                    </button>
-                </div>
-
-                {/* <RoomSearch />   */}
-            </div>
+        <div
+            className={`grid grid-cols-1 gap-16 bg-cover bg-no-repeat px-8 py-20 lg:grid-cols-2 lg:px-48`}
+        >
+            <Reviews />
+            <Form />
         </div>
     );
 };

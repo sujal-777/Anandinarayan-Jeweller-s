@@ -8,6 +8,8 @@ import EmblaCarousel from "./EmblaCarousel";
 import DatePicker from "react-datepicker";
 import { Select, SelectItem, Button } from "@nextui-org/react";
 import { FaPhoneVolume } from "react-icons/fa6";
+import Reviews from "@/app/_components/Reviews/Reviews";
+import Form from "@/app/_components/Form";
 const imageUrl = "/WhatClientsSay/image.png";
 const reviews = [
     {
@@ -74,76 +76,8 @@ const WhatClientsSay = () => {
     const [endDate, setEndDate] = useState<Date | null>(null);
     return (
         <div className="grid grid-cols-1 gap-16 bg-[url('/food/banner.png')] bg-cover bg-no-repeat px-8 py-20 lg:grid-cols-2 lg:px-48">
-            <div className="space-y-4">
-                <h2 className="font-gilda text-3xl text-white md:text-4xl">
-                    What Client&apos;s Say?
-                </h2>
-                <EmblaCarousel slides={reviews} />
-                <div className="flex items-center text-xl" data-aos="fade-up">
-                    <div className="mr-4">
-                        <FaPhoneVolume style={{ color: "#fff" }} />
-                    </div>
-                    <a href="tel:+918888870722" className="flex flex-col">
-                        <p style={{ color: "#fff" }}>Reservation</p>
-                        <p className="text-xl" style={{ color: "#fff" }}>
-                            +91 88888 70722
-                        </p>
-                    </a>
-                </div>
-            </div>
-            <div className="right-1 mx-auto  max-w-[450px] bg-[#F8F5F0] p-4">
-                <div className="py-10" data-aos="fade-up">
-                    <p className="font-barlow uppercase tracking-widest text-[#666666]">
-                        ROOMS & SUITES
-                    </p>
-                    <h2
-                        className="text-heading font-gilda"
-                        style={{ color: "#000000" }}
-                    >
-                        Hotel Booking Form
-                    </h2>
-                </div>
-
-                <div className="grid grid-cols-1 gap-4 font-barlow lg:grid-cols-2">
-                    <div className="bg-white p-4 lg:col-span-2">
-                        <label htmlFor="" className="text-[#666666]">
-                            Check In
-                        </label>
-                        <input type="date" className="block w-full" />
-                    </div>
-                    <div className="bg-white p-4 lg:col-span-2">
-                        <label htmlFor="" className="text-[#666666]">
-                            Check Out
-                        </label>
-                        <input type="date" className="block w-full" />
-                    </div>
-                    <div className="flex h-full items-center justify-center border-r-2 bg-white">
-                        <Select
-                            radius="none"
-                            label="Adults"
-                            className="w-full bg-white"
-                        >
-                            {adultCount?.map((ele, i) => (
-                                <SelectItem key={i}>{ele}</SelectItem>
-                            ))}
-                        </Select>
-                    </div>
-                    <div className="flex h-full items-center justify-center border-r-2">
-                        <Select
-                            radius="none"
-                            label="Children"
-                            className="w-full"
-                        >
-                            {childCount?.map((ele, i) => (
-                                <SelectItem key={i}>{ele}</SelectItem>
-                            ))}
-                        </Select>
-                    </div>
-                    <button className="bg-[#AA8453] p-4 text-center uppercase text-white hover:bg-black lg:col-span-2">
-                        CHECK AVAILABILITY
-                    </button>
-                </div>
-            </div>
+            <Reviews />
+            <Form />
         </div>
     );
 };

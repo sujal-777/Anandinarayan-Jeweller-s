@@ -8,8 +8,8 @@ import Link from "next/link";
 import Image from "next/image";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { menuItems } from "@/constants/menuItems";
-import Form from "./Form";
 import Script from "next/script";
+import Form from "@/app/_components/Form";
 
 export default function Hero() {
     const slides = [
@@ -142,12 +142,16 @@ export default function Hero() {
                     <p className="font-barlow text-xs uppercase tracking-[0.3rem]">
                         reservation
                     </p>
-                    <p className="text-xl text-[#8E6D45]">+91 88888 70722</p>
+                    <p className="text-xl text-white">+91 88888 70722</p>
                 </div>
             </a>
 
-            <div className="bottom-0 left-0 right-0 z-30 hidden  px-8 pb-20 lg:absolute lg:block lg:px-40">
+            <div className="bottom-0 left-0 right-0 z-30  block px-8 pb-20 lg:absolute lg:px-40">
                 <RoomSearch />
+            </div>
+
+            <div className="block lg:hidden">
+                <Form />
             </div>
         </section>
     );

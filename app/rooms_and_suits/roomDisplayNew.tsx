@@ -79,9 +79,11 @@ const Service = () => {
     return (
         <>
             <section className="space-y-10">
-                {cardArray?.map((ele, i) => (
-                    <ServiceCard key={ele.room} {...ele} index={i} />
-                ))}
+                {cardArray
+                    ?.reverse()
+                    .map((ele, i) => (
+                        <ServiceCard key={ele.room} {...ele} index={i} />
+                    ))}
             </section>
         </>
     );
@@ -120,9 +122,7 @@ const ServiceCard = ({
 
             <div
                 className={`bottom-0 top-0 my-auto h-fit -translate-y-[2rem] p-4 lg:absolute lg:w-[50%] lg:translate-y-0 lg:p-0 ${
-                    index === 0 || index % 2 === 0
-                        ? "left-[0%]"
-                        : "right-[0%]"
+                    index === 0 || index % 2 === 0 ? "left-[0%]" : "right-[0%]"
                 }`}
             >
                 <Card radius="none" className="shadow-none">
@@ -167,12 +167,14 @@ const ServiceCard = ({
                                 <RxArrowRight />
                             </Button>
                         </Link>
-                        <Button
-                            radius="none"
-                            className="bg-[#AA8453] text-white"
-                        >
-                            Book Now
-                        </Button>
+                        <Link href="">
+                            <Button
+                                radius="none"
+                                className="bg-[#AA8453] text-white"
+                            >
+                                Book Now
+                            </Button>
+                        </Link>
                     </CardFooter>
                 </Card>
             </div>

@@ -27,12 +27,6 @@ const barlow = Barlow({
     weight: "400",
 });
 
-const barlowCondensed = Barlow_Condensed({
-    subsets: ["latin"],
-    variable: "--font-barlow-condensed",
-    display: "swap",
-    weight: "400",
-});
 
 export const metadata: Metadata = {
     title: "The Hotel Ashok",
@@ -48,7 +42,7 @@ export default function RootLayout({
         <html lang="en">
             <AOSInit />
             <body
-                className={`${inter.variable} ${gilda.variable} ${barlow.variable} ${barlowCondensed.variable} text-normal`}
+                className={`${inter.variable} ${gilda.variable} ${barlow.variable} text-normal`}
             >
                 
                 <Provider>

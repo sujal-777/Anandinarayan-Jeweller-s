@@ -47,7 +47,7 @@ export const menuItems = [
             },
             {
                 name: "Samrat Hall",
-                href: "/weddings-and-events/Samrat",
+                href: "/weddings-and-events/samrat",
             },
         ],
     },

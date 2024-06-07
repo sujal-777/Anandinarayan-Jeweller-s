@@ -6,30 +6,7 @@ import Card from "./Card";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
-export default function HallCarousel() {
-    const rooms = [
-        {
-            title: "Kohinoor",
-            img: "/assets/hallls/samrat1.png",
-            link: "/weddings-and-events/kohinoor",
-        },
-        {
-            title: "Maurya",
-            img: "/assets/hallls/maurya1.png",
-            link: "/weddings-and-events/maurya",
-        },
-        {
-            title: "Magadh",
-            img: "/assets/hallls/magad1.png",
-            link: "/weddings-and-events/magadh",
-        },
-        {
-            title: "Samrat",
-            img: "/assets/hallls/kohinor1.png",
-            link: "/weddings-and-events/samrat",
-        },
-    ];
-
+export default function Carousel({ reviews }: { reviews: any[] }) {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [loaded, setLoaded] = useState(false);
     const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>(
@@ -41,14 +18,6 @@ export default function HallCarousel() {
             },
             created() {
                 setLoaded(true);
-            },
-            breakpoints: {
-                "(min-width: 1025px)": {
-                    slides: {
-                        perView: 2,
-                        spacing: 10,
-                    },
-                },
             },
             slides: {
                 perView: 1,
@@ -86,32 +55,13 @@ export default function HallCarousel() {
             },
         ]
     );
-
     return (
-        <section className="min-h-screen bg-[#F8F5F0] px-8 py-20 lg:px-48">
-            <div className="py-10" data-aos="fade-up">
-                <p
-                    className="font-barlow uppercase tracking-widest text-[#666666]"
-                    data-aos="fade-up"
-                >
-                    Hotel Ashok
-                </p>
-                <h2
-                    className="text-heading font-gilda"
-                    style={{ color: "#000000" }}
-                >
-                    Wedding and Event Halls
-                </h2>
-            </div>
-
+        <div>
+            {" "}
             <div ref={sliderRef} className="keen-slider">
-                {rooms.map((room, index) => (
+                {reviews.map((review, index) => (
                     <div className="keen-slider__slide" key={index}>
-                        <Card
-                            title={room.title}
-                            img={room.img}
-                            link={room.link}
-                        />
+                        <Card {...review} />
                     </div>
                 ))}
             </div>
@@ -133,7 +83,7 @@ export default function HallCarousel() {
                                         "dot mx-1 rounded-full border-2 border-[#C49A62] p-2" +
                                         (currentSlide === y
                                             ? " bg-[#AA8453]"
-                                            : "")
+                                            : " border-white")
                                     }
                                 ></button>
                             );
@@ -141,7 +91,6 @@ export default function HallCarousel() {
                     )}
                 </div>
             )}
-            <br />
-        </section>
+        </div>
     );
 }

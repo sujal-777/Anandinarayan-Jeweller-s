@@ -19,13 +19,13 @@ export default function Header({
     return (
         <div className="relative h-[60dvh] bg-gray-300">
             {/* NAVBAR */}
-            <div className=" fixed left-0 py-4 top-0 z-40 flex w-full items-center justify-between gap-36 px-4 font-barlow lg:justify-center lg:px-12">
+            <div className=" fixed left-0 py-4 top-0 z-40 flex w-full items-center justify-between gap-36 px-4 barlow-condensed lg:justify-center lg:px-12">
                 <Image
                     src="/logo.svg"
                     alt="logo"
                     width={500}
                     height={500}
-                    className="max-w-[80px] md:max-w-[120px]"
+                    className="max-w-[80px] md:max-w-[150px]"
                 />
 
                 <button

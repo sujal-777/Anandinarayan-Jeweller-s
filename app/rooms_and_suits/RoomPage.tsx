@@ -135,7 +135,7 @@ const RoomPage: React.FC<RoomPageProps> = ({ src, room, desc1, desc2 }) => {
                         <Button
                             radius="none"
                             size="lg"
-                            className="bg-[#AA8453] tracking-tight text-white"
+                            className="bg-[#AA8453] p-4 text-center uppercase text-white hover:bg-black"
                         >
                             CHECK NOW
                         </Button>
