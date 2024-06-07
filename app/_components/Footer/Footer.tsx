@@ -33,7 +33,7 @@ export default function Footer() {
 
     return (
         <>
-            <div className="footer grid grid-cols-1 gap-4 bg-[#282424] px-8 py-20 text-white lg:grid-cols-4 lg:px-48 font-barlow">
+            <div className="footer grid grid-cols-1 gap-4 bg-[#282424] px-8 py-20 font-barlow text-white lg:grid-cols-4 lg:px-48">
                 <div className="leading-5">
                     <h2 className="mb-2 font-gilda text-lg">Explore</h2>
                     <ul className="">
@@ -53,9 +53,7 @@ export default function Footer() {
                     <h2 className="mb-2 font-gilda text-lg">Legal</h2>
                     <ul className="text-sm">
                         <li className="mb-2 text-[#ADADAD] hover:text-white">
-                            <Link href="/faq">
-                                Frequently Asked Questions
-                            </Link>
+                            <Link href="/faq">Frequently Asked Questions</Link>
                         </li>
                         <li className="mb-2 text-[#ADADAD] hover:text-white">
                             <Link href="/terms-and-conditions">
@@ -63,14 +61,10 @@ export default function Footer() {
                             </Link>
                         </li>
                         <li className="mb-2 text-[#ADADAD] hover:text-white">
-                            <Link href="/privacy-policy">
-                                Privacy Policy
-                            </Link>
+                            <Link href="/privacy-policy">Privacy Policy</Link>
                         </li>
                         <li className="mb-2 text-[#ADADAD] hover:text-white">
-                            <Link href="/payment-terms">
-                                Payment Terms
-                            </Link>
+                            <Link href="/payment-terms">Payment Terms</Link>
                         </li>
                     </ul>
                 </div>
@@ -84,7 +78,9 @@ export default function Footer() {
                         </li>
                         <li>
                             <FaPhoneVolume className="mr-2 inline text-lg" />{" "}
-                            <span className="text-xl text-white">+91 88888 70722</span>
+                            <span className="text-xl text-white">
+                                +91 88888 70722
+                            </span>
                         </li>
                         <li className="underline">
                             <a href="mailto:booking@thenagpurashok.com">
@@ -95,37 +91,37 @@ export default function Footer() {
                     <br />
                     <div className="mt-2 flex justify-start gap-4">
                         <a
-                            href="/"
+                            href="https://www.facebook.com/thenagpurashok/"
                             className="transition duration-75 hover:text-purple-400"
                         >
                             <FaFacebookF />
                         </a>
                         <a
-                            href="/"
+                            href="https://www.instagram.com/hotel_nagpur_ashok/"
                             className="transition duration-75 hover:text-purple-400"
                         >
                             <TfiInstagram />
                         </a>
                         <a
-                            href="/"
+                            href="https://www.google.com.np/travel/hotels/entity/ChgIw7SUwYLs3__hARoLL2cvMXRzeW43OGgQAQ?g2lb=4207876%2C4208993%2C4220293%2C4223281%2C4242898%2C4245928%2C4251619%2C4253230%2C4254308%2C4256748%2C4258168%2C4250437%2C4251518%2C4253015&hl=en&gl=np&un=1&rp=MhsKEgml8-FZgqw7QBHB4nDmV1tVQBC245qvrC04AUgC&ictx=1&tcfs=EhoaGAoKMjAxOS0wNS0yMRIKMjAxOS0wNS0yMlIA&utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAEaUwo1EjEyJTB4M2EyY2Q0Y2JhYzNkMjRkZjoweDg3ZmFhZjY2NTM1ZmM5ODU6CFZpZGFyYmhhGgASGhIUCgcI6A8QBhgIEgcI6A8QBhgJGAEyAhAAKgkKBToDTlBSGgA&sa=X&ap=MAA&ei=wtUFZMe5C8i92QL19qy4Dg&ved=0CAAQ5JsGahcKEwjI3eeawsmGAxUAAAAAHQAAAAAQBA"
                             className="transition duration-75 hover:text-purple-400"
                         >
                             <SiGoogle />
                         </a>
                         <a
-                            href="/"
+                            href="https://www.youtube.com/channel/UC08aVU9z2jR3jMPrDtnLVnQ"
                             className="transition duration-75 hover:text-purple-400"
                         >
                             <TfiYoutube />
                         </a>
                         <a
-                            href="/"
+                            href="https://in.linkedin.com/company/the-nagpur-ashok"
                             className="transition duration-75 hover:text-purple-400"
                         >
                             <PiLinkedinLogo />
                         </a>
                         <a
-                            href="/"
+                            href="https://x.com/thenagpurashok"
                             className="transition duration-75 hover:text-purple-400"
                         >
                             <RiTwitterXLine />
@@ -144,7 +140,14 @@ export default function Footer() {
             </div>
             <div className="border-t-2 border-white bg-[#282424] py-4 text-center font-barlow text-[#ADADAD]">
                 <p>
-                    Design and Developed by <a href="https://gbjbuzz.com/" target="_blank" className="text-white">GBJ Buzz Pvt Ltd</a>{" "}
+                    Design and Developed by{" "}
+                    <a
+                        href="https://gbjbuzz.com/"
+                        target="_blank"
+                        className="text-white"
+                    >
+                        GBJ Buzz Pvt Ltd
+                    </a>{" "}
                     Copyright © 2024 Ashok Group
                 </p>
             </div>

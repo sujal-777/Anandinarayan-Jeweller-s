@@ -13,7 +13,7 @@ export default function Promotional() {
                     Hotel Ashok
                 </p>
                 <h2
-                    className="font-gilda text-heading"
+                    className="text-heading font-gilda"
                     style={{ color: "#fff" }}
                 >
                     Rooms & Suites
@@ -34,7 +34,7 @@ export default function Promotional() {
             </div>
 
             {!hide && (
-                <div className="fixed bottom-0 left-0 right-0 top-0 z-50 m-auto h-fit w-fit bg-black bg-opacity-50 p-8 w-full md:w-[60vw]">
+                <div className="fixed bottom-0 left-0 right-0 top-0 z-50 m-auto h-fit w-fit w-full bg-black bg-opacity-50 p-8 md:w-[60vw]">
                     <button
                         className="absolute right-0 top-0 m-2 text-white"
                         onClick={() => {
@@ -45,12 +45,12 @@ export default function Promotional() {
                     </button>
 
                     <iframe
-                        src="https://www.youtube.com/embed/KLuTLF3x9sA?si=MDw0vwyXJ99LlXhY"
+                        src="https://www.youtube.com/embed/Aasrid2Uhy4?si=fPaMaVn5lu3RNA-y"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
+                        className="aspect-video w-full"
                         allowFullScreen
-                        className="w-full aspect-video"
                     ></iframe>
                 </div>
             )}
