@@ -167,10 +167,10 @@ const ServiceCard = ({
                                 <RxArrowRight />
                             </Button>
                         </Link>
-                        <Link href="">
+                        <Link target="_blank" href="https://www.swiftbook.io/inst/#home?propertyId=963MTUJmY1lpZeCmz9rXlfH7YmoaIvdJKdXK4LhxJkZp0tg0ZSH9q9wNA==&JDRN=Y">
                             <Button
                                 radius="none"
-                                className="bg-[#AA8453] text-white"
+                                className="bg-[#AA8453] text-white hover:bg-black hover:text-white"
                             >
                                 Book Now
                             </Button>

@@ -11,8 +11,8 @@ export default function Form() {
     const [children, setChildren] = useState(0);
 
     return (
-        <div className="right-1 mx-auto  max-w-[450px] bg-[#F8F5F0] px-8 py-10">
-            <div className="py-10">
+        <div className="right-1 mx-auto  max-w-[450px] bg-[#F8F5F0] px-8 py-4">
+            <div className="pb-4">
                 <p className="font-barlow uppercase tracking-widest text-[#666666]">
                     ROOMS & SUITES
                 </p>
@@ -28,7 +28,7 @@ export default function Form() {
                 action={`https://www.swiftbook.io/inst/#/home?propertyId=963MTUJmY1lpZeCmz9rXlfH7YmoaIvdJKdXK4LhxJkZp0tg0ZSH9q9wNA==&checkIn=${startDate.toString()}&checkOut=${endDate.toString()}&clientWidth=1519&JDRN=Y&noofrooms=${rooms}&adult0=${adults}&child0=${children}`}
                 className="grid grid-cols-1 gap-4 font-barlow lg:grid-cols-2"
             >
-                <div className="bg-white p-4 lg:col-span-2">
+                <div className="bg-white p-2 lg:col-span-2">
                     <label htmlFor="" className="text-[#666666]">
                         Check In
                     </label>
@@ -49,7 +49,7 @@ export default function Form() {
                         required
                     />
                 </div>
-                <div className="bg-white p-4 lg:col-span-2">
+                <div className="bg-white p-2 lg:col-span-2">
                     <label htmlFor="" className="text-[#666666]">
                         Check Out
                     </label>
@@ -63,7 +63,7 @@ export default function Form() {
                     />
                 </div>
 
-                <div className="bg-white p-4 lg:col-span-2">
+                <div className="bg-white p-2 lg:col-span-2">
                     <label htmlFor="" className="text-[#666666]">
                         Rooms
                     </label>
@@ -86,7 +86,7 @@ export default function Form() {
                         </p>
                     </div>
                 </div>
-                <div className="bg-white p-4 ">
+                <div className="bg-white p-2 ">
                     <label htmlFor="" className="text-[#666666]">
                         Adults
                     </label>
@@ -115,7 +115,7 @@ export default function Form() {
                         </p>
                     </div>
                 </div>
-                <div className="bg-white p-4 ">
+                <div className="bg-white p-2 ">
                     <label htmlFor="" className="text-[#666666]">
                         Children
                     </label>
@@ -144,7 +144,7 @@ export default function Form() {
                 </div>
 
                 <button
-                    className="bg-[#AA8453] p-4 text-center uppercase text-white hover:bg-black lg:col-span-2"
+                    className="bg-[#AA8453] p-2 text-center uppercase text-white hover:bg-black lg:col-span-2"
                     onSubmit={(e) => {}}
                 >
                     Check Availabilty

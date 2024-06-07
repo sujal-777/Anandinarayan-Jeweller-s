@@ -19,7 +19,7 @@ export default function Weddings() {
             img: "/assets/weddings/wedding8.png",
             title: "Tripadvisor®️ 2023",
             para1: "Hotel Nagpur Ashok has been recognized as a Tripadvisor®️ 2023 Travelers' Choice®️ Award Winner. This prestigious accolade, is the Eighth Award that Hotel has received from Tripadvisor, the world's most renowned travel site. With a guest satisfaction rating of over 95% for the past 13 years, this recognition holds significant importance as it solely reflects the experiences and feedback of guests who stayed or celebrated there event in the hotel.",
-            para2: "",
+            para2: "Hotel Nagpur Ashok has been recognized as a Tripadvisor®️ 2023 Travelers' Choice®️ Award Winner. This prestigious accolade, is the Eighth Award that Hotel has received from Tripadvisor, the world's most renowned travel site. With a guest satisfaction rating of over 95% for the past 13 years, this recognition holds significant importance as it solely reflects the experiences and feedback of guests who stayed or celebrated there event in the hotel.",
         },
         {
             img: "/assets/weddings/wedding9.png",
@@ -31,7 +31,10 @@ export default function Weddings() {
 
     return (
         <div>
-            <div className="space-y-8 px-8 py-10 font-barlow font-barlow leading-8 text-[##7D7D7D] md:px-48" id="#weddings">
+            <div
+                className="space-y-8 px-8 py-10 font-barlow font-barlow leading-8 text-[##7D7D7D] md:px-48"
+                id="#weddings"
+            >
                 <div>
                     <h2 className="text-4xl font-[500] text-[#AA8453]">
                         A place to make your wedding an unforgettable event
