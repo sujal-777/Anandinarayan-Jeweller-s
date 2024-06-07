@@ -31,7 +31,7 @@ const cardArray = [
         price: "500/Night",
         room: "Budget Room",
         description:
-            "Our Budget rooms  are second to none in this range with the vast options of services and...read more",
+            "Our Budget rooms  are second to none in this range with the vast options of services and amenities.",
         link: "/rooms_and_suits/budget_room",
     },
     {
@@ -44,7 +44,7 @@ const cardArray = [
         price: "1000/Night",
         room: "Deluxe Room",
         description:
-            "The Deluxe Rooms at our hotel are designed to provide a comfortable space and relaxing stay for...read more",
+            "The Deluxe Rooms at our hotel are designed to provide a comfortable space and relaxing stay for our guests.",
         link: "/rooms_and_suits/deluxe_room",
     },
     {
@@ -57,7 +57,7 @@ const cardArray = [
         price: "800/Night",
         room: "Family Room",
         description:
-            "We present the best in line family rooms which will go soft on the pocket when you see the array of...read more",
+            "We present the best in line family rooms which will go soft on the pocket when you see the array of services.",
         link: "/rooms_and_suits/family_room",
     },
     {
@@ -131,9 +131,9 @@ const ServiceCard = ({
                             <p className="font-gilda text-2xl">{room}</p>
                         </div>
                     </CardHeader>
-                    <CardBody className="text-sm">
+                    <CardBody className="text-sm p-4">
                         <p>{description}</p>
-                        <div className=" flex items-center justify-center">
+                        <div className=" flex items-center justify-center py-4">
                             <div className="grid grid-cols-3 gap-4">
                                 <p className="mt-2 flex items-center">
                                     <PersonIcon className="mr-2" /> 1-2 Persons

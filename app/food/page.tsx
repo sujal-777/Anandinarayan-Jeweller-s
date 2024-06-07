@@ -114,7 +114,7 @@ export default function Foods() {
                             alt="food"
                             width={1000}
                             height={1000}
-                            className="w-full"
+                            className="w-full h-full"
                         />
                     </div>
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -123,7 +123,7 @@ export default function Foods() {
                             alt="food"
                             width={1000}
                             height={1000}
-                            className="w-full"
+                            className="w-full h-full"
                         />
                         <Image
                             src="/assets/food/image7.png"
@@ -137,7 +137,7 @@ export default function Foods() {
                             alt="food"
                             width={1000}
                             height={1000}
-                            className="w-full"
+                            className="w-full h-full"
                         />
                     </div>
                 </div>
