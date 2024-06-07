@@ -1,8 +1,9 @@
 import React from "react";
 
-import { Image, Button } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import HallCarousel from "./HallCarousel/HallCarousel";
 import { FaPhoneVolume } from "react-icons/fa6";
+import Image from "next/image";
 
 interface RoomPageProps {
     src: string;
@@ -10,6 +11,7 @@ interface RoomPageProps {
     desc1: string;
     features: string[];
     occasions: string[];
+    images: string[];
 }
 
 const HallsPage: React.FC<RoomPageProps> = ({
@@ -18,6 +20,7 @@ const HallsPage: React.FC<RoomPageProps> = ({
     desc1,
     features,
     occasions,
+    images,
 }) => {
     return (
         <div className="font-barlow">
@@ -32,7 +35,7 @@ const HallsPage: React.FC<RoomPageProps> = ({
                     {hall}
                 </h2>
             </div>
-            <div className="py-10 md:px-8">
+            <div className="py-10">
                 <div className="">
                     <div className="">
                         <div>
@@ -70,7 +73,7 @@ const HallsPage: React.FC<RoomPageProps> = ({
 
                 <a
                     href="tel:+918888870722"
-                    className="flex items-center text-xl mt-6"
+                    className="mt-6 flex items-center text-xl"
                 >
                     <div className="mr-4">
                         <FaPhoneVolume style={{ color: "#AA8453" }} />
@@ -82,6 +85,22 @@ const HallsPage: React.FC<RoomPageProps> = ({
                         </p>
                     </div>
                 </a>
+
+                <div className="grid grid-cols-1 py-10 md:grid-cols-2 gap-4">
+                    {images.map((image, index) => {
+                        return (
+                            <div key={index} className="relative">
+                                <Image
+                                    src={image}
+                                    alt="image"
+                                    width={500}
+                                    height={500}
+                                    className="h-full w-full"
+                                />
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
         </div>
     );

@@ -31,7 +31,7 @@ export default function Weddings() {
 
     return (
         <div>
-            <div className="space-y-8 px-8 py-10 font-barlow font-barlow leading-8 text-[##7D7D7D] md:px-48">
+            <div className="space-y-8 px-8 py-10 font-barlow font-barlow leading-8 text-[##7D7D7D] md:px-48" id="#weddings">
                 <div>
                     <h2 className="text-4xl font-[500] text-[#AA8453]">
                         A place to make your wedding an unforgettable event

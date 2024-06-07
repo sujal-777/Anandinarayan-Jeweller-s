@@ -24,6 +24,13 @@ const occasionsArray = [
 ];
 
 const page = () => {
+    const images = [
+        "/assets/hallls/image 79.png",
+        "/assets/hallls/image 80.png",
+        "/assets/hallls/image 91.png",
+        "/assets/hallls/image 92.png",
+    ];
+
     return (
         <section>
             <Hero
@@ -41,6 +48,7 @@ const page = () => {
                     desc1={desc}
                     features={featuresArray}
                     occasions={occasionsArray}
+                    images={images}
                 />
             </div>
             <HallCarousel />

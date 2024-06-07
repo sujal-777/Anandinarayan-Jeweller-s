@@ -8,7 +8,7 @@ export default function CorporateTie() {
     return (
         <section className="min-h-screen space-y-8 bg-[#F8F5F0] px-8 py-20 lg:px-48">
             <p
-                className="text-heading flex items-center justify-center text-black"
+                className="text-heading flex items-center justify-center text-black font-gilda"
                 data-aos="fade-up"
             >
                 Corporate Tie-ups
@@ -86,12 +86,14 @@ export default function CorporateTie() {
                                     className="h-full w-full object-cover object-center"
                                 />
                                 <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-40 opacity-0 transition-all duration-200 group-hover:opacity-100">
-                                    <Link
-                                        href={"/corporate-events"}
+                                    <a
+                                        href={
+                                            "/weddings-and-events#corporate-events"
+                                        }
                                         className="text-white"
                                     >
                                         Read More
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                             <div
@@ -107,12 +109,14 @@ export default function CorporateTie() {
                                     className="h-full w-full object-cover object-center"
                                 />
                                 <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-40 opacity-0 transition-all duration-200 group-hover:opacity-100">
-                                    <Link
-                                        href={"/corporate-events"}
+                                    <a
+                                        href={
+                                            "/weddings-and-events#corporate-events"
+                                        }
                                         className="text-white"
                                     >
                                         Read More
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                             <div
@@ -128,12 +132,14 @@ export default function CorporateTie() {
                                     className="h-full w-full object-cover object-center"
                                 />
                                 <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-40 opacity-0 transition-all duration-200 group-hover:opacity-100">
-                                    <Link
-                                        href={"/corporate-events"}
+                                    <a
+                                        href={
+                                            "/weddings-and-events#corporate-events"
+                                        }
                                         className="text-white"
                                     >
                                         Read More
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                             <div
@@ -149,12 +155,14 @@ export default function CorporateTie() {
                                     className="h-full w-full object-cover object-center"
                                 />
                                 <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-40 opacity-0 transition-all duration-200 group-hover:opacity-100">
-                                    <Link
-                                        href={"/corporate-events"}
+                                    <a
+                                        href={
+                                            "/weddings-and-events#corporate-events"
+                                        }
                                         className="text-white"
                                     >
                                         Read More
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>

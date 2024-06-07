@@ -9,6 +9,7 @@ import SwimmingPool from "./Icons/swimmingPool";
 import BedIcon from "./Icons/bedIcon";
 import BreakfastIcon from "./Icons/breakfastIcon";
 import WifiIcon from "./Icons/wifiIcon";
+import Link from "next/link";
 
 interface RoomPageProps {
     src: string;
@@ -22,9 +23,7 @@ const RoomPage: React.FC<RoomPageProps> = ({ src, room, desc1, desc2 }) => {
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
             <div className="col-span-2 space-y-4 font-barlow">
                 <div className="pb-8">
-                    <p
-                        className="font-barlow uppercase tracking-widest text-[#666666]"
-                    >
+                    <p className="font-barlow uppercase tracking-widest text-[#666666]">
                         Hotel the nagpur Ashok
                     </p>
                     <h2
@@ -73,7 +72,7 @@ const RoomPage: React.FC<RoomPageProps> = ({ src, room, desc1, desc2 }) => {
                         </div>
                     </div>
                 </div>
-        <br />
+                <br />
                 <div className="mt-5 lg:mt-0">
                     <p className="font-gilda text-[24px] text-[#222222]">
                         Special check-in instructions
@@ -106,7 +105,7 @@ const RoomPage: React.FC<RoomPageProps> = ({ src, room, desc1, desc2 }) => {
                     <p>Pets not allowed</p>
                 </div>
 
-                <div className="mt-5 lg:hidden block">
+                <div className="mt-5 block lg:hidden">
                     <p className="font-gilda text-[24px] text-[#222222]">
                         Amenities
                     </p>
@@ -132,13 +131,20 @@ const RoomPage: React.FC<RoomPageProps> = ({ src, room, desc1, desc2 }) => {
 
                 <div className="mt-5 flex flex-col">
                     <div className="order-first md:order-last md:mt-4">
-                        <Button
-                            radius="none"
-                            size="lg"
-                            className="bg-[#AA8453] p-4 text-center uppercase text-white hover:bg-black"
+                        <Link
+                            target="_blank"
+                            href={
+                                "https://www.swiftbook.io/inst/#home?propertyId=963MTUJmY1lpZeCmz9rXlfH7YmoaIvdJKdXK4LhxJkZp0tg0ZSH9q9wNA==&JDRN=Y"
+                            }
                         >
-                            CHECK NOW
-                        </Button>
+                            <Button
+                                radius="none"
+                                size="lg"
+                                className="bg-[#AA8453] p-4 text-center uppercase text-white hover:bg-black"
+                            >
+                                CHECK NOW
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>

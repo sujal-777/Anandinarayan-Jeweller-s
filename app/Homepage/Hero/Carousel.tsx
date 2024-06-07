@@ -51,16 +51,17 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                     <h3 className="font-barlow">
                                         {item.title2}
                                     </h3>
-                                    <h1 className="  text-heading font-[500] uppercase tracking-wider">
+                                    <h1 className="  text-heading font-[500] uppercase tracking-wider font-gilda">
                                         {item.title1}
                                     </h1>
                                 </div>
                                 {item.btnTitle !== "" && (
                                     <Link
                                         href={item.links}
-                                        className={`z-30 border-2 border-white px-4 py-2 font-barlow uppercase tracking-wider transition-all delay-200 duration-700 hover:bg-white hover:text-black  ${index === selectedIndex ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
+                                        className={`z-30 btn border-2 group relative border-white px-4 py-2 font-barlow uppercase tracking-wider transition-all delay-200 duration-700 hover:text-black  ${index === selectedIndex ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
                                     >
                                         {item.btnTitle}
+                                        
                                     </Link>
                                 )}
                                 <Image

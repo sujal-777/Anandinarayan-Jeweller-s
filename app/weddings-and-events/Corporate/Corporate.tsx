@@ -9,7 +9,7 @@ import { LiaConciergeBellSolid } from "react-icons/lia";
 export default function Corporate() {
     return (
         <div>
-            <div className="space-y-4 px-8 py-20 font-barlow md:px-48">
+            <div className="space-y-4 px-8 py-20 font-barlow md:px-48" id="corporate-events">
                 <div className="">
                     <p
                         className="font-barlow uppercase tracking-widest text-[#666666]"

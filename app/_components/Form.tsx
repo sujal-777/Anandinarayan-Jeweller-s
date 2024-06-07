@@ -9,6 +9,7 @@ export default function Form() {
     const [rooms, setRooms] = useState(1);
     const [adults, setAdults] = useState(1);
     const [children, setChildren] = useState(0);
+
     return (
         <div className="right-1 mx-auto  max-w-[450px] bg-[#F8F5F0] px-8 py-10">
             <div className="py-10">
@@ -37,6 +38,12 @@ export default function Form() {
                         value={startDate}
                         onChange={(e) => {
                             setStartDate(e.target.value);
+                            const newDate = new Date(e.target.value);
+                            newDate.setDate(newDate.getDate() + 1);
+                            const nextDate = newDate
+                                .toISOString()
+                                .split("T")[0];
+                            setEndDate(nextDate);
                         }}
                         min={new Date().toISOString().split("T")[0]}
                         required
@@ -51,7 +58,7 @@ export default function Form() {
                         className="block w-full"
                         value={endDate}
                         onChange={(e) => setEndDate(e.target.value)}
-                        min={new Date().toISOString().split("T")[0]}
+                        min={endDate}
                         required
                     />
                 </div>

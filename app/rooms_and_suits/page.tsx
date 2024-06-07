@@ -18,7 +18,7 @@ export default function rooms() {
                 <Room />
                 {/* <Page /> */}
             </div>
-            <div className="my-20 bg-[#F8F5F0] px-8 md:px-96">
+            <div className="my-20 bg-[#F8F5F0] md:px-48">
                 <Search />
             </div>
         </section>

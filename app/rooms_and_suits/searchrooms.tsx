@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Select, SelectItem, Button } from "@nextui-org/react";
-import Form from "./Hero/Form";
+import HorizontalForm from "../_components/HorizontalForm";
+import Form from "../_components/Form";
 
 const adultCount = [
     "1 Adult",
@@ -36,7 +37,7 @@ const SearchRooms = () => {
 
     return (
         <div className="w-full py-10 font-barlow">
-            <div className="pb-10" data-aos="fade-up">
+            <div className="pb-5 px-8 lg:px-0" data-aos="fade-up">
                 <p
                     className="font-barlow uppercase tracking-widest text-[#666666]"
                     data-aos="fade-up"
@@ -50,72 +51,11 @@ const SearchRooms = () => {
                     Search Rooms
                 </h2>
             </div>
-            <div className="lg:flex items-center justify-center border-2 hidden">
-                <div className="grid w-full grid-cols-1 gap-0 md:grid-cols-2 lg:grid-cols-6">
-                    <div className="flex items-stretch justify-center border-b-2 border-r-0 bg-white md:border-b-0 md:border-r-2">
-                        <DatePicker
-                            showIcon
-                            isClearable
-                            placeholderText="Click to select a date"
-                            selected={startDate}
-                            onChange={(date) => setStartDate(date)}
-                            selectsStart
-                            startDate={startDate}
-                            endDate={endDate}
-                            className="w-full "
-                        />
-                    </div>
-                    <div className="flex items-stretch justify-center border-b-2 border-r-0 bg-white md:border-b-0 md:border-r-2">
-                        <DatePicker
-                            showIcon
-                            isClearable
-                            placeholderText="Click to select a date"
-                            selected={endDate}
-                            onChange={(date) => setEndDate(date)}
-                            selectsEnd
-                            startDate={startDate}
-                            endDate={endDate}
-                            minDate={startDate}
-                            className="w-full"
-                        />
-                    </div>
-                    <div className="flex items-stretch justify-center border-b-2 border-r-0 md:border-b-0 md:border-r-2">
-                        <Select radius="none" label="Adults" className="w-full">
-                            {adultCount?.map((ele, i) => (
-                                <SelectItem key={i}>{ele}</SelectItem>
-                            ))}
-                        </Select>
-                    </div>
-                    <div className="flex items-stretch justify-center border-b-2 border-r-0 md:border-b-0 md:border-r-2">
-                        <Select
-                            radius="none"
-                            label="Children"
-                            className="w-full"
-                        >
-                            {childCount?.map((ele, i) => (
-                                <SelectItem key={i}>{ele}</SelectItem>
-                            ))}
-                        </Select>
-                    </div>
-                    <div className="flex items-stretch justify-center border-b-2 border-r-0 md:border-b-0 md:border-r-2">
-                        <Select radius="none" label="Rooms" className="w-full">
-                            {roomCount?.map((ele, i) => (
-                                <SelectItem key={i}>{ele}</SelectItem>
-                            ))}
-                        </Select>
-                    </div>
-                    <div className="flex items-stretch justify-center border-b-2 md:border-b-0">
-                        <Button
-                            radius="none"
-                            variant="flat"
-                            className="h-full w-full bg-[#AA8453] text-white"
-                        >
-                            Check Now
-                        </Button>
-                    </div>
-                </div>
+
+            <div className="hidden lg:block">
+                <HorizontalForm />
             </div>
-            <div className="block bg-[#F8F5F0] p-4 lg:hidden">
+            <div className="block lg:hidden">
                 <Form />
             </div>
         </div>

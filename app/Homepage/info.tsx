@@ -3,6 +3,7 @@ import CallIcon from "@mui/icons-material/Call";
 
 import { FaPhoneVolume } from "react-icons/fa6";
 import Image from "next/image";
+import { ClassNames } from "@emotion/react";
 
 const info = () => {
     return (
@@ -56,8 +57,8 @@ const info = () => {
                                         style={{ color: "#AA8453" }}
                                     />
                                 </div>
-                                <div className="flex flex-col">
-                                    <p style={{ color: "" }}>Reservation</p>
+                                <div className="flex flex-col ">
+                                    <p style={{ color: "" }} className="barlow-condensed">Reservation</p>
                                     <p
                                         className="text-xl"
                                         style={{ color: "#AA8453" }}

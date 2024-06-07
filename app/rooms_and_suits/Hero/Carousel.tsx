@@ -24,7 +24,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     const { slides, options, title } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [
         Fade(),
-        Autoplay({ playOnInit: true, delay: 5000, stopOnMouseEnter: true }),
+        Autoplay({ playOnInit: true, delay: 5000 }),
     ]);
 
     const { selectedIndex, scrollSnaps, onDotButtonClick } =

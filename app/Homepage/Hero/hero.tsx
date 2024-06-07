@@ -10,6 +10,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { menuItems } from "@/constants/menuItems";
 import Script from "next/script";
 import Form from "@/app/_components/Form";
+import HorizontalForm from "@/app/_components/HorizontalForm";
 
 export default function Hero() {
     const slides = [
@@ -45,7 +46,7 @@ export default function Hero() {
     return (
         <section data-aos="fade-in" className="hero relative">
             {/* NAVBAR */}
-            <div className=" fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-36 px-4 py-4 font-barlow lg:justify-center lg:px-12">
+            <div className=" barlow-condensed fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-36 px-4  py-4 lg:justify-center lg:px-12">
                 <Link href={"/"}>
                     <Image
                         src="/logo.svg"
@@ -139,15 +140,15 @@ export default function Hero() {
                     <FaPhoneVolume className="text-xl" />
                 </div>
                 <div className="float-left mx-4">
-                    <p className="font-barlow text-xs uppercase tracking-[0.3rem]">
+                    <p className="barlow-condensed text-xs uppercase tracking-[0.3rem]">
                         reservation
                     </p>
                     <p className="text-xl text-white">+91 88888 70722</p>
                 </div>
             </a>
 
-            <div className="bottom-0 left-0 right-0 z-30  block px-8 pb-20 lg:absolute lg:px-40">
-                <RoomSearch />
+            <div className="bottom-0 left-0 right-0 z-30 hidden lg:block px-8 pb-20 lg:absolute lg:px-40">
+                <HorizontalForm />
             </div>
 
             <div className="block lg:hidden">

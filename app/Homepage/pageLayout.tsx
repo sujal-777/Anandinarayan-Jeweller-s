@@ -14,7 +14,7 @@ import TripAdvisor from "./TripAdvisor/TripAdvisor";
 
 const pageLayout = () => {
     return (
-        <section className="overflow-x-hidden font-gilda">
+        <section className="overflow-x-hidden font-barlow">
             <Hero />
             <Info />
             <RoomsAndSuites />
