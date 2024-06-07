@@ -130,11 +130,11 @@ export default function Footer() {
                 </div>
                 <div className="">
                     <Image
-                        src="/assets/trip-advisor-2024.png"
+                        src="/assets/TC LOGO_2024.webp"
                         alt="footer image"
                         width={200}
                         height={200}
-                        className="h-auto max-w-full"
+                        className="h-auto max-w-full rounded-full aspect-square object-cover object-center"
                     />
                 </div>
             </div>

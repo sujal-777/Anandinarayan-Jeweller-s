@@ -55,11 +55,11 @@ export default function TripAdvisor() {
 
                 <div className="w-full items-center lg:flex lg:justify-center">
                     <Image
-                        src="/assets/trip-advisor-2024.png"
+                        src="/assets/TC LOGO_2024.webp"
                         width={1000}
                         height={1000}
                         alt="Corporate Image 1"
-                        className=" w-full object-cover object-center max-w-[300px] aspect-square"
+                        className=" w-full object-cover object-center max-w-[300px] aspect-square rounded-full"
                     />
                 </div>
             </div>
