@@ -143,7 +143,7 @@ export default function Hero() {
                     <p className="barlow-condensed text-xs uppercase tracking-[0.3rem]">
                         reservation
                     </p>
-                    <p className="text-xl text-white">+91 88888 70722</p>
+                    <p className="text-2xl text-[#aa8453] font-gilda">+91 88888 70722</p>
                 </div>
             </a>
 

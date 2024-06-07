@@ -3,6 +3,7 @@ import React from "react";
 import { Image } from "@nextui-org/react";
 import { FaPhoneVolume } from "react-icons/fa6";
 import EmblaCarousel from "./EmblaCarousel";
+import Carousel from "./Carousel";
 
 export default function WeddingEvent() {
     const halls = [
@@ -104,8 +105,8 @@ export default function WeddingEvent() {
                     </a>
                 </div>
 
-                <div className="w-full md:p-4" data-aos="fade-in" data-aos-delay="200">
-                    <EmblaCarousel slides={halls} options={{ loop: false }} />
+                <div className="w-full" data-aos="fade-in" data-aos-delay="200">
+                <Carousel cards={halls} />
                 </div>
             </div>
         </section>
