@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Form() {
     const [startDate, setStartDate] = useState("");
     const [endDate, setEndDate] = useState("");
-
+    const [rooms, setRooms] = useState(1);
     const [adults, setAdults] = useState(1);
     const [children, setChildren] = useState(0);
     return (
@@ -24,7 +24,7 @@ export default function Form() {
             </div>
 
             <form
-                action={`https://www.swiftbook.io/inst/#/home?propertyId=963MTUJmY1lpZeCmz9rXlfH7YmoaIvdJKdXK4LhxJkZp0tg0ZSH9q9wNA==&checkIn=${startDate.toString()}&checkOut=${endDate.toString()}&clientWidth=1519&JDRN=Y&noofrooms=1&adult0=${adults}&child0=${children}`}
+                action={`https://www.swiftbook.io/inst/#/home?propertyId=963MTUJmY1lpZeCmz9rXlfH7YmoaIvdJKdXK4LhxJkZp0tg0ZSH9q9wNA==&checkIn=${startDate.toString()}&checkOut=${endDate.toString()}&clientWidth=1519&JDRN=Y&noofrooms=${rooms}&adult0=${adults}&child0=${children}`}
                 className="grid grid-cols-1 gap-4 font-barlow lg:grid-cols-2"
             >
                 <div className="bg-white p-4 lg:col-span-2">
@@ -56,13 +56,39 @@ export default function Form() {
                     />
                 </div>
 
+                <div className="bg-white p-4 lg:col-span-2">
+                    <label htmlFor="" className="text-[#666666]">
+                        Rooms
+                    </label>
+                    <div className="flex items-center justify-between">
+                        <p
+                            className=""
+                            onClick={() => {
+                                setRooms((x) => x - 1);
+                            }}
+                        >
+                            <FaMinus />
+                        </p>
+                        <p>{rooms}</p>
+                        <p
+                            onClick={() => {
+                                setRooms((x) => x + 1);
+                            }}
+                        >
+                            <FaPlus />
+                        </p>
+                    </div>
+                </div>
                 <div className="bg-white p-4 ">
+                    <label htmlFor="" className="text-[#666666]">
+                        Adults
+                    </label>
                     <div className="flex items-center justify-between">
                         <p
                             className=""
                             onClick={() => {
                                 adults > 1 && setAdults((x) => x - 1);
-                                adults + children > 4 &&
+                                adults + children > 4 * rooms &&
                                     setChildren((x) => x - 1);
                             }}
                         >
@@ -71,10 +97,11 @@ export default function Form() {
                         <p>{adults}</p>
                         <p
                             onClick={() => {
-                                adults + children > 3 &&
-                                    adults < 4 &&
+                                adults + children > 4 * rooms - 1 &&
+                                    adults < 4 * rooms &&
+                                    children > 0 &&
                                     setChildren((x) => x - 1);
-                                adults < 4 && setAdults((x) => x + 1);
+                                adults < 4 * rooms && setAdults((x) => x + 1);
                             }}
                         >
                             <FaPlus />
@@ -82,6 +109,9 @@ export default function Form() {
                     </div>
                 </div>
                 <div className="bg-white p-4 ">
+                    <label htmlFor="" className="text-[#666666]">
+                        Children
+                    </label>
                     <div className="flex items-center justify-between">
                         <p
                             className=""
@@ -94,10 +124,11 @@ export default function Form() {
                         <p>{children}</p>
                         <p
                             onClick={() => {
-                                adults + children > 3 &&
-                                    children < 1 &&
+                                adults + children > 4 * rooms - 1 &&
+                                    children < 1 * rooms &&
                                     setAdults((x) => x - 1);
-                                children < 1 && setChildren((x) => x + 1);
+                                children < 1 * rooms &&
+                                    setChildren((x) => x + 1);
                             }}
                         >
                             <FaPlus />
