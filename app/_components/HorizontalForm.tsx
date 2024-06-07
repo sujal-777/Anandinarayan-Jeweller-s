@@ -55,7 +55,7 @@ export default function HorizontalForm() {
                             setRooms((x) => x - 1);
                         }}
                     >
-                        <FaMinus />
+                        <FaMinus className="text-[#aa8453]" />
                     </p>
                     <p>{rooms}</p>
                     <p
@@ -64,7 +64,7 @@ export default function HorizontalForm() {
                             setRooms((x) => x + 1);
                         }}
                     >
-                        <FaPlus />
+                        <FaPlus className="text-[#aa8453]" />
                     </p>
                 </div>
             </div>
@@ -81,7 +81,7 @@ export default function HorizontalForm() {
                                 setChildren((x) => x - 1);
                         }}
                     >
-                        <FaMinus />
+                        <FaMinus className="text-[#aa8453]" />
                     </p>
                     <p>{adults}</p>
                     <p
@@ -94,7 +94,7 @@ export default function HorizontalForm() {
                             adults < 4 * rooms && setAdults((x) => x + 1);
                         }}
                     >
-                        <FaPlus />
+                        <FaPlus className="text-[#aa8453]" />
                     </p>
                 </div>
             </div>
