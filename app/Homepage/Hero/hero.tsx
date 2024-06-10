@@ -48,7 +48,7 @@ export default function Hero() {
     return (
         <section data-aos="fade-in" className="hero relative">
             {/* NAVBAR */}
-            <div className=" barlow-condensed fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-36 px-4  py-4 lg:justify-center lg:px-12">
+            <div className=" barlow-condensed fixed left-0 top-0 z-40 flex w-full items-center justify-between gap-36 px-4 py-4 lg:justify-center lg:px-12">
                 <Link href={"/"}>
                     <Image
                         src="/logo.svg"
@@ -89,23 +89,21 @@ export default function Hero() {
                 </button>
 
                 <div
-                    className={`absolute left-0 top-full block w-full items-center gap-8 space-y-4 overflow-clip overflow-y-scroll px-4 transition-all duration-300 lg:static lg:flex lg:w-fit lg:space-y-0 lg:overflow-visible lg:bg-transparent lg:p-0 ${hidden ? "max-h-[0dvh] p-0 lg:max-h-fit" : "max-h-[80dvh] py-4 lg:max-h-fit"}`}
+                    className={`absolute left-0 top-full w-full items-center gap-8 space-y-4 overflow-clip bg-white px-4 transition-all duration-300 lg:static block md:grid md:grid-cols-2 lg:flex lg:w-fit lg:space-y-0 lg:overflow-visible lg:bg-transparent lg:p-0 ${hidden ? "max-h-[0dvh] p-0 lg:max-h-fit" : "max-h-[80dvh] py-4 lg:max-h-fit"}`}
                 >
                     {menuItems.map((item, index) => {
                         return (
                             <div key={index} className="group relative">
                                 <Link
                                     href={item.href}
-                                    className={` uppercase hover:text-[#AA8453] ${pathname === item.href ? "text-[#AA8453]" : "text-white"}`}
+                                    className="uppercase text-black hover:text-[#AA8453] lg:text-white"
                                     onClick={() => {
                                         setHidden(true);
                                     }}
                                 >
                                     {item.text}
                                     {item.links && (
-                                        <KeyboardArrowDownIcon
-                                            className={` hover:text-[#AA8453] ${pathname === item.href ? "text-[#AA8453]" : "text-white"}`}
-                                        />
+                                        <KeyboardArrowDownIcon className=" text-black hover:text-[#AA8453] lg:text-white" />
                                     )}
                                 </Link>
                                 {item.links && (
@@ -115,7 +113,7 @@ export default function Hero() {
                                                 <Link
                                                     key={index}
                                                     href={link.href}
-                                                    className={`block pt-2 hover:text-[#AA8453] ${pathname === item.href && "text-[#AA8453]"}`}
+                                                    className="block pt-2 text-black hover:text-[#AA8453]"
                                                     onClick={() => {
                                                         setHidden(true);
                                                     }}

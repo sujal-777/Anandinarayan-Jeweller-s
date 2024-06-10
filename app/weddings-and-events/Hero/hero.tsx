@@ -66,7 +66,7 @@ export default function Hero({
                 </button>
 
                 <div
-                    className={`absolute left-0 top-full block w-full items-center gap-8 space-y-4 overflow-clip bg-white px-4 transition-all duration-300 lg:static lg:flex lg:w-fit lg:space-y-0 lg:overflow-visible lg:bg-transparent lg:p-0 ${hidden ? "max-h-[0dvh] p-0 lg:max-h-fit" : "max-h-[80dvh] py-4 lg:max-h-fit"}`}
+                    className={`absolute left-0 top-full block w-full items-center gap-8 space-y-4 overflow-clip bg-white px-4 transition-all duration-300 md:grid md:grid-cols-2 lg:static lg:flex lg:w-fit lg:space-y-0 lg:overflow-visible lg:bg-transparent lg:p-0 ${hidden ? "max-h-[0dvh] p-0 lg:max-h-fit" : "max-h-[80dvh] py-4 lg:max-h-fit"}`}
                 >
                     {menuItems.map((item, index) => {
                         return (
@@ -84,13 +84,13 @@ export default function Hero({
                                     )}
                                 </Link>
                                 {item.links && (
-                                    <div className="left-0 right-0 top-full hidden w-full max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:block lg:absolute lg:min-w-[10rem]">
+                                    <div className="hover-trans top-[-2000%] z-[-1] w-full max-w-[20rem] space-y-2 divide-y-2 bg-white p-4 group-hover:top-full group-hover:opacity-100 lg:absolute lg:left-0 lg:right-0 lg:min-w-[10rem] lg:opacity-0">
                                         {item.links.map((link, index) => {
                                             return (
                                                 <Link
                                                     key={index}
                                                     href={link.href}
-                                                    className="block pt-2 text-normal text-black hover:text-[#AA8453]"
+                                                    className="text-normal block pt-2 text-black hover:text-[#AA8453]"
                                                     onClick={() => {
                                                         setHidden(true);
                                                     }}
