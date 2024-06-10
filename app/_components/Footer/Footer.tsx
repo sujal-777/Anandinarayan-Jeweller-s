@@ -12,7 +12,6 @@ import { RiTwitterXLine } from "react-icons/ri";
 import "./style.css";
 
 import { Image, menuItem } from "@nextui-org/react";
-import { menuItems } from "@/constants/menuItems";
 import Link from "next/link";
 import { IoLocationOutline } from "react-icons/io5";
 
@@ -29,7 +28,91 @@ import { IoLocationOutline } from "react-icons/io5";
 }
 
 export default function Footer() {
-    // TODO: ADD links to: Solutions, Price lists, Terms of Sale, Privacy Statement, Legal Authoriiy, Accessibilty, Projects, Commissions
+    const menuItems = [
+        {
+            text: "Home",
+            href: "/",
+        },
+        {
+            text: "About",
+            href: "/about-us",
+        },
+        {
+            text: "Rooms & Suits",
+            href: "/rooms_and_suits",
+            links: [
+                {
+                    name: "Family Room",
+                    href: "/rooms_and_suits/family_room",
+                },
+                {
+                    name: "Deluxe Room",
+                    href: "/rooms_and_suits/deluxe_room",
+                },
+                {
+                    name: "King Suite",
+                    href: "/rooms_and_suits/king_suit",
+                },
+                {
+                    name: "Budget Room",
+                    href: "/rooms_and_suits/budget_room",
+                },
+            ],
+        },
+        {
+            text: "Wedding & Events",
+            href: "/weddings-and-events",
+            links: [
+                {
+                    name: "Kohinoor Hall",
+                    href: "/weddings-and-events/kohinoor",
+                },
+                {
+                    name: "Magadh Hall",
+                    href: "/weddings-and-events/magadh",
+                },
+                {
+                    name: "Maurya Hall",
+                    href: "/weddings-and-events/maurya",
+                },
+                {
+                    name: "Samrat Hall",
+                    href: "/weddings-and-events/samrat",
+                },
+            ],
+        },
+        {
+            text: "Dining",
+            href: "/food",
+            links: [
+                {
+                    name: "Food",
+                    href: "/food",
+                },
+                {
+                    name: "Bar",
+                    href: "/bar",
+                },
+                {
+                    name: "Pooldeck Restrobar",
+                    href: "/pooldeck-restrobar",
+                },
+                {
+                    name: "Swimming Pool",
+                    href: "/swimming-pool",
+                },
+            ],
+        },
+        {
+            text: "Awards",
+            href: "/awards",
+        },
+        {
+            text: "Careers",
+            href: "/careers",
+        },
+        { text: "Contact", href: "/contact_us" },
+    ];
 
     return (
         <>
@@ -93,49 +176,57 @@ export default function Footer() {
                         <a
                             href="https://www.facebook.com/thenagpurashok/"
                             className="transition duration-75 hover:text-purple-400"
+                            target="_blank"
                         >
                             <FaFacebookF />
                         </a>
                         <a
                             href="https://www.instagram.com/hotel_nagpur_ashok/"
                             className="transition duration-75 hover:text-purple-400"
+                            target="_blank"
                         >
                             <TfiInstagram />
                         </a>
                         <a
                             href="https://www.google.com.np/travel/hotels/entity/ChgIw7SUwYLs3__hARoLL2cvMXRzeW43OGgQAQ?g2lb=4207876%2C4208993%2C4220293%2C4223281%2C4242898%2C4245928%2C4251619%2C4253230%2C4254308%2C4256748%2C4258168%2C4250437%2C4251518%2C4253015&hl=en&gl=np&un=1&rp=MhsKEgml8-FZgqw7QBHB4nDmV1tVQBC245qvrC04AUgC&ictx=1&tcfs=EhoaGAoKMjAxOS0wNS0yMRIKMjAxOS0wNS0yMlIA&utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAEaUwo1EjEyJTB4M2EyY2Q0Y2JhYzNkMjRkZjoweDg3ZmFhZjY2NTM1ZmM5ODU6CFZpZGFyYmhhGgASGhIUCgcI6A8QBhgIEgcI6A8QBhgJGAEyAhAAKgkKBToDTlBSGgA&sa=X&ap=MAA&ei=wtUFZMe5C8i92QL19qy4Dg&ved=0CAAQ5JsGahcKEwjI3eeawsmGAxUAAAAAHQAAAAAQBA"
                             className="transition duration-75 hover:text-purple-400"
+                            target="_blank"
                         >
                             <SiGoogle />
                         </a>
                         <a
                             href="https://www.youtube.com/channel/UC08aVU9z2jR3jMPrDtnLVnQ"
                             className="transition duration-75 hover:text-purple-400"
+                            target="_blank"
                         >
                             <TfiYoutube />
                         </a>
                         <a
                             href="https://in.linkedin.com/company/the-nagpur-ashok"
                             className="transition duration-75 hover:text-purple-400"
+                            target="_blank"
                         >
                             <PiLinkedinLogo />
                         </a>
                         <a
                             href="https://x.com/thenagpurashok"
                             className="transition duration-75 hover:text-purple-400"
+                            target="_blank"
                         >
                             <RiTwitterXLine />
                         </a>
                     </div>
                 </div>
                 <div className="">
-                    <Image
-                        src="/assets/TC LOGO_2024.webp"
-                        alt="footer image"
-                        width={200}
-                        height={200}
-                        className="h-auto max-w-full rounded-full aspect-square object-cover object-center"
-                    />
+                    <Link href={"https://www.tripadvisor.in/Hotel_Review-g662323-d2399400-Reviews-Hotel_Nagpur_Ashok-Nagpur_Nagpur_District_Maharashtra.html?m=19905"} target="_blank">
+                        <Image
+                            src="/assets/TC LOGO_2024.webp"
+                            alt="footer image"
+                            width={200}
+                            height={200}
+                            className="aspect-square h-auto max-w-full rounded-full object-cover object-center"
+                        />
+                    </Link>
                 </div>
             </div>
             <div className="border-t-2 border-white bg-[#282424] py-4 text-center font-barlow text-[#ADADAD]">

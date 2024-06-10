@@ -10,6 +10,16 @@
     font-style: normal;
 }
 
+.text-normal {
+    font-size: 15px;
+    line-height: 1.75rem;
+}
+
+.text-heading {
+    font-size: 45px;
+    line-height: 1;
+}
+
 .btn::before {
     content: "";
     display: block;
@@ -163,14 +173,4 @@
 
 .bg-gradient-black {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-}
-
-.text-normal {
-    font-size: 15px;
-    line-height: 1.75rem;
-}
-
-.text-heading {
-    font-size: 45px;
-    line-height: 1;
 }

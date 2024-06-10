@@ -11,6 +11,7 @@ import { menuItems } from "@/constants/menuItems";
 import Script from "next/script";
 import Form from "@/app/_components/Form";
 import HorizontalForm from "@/app/_components/HorizontalForm";
+import { usePathname } from "next/navigation";
 
 export default function Hero() {
     const slides = [
@@ -43,6 +44,7 @@ export default function Hero() {
 
     const [hidden, setHidden] = useState(true);
 
+    const pathname = usePathname();
     return (
         <section data-aos="fade-in" className="hero relative">
             {/* NAVBAR */}
@@ -53,7 +55,7 @@ export default function Hero() {
                         alt="logo"
                         width={500}
                         height={500}
-                        className="max-w-[80px] md:max-w-[150px]"
+                        className="max-w-[120px] md:max-w-[150px]"
                     />
                 </Link>
 
@@ -87,21 +89,23 @@ export default function Hero() {
                 </button>
 
                 <div
-                    className={`absolute left-0 top-full block w-full items-center gap-8 space-y-4 overflow-clip bg-white px-4 transition-all duration-300 lg:static lg:flex lg:w-fit lg:space-y-0 lg:overflow-visible lg:bg-transparent lg:p-0 ${hidden ? "max-h-[0dvh] p-0 lg:max-h-fit" : "max-h-[80dvh] py-4 lg:max-h-fit"}`}
+                    className={`absolute left-0 top-full block w-full items-center gap-8 space-y-4 overflow-clip overflow-y-scroll px-4 transition-all duration-300 lg:static lg:flex lg:w-fit lg:space-y-0 lg:overflow-visible lg:bg-transparent lg:p-0 ${hidden ? "max-h-[0dvh] p-0 lg:max-h-fit" : "max-h-[80dvh] py-4 lg:max-h-fit"}`}
                 >
                     {menuItems.map((item, index) => {
                         return (
                             <div key={index} className="group relative">
                                 <Link
                                     href={item.href}
-                                    className="uppercase text-black hover:text-[#AA8453] lg:text-white"
+                                    className={` uppercase hover:text-[#AA8453] ${pathname === item.href ? "text-[#AA8453]" : "text-white"}`}
                                     onClick={() => {
                                         setHidden(true);
                                     }}
                                 >
                                     {item.text}
                                     {item.links && (
-                                        <KeyboardArrowDownIcon className=" text-black hover:text-[#AA8453] lg:text-white" />
+                                        <KeyboardArrowDownIcon
+                                            className={` hover:text-[#AA8453] ${pathname === item.href ? "text-[#AA8453]" : "text-white"}`}
+                                        />
                                     )}
                                 </Link>
                                 {item.links && (
@@ -111,7 +115,7 @@ export default function Hero() {
                                                 <Link
                                                     key={index}
                                                     href={link.href}
-                                                    className="block pt-2 text-sm text-black hover:text-[#AA8453]"
+                                                    className={`block pt-2 hover:text-[#AA8453] ${pathname === item.href && "text-[#AA8453]"}`}
                                                     onClick={() => {
                                                         setHidden(true);
                                                     }}
@@ -143,11 +147,13 @@ export default function Hero() {
                     <p className="barlow-condensed text-xs uppercase tracking-[0.3rem]">
                         reservation
                     </p>
-                    <p className="text-2xl text-[#aa8453] font-gilda">+91 88888 70722</p>
+                    <p className="font-gilda text-2xl text-[#aa8453]">
+                        +91 88888 70722
+                    </p>
                 </div>
             </a>
 
-            <div className="bottom-0 left-0 right-0 z-30 hidden lg:block px-8 pb-20 lg:absolute lg:px-40">
+            <div className="bottom-0 left-0 right-0 z-30 hidden px-8 pb-20 lg:absolute lg:block lg:px-40">
                 <HorizontalForm />
             </div>
 

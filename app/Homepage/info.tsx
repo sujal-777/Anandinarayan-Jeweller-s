@@ -17,7 +17,7 @@ const info = () => {
                         <p className="font-barlow uppercase tracking-widest text-[#666666]">
                             Hotel Ashok
                         </p>
-                        <h2 className="text-heading">
+                        <h2 className="text-heading font-gilda">
                             Enjoy a Luxury Experience
                         </h2>
 

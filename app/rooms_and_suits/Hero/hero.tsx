@@ -32,7 +32,7 @@ export default function Hero({
                         alt="logo"
                         width={500}
                         height={500}
-                        className="max-w-[80px] md:max-w-[150px]"
+                        className="max-w-[120px] md:max-w-[150px]"
                     />
                 </Link>
 
@@ -90,7 +90,7 @@ export default function Hero({
                                                 <Link
                                                     key={index}
                                                     href={link.href}
-                                                    className="block pt-2 text-sm text-black hover:text-[#AA8453]"
+                                                    className="block pt-2 text-black hover:text-[#AA8453]"
                                                     onClick={() => {
                                                         setHidden(true);
                                                     }}

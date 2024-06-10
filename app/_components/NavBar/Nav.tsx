@@ -8,7 +8,6 @@ import { it } from "node:test";
 import Link from "next/link";
 import { menuItems } from "@/constants/menuItems";
 import { usePathname } from "next/navigation";
-import "./Nav.css";
 
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +16,6 @@ export default function Nav() {
     const [scrolled, setScrolled] = useState(false);
 
     const pathname = usePathname();
-    console.log(pathname);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -38,7 +36,7 @@ export default function Nav() {
 
     return (
         <div
-            className={`barlow-condensed fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-36 bg-white px-4 py-4 shadow-xl backdrop-blur-sm transition-all duration-200 lg:justify-center lg:px-12 ${scrolled ? " -translate-y-0" : " -translate-y-full"}`}
+            className={`barlow-condensed text-normal fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-36 bg-white px-4 py-4 shadow-xl backdrop-blur-sm transition-all duration-200 lg:justify-center lg:px-12 ${scrolled ? " -translate-y-0" : " -translate-y-full"}`}
         >
             <Link href={"/"}>
                 <Image
@@ -46,7 +44,7 @@ export default function Nav() {
                     alt="logo"
                     width={500}
                     height={500}
-                    className="max-w-[80px] md:max-w-[150px]"
+                    className="max-w-[120px] md:max-w-[150px]"
                 />
             </Link>
 
@@ -106,7 +104,7 @@ export default function Nav() {
                                             <Link
                                                 key={index}
                                                 href={link.href}
-                                                className={`block pt-2 text-sm hover:text-[#AA8453] ${pathname === item.href && "text-[#AA8453]"}`}
+                                                className={`block pt-2 hover:text-[#AA8453] ${pathname === item.href && "text-[#AA8453]"}`}
                                                 onClick={() => {
                                                     setHidden(true);
                                                 }}

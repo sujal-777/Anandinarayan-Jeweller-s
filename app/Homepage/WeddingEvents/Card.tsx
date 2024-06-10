@@ -26,7 +26,7 @@ export default function Card({
     link2: string;
 }) {
     return (
-        <div className="group relative aspect-[4/3] w-full p-4">
+        <div className="group relative aspect-[4/3] w-full py-4">
             <div className="h-full w-full overflow-clip">
                 <Image
                     src={img}
@@ -36,7 +36,7 @@ export default function Card({
                     className="trans-duration-500 h-full w-full object-cover"
                 />
             </div>
-            <div className="absolute -bottom-[1rem] left-0 right-0 mx-auto w-[90%] bg-white px-4 py-2 text-center group-hover:space-y-4 md:pt-6 md:pb-8">
+            <div className="absolute -bottom-[1rem] left-0 right-0 mx-auto w-[90%] bg-white px-4 py-2 text-center group-hover:space-y-4 md:pt-6 md:pb-8 pb-4">
                 <h3 className="text-xl md:text-2xl font-gilda">{name}</h3>
                 <div className=" trans-duration-500 max-h-0 space-y-4 overflow-clip  font-barlow  text-sm delay-200 group-hover:max-h-[20rem] md:text-lg">
                     <p className="text-sm">{desc}</p>

@@ -54,13 +54,20 @@ export default function TripAdvisor() {
                 </div>
 
                 <div className="w-full items-center lg:flex lg:justify-center">
-                    <Image
-                        src="/assets/TC LOGO_2024.webp"
-                        width={1000}
-                        height={1000}
-                        alt="Corporate Image 1"
-                        className=" w-full object-cover object-center max-w-[300px] aspect-square rounded-full"
-                    />
+                    <Link
+                        href={
+                            "https://www.tripadvisor.in/Hotel_Review-g662323-d2399400-Reviews-Hotel_Nagpur_Ashok-Nagpur_Nagpur_District_Maharashtra.html?m=19905"
+                        }
+                        target="_blank"
+                    >
+                        <Image
+                            src="/assets/TC LOGO_2024.webp"
+                            width={1000}
+                            height={1000}
+                            alt="Corporate Image 1"
+                            className=" aspect-square w-full max-w-[300px] rounded-full object-cover object-center"
+                        />
+                    </Link>
                 </div>
             </div>
         </div>
