@@ -21,7 +21,16 @@ export default function family_room() {
         <section>
             <Hero slides={slides} title="Family Room" />
             <div className="px-8 py-10 lg:px-48">
-                <RoomPage src={src} room={title} desc1={para1} desc2={para2} />
+                <RoomPage
+                    src={src}
+                    room={title}
+                    desc1={para1}
+                    desc2={para2}
+                    images={[
+                        "/assets/rooms/family-room-1.jpeg",
+                        "/assets/rooms/family-room-2.jpeg",
+                    ]}
+                />
             </div>
             <RoomsAndSuites />
             <WhatClientsSay />

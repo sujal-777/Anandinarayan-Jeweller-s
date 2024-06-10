@@ -36,6 +36,13 @@ export default function Hero() {
             btnTitle: "Weddings",
             links: "/weddings-and-events",
         },
+        {
+            img: "/assets/Home/award.jpeg",
+            title1: "Experience the pinnacle of hospitality at our acclaimed hotel.",
+            title2: "Luxury Hotel & Best Resort",
+            btnTitle: "",
+            links: "",
+        },
     ];
 
     const options: EmblaOptionsType = { loop: true, duration: 60 };
@@ -89,7 +96,7 @@ export default function Hero() {
                 </button>
 
                 <div
-                    className={`absolute left-0 top-full w-full items-center gap-8 space-y-4 overflow-clip bg-white px-4 transition-all duration-300 lg:static block md:grid md:grid-cols-2 lg:flex lg:w-fit lg:space-y-0 lg:overflow-visible lg:bg-transparent lg:p-0 ${hidden ? "max-h-[0dvh] p-0 lg:max-h-fit" : "max-h-[80dvh] py-4 lg:max-h-fit"}`}
+                    className={`absolute left-0 top-full block w-full items-center gap-8 space-y-4 overflow-clip bg-white px-4 transition-all duration-300 md:grid md:grid-cols-2 lg:static lg:flex lg:w-fit lg:space-y-0 lg:overflow-visible lg:bg-transparent lg:p-0 ${hidden ? "max-h-[0dvh] p-0 lg:max-h-fit" : "max-h-[80dvh] py-4 lg:max-h-fit"}`}
                 >
                     {menuItems.map((item, index) => {
                         return (

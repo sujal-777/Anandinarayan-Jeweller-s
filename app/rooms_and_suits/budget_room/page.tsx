@@ -21,7 +21,16 @@ export default function budget_room() {
         <section>
             <Hero slides={slides} title="Budget Room" />
             <div className="px-8 py-10 lg:px-48">
-                <RoomPage src={src} room={title} desc1={para1} desc2={para2} />
+                <RoomPage
+                    src={src}
+                    room={title}
+                    desc1={para1}
+                    desc2={para2}
+                    images={[
+                        "/assets/rooms/budget-room-1.jpeg",
+                        "/assets/rooms/budget-room-2.jpeg",
+                    ]}
+                />
             </div>
             <RoomsAndSuites />
             <WhatClientsSay />

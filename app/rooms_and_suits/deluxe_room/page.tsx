@@ -21,7 +21,18 @@ export default function deluxe_room() {
         <section>
             <Hero slides={slides} title="Deluxe Room" />
             <div className="px-8 py-10 lg:px-48">
-                <RoomPage src={src} room={title} desc1={para1} desc2={para2} />
+                <RoomPage
+                    src={src}
+                    room={title}
+                    desc1={para1}
+                    desc2={para2}
+                    images={[
+                        "/assets/rooms/deluxe-room-1.jpeg",
+                        "/assets/rooms/deluxe-room-2.jpeg",
+                        "/assets/rooms/deluxe-room-3.jpeg",
+                        "/assets/rooms/deluxe-room-4.jpeg",
+                    ]}
+                />
             </div>
             <RoomsAndSuites />
             <WhatClientsSay />
