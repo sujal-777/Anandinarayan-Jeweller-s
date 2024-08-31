@@ -13,217 +13,88 @@ const Content = () => {
 
     return (
         <>
-            <div className="my-10 ">
-                <div className=" flex items-center justify-center ">
-                    <Button
-                        radius="none"
-                        size="lg"
-                        className=" bg-[#AA8453] font-gilda text-4xl uppercase text-white "
-                    >
-                        Feedback
-                    </Button>
-                </div>
-                <p className="mx-5 mt-3 flex items-center justify-center text-center font-barlow text-xl md:mx-40 lg:mx-96">
+            <div className="px-8  py-20 font-barlow lg:px-48">
+                <h3 className="text-2xl uppercase tracking-wider text-[#666666]">
+                    Feedback
+                </h3>
+                <h2 className="text-center text-3xl text-[#AA8453]">
                     Getting things right for you is an important part of what we
                     do and really do like to hear your feedback about your stay
                     with us.
-                </p>
+                </h2>
             </div>
-            <div className="flex flex-col bg-[#EDEDED] md:flex-row">
-                <div className="w-full text-white md:w-1/2">
-                    <div className="grid grid-cols-1 gap-5 px-5 py-5 md:grid-cols-2">
-                        <Input
-                            label="First Name"
-                            variant="underlined"
-                            isRequired
-                            isClearable
-                            radius="lg"
-                            classNames={{
-                                label: "text-black/50 dark:text-white/90",
-                                input: [
-                                    "bg-transparent",
-                                    "text-black/90 dark:text-white/90",
-                                    "placeholder:text-default-700/50 dark:placeholder:text-white/60",
-                                ],
-                                innerWrapper: "bg-transparent",
-                                inputWrapper: [
-                                    "shadow-xl",
-                                    "bg-default-200/50",
-                                    "dark:bg-default/60",
-                                    "backdrop-blur-xl",
-                                    "backdrop-saturate-200",
-                                    "hover:bg-default-200/70",
-                                    "dark:hover:bg-default/70",
-                                    "group-data-[focused=true]:bg-default-200/50",
-                                    "dark:group-data-[focused=true]:bg-default/60",
-                                    "!cursor-text",
-                                ],
-                            }}
-                            placeholder="First Name"
-                        />
-                        <Input
-                            label="Last Name"
-                            variant="underlined"
-                            isRequired
-                            isClearable
-                            radius="lg"
-                            classNames={{
-                                label: "text-black/50 dark:text-white/90",
-                                input: [
-                                    "bg-transparent",
-                                    "text-black/90 dark:text-white/90",
-                                    "placeholder:text-default-700/50 dark:placeholder:text-white/60",
-                                ],
-                                innerWrapper: "bg-transparent",
-                                inputWrapper: [
-                                    "shadow-xl",
-                                    "bg-default-200/50",
-                                    "dark:bg-default/60",
-                                    "backdrop-blur-xl",
-                                    "backdrop-saturate-200",
-                                    "hover:bg-default-200/70",
-                                    "dark:hover:bg-default/70",
-                                    "group-data-[focused=true]:bg-default-200/50",
-                                    "dark:group-data-[focused=true]:bg-default/60",
-                                    "!cursor-text",
-                                ],
-                            }}
-                            placeholder="Last Name"
-                        />
-                        <Input
-                            label="@Email"
-                            type="email"
-                            variant="underlined"
-                            isClearable
-                            radius="lg"
-                            classNames={{
-                                label: "text-black/50 dark:text-white/90",
-                                input: [
-                                    "bg-transparent",
-                                    "text-black/90 dark:text-white/90",
-                                    "placeholder:text-default-700/50 dark:placeholder:text-white/60",
-                                ],
-                                innerWrapper: "bg-transparent",
-                                inputWrapper: [
-                                    "shadow-xl",
-                                    "bg-default-200/50",
-                                    "dark:bg-default/60",
-                                    "backdrop-blur-xl",
-                                    "backdrop-saturate-200",
-                                    "hover:bg-default-200/70",
-                                    "dark:hover:bg-default/70",
-                                    "group-data-[focused=true]:bg-default-200/50",
-                                    "dark:group-data-[focused=true]:bg-default/60",
-                                    "!cursor-text",
-                                ],
-                            }}
-                            placeholder="email@address.com"
-                        />
-                        <Input
-                            label="Phone No."
-                            type="number"
-                            variant="underlined"
-                            isClearable
-                            radius="lg"
-                            classNames={{
-                                label: "text-black/50 dark:text-white/90",
-                                input: [
-                                    "bg-transparent",
-                                    "text-black/90 dark:text-white/90",
-                                    "placeholder:text-default-700/50 dark:placeholder:text-white/60",
-                                ],
-                                innerWrapper: "bg-transparent",
-                                inputWrapper: [
-                                    "shadow-xl",
-                                    "bg-default-200/50",
-                                    "dark:bg-default/60",
-                                    "backdrop-blur-xl",
-                                    "backdrop-saturate-200",
-                                    "hover:bg-default-200/70",
-                                    "dark:hover:bg-default/70",
-                                    "group-data-[focused=true]:bg-default-200/50",
-                                    "dark:group-data-[focused=true]:bg-default/60",
-                                    "!cursor-text",
-                                ],
-                            }}
-                            placeholder="Enter your phone number..."
-                        />
-                        <div>
-                            <DatePicker
-                                showIcon
-                                isClearable
-                                placeholderText="Check-in"
-                                selected={startDate}
-                                onChange={(date) => setStartDate(date)}
-                                selectsStart
-                                startDate={startDate}
-                                endDate={endDate}
-                                className="w-full bg-transparent"
-                            />
-                        </div>
+            <div className="grid grid-cols-1 gap-12 bg-[#141414] px-8  py-20 font-barlow text-white lg:grid-cols-2 lg:px-48">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                    <input
+                        type="text"
+                        placeholder="First Name*"
+                        className="block w-full border-b-2 border-[#aa8453] bg-transparent p-2"
+                    />
+                    <input
+                        type="text"
+                        placeholder="Last Name*"
+                        className="block w-full border-b-2 border-[#aa8453] bg-transparent p-2"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Email*"
+                        className="block w-full border-b-2 border-[#aa8453] bg-transparent p-2"
+                    />
+                    <input
+                        type="tel"
+                        placeholder="Phone*"
+                        className="block w-full border-b-2 border-[#aa8453] bg-transparent p-2"
+                    />
 
-                        <div>
-                            <DatePicker
-                                showIcon
-                                isClearable
-                                placeholderText="Check-out"
-                                selected={endDate}
-                                onChange={(date) => setEndDate(date)}
-                                selectsEnd
-                                startDate={startDate}
-                                endDate={endDate}
-                                minDate={startDate}
-                                className="w-full bg-transparent"
-                            />
-                        </div>
-
-                        <div className="md:col-span-2">
-                            <Input
-                                label="Room Number"
-                                type="text"
-                                variant="underlined"
-                                isClearable
-                                radius="lg"
-                                classNames={{
-                                    label: "text-black/50 dark:text-white/90",
-                                    input: [
-                                        "bg-transparent",
-                                        "text-black/90 dark:text-white/90",
-                                        "placeholder:text-default-700/50 dark:placeholder:text-white/60",
-                                    ],
-                                    innerWrapper: "bg-transparent",
-                                    inputWrapper: [
-                                        "shadow-xl",
-                                        "bg-default-200/50",
-                                        "dark:bg-default/60",
-                                        "backdrop-blur-xl",
-                                        "backdrop-saturate-200",
-                                        "hover:bg-default-200/70",
-                                        "dark:hover:bg-default/70",
-                                        "group-data-[focused=true]:bg-default-200/50",
-                                        "dark:group-data-[focused=true]:bg-default/60",
-                                        "!cursor-text",
-                                    ],
-                                }}
-                                placeholder="Room No."
-                            />
-                        </div>
-                        <div className="md:col-span-2">
-                            <Textarea
-                                isRequired
-                                variant="underlined"
-                                label="Description"
-                                labelPlacement="outside"
-                                placeholder="Enter your description"
-                            />
-                        </div>
+                    <div>
+                        <label htmlFor="" className="text-[#6a6f76]">
+                            Check In
+                        </label>
+                        <input
+                            type="date"
+                            placeholder="Check-out*"
+                            className="block w-full border-b-2 border-[#aa8453] bg-transparent p-2"
+                        />
                     </div>
+
+                    <div>
+                        <label htmlFor="" className="text-[#6a6f76]">
+                            Check Out
+                        </label>
+                        <input
+                            type="date"
+                            placeholder="Check-out*"
+                            className="block w-full border-b-2 border-[#aa8453] bg-transparent p-2"
+                        />
+                    </div>
+                    <input
+                        type="text"
+                        placeholder="Room No.*"
+                        className="block w-full border-b-2 border-[#aa8453] bg-transparent p-2 md:col-span-2"
+                    />
+                    <textarea
+                        name=""
+                        id=""
+                        placeholder="Message*"
+                        rows={3}
+                        className="block w-full border-b-2 border-[#aa8453] bg-transparent p-2 md:col-span-2"
+                    ></textarea>
+
+                    <Button
+                        radius="none"
+                        size="lg"
+                        className="bg-[#AA8453] font-barlow uppercase tracking-tight text-white"
+                    >
+                        Send a Message
+                    </Button>
                 </div>
-                <div className="flex w-full items-center justify-center md:w-1/2">
-                    <img
+                <div className="">
+                    <Image
                         src="/feedback/feed_img.png"
                         alt="feedback image"
                         className="block h-auto max-w-full items-center justify-center"
+                        width={1000}
+                        height={1000}
                     />
                 </div>
             </div>

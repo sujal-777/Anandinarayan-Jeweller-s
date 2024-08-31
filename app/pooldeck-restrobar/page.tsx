@@ -1,32 +1,32 @@
 "use client";
 
 import React from "react";
-import Header from "../_components/Header/Header";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import Image from "next/image";
+import WhatClientsSay from "./WhatClientsSay/WhatClientsSay";
+import Header from "../_components/Header/Header";
 
 export default function PoolDeckRestroBar() {
     return (
         <section>
             <Header
-                aboutUsText="Pooldeck Restrobar"
-                headerBannerSrc="/pool-restrobar/banner.png"
+                title1="Pooldeck Restrobar"
+                title2="explore our"
+                image="/assets/pooldeck/pooldeck.png"
             />
 
-            <div>
-                <p
-                    className="mt-20 px-20 font-gilda text-3xl"
-                    style={{ color: "#AA8453" }}
-                >
+            <div className=" px-8 py-20 lg:px-48">
+                <p className="text-heading mt-20 font-gilda text-[#AA8453]">
                     Pooldeck Restrobar
                 </p>
-                <p className="mt-5 px-20 font-gilda">
+                <p className="mt-5 font-barlow">
                     Pooldeck Restrobar at Hotel Ashok offers a captivating
                     fusion of culinary delights and leisure in a picturesque
                     setting. Nestled by the shimmering poolside, this unique
                     dining experience combines the vibrant ambiance of a trendy
                     bar with the laid-back charm of a sophisticated restaurant.
                 </p>
-                <p className="mt-5 px-20 font-gilda">
+                <p className="mt-5 font-barlow">
                     As the sun sets, the Pooldeck Restrobar transforms into a
                     chic destination, where guests can unwind and savor a
                     diverse array of delectable dishes and handcrafted
@@ -34,7 +34,7 @@ export default function PoolDeckRestroBar() {
                     local flavors, featuring fresh and high-quality ingredients
                     prepared by skilled chefs.
                 </p>
-                <p className="mt-5 px-20 font-gilda">
+                <p className="mt-5 font-barlow">
                     Surrounded by lush greenery and the soothing sounds of
                     water, patrons can indulge in a relaxed atmosphere, perfect
                     for socializing with friends or enjoying a romantic evening.
@@ -42,7 +42,7 @@ export default function PoolDeckRestroBar() {
                     destination; it&apos;s an escape into a world of culinary
                     excellence and refined hospitality.
                 </p>
-                <p className="mt-5 px-20 font-gilda">
+                <p className="mt-5 font-barlow">
                     Whether you&apos;re looking to celebrate a special occasion,
                     have a casual meal with friends, or simply unwind with a
                     refreshing drink, Pooldeck Restrobar promises a memorable
@@ -50,21 +50,21 @@ export default function PoolDeckRestroBar() {
                     luxurious amenities and impeccable service.
                 </p>
 
-                <p className="mt-20 px-20 font-gilda text-2xl">Hours</p>
+                <p className="mt-20 font-gilda text-2xl">Hours</p>
 
-                <div className="mt-5 flex justify-start px-20">
+                <div className="mt-5 flex justify-start">
                     <AccessTimeIcon style={{ color: "#AA8453" }} />
                     <p className="px-2">
                         Breakfast: 7.00 am - 11.00 am ( daily)
                     </p>
                 </div>
 
-                <div className="mt-5 flex justify-start px-20">
+                <div className="mt-5 flex justify-start">
                     <AccessTimeIcon style={{ color: "#AA8453" }} />
                     <p className="px-2">Lunch: 12.00 pm - 2.00 Pm ( daily)</p>
                 </div>
 
-                <div className="mt-5 flex justify-start px-20">
+                <div className="mt-5 flex justify-start">
                     <AccessTimeIcon style={{ color: "#AA8453" }} />
                     <p className="px-2">
                         Dinner : open from 6.30 pm, last order at 10.00 pm
@@ -72,20 +72,80 @@ export default function PoolDeckRestroBar() {
                     </p>
                 </div>
 
-                <p className="mt-10 px-20 font-gilda text-2xl">Dress Code</p>
-                <p className="mt-2 px-20 font-gilda">
+                <p className="mt-10 font-gilda text-2xl">Dress Code</p>
+                <p className="mt-2 font-barlow">
                     Smart casual (no shorts, hats, or sandals permitted)
                 </p>
 
-                <p className="mt-10 px-20 font-gilda text-2xl">Terrace</p>
-                <p className="mt-2 px-20 font-gilda">Open for drinks only</p>
-
-                <img
-                    className="p-20"
-                    src="/pool-restrobar/pool_grid.png"
-                    alt=" "
-                />
+                <p className="mt-10 font-gilda text-2xl">Terrace</p>
+                <p className="mt-2 font-barlow">Open for drinks only</p>
+                <br />
+                <div className="space-y-4">
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                        <Image
+                            src="/assets/pooldeck/p1.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full h-full"
+                        />
+                        <Image
+                            src="/assets/pooldeck/p2.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full h-full"
+                        />
+                        <Image
+                            src="/assets/pooldeck/p3.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full h-full"
+                        />
+                    </div>
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                        <Image
+                            src="/assets/pooldeck/p5.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full h-full"
+                        />
+                        <Image
+                            src="/assets/pooldeck/p6.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full h-full"
+                        />
+                    </div>
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                        <Image
+                            src="/assets/pooldeck/p7.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full h-full"
+                        />
+                        <Image
+                            src="/assets/pooldeck/p8.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full h-full"
+                        />
+                        <Image
+                            src="/assets/pooldeck/p9.png"
+                            alt="food"
+                            width={1000}
+                            height={1000}
+                            className="w-full h-full"
+                        />
+                    </div>
+                </div>
             </div>
+            <WhatClientsSay />
         </section>
     );
 }

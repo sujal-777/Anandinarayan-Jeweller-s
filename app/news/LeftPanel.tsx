@@ -39,7 +39,7 @@ function LeftPanel() {
     return (
         <>
             {/* Mian blog div */}
-            <div className="mb-5 mt-5 md:mt-20 md:px-5">
+            <div className="mb-5 mt-5  md:px-5">
                 {newData.map((item, index) => {
                     return (
                         <div key={index} className="mt-10">

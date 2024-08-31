@@ -1,5 +1,8 @@
 import React from "react";
 import RoomPage from "../RoomPage";
+import RoomsAndSuites from "../Rooms-Suites/rooms-suites";
+import WhatClientsSay from "../WhatClientsSay/WhatClientsSay";
+import Hero from "../Hero/hero";
 
 const src = "/rooms/room3.png";
 const title = "Deluxe Room";
@@ -9,13 +12,30 @@ const para2 =
     "Each Deluxe Room is equipped with a plush king-size bed or twin beds, a flat-screen TV, a work desk, a mini-fridge, and tea/coffee making facilities. The en-suite bathroom is stocked with complimentary toiletries and features a shower & a bathtub.";
 
 export default function deluxe_room() {
+    const slides = [
+        "/assets/rooms/duplex1.png",
+        "/assets/rooms/duplex2.png",
+        "/assets/rooms/duplex3.png",
+    ];
     return (
         <section>
-            <div className="flex min-h-screen flex-col items-stretch justify-center px-4 md:flex-row">
-                <div className="hidden flex-grow bg-[url('../public/short_border.svg')] bg-contain bg-center bg-repeat md:w-1/12 lg:block lg:w-1/6"></div>
-                <RoomPage src={src} room={title} desc1={para1} desc2={para2} />
-                <div className="hidden flex-grow bg-[url('../public/short_border.svg')] bg-contain bg-center bg-repeat md:w-1/12 lg:block lg:w-1/6"></div>
+            <Hero slides={slides} title="Deluxe Room" />
+            <div className="px-8 py-10 lg:px-48">
+                <RoomPage
+                    src={src}
+                    room={title}
+                    desc1={para1}
+                    desc2={para2}
+                    images={[
+                        "/assets/rooms/deluxe-room-1.jpeg",
+                        "/assets/rooms/deluxe-room-2.jpeg",
+                        "/assets/rooms/deluxe-room-3.jpeg",
+                        "/assets/rooms/deluxe-room-4.jpeg",
+                    ]}
+                />
             </div>
+            <RoomsAndSuites />
+            <WhatClientsSay />
         </section>
     );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 
-import { Image, Card, CardHeader, CardBody } from "@nextui-org/react";
+import { Card, CardHeader, CardBody } from "@nextui-org/react";
+import Image from "next/image";
 
 const cardArray = [
     {
@@ -23,7 +24,7 @@ const cardArray = [
         ],
         award: "INDIAN ACHIEVERS AWARD FOR HOSPITALITY & TOURISM",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.",
     },
     {
         imageArray: [
@@ -63,7 +64,7 @@ const cardArray = [
 const Service = () => {
     return (
         <>
-            <section className="mx-auto mb-24 mt-12 flex w-11/12 max-w-[1600px] flex-col gap-y-0 font-barlow lg:mt-20 lg:gap-y-20 xl:w-10/12">
+            <section className=" space-y-10 px-8 py-20 md:px-48">
                 {cardArray?.map((ele, i) => (
                     <ServiceCard key={ele.award} {...ele} index={i} />
                 ))}
@@ -86,33 +87,23 @@ const ServiceCard = ({
     index: any;
 }) => {
     return (
-        <div
-            className={` flex flex-col items-center justify-center ${
-                index === 0 || index % 2 === 0
-                    ? "lg:flex-row-reverse"
-                    : "lg:flex-row"
-            }`}
-        >
-            <div className="inline-block w-full md:w-10/12 lg:w-6/12">
-                <div>
-                    {imageArray?.map((ele: any, i: number) => (
-                        <div key={i}>
-                            <Image
-                                src={ele.img}
-                                alt={ele.alt}
-                                radius="none"
-                                className="h-auto max-w-full"
-                            />
-                        </div>
-                    ))}
-                </div>
+        <div className="relative w-full">
+            <div
+                className={`lg:w-[60%] ${index % 2 === 0 ? "ml-auto" : "mr-auto"}`}
+            >
+                <Image
+                    src={imageArray[0].img}
+                    alt={imageArray[0].alt}
+                    width={800}
+                    height={500}
+                />
             </div>
 
             <div
-                className={`relative -top-5 z-10 inline-block w-11/12 bg-white text-sm md:w-8/12 lg:top-0 lg:w-5/12 ${
+                className={`bottom-0 top-0 my-auto h-fit -translate-y-[2rem] p-4 lg:absolute lg:w-[50%] lg:translate-y-0 lg:p-0 ${
                     index === 0 || index % 2 === 0
-                        ? "lg:-right-20"
-                        : "lg:-left-20"
+                        ? "-left-[0%]"
+                        : "-right-[0%]"
                 }`}
             >
                 <Card radius="none" className="">
@@ -123,7 +114,7 @@ const ServiceCard = ({
                             </p>
                         </div>
                     </CardHeader>
-                    <CardBody className="text-sm">
+                    <CardBody className="font-barlow text-sm">
                         <p>{description}</p>
                     </CardBody>
                 </Card>
