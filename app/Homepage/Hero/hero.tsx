@@ -18,7 +18,7 @@ export default function Hero() {
         {
             img: "/assets/Home/Carousel2.png",
             title1: "Where Grace Meets Gold",
-            title2: "Anandinarayan Jeweller's Collection",
+            title2: "Anadinarayan Jeweller's Collection",
             btnTitle: "Explore Collection",
             links: "/collections",
         },

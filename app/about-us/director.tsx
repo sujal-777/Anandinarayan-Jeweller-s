@@ -20,16 +20,16 @@ const Director = () => {
                     </p>
                     <br />
                     <p>
-                        Mr. Anand Narayan is the esteemed founder and guiding force behind Anandinarayan Jewellers, a renowned name in Bhandara's jewellery landscape. With a profound passion for exquisite craftsmanship and a commitment to authenticity, Mr. Narayan has dedicated over two decades to curating a collection that resonates with elegance and tradition.
+                        Mr. Anand Narayan is the esteemed founder and guiding force behind Anadinarayan Jewellers, a renowned name in Bhandara's jewellery landscape. With a profound passion for exquisite craftsmanship and a commitment to authenticity, Mr. Narayan has dedicated over two decades to curating a collection that resonates with elegance and tradition.
                         <br />
                         <br />
-                        Under his visionary leadership, Anandinarayan Jewellers has become synonymous with trust and quality, offering a diverse range of hallmarked gold and silver jewellery. Mr. Narayan's emphasis on innovative designs and customer satisfaction has fostered a loyal clientele, making the showroom a preferred destination for jewellery enthusiasts.
+                        Under his visionary leadership, Anadinarayan Jewellers has become synonymous with trust and quality, offering a diverse range of hallmarked gold and silver jewellery. Mr. Narayan's emphasis on innovative designs and customer satisfaction has fostered a loyal clientele, making the showroom a preferred destination for jewellery enthusiasts.
                         <br />
                         <br />
-                        Beyond his entrepreneurial pursuits, Mr. Narayan is deeply invested in community development. His philanthropic endeavors include supporting local artisans and contributing to various social welfare initiatives in Bhandara. His dedication to both his craft and community exemplifies the values that Anandinarayan Jewellers stands for.
+                        Beyond his entrepreneurial pursuits, Mr. Narayan is deeply invested in community development. His philanthropic endeavors include supporting local artisans and contributing to various social welfare initiatives in Bhandara. His dedication to both his craft and community exemplifies the values that Anadinarayan Jewellers stands for.
                         <br />
                         <br />
-                        At Anandinarayan Jewellers, we take pride in the legacy established by Mr. Narayan, striving to uphold the standards of excellence and integrity that he embodies.
+                        At Anadinarayan Jewellers, we take pride in the legacy established by Mr. Narayan, striving to uphold the standards of excellence and integrity that he embodies.
                     </p>
                 </div>
             </div>

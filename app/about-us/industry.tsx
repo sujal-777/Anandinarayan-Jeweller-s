@@ -6,7 +6,7 @@ export const Industry = () => {
         <div className="mt-10 font-barlow">
             <div className="pb-10">
                 <p className="font-barlow uppercase tracking-widest text-[#666666]">
-                    Anandinarayan Jewellers
+                    Anadinarayan Jewellers
                 </p>
                 <h2
                     className="text-heading font-gilda"
@@ -19,16 +19,16 @@ export const Industry = () => {
                 <div>
                     <div className="space-y-4 font-barlow">
                         <p>
-                            Welcome to Anandinarayan Jewellers, a distinguished name in the heart of Bhandara known for its exceptional quality, timeless designs, and deep-rooted values. Since our inception, we have remained committed to creating jewellery that celebrates tradition, elegance, and trust.
+                            Welcome to Anadinarayan Jewellers, a distinguished name in the heart of Bhandara known for its exceptional quality, timeless designs, and deep-rooted values. Since our inception, we have remained committed to creating jewellery that celebrates tradition, elegance, and trust.
                         </p>
                         <p>
                             Nestled in the vibrant town of Bhandara, our showroom offers a curated collection of BIS-hallmarked gold and silver ornaments that appeal to every generation. From intricate bridal sets to everyday essentials, each piece is crafted with precision and passion to mark life’s special moments.
                         </p>
                         <p>
-                            At Anandinarayan Jewellers, our dedication goes beyond fine jewellery. We take pride in fostering long-term relationships with our customers, ensuring transparent pricing, ethical sourcing, and personalized service. Our clientele spans families who have trusted us for generations, and we continue to serve with the same commitment and warmth.
+                            At Anadinarayan Jewellers, our dedication goes beyond fine jewellery. We take pride in fostering long-term relationships with our customers, ensuring transparent pricing, ethical sourcing, and personalized service. Our clientele spans families who have trusted us for generations, and we continue to serve with the same commitment and warmth.
                         </p>
                         <p>
-                            As we grow, our mission remains unchanged — to uphold the legacy of trust and bring joy to every customer who walks through our doors. Discover the unmatched artistry and integrity that make Anandinarayan Jewellers a true jewel of Bhandara.
+                            As we grow, our mission remains unchanged — to uphold the legacy of trust and bring joy to every customer who walks through our doors. Discover the unmatched artistry and integrity that make Anadinarayan Jewellers a true jewel of Bhandara.
                         </p>
                     </div>
                 </div>

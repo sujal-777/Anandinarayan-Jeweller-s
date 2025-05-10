@@ -12,7 +12,7 @@ const info = () => {
                         data-aos="fade-up"
                     >
                         <p className="font-barlow uppercase tracking-widest text-[#666666]">
-                            Anandinarayan Jeweller's
+                            Anadinarayan Jeweller's
                         </p>
                         <h2 className="text-heading font-gilda">
                             Grace. Glamour. Gold.
@@ -23,7 +23,7 @@ const info = () => {
 
                         <div className="space-y-4 font-barlow" data-aos="fade-up">
                             <p>
-                                Welcome to Anandinarayan Jeweller's, where timeless tradition meets modern elegance. Discover intricately crafted jewelry that celebrates the spirit of grace and sophistication.
+                                Welcome to Anadinarayan Jeweller's, where timeless tradition meets modern elegance. Discover intricately crafted jewelry that celebrates the spirit of grace and sophistication.
                             </p>
                             <p>
                                 From bridal sets to everyday sparkle, each piece in our collection is a testament to fine craftsmanship and exquisite design. Whether you're shopping for a celebration or creating a legacy, we help you make every moment shine.

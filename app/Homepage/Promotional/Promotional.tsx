@@ -16,7 +16,7 @@ export default function Promotional() {
                     className="text-heading font-gilda"
                     style={{ color: "#fff" }}
                 >
-                    AnandiNarayan Jeweller's
+                    AnadiNarayan Jeweller's
                 </h2>
             </div>
             <br />

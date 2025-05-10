@@ -33,10 +33,10 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL(`https://thehotelashok.vercel.app/`),
-    title: "The Hotel Ashok",
+    metadataBase: new URL(`https://anandinarayan-jeweller-s.vercel.app/`),
+    title: "AnadiNarayan Jeweller's",
     description:
-        "Welcome to Hotel Ashok, where warm hospitality and exceptional service await each and every guest. Since our establishment in February 2011, we have continuously evolved and improved to ensure an unforgettable experience for our valued guests.",
+        "Welcome to Anadinarayan Jewellers, a distinguished name in the heart of Bhandara known for its exceptional quality, timeless designs, and deep-rooted values. Since our inception, we have remained committed to creating jewellery that celebrates tradition, elegance, and trust.",
     alternates: {
         canonical: "./"
     }

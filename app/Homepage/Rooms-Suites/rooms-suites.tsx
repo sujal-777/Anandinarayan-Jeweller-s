@@ -33,7 +33,7 @@ export default function RoomsAndSuites() {
                     className="font-barlow uppercase tracking-widest text-[#666666]"
                     data-aos="fade-up"
                 >
-                    Anandinarayan Jeweller's
+                    Anadinarayan Jeweller's
                 </p>
                 <h2
                     className="font-gilda text-heading"

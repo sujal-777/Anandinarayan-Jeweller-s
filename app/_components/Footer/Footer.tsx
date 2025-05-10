@@ -69,7 +69,7 @@ export default function Footer() {
                                 <ul className="space-y-3 text-[#ADADAD]">
                                     <li>
                                         <IoLocationOutline className="inline mr-2 text-lg" />
-                                        Anandinarayan Jewellers, Main Bazaar, Nagpur, Maharashtra
+                                        Anadinarayan Jewellers, Main Bazaar, Nagpur, Maharashtra
                                     </li>
                                     <li>
                                         <FaPhoneVolume className="inline mr-2 text-lg" />
@@ -78,7 +78,7 @@ export default function Footer() {
                                     <li>
                                         <FaRegEnvelope className="inline mr-2 text-lg" />
                                         <a href="mailto:info@anandinarayan.com" className="underline">
-                                            info@anandinarayan.com
+                                            info@anadinarayan.com
                                         </a>
                                     </li>
                                 </ul>
@@ -138,7 +138,7 @@ export default function Footer() {
                             <ul className="space-y-3 text-[#ADADAD]">
                                 <li>
                                     <IoLocationOutline className="inline mr-2 text-lg" />
-                                    Anandinarayan Jewellers, Main Bazaar, Nagpur, Maharashtra
+                                    Anadinarayan Jewellers, Main Bazaar, Nagpur, Maharashtra
                                 </li>
                                 <li>
                                     <FaPhoneVolume className="inline mr-2 text-lg" />
@@ -147,7 +147,7 @@ export default function Footer() {
                                 <li>
                                     <FaRegEnvelope className="inline mr-2 text-lg" />
                                     <a href="mailto:info@anandinarayan.com" className="underline">
-                                        info@anandinarayan.com
+                                        info@anadinarayan.com
                                     </a>
                                 </li>
                             </ul>
@@ -173,7 +173,7 @@ export default function Footer() {
                     <a href="https://gbjbuzz.com/" target="_blank" className="text-white">
                         GBJ Buzz Private Limited
                     </a>{" "}
-                    | © 2025 Anandinarayan Jewellers
+                    | © 2025 Anadinarayan Jewellers
                 </p>
             </div>
         </>

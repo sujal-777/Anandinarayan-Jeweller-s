@@ -21,11 +21,11 @@ export default function ContactUs() {
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     <div className="flex w-full flex-col justify-center text-justify">
                         <p className="text-heading font-gilda text-black">
-                            Anandinarayan Jewellers
+                            Anadinarayan Jewellers
                         </p>
 
                         <p className="mt-10 font-barlow text-black">
-                            Welcome to Anandinarayan Jewellers, a trusted destination for timeless gold and silver jewellery in Bhandara, Maharashtra. Our legacy is built on craftsmanship, authenticity, and customer satisfaction. Whether it’s an heirloom piece or a modern design, we create ornaments that elevate every celebration.
+                            Welcome to Anadinarayan Jewellers, a trusted destination for timeless gold and silver jewellery in Bhandara, Maharashtra. Our legacy is built on craftsmanship, authenticity, and customer satisfaction. Whether it’s an heirloom piece or a modern design, we create ornaments that elevate every celebration.
                         </p>
 
                         <p className="mt-4 font-barlow text-black">
@@ -61,7 +61,7 @@ export default function ContactUs() {
                                     className="text-sm"
                                     style={{ color: "#AA8453" }}
                                 >
-                                    contact@anandinarayanjewellers.com
+                                    contact@anadinarayanjewellers.com
                                 </p>
                             </div>
                         </div>
@@ -78,7 +78,7 @@ export default function ContactUs() {
                                     className="text-sm"
                                     style={{ color: "#AA8453" }}
                                 >
-                                    Anandinarayan Jewellers, Bhandara, Maharashtra 441904
+                                    Anadinarayan Jewellers, Bhandara, Maharashtra 441904
                                 </p>
                             </div>
                         </div>
@@ -92,7 +92,7 @@ export default function ContactUs() {
 
             <div className="bg-[#1E1E1E]">
                 <p className="item-center flex justify-center font-gilda text-3xl text-white px-4 py-8 text-center">
-                    How to Reach Anandinarayan Jewellers, Bhandara
+                    How to Reach Anadinarayan Jewellers, Bhandara
                 </p>
             </div>
 
