@@ -1,72 +1,61 @@
 import React from "react";
-
-import { Image } from "@nextui-org/react";
 import { FaPhoneVolume } from "react-icons/fa6";
-import EmblaCarousel from "./EmblaCarousel";
 import Carousel from "./Carousel";
 
 export default function WeddingEvent() {
-    const halls = [
+    const services = [
         {
-            name: "Kohinoor",
-            desc: "A prestigious venue where every detail is tailored to perfection for your special day.",
-            img: "/assets/Home/event1.png",
-            guests: 500,
-            seats: 300,
-            area: "5000 x 2000",
-            link1: "/weddings-and-events/kohinoor",
+            name: "Gold",
+            desc: "Exclusive handcrafted gold jewelry to elevate your elegance.",
+            img: "/assets/Home/gold.jpg",
+            guests: 0,
+            seats: 0,
+            area: "0",
+            link1: "",
             link2: "",
         },
         {
-            name: "Maurya",
-            desc: "Maurya Wedding Event Hall at Hotel Ashok offers elegance and sophistication for your special day.",
-            img: "/assets/Home/event2.png",
-            guests: 500,
-            seats: 400,
-            area: "5000 x 2000",
-            link1: "/weddings-and-events/maurya",
+            name: "Pearl & Ruby",
+            desc: "Timeless pearl collections that embody grace and charm.",
+            img: "/assets/Home/pearl.jpg",
+            guests: 0,
+            seats: 0,
+            area: "0",
+            link1: "",
             link2: "",
         },
         {
-            name: "Magadh",
-            desc: "A harmonious blend of luxury and elegance, creating the perfect backdrop for your cherished celebrations",
-            img: "/assets/Home/event3.png",
-            guests: 500,
-            seats: 500,
-            area: "5000 x 2000",
-            link1: "/weddings-and-events/magadh",
+            name: "Platinum",
+            desc: "Luxurious platinum designs made for modern royalty.",
+            img: "/assets/Home/platinum.jpeg",
+            guests: 0,
+            seats: 0,
+            area: "0",
+            link1: "",
             link2: "",
         },
         {
-            name: "Samrat",
-            desc: "Elevate your celebrations in a regal setting that promises an unforgettable wedding experience.",
-            img: "/assets/Home/event4.png",
-            guests: 500,
-            seats: 450,
-            area: "5000 x 2000",
-            link1: "/weddings-and-events/samrat",
+            name: "Silver",
+            desc: "Elegant silver jewelry perfect for every occasion.",
+            img: "/assets/Home/silver.jpg",
+            guests: 0,
+            seats: 0,
+            area: "0",
+            link1: "",
             link2: "",
         },
+  
     ];
 
     return (
         <section className="flex min-h-screen items-center bg-[#222222] px-8 py-20 lg:px-48">
             <div className="grid grid-cols-1 place-items-center gap-4 lg:grid-cols-2">
-                <div
-                    className="flex w-full flex-col justify-center"
-                    data-aos="fade-up"
-                >
-                    <p
-                        className="font-barlow uppercase tracking-widest text-[#AA8453]"
-                        data-aos="fade-up"
-                    >
-                        Best services
+                <div className="flex w-full flex-col justify-center" data-aos="fade-up">
+                    <p className="font-barlow uppercase tracking-widest text-[#AA8453]" data-aos="fade-up">
+                        Our Collection
                     </p>
-                    <h2
-                        className="font-gilda text-heading"
-                        style={{ color: "#fff" }}
-                    >
-                        Wedding & Event Halls
+                    <h2 className="font-gilda text-heading" style={{ color: "#fff" }}>
+                        Jewelry Categories
                     </h2>
 
                     <br />
@@ -74,39 +63,31 @@ export default function WeddingEvent() {
 
                     <div className="space-y-4 font-barlow">
                         <p className=" text-white">
-                            At Hotel Ashok, we understand that your special
-                            occasions deserve an equally exceptional setting.
+                            Discover timeless elegance in every piece. We craft emotions into jewelry.
                         </p>
-
                         <p className=" text-white">
-                            Our luxurious and versatile event halls provide the
-                            perfect backdrop for weddings, receptions, and a
-                            variety of special events.
+                            Explore a range of luxurious collections made for every special moment.
                         </p>
                     </div>
 
                     <br />
                     <br />
 
-                    <a
-                                href="tel:+918888870722"
-                        className="flex items-center text-xl"
-                        data-aos="fade-up"
-                    >
+                    <div className="flex items-center text-xl" data-aos="fade-up">
                         <div className="mr-4">
                             <FaPhoneVolume style={{ color: "#AA8453" }} />
                         </div>
                         <div className="flex flex-col font-barlow text-sm">
-                            <p style={{ color: "#ADADAD" }}>For Information</p>
+                            <p style={{ color: "#ADADAD" }}>Contact Us</p>
                             <p className="text-xl" style={{ color: "#AA8453" }}>
-                                +91 88888 70722
+                                +91 96739 98267
                             </p>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
                 <div className="w-full" data-aos="fade-in" data-aos-delay="200">
-                <Carousel cards={halls} />
+                    <Carousel cards={services} />
                 </div>
             </div>
         </section>

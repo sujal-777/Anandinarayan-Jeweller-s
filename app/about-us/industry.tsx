@@ -1,68 +1,38 @@
 import React from "react";
-
 import { Image, Button } from "@nextui-org/react";
 
 export const Industry = () => {
     return (
         <div className="mt-10 font-barlow">
-            {" "}
             <div className="pb-10">
                 <p className="font-barlow uppercase tracking-widest text-[#666666]">
-                    Hotel Ashok
+                    Anandinarayan Jewellers
                 </p>
                 <h2
                     className="text-heading font-gilda"
                     style={{ color: "#000000" }}
                 >
-                    Ashok group of Industries
+                    A Legacy of Trust and Craftsmanship
                 </h2>
             </div>
             <div className="grid w-full grid-cols-1 gap-4 space-y-8 lg:grid-cols-2">
                 <div>
                     <div className="space-y-4 font-barlow">
                         <p>
-                            Welcome to Hotel Ashok, where warm hospitality and
-                            exceptional service await each and every guest.
-                            Since our establishment in February 2011, we have
-                            continuously evolved and improved to ensure an
-                            unforgettable experience for our valued guests.
+                            Welcome to Anandinarayan Jewellers, a distinguished name in the heart of Bhandara known for its exceptional quality, timeless designs, and deep-rooted values. Since our inception, we have remained committed to creating jewellery that celebrates tradition, elegance, and trust.
                         </p>
                         <p>
-                            Conveniently located in the heart of Nagpur, our
-                            prime location makes us the perfect choice for both
-                            business and leisure travellers seeking convenience
-                            and comfort. With a wide range of room options, we
-                            have accommodations to suit every taste and need,
-                            ensuring a comfortable and enjoyable stay for all.
-                            At Hotel Ashok, we prioritize creating a welcoming
-                            atmosphere where every guest feels at home. Our
-                            dedicated team goes above and beyond to ensure your
-                            stay is memorable and hassle-free.
+                            Nestled in the vibrant town of Bhandara, our showroom offers a curated collection of BIS-hallmarked gold and silver ornaments that appeal to every generation. From intricate bridal sets to everyday essentials, each piece is crafted with precision and passion to mark life’s special moments.
                         </p>
                         <p>
-                            Our stunning banquet halls are renowned for
-                            providing the perfect setting for all your special
-                            events and functions. Whether it&apos;s an intimate
-                            gathering or a large-scale corporate event, our
-                            versatile banquet halls can cater to your specific
-                            needs, ensuring a memorable experience for you and
-                            your guests. To enhance your stay, we offer modern
-                            amenities and multiple facilities for your
-                            convenience. Indulge in delectable cuisine and
-                            refreshing drinks at our bar and drinks area, unwind
-                            in our relaxation area, or enjoy a delightful dining
-                            experience at our infinity poolside restaurant.
+                            At Anandinarayan Jewellers, our dedication goes beyond fine jewellery. We take pride in fostering long-term relationships with our customers, ensuring transparent pricing, ethical sourcing, and personalized service. Our clientele spans families who have trusted us for generations, and we continue to serve with the same commitment and warmth.
                         </p>
                         <p>
-                            At Hotel Ashok, our commitment is to provide our
-                            guests with the best possible experience. We strive
-                            to exceed expectations and create lasting memories
-                            for each and every guest who walks through our
-                            doors.
+                            As we grow, our mission remains unchanged — to uphold the legacy of trust and bring joy to every customer who walks through our doors. Discover the unmatched artistry and integrity that make Anandinarayan Jewellers a true jewel of Bhandara.
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col  gap-4">
+                <div className="flex flex-col gap-4">
                     <Image
                         radius="none"
                         alt="img1"

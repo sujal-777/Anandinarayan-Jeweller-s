@@ -45,18 +45,14 @@ export default function Card({
                     </h2>
                 </div>
                 <p className="leading-relazed font-barlow text-normal">
-                    Welcome to Hotel Ashok, nestled in the heart of Nagpur,
-                    since our inception in February 2011, we have been
-                    consistent with warm hospitality and exceptional services,
-                    setting the standard for excellence in the hospitality
-                    industry in Nagpur.
+                    Step into our timeless jewellery boutique where heritage meets craftsmanship. Since opening, we’ve delighted customers with stunning pieces, personalized service, and a legacy of elegance that continues to shine through every detail.
                 </p>
-                <Link
+                {/* <Link
                     href={link}
                     className="block w-fit bg-[#AB8A62] p-2 font-barlow text-normal uppercase text-white"
                 >
                     Learn More
-                </Link>
+                </Link> */}
             </div>
         </div>
     );

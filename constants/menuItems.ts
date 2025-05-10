@@ -8,8 +8,8 @@ export const menuItems = [
         href: "/about-us",
     },
     {
-        text: "Rooms & Suits",
-        href: "/rooms_and_suits",
+        text: "Collections",
+        href: "/collections",
         links: [
             {
                 name: "Family Room",
@@ -30,57 +30,22 @@ export const menuItems = [
         ],
     },
     {
-        text: "Wedding & Events",
-        href: "/weddings-and-events",
-        links: [
-            {
-                name: "Kohinoor Hall",
-                href: "/weddings-and-events/kohinoor",
-            },
-            {
-                name: "Magadh Hall",
-                href: "/weddings-and-events/magadh",
-            },
-            {
-                name: "Maurya Hall",
-                href: "/weddings-and-events/maurya",
-            },
-            {
-                name: "Samrat Hall",
-                href: "/weddings-and-events/samrat",
-            },
-        ],
+        text: "Gallery",
+        href: "/gallery",
+        
     },
     {
-        text: "Dining",
-        href: "/food",
-        links: [
-            {
-                name: "Food",
-                href: "/food",
-            },
-            {
-                name: "Bar",
-                href: "/bar",
-            },
-            {
-                name: "Pooldeck Restrobar",
-                href: "/pooldeck-restrobar",
-            },
-            {
-                name: "Swimming Pool",
-                href: "/swimming-pool",
-            },
-        ],
+        text: "Blogs",
+        href: "/blog",
     },
     {
         text: "More",
         href: "",
         links: [
-            {
-                name: "Awards",
-                href: "/awards",
-            },
+            // {
+            //     name: "Testimonials",
+            //     href: "/testimonial",
+            // },
             {
                 name: "FAQs",
                 href: "/faq",

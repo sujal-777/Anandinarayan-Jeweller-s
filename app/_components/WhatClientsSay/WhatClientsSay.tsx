@@ -1,62 +1,73 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Select, SelectItem, Button } from "@nextui-org/react";
-import { FaPhoneVolume, FaPlus, FaMinus } from "react-icons/fa6";
-import Carousel from "./Carousel";
-import Link from "next/link";
-const imageUrl = "/WhatClientsSay/image.png";
-import { useRouter } from "next/navigation";
-import Form from "../Form";
-import Reviews from "../Reviews/Reviews";
+import { FaStar } from "react-icons/fa";
+import Image from "next/image";
 
 const reviews = [
     {
-        name: "Vaishali Kumar",
-        text: "The services at Hotel Ashok were superb. The staff were extremely polite, the location convenient from the railway station and airport, and the room service excellent and quick. The complimentary airport pickup and drop were awesome.",
+        name: "Meera Shah",
+        text: "Absolutely loved the diamond necklace I purchased! The craftsmanship is exquisite and the customer service made me feel truly special. Will definitely shop here again.",
         image: "/WhatClientsSay/1.jpg",
-        role: "CTO at Flowbite",
+        role: "Fashion Blogger",
         rating: 5,
     },
     {
-        name: "Harshit Das",
-        text: "Hotel Ashok boasts a good location, clean rooms, and cordial staff. The breakfast was also very good, offering great value for money. Its proximity to all important business centers makes it an ideal choice. Overall, it was a very good and comfortable stay.",
-        image: "/WhatClientsSay/3.jpg",
-        role: "CTO at Flowbite",
-        rating: 5,
-    },
-    {
-        name: "Shalini Gupta",
-        text: "The rooms were spacious and clean, with good services. The restaurant was nice, and both breakfast and dinner were tasty. We thoroughly enjoyed our stay and recommend it for solo travelers. The hotel`s location is just a plus point.",
+        name: "Rahul Mehta",
+        text: "Bought an engagement ring from here and it was perfect. The staff was knowledgeable and helped me find the ideal piece. Highly recommended for life’s special moments.",
         image: "/WhatClientsSay/2.jpg",
-        role: "CTO at Flowbite",
+        role: "Software Engineer",
         rating: 5,
     },
-    // Add more reviews here
+    {
+        name: "Naina Kapoor",
+        text: "This place is a gem! The collection is unique and elegant. I received so many compliments on the gold bangles I purchased. A wonderful jewelry shopping experience!",
+        image: "/WhatClientsSay/3.jpg",
+        role: "Interior Designer",
+        rating: 5,
+    },
 ];
 
-const adultCount = [
-    "1 Adult",
-    "2 Adult",
-    "3 Adult",
-    "4 Adult",
-    "5 Adult",
-    "6 Adult",
-    "7 Adult",
-];
+const WhatClientsSay = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-const WhatClientsSay = ({ bg }: { bg?: string }) => {
-    const [startDate, setStartDate] = useState("");
-    const [endDate, setEndDate] = useState("");
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
+        }, 5000); // Change testimonial every 5 seconds
 
-    const [adults, setAdults] = useState(1);
-    const [children, setChildren] = useState(0);
+        return () => clearInterval(interval); // Clean up interval on component unmount
+    }, []);
+
+    const review = reviews[currentIndex];
 
     return (
         <div
-            className={`grid grid-cols-1 gap-16 bg-cover bg-no-repeat px-8 py-20 lg:grid-cols-2 lg:px-48`}
+            className={`flex items-center justify-center bg-cover bg-no-repeat px-8 py-20 lg:px-48`}
         >
-            <Reviews />
-            <Form />
+            <div className="flex flex-col items-center justify-center space-y-10 w-full max-w-2xl">
+                <div className="text-center w-full p-8" data-aos="fade-up">
+                    <div className="flex justify-center mb-4">
+                        <Image
+                            src={review.image}
+                            alt={review.name}
+                            width={100}
+                            height={100}
+                            className="rounded-full border-4 border-white"
+                        />
+                    </div>
+                    <p className="text-xl font-semibold text-white">{review.name}</p>
+                    <p className="text-sm text-gray-300">{review.role}</p>
+                    <div className="flex justify-center space-x-1 mt-2">
+                        {[...Array(5)].map((_, i) => (
+                            <FaStar
+                                key={i}
+                                className={`text-yellow-500 ${i < review.rating ? "text-yellow-500" : "text-gray-300"}`}
+                            />
+                        ))}
+                    </div>
+                    <p className="text-lg text-white mt-4">{review.text}</p>
+                </div>
+            </div>
         </div>
     );
 };

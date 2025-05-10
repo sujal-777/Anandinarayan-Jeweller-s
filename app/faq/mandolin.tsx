@@ -6,32 +6,31 @@ import { PlusIcon, Cross2Icon } from "@radix-ui/react-icons";
 
 const contentfaq = [
     {
-        question:
-            "How do i request early check-in or late check-out with the hotel?",
-        answer: "Since hotel policies regarding early check-in (generally before 2:00 pm) or late checkout (generally after 12:00 pm) vary by location and by hotel, please call the hotel directly prior to your arrival to make any necessary arrangements. Direct hotel phone numbers can be found on your confirmation email or on the hotel information page.",
+        question: "What types of jewelry do you offer at your store?",
+        answer: "We offer a wide range of jewelry including gold, diamond, platinum, silver, gemstone-studded pieces, and custom-designed ornaments for all occasions.",
     },
     {
-        question: "What is your policy regarding cancellations?",
-        answer: "If your travel plans change or delay, you can cancel or modify your reservation in accordance with the hotel's cancellation policy as stated during the reservation process.",
+        question: "Do you provide jewelry customization services?",
+        answer: "Yes, we specialize in custom jewelry design. You can share your ideas or inspirations with us, and our expert craftsmen will bring your vision to life.",
     },
     {
-        question: "Will I be charged for extra guests occupying my room?",
-        answer: "Hotel room rates vary by date and by the number of adults occupying a single room. To accommodate more guests, you need to change your reservation. You will be notified of any additional charges prior to confirming your updated reservation.",
+        question: "How do I know if your jewelry is authentic?",
+        answer: "All our pieces come with proper hallmark certifications, including BIS Hallmark for gold, IGI/GIA certification for diamonds, and authenticity guarantees for other gemstones.",
     },
     {
-        question: "Is there a minimun age requirement to reserve a hotel room?",
-        answer: "Although individual hotel policies may vary, most hotels have a minimum age requirement of 21 years old. Please call the hotel directly prior to your arrival to make any necessary arrangements. Direct hotel phone numbers can be found in your confirmation email or on the respective hotel information page.",
+        question: "Do you offer jewelry repair and polishing services?",
+        answer: "Yes, we provide professional cleaning, polishing, resizing, and repair services for all types of jewelry, including those not purchased from our store.",
     },
     {
-        question:
-            "Who can I call if I want to speak to someone when visiting Hotel Ashok website?",
-        answer: "For any queries regarding brand content, please get in touch with the appropriate regional office.",
+        question: "Is there an exchange or buyback policy?",
+        answer: "We offer a transparent exchange and buyback policy based on the current market value and condition of the jewelry. Terms may vary by item type and condition.",
     },
     {
-        question: "Do you have any discount code?",
-        answer: "For discount codes on Hotel Ashok's website, you can check their official website, we often have special offers or codes available for booking directly through our website.",
+        question: "Can I book an appointment for a personalized shopping experience?",
+        answer: "Absolutely! You can book an appointment through our website or call us directly to schedule a personalized session with our jewelry consultants.",
     },
 ];
+
 
 export default function Mandolin() {
     return (

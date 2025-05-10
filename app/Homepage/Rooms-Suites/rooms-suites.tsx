@@ -5,23 +5,23 @@ import Card from "./Card";
 export default function RoomsAndSuites() {
     const rooms = [
         {
-            title: "Budget Room",
-            img: "/assets/Home/rooms1.png",
+            title: "Elegant Rings",
+            img: "/assets/Home/ring.jpg",
             link: "/rooms_and_suits/budget_room",
         },
         {
-            title: "Deluxe Room",
-            img: "/assets/Home/rooms2.png",
+            title: "Bridal Collection",
+            img: "/assets/Home/bridal.jpg",
             link: "/rooms_and_suits/deluxe_room",
         },
         {
-            title: "Family Room",
-            img: "/assets/Home/rooms3.png",
+            title: "Classic Bracelets",
+            img: "/assets/Home/bracelet.jpg",
             link: "/rooms_and_suits/family_room",
         },
         {
-            title: "King Suite",
-            img: "/assets/Home/rooms4.png",
+            title: "Royal Necklaces",
+            img: "/assets/Home/necklace.jpg",
             link: "/rooms_and_suits/king_suit",
         },
     ];
@@ -33,13 +33,13 @@ export default function RoomsAndSuites() {
                     className="font-barlow uppercase tracking-widest text-[#666666]"
                     data-aos="fade-up"
                 >
-                    Hotel Ashok
+                    Anandinarayan Jeweller's
                 </p>
                 <h2
                     className="font-gilda text-heading"
                     style={{ color: "#000000" }}
                 >
-                    Rooms & Suites
+                    Our Exquisite Collections
                 </h2>
             </div>
 

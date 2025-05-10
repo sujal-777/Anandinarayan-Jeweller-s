@@ -1,9 +1,6 @@
 import React from "react";
-import CallIcon from "@mui/icons-material/Call";
-
 import { FaPhoneVolume } from "react-icons/fa6";
 import Image from "next/image";
-import { ClassNames } from "@emotion/react";
 
 const info = () => {
     return (
@@ -15,55 +12,35 @@ const info = () => {
                         data-aos="fade-up"
                     >
                         <p className="font-barlow uppercase tracking-widest text-[#666666]">
-                            Hotel Ashok
+                            Anandinarayan Jeweller's
                         </p>
                         <h2 className="text-heading font-gilda">
-                            Enjoy a Luxury Experience
+                            Grace. Glamour. Gold.
                         </h2>
 
                         <br />
                         <br />
 
-                        <div
-                            className="space-y-4 font-barlow"
-                            data-aos="fade-up"
-                        >
+                        <div className="space-y-4 font-barlow" data-aos="fade-up">
                             <p>
-                                Welcome to Hotel Ashok, nestled in the heart of
-                                Nagpur, since our inception in February 2011, we
-                                have been consistent with warm hospitality and
-                                exceptional services, setting the standard for
-                                excellence in the hospitality industry in
-                                Nagpur.
+                                Welcome to Anandinarayan Jeweller's, where timeless tradition meets modern elegance. Discover intricately crafted jewelry that celebrates the spirit of grace and sophistication.
                             </p>
                             <p>
-                                Experience the regal charm and grandeur of our
-                                suites, designed to make every guest feel like
-                                royalty. Whether you&apos;re seeking a family
-                                retreat or a romantic escape, our range of
-                                rooms, from family to honeymoon suites, caters
-                                to your every whim. With a host of modern
-                                amenities and facilities, we ensure a
-                                comfortable and memorable stay at Hotel Ashok.
+                                From bridal sets to everyday sparkle, each piece in our collection is a testament to fine craftsmanship and exquisite design. Whether you're shopping for a celebration or creating a legacy, we help you make every moment shine.
                             </p>
 
                             <a
-                                href="tel:+918888870722"
+                                href="tel:+919673998267"
                                 className="flex items-center text-xl"
                                 data-aos="fade-up"
                             >
                                 <div className="mr-4">
-                                    <FaPhoneVolume
-                                        style={{ color: "#AA8453" }}
-                                    />
+                                    <FaPhoneVolume style={{ color: "#AA8453" }} />
                                 </div>
-                                <div className="flex flex-col ">
-                                    <p style={{ color: "" }} className="barlow-condensed">Reservation</p>
-                                    <p
-                                        className="text-xl"
-                                        style={{ color: "#AA8453" }}
-                                    >
-                                        +91 88888 70722
+                                <div className="flex flex-col">
+                                    <p className="barlow-condensed">Contact Us</p>
+                                    <p className="text-xl" style={{ color: "#AA8453" }}>
+                                        +91 96739 98267
                                     </p>
                                 </div>
                             </a>
@@ -76,7 +53,7 @@ const info = () => {
                     >
                         <Image
                             src="/assets/Home/luxury.png"
-                            alt="Your Image"
+                            alt="Jewelry Showcase"
                             width={1000}
                             height={1000}
                         />

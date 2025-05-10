@@ -11,7 +11,7 @@ const page = () => {
         <div>
             <Header
                 title1="About us"
-                title2="Luxury hotel"
+                title2="Luxury Jewels"
                 image="/HeaderAssets/img_header.png"
             />
             <div

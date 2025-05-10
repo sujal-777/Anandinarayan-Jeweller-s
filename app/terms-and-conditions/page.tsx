@@ -2,20 +2,20 @@ import React from "react";
 
 export default function page() {
     const tnc = [
-        "Check In Time: 2:00 PM. Check Out Time: 12:00 Noon. Early check-in of room not assured, will be provided as per availability.",
-        "Early check-in 5 to 7 hours before the check-in time will be charged half day tariff. Early check-in more than 7 hours before the check-in time will be charged full day tariff.",
-        "For direct payment mode, full room tariff has to be deposited at the time of check-in. For extension in the duration of stay, full room tariff for the extended duration is payable while requesting extension.",
-        "Pick up/drop will be provided via 2 way shuttle service in every 30 minutes from airport. Kindly request for pick up drop 1 day before check in date.",
-        "According to government regulations, a valid Photo ID has to be carried by every person staying at the hotel. The identification proofs accepted are Drivers License, Aadhar Card, Passport. Without valid ID the guest will not be allowed to check in. PAN Card required for billing above Rs. 25,000.",
-        "The hotel reserves the right of admission. Accommodation can be denied to guests posing as a couple if suitable proof of identification is not presented at check-in. Unmarried couples are not allowed.",
-        "Hotel will reserve direct payment bookings upto 7 pm. The rooms may be provided to other guest without any intimation in case no prior information is provided about check-in.",
-        "Visitors are not allowed in room. Restaurant, Lobby, Coffee Shop can be used for meeting visitors.",
-        "The room booking are confirmed on Non Refundable basis. For company guests, in case of No Show, retention charges equivalent to room tariff will be billed to the company.",
-        "Any other guest apart from the number of guests confirmed during the booking will be chargeable at Rs. 1800 + GST per person.",
+        "All jewelry sold is certified and hallmarked as per industry standards. Customers are advised to collect the certificate of authenticity during purchase.",
+        "Customized or made-to-order jewelry items are non-refundable and non-exchangeable once the order is confirmed.",
+        "Returns or exchanges are allowed within 7 days of purchase for unused, undamaged items with original invoice and packaging. Custom pieces and items purchased on discount are not eligible.",
+        "Jewelry cleaning and inspection services are provided free of charge once every 6 months for items purchased from Anandinarayan Jewelry Shoppe.",
+        "Jewelry repairs, resizing, or alterations are chargeable and subject to assessment. Timelines and charges may vary based on the design and material.",
+        "All payments above ₹2,00,000 must be made via bank transfer or card as per government guidelines. PAN card is mandatory for billing above ₹2,00,000.",
+        "In-store pickup of online or phone orders requires valid ID proof and matching name on the order. Authorized collection by others must be pre-informed.",
+        "Product pricing is subject to change without prior notice due to fluctuations in market rates for gold, silver, and gemstones.",
+        "The buyback and exchange value of jewelry will depend on the current market rate and condition of the item. Original invoice must be presented.",
+        "Anandinarayan Jewelry Shoppe reserves the right to deny service or cancel an order if fraudulent activity or policy violation is suspected.",
     ];
 
     return (
-        <div className="space-y-8  px-8 py-20 lg:px-48 font-barlow">
+        <div className="space-y-8 px-8 py-20 lg:px-48 font-barlow">
             <h3 className="text-heading">Terms And Conditions</h3>
             <div className="py-10">
                 <ol className="list-decimal">

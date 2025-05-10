@@ -40,7 +40,7 @@ export default function Nav() {
         >
             <Link href={"/"}>
                 <Image
-                    src="/logo.svg"
+                    src="/logo-default-2.png"
                     alt="logo"
                     width={500}
                     height={500}

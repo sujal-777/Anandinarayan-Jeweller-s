@@ -1,15 +1,24 @@
 import React from "react";
-import Image from "next/image";
+import {
+    GiCutDiamond,
+    GiGemPendant,
+} from "react-icons/gi";
+import {
+    FaTools,
+    FaExchangeAlt,
+    FaPenFancy,
+    FaStar,
+} from "react-icons/fa";
 
 interface CardProps {
-    imageSrc: string;
+    Icon: React.ElementType;
     title: string;
     description: string;
 }
 
-const Card: React.FC<CardProps> = ({ imageSrc, title, description }) => (
+const Card: React.FC<CardProps> = ({ Icon, title, description }) => (
     <div className="flex min-h-full flex-col items-start justify-start border border-[#F1EEEB] p-5 font-gilda text-black">
-        <Image src={imageSrc} alt={title} width={70} height={70} />
+        <Icon size={70} color="#AA8453" />
         <div className="text-start font-gilda">
             <p className="mt-2 text-xl">{title}</p>
             <p className="mt-2 font-barlow text-sm">{description}</p>
@@ -20,58 +29,51 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, description }) => (
 export default function HomeServices() {
     const services = [
         {
-            imageSrc: "/HomePageAssets/HotelFacility/image4.png",
-            title: "Swimming Pool",
+            Icon: GiCutDiamond,
+            title: "Custom Jewelry Design",
             description:
-                " A spacious poolside fine dining restaurant which serves multi cuisine food along with beverages as per our guests choice along with live music that creates a soothing ambience ",
+                "Tailor-made jewelry pieces crafted to match your imagination and style, designed by our expert artisans using fine materials and intricate techniques that reflect elegance.",
         },
         {
-            imageSrc: "/HomePageAssets/HotelFacility/image6.png",
-            title: "Multi-Cuisine Restaurant",
+            Icon: FaTools,
+            title: "Jewelry Repair & Polishing",
             description:
-                "Enjoy a delightful array of options to kickstart your day, from continental classics to local delights, savor a delicious morning spread that caters to every taste.",
-        },
-
-        {
-            imageSrc: "/HomePageAssets/HotelFacility/image2.png",
-            title: "Bar",
-            description:
-                "Secure your vehicle in our convenient parking facilities, adding an extra layer of comfort to your stay. Rest assured, your car is in safe hands while you enjoy our hospitality.",
+                "Restore the brilliance of your jewelry with our professional repair and polishing services handled by skilled technicians to retain the original charm of your precious items.",
         },
         {
-            imageSrc: "/HomePageAssets/HotelFacility/image3.png",
-            title: "Room Service",
+            Icon: FaExchangeAlt,
+            title: "Gold & Diamond Exchange",
             description:
-                "Our room service is designed for your convenience, offering  efficient assistance whenever you need it bu our  attentive staff who  ensures your requests are met right away.",
+                "Exchange your old gold or diamond jewelry with ease and transparency at the best market rates under expert guidance and secure valuation methods.",
         },
         {
-            imageSrc: "/HomePageAssets/HotelFacility/image1.png",
-            title: "Pick Up & Drop",
+            Icon: FaPenFancy,
+            title: "Engraving Services",
             description:
-                "Experience seamless travel with our dedicated pick-up and drop service, ensuring convenience from your doorstep to Hotel Ashok.",
+                "Personalize your jewelry with names, initials, or memorable dates using our precise engraving tools for a thoughtful and lasting impression.",
         },
         {
-            imageSrc: "/HomePageAssets/HotelFacility/image5.png",
-            title: "Fibre Internet",
+            Icon: GiGemPendant,
+            title: "Certified Gemstone Guidance",
             description:
-                "Indulge in high-speed internet providing seamless connectivity for your work or leisure. Enjoy a smooth online experience throughout your stay with us.",
+                "Consult our gem experts to choose the right certified gemstone that suits your needs, style, or astrological beliefs, with assurance of quality and authenticity.",
+        },
+        {
+            Icon: FaStar,
+            title: "Jewelry Cleaning Services",
+            description:
+                "Bring back the original shine of your ornaments with our ultrasonic cleaning and care solutions handled by professionals using non-damaging techniques.",
         },
     ];
 
     return (
         <section className="bg-white px-8 py-20 lg:px-48">
             <div className="py-10" data-aos="fade-up">
-                <p
-                    className="font-barlow uppercase tracking-widest text-[#AA8453]"
-                    data-aos="fade-up"
-                >
+                <p className="font-barlow uppercase tracking-widest text-[#AA8453]">
                     our services
                 </p>
-                <h2
-                    className="text-heading font-gilda capitalize"
-                    style={{ color: "#000000" }}
-                >
-                    hotel facilities
+                <h2 className="text-heading font-gilda capitalize" style={{ color: "#000000" }}>
+                    jewelry shoppe services
                 </h2>
             </div>
 
@@ -82,7 +84,7 @@ export default function HomeServices() {
                 {services.map((service, index) => (
                     <Card
                         key={index}
-                        imageSrc={service.imageSrc}
+                        Icon={service.Icon}
                         title={service.title}
                         description={service.description}
                     />

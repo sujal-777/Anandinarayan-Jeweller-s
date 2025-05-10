@@ -16,35 +16,36 @@ import { usePathname } from "next/navigation";
 export default function Hero() {
     const slides = [
         {
-            img: "/assets/Home/Carousel1.png",
-            title1: "Enjoy a luxury experience",
-            title2: "Luxury Hotel & Best Resort",
-            btnTitle: "",
-            links: "",
-        },
-        {
             img: "/assets/Home/Carousel2.png",
-            title1: "Experience unparalleled luxury and sophistication",
-            title2: "Luxury Hotel & Best Resort",
-            btnTitle: "Rooms and Suite",
-            links: "/rooms_and_suits",
+            title1: "Where Grace Meets Gold",
+            title2: "Anandinarayan Jeweller's Collection",
+            btnTitle: "Explore Collection",
+            links: "/collections",
         },
         {
-            img: "/assets/Home/Carousel3.png",
-            title1: "Discover a sanctuary of luxury and tranquility",
-            title2: "Luxury Hotel & Best Resort",
-            btnTitle: "Weddings",
-            links: "/weddings-and-events",
+            img: "/assets/Home/Carousel3.jpg",
+            title1: "Crafting Elegance for Generations",
+            title2: "Jewels That Tell Your Story",
+            btnTitle: "About Us",
+            links: "/about",
         },
         {
-            img: "/assets/Home/award.jpeg",
-            title1: "Experience the pinnacle of hospitality at our acclaimed hotel.",
-            title2: "Luxury Hotel & Best Resort",
-            btnTitle: "",
-            links: "",
+            img: "/assets/Home/Carousel4.jpg",
+            title1: "Adorn Your Moments with Brilliance",
+            title2: "Bridal & Custom Jewelry",
+            btnTitle: "View Bridal Sets",
+            links: "/bridal-sets",
+        },
+        {
+            img: "/assets/Home/Carousel1.webp",
+            title1: "Grace. Glamour. Gold.",
+            title2: "Jewelry Crafted to Perfection",
+            btnTitle: "Visit Our Store",
+            links: "/contact",
         },
     ];
-
+    
+    
     const options: EmblaOptionsType = { loop: true, duration: 60 };
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,10 +59,10 @@ export default function Hero() {
             <div className=" barlow-condensed fixed left-0 top-0 z-40 flex w-full items-center justify-between gap-36 px-4 py-4 lg:justify-center lg:px-12">
                 <Link href={"/"}>
                     <Image
-                        src="/logo.svg"
+                        src="/logo-default.png"
                         alt="logo"
-                        width={500}
-                        height={500}
+                        width={700}
+                        height={600}
                         className="max-w-[120px] md:max-w-[150px]"
                     />
                 </Link>
@@ -142,7 +143,7 @@ export default function Hero() {
 
             {/* SIDE */}
             <a
-                href="tel:+918888870722"
+                href="tel:+919673998267"
                 className="absolute bottom-0 left-[-5%] top-0 z-20 my-auto hidden h-fit -rotate-90 p-4 text-white lg:block"
             >
                 <div className="float-left rounded-full border-2 border-white p-4 hover:scale-110">
@@ -150,21 +151,20 @@ export default function Hero() {
                 </div>
                 <div className="float-left mx-4">
                     <p className="barlow-condensed text-xs uppercase tracking-[0.3rem]">
-                        reservation
+                        Contact us: 
                     </p>
                     <p className="font-gilda text-2xl text-[#aa8453]">
-                        +91 88888 70722
-                    </p>
+                    +91 96739 98267                    </p>
                 </div>
             </a>
-
+{/* 
             <div className="bottom-0 left-0 right-0 z-30 hidden px-8 pb-20 lg:absolute lg:block lg:px-40">
                 <HorizontalForm />
             </div>
 
             <div className="block lg:hidden">
                 <Form />
-            </div>
+            </div> */}
         </section>
     );
 }

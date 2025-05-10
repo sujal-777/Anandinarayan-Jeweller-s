@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import { BiArea } from "react-icons/bi";
-import { FaArrowRight } from "react-icons/fa6";
-import { LiaCouchSolid } from "react-icons/lia";
-import { TbUsersGroup } from "react-icons/tb";
+// import { BiArea } from "react-icons/bi";
+// import { LiaCouchSolid } from "react-icons/lia";
+// import { TbUsersGroup } from "react-icons/tb";
+// import { FaArrowRight } from "react-icons/fa6";
 
 export default function Card({
     img,
@@ -38,8 +37,10 @@ export default function Card({
             </div>
             <div className="absolute -bottom-[1rem] left-0 right-0 mx-auto w-[90%] bg-white px-4 py-2 text-center group-hover:space-y-4 md:pt-6 md:pb-8 pb-4">
                 <h3 className="text-xl md:text-2xl font-gilda">{name}</h3>
-                <div className=" trans-duration-500 max-h-0 space-y-4 overflow-clip  font-barlow  text-sm delay-200 group-hover:max-h-[20rem] md:text-lg">
+                <div className="trans-duration-500 max-h-0 space-y-4 overflow-clip font-barlow text-sm delay-200 group-hover:max-h-[20rem] md:text-lg">
                     <p className="text-sm">{desc}</p>
+
+                    {/* 
                     <div className="grid grid-cols-3 text-left text-xs md:text-sm">
                         <p>
                             <TbUsersGroup className="mx-2 inline text-[#AA8453]" />
@@ -54,14 +55,11 @@ export default function Card({
                             {area} sq. ft
                         </p>
                     </div>
-                    <div className="flex items-center justify-end">
-                        <Link
-                            href={link1}
-                            className="text-normal font-barlow uppercase hover:text-[#AA8453]"
-                        >
-                            Details
-                            <FaArrowRight className="mx-2 my-auto inline-block" />
-                        </Link>
+                    */}
+
+                    <div className="flex items-center justify-center">
+                        <p className="font-barlow uppercase text-[#AA8453]">Contact Us</p>
+                        {/* <FaArrowRight className="mx-2 my-auto inline-block" /> */}
                     </div>
                 </div>
             </div>

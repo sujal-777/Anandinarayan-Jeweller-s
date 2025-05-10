@@ -22,7 +22,7 @@ export default function Header({
             <div className=" barlow-condensed fixed left-0 top-0 z-40 flex w-full items-center justify-between gap-36 px-4 py-4 lg:justify-center lg:px-12">
                 <Link href={"/"}>
                     <Image
-                        src="/logo.svg"
+                        src="/logo-default.png"
                         alt="logo"
                         width={500}
                         height={500}

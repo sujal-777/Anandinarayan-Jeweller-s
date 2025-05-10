@@ -10,13 +10,13 @@ export default function Promotional() {
         <div className="bg-transparent py-20">
             <div className="text-center" data-aos="fade-up">
                 <p className="font-barlow uppercase tracking-widest text-[#fff]">
-                    Hotel Ashok
+                    Gold. Glamour. Grace.
                 </p>
                 <h2
                     className="text-heading font-gilda"
                     style={{ color: "#fff" }}
                 >
-                    Rooms & Suites
+                    AnandiNarayan Jeweller's
                 </h2>
             </div>
             <br />
